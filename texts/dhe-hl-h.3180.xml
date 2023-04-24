@@ -1,0 +1,221 @@
+<?xml-model href="../../schema/hardyletter.rng" type="application/xml" 
+   schematypens="http://relaxng.org/ns/structure/1.0"?><!--<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="dhe-hl-h.3180">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+
+            <title>Letter from Florence Henniker to Thomas Hardy on the First World War and war
+               poetry, 1 November 1914</title>
+            <!--The author of the letter-->
+            <author ref="#ps:FlorenceHenniker">Florence Henniker</author>
+            <!--The editor of the tei file-->
+            <editor ref="#resp:HA">Helen Angear</editor>
+            <funder>Arts and Humanities Research Council</funder>
+            <sponsor>University of Exeter</sponsor>
+            <sponsor>Dorset County Museum</sponsor>
+            <principal>Angelique Richardson</principal>
+
+            <respStmt>
+               <persName ref="#resp:HA">Helen Angear</persName>
+               <resp>Selection</resp>
+               <resp>Transcription</resp>
+
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:BM">Beth Mills</persName>
+               <resp>Proofreading</resp>
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:HP">Hannah Petrie</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="#resp:EW">Elizabeth Williamson</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition, transcribed and edited directly from primary
+               sources</edition>
+         </editionStmt>
+         <publicationStmt>
+            <publisher>University of Exeter Digital Humanities Lab</publisher>
+            <pubPlace>Exeter, UK</pubPlace>
+            <date>November 2019</date>
+            <availability>
+               <p>The letter transcripts are licensed under a Creative Commons Attribution 4.0
+                  International License. This means that you can use these transcripts providing you
+                  acknowledge the Hardy's Correspondents project.</p>
+               <p>The letter images remain the copyright of Dorset Museum. Please contact the Museum
+                  if you would like to reuse any of the letter images.</p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <placeName ref="#pl:Dorchester">Dorchester</placeName>
+                  <institution>Dorset County Museum</institution>
+                  <idno type="DCM">H.3180</idno>
+                  <altIdentifier>
+                     <idno type="XXXX"><!-- optional - any other identifiers --></idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Letter written on <material>cream paper</material>.</p>
+                           <p>Pencil library marks on page 4: <note type="libraryMark"
+                              >H.3180</note>.</p>
+                           <p>Note that the last part of page 4 is written in the top margin of the
+                              page.</p>
+                           <p>Envelope bearing the following marks: <stamp type="postmark">Two black
+                                 ink stamps specifying <mentioned>LONDON 2.- am 2 NOV
+                                 14</mentioned></stamp>. <stamp type="postage">One penny bright
+                                 scarlet King George V stamp.</stamp>
+                              <note rend="pencil">Nov.1 (1914)</note></p>
+                        </support>
+                        <condition>Good</condition>
+                     </supportDesc>
+                  </objectDesc>
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Prepared as part of the AHRC/REACT Studentship on Thomas Hardy's letters, in
+               conjunction with Dorset County Museum.</p>
+         </projectDesc>
+
+      </encodingDesc>
+      <profileDesc>
+         <correspDesc>
+            <!-- Provides detailed correspondence-specific metadata, particularly concerning the communicative aspects 
+            (sending, receiving, forwarding etc.) associated with acts of correspondence. -->
+
+            <correspAction type="sent">
+               <persName ref="#ps:FlorenceHenniker">Florence Henniker</persName>
+               <placeName ref="#pl:StratfordPlace13">Stratford Place, London</placeName>
+               <date when="1914-11-01"/>
+            </correspAction>
+            <correspAction type="received">
+               <persName ref="#ps:TH">Thomas Hardy</persName>
+            </correspAction>
+
+         </correspDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="letter">
+            <pb n="1" facs="uoedh_hl_h.3180_1.jpg"/>
+            <opener>
+               <address rend="letterhead">
+                  <addrLine>13, Stratford Place, <choice><abbr>W.</abbr>
+                        <expan>West</expan></choice></addrLine>
+                  <addrLine rend="transform:rotateZ(-40deg)">TELEPHONE 3924 GERRARD</addrLine>
+               </address>
+               <dateline>
+                  <date when="1914-11-01">Nov 1.</date>
+               </dateline>
+               <salute>My dear friend:</salute>
+            </opener>
+
+            <p> A <hi rend="underline">long</hi> time ago I directed an envelope to you, as I wanted
+               to say how much I liked your poem on the "<ref
+                  target="#bib:Hardy1914_MenWhoMarchAway">Men Who March Away</ref>". My
+                     <choice><abbr>sec.</abbr>
+                  <expan>secretary</expan></choice>
+               <persName ref="#ps:MrsBlake">M<hi rend="superscript">rs</hi> Blake</persName>,
+                  (who<del>m</del>
+               <persName ref="#ps:FlorenceHardy">Florence</persName> knows,) also likes it so much –
+               &amp; I believe <hi rend="underline">often</hi> thinks of it; for here we see, every
+               day, crowds of men preparing to go to the <pb n="2" facs="uoedh_hl_h.3180_2.jpg"/>
+               Front, sooner or later.</p>
+            <p> I am sure many people must have admired your poem – which struck an original note –.
+               and so much of the War verse has been poor, or too vindictive – (such as the <hi
+                  rend="underline">infuriated</hi> contribution by that railway porter,
+                     <choice><abbr>wh.</abbr>
+                  <expan>which</expan></choice> does contain, however, some good lines – &amp; has a
+               certain power.) – </p>
+            <p>I thought <persName ref="#ps:EdmundGosse"><abbr>M<hi rend="superscript">r</hi></abbr>
+                  Gosse's</persName>
+               <pb n="3" facs="uoedh_hl_h.3180_3.jpg"/> "to the Dead" strong &amp; pathetic &amp;
+               there have been other rather lighter things that I liked. </p>
+            <p> I hope you have, – as much as you could do in these times, – enjoyed this wonderful
+               second summer? –</p>
+            <p> What a tragedy that was about poor <persName ref="#ps:GeorgeDigby">Major
+                  Digby</persName>: I had a very sad note from <persName ref="#ps:BirdieIlchester"
+                  >Birdie <choice><abbr>I.</abbr>
+                     <expan>Ilchester</expan></choice></persName> but she gave no details as to how
+               it all happened.–</p>
+            <p> I know so many people in sore trouble now – of course–, &amp; a great <pb n="4"
+                  facs="uoedh_hl_h.3180_4.jpg"/> many soldiers who are wounded. Others I know have
+               been killed – and so far, we don't seem <hi rend="underline">near</hi> the end of it
+               all. Dear old <persName ref="#ps:AnnaHirschmann">Anna</persName> is so good about it
+               –; loyal to me &amp; fond of <placeName ref="#pl:England">England</placeName>, though
+               she loves the <placeName ref="#pl:Rhine">Rhine</placeName> as all who have lived on
+               it do.–</p>
+            <p> I wish you would write a <hi rend="underline">strong</hi> protest against the wicked
+               proposal to demolish <placeName ref="#pl:ClothFair">Cloth Fair</placeName>? <pb n="5"
+                  facs="uoedh_hl_h.3180_5.jpg"/> It is really worse to pull down beautiful &amp;
+               interesting old buildings in time of <hi rend="underline">peace</hi>, than to burn
+               them in the excitement of war. Surely those <placeName ref="#pl:Smithfield"
+                  >Smithfield</placeName> houses should be kept as treasured <hi rend="underline"
+                  >relics</hi>, even if they are not supposed to be suitable to live in?–</p>
+            <p>It is a relief to read things sometimes unconnected with the war – I have first been
+               reading <pb n="6" facs="uoedh_hl_h.3180_6.jpg"/>
+               <milestone xml:id="m01" unit="section"/>
+               <milestone unit="section" xml:id="m02"/> most of <persName ref="#ps:KatharineParnell"
+                     >M<hi rend="superscript">rs</hi> Parnell</persName>'s book–. It is a wonderful
+               love-story. – &amp; even though she perhaps ought not to have published it, one can't
+               help being touched by it.–</p>
+            <p> I am by way of returning to <placeName ref="#pl:ShorehamKent">Shoreham</placeName>
+               on <choice><abbr>Wed<hi rend="superscript">y</hi>.</abbr>
+                  <expan>Wednesday</expan></choice> so perhaps some day you will send me a little
+               news of you &amp; <persName ref="#ps:FlorenceHardy">Florence</persName>
+               <hi rend="underline">there</hi>? You must be sure to direct <placeName
+                  ref="#pl:ShorehamKent">Shoreham</placeName>
+               <hi rend="underline">near</hi>
+               <placeName ref="#pl:Sevenoaks"><hi rend="underline">Seven</hi>oaks</placeName>.</p>
+            <p> I hope Wessex is well?</p>
+
+            <p corresp="#m01" xml:id="h3180a" style="transform:rotateZ(-90deg)">Milner is a greater
+               darling than ever. Of course give my love to <persName ref="#ps:FlorenceHardy"
+                        ><choice><abbr>F.</abbr>
+                     <expan>Florence</expan></choice></persName></p>
+            <closer xml:id="h3180b" corresp="#m02" style="transform:rotateZ(-90deg)">
+               <salute>
+                  <choice><abbr>yr</abbr>
+                     <expan>your</expan></choice>
+                  <choice><abbr>affec.</abbr>
+                     <expan>affectionately</expan></choice> friend</salute>
+               <signed>F.H.</signed>
+            </closer>
+
+         </div>
+      </body>
+      <back>
+         <div type="envelope">
+            <pb n="7" facs="uoedh_hl_h.3180_env1.jpg"/>
+            <p>
+               <address>
+                  <addrLine>Thomas Hardy Esq O.M.</addrLine>
+                  <addrLine>Maxgate</addrLine>
+                  <addrLine rend="underline">Dorchester</addrLine>
+               </address>
+            </p>
+            <pb n="8" facs="uoedh_hl_h.3180_env2.jpg"/>
+         </div>
+      </back>
+   </text>
+</TEI>

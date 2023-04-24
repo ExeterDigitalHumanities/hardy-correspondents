@@ -1,0 +1,187 @@
+<?xml-model href="../../schema/hardyletter.rng" type="application/xml" 
+   schematypens="http://relaxng.org/ns/structure/1.0"?><!--<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="dhe-hl-h.5225">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+
+            <title>Letter from May Sinclair to Thomas Hardy on the psychology of <ref
+                  target="#bib:Hardy1891_Tess"><emph rend="italics">Tess of the
+                  d'Urbervilles</emph></ref>, 21 July 1909</title>
+            <author ref="#ps:MaySinclair">May Sinclair</author>
+            <!--The editor of the tei file-->
+            <editor ref="#resp-HA">Helen Angear</editor>
+            <funder>Arts and Humanities Research Council</funder>
+            <sponsor>University of Exeter</sponsor>
+            <sponsor>Dorset County Museum</sponsor>
+            <principal>Angelique Richardson</principal>
+
+            <respStmt>
+               <persName ref="#resp:HA">Helen Angear</persName>
+               <resp>Selection</resp>
+               <resp>Transcription</resp>
+
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:BM">Beth Mills</persName>
+               <resp>Proofreading</resp>
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:HP">Hannah Petrie</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="#resp:EW">Elizabeth Williamson</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition, transcribed and edited directly from primary
+               sources</edition>
+         </editionStmt>
+         <publicationStmt>
+            <publisher>University of Exeter Digital Humanities Lab</publisher>
+            <pubPlace>Exeter, UK</pubPlace>
+            <date>November 2019</date>
+            <availability>
+               <p>The letter transcripts are licensed under a Creative Commons Attribution 4.0
+                  International License. This means that you can use these transcripts providing you
+                  acknowledge the Hardy's Correspondents project.</p>
+               <p>The letter images remain the copyright of Dorset Museum. Please contact the Museum
+                  if you would like to reuse any of the letter images.</p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <placeName ref="#pl:Dorchester">Dorchester</placeName>
+                  <institution>Dorset County Museum</institution>
+                  <idno type="DCM">H.5225</idno>
+                  <altIdentifier>
+                     <idno type="XXXX"><!-- optional - any other identifiers --></idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Letter written on <material>cream paper</material>.</p>
+                           <p>Pencil library marks on page 2: <note type="libraryMark" rend="pencil"
+                                 > H.5225</note></p>
+                        </support>
+                        <condition>Good</condition>
+                     </supportDesc>
+                  </objectDesc>
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Prepared as part of the AHRC/REACT Studentship on Thomas Hardy's letters, in
+               conjunction with Dorset County Museum.</p>
+         </projectDesc>
+
+      </encodingDesc>
+      <profileDesc>
+         <correspDesc>
+            <!-- Provides detailed correspondence-specific metadata, particularly concerning the communicative aspects 
+            (sending, receiving, forwarding etc.) associated with acts of correspondence. -->
+
+            <correspAction type="sent">
+               <!-- Structured description of the place, the name of a person/organisation and the date related to the sending/receiving of a message -->
+               <persName ref="#ps:MaySinclair">May Sinclair</persName>
+
+               <!--Location letter sent from-->
+               <placeName ref="#pl:TheWhiteHartHotel">The White Hart Hotel, Okehampton,
+                  Devon</placeName>
+               <!-- Check place ID. -->
+               <date when="1909-07-21"/>
+            </correspAction>
+            <correspAction type="received">
+               <persName ref="#ps:TH">Thomas Hardy</persName>
+            </correspAction>
+
+         </correspDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="letter">
+            <pb n="1" facs="uoedh_hl_h.5225_1.jpg"/>
+
+            <note rend="red pencil" hand="unknown"><hi rend="underline">May Sinclair</hi>
+               1909</note>
+
+            <opener>
+               <address rend="letterhead">
+                  <addrLine>WHITE HART HOTEL</addrLine>
+                  <addrLine>OKEHAMPTON</addrLine>
+                  <addrLine>DEVON</addrLine>
+               </address>
+               <figure rend="letterhead">
+                  <figDesc>Top centre. A printed blue image of a decorative crown around the written
+                     lines</figDesc>
+               </figure>
+
+               <dateline>
+                  <date when="1909-07-21"> July 21. 1909</date>
+               </dateline>
+
+
+
+
+
+               <salute>Dear Mr. Hardy</salute>
+            </opener>
+
+            <p> Your letter just stopped me wiring to you to meet me at <placeName
+                  ref="#pl:Portland"> Portland</placeName> &amp; come on to <placeName
+                  ref="#pl:Dartmouth">Dartmouth</placeName>. But it is just as well you
+                        <choice><abbr>c<hi rend="superscript"/>d.</abbr>
+                  <expan>could</expan></choice>
+               <choice><abbr>n't</abbr>
+                  <expan>not</expan></choice>. We were two days in <placeName
+                  ref="#pl:PortlandHarbour">Portland Harbour</placeName>, with a gale outside; &amp;
+               we were all but caught <pb n="2" facs="uoedh_hl_h.5225_4.jpg"/> in the Race going
+               round <placeName ref="#pl:PortlandBill">Portland Bill</placeName> on Saturday night.
+               I was all alone with the sailors; having landed my sea-sick friends at <placeName
+                  ref="#pl:Swanage">Swanage</placeName>; &amp; very glad I was that I had not
+               succeeded in luring you into this peril. As it was, I'm afraid I thoroughly enjoyed
+               it.</p>
+
+            <p>I'm afraid my doctor <hi rend="underline">is</hi> right. My silly heart even resents
+               my <note rend="pencil" hand="#ps:TH">even resents</note>
+               <pb n="3" facs="uoedh_hl_h.5225_2.jpg"/> little mile-long scramblings on <placeName
+                  ref="#pl:Dartmoor">Dartmoor</placeName>, &amp; I resent its resentment.</p>
+            <p>I am rejoiced to hear of the success of <ref target="#bib:Hardy1891_Tess">Tess</ref>
+               at the <orgName ref="#pl:LondonRoyalOpera">Royal Opera</orgName>. I wish I had been
+               there.</p>
+
+            <p>It happened to be <ref target="#bib:Hardy1891_Tess">Tess</ref> that I chose to bring
+               with me on my cruise, <pb n="4" facs="uoedh_hl_h.5225_3.jpg"/> &amp; I am reading her
+               again with more &amp; more admiration. </p>
+            <p>Once I wondered whether the "psychology" of <ref target="#bib:Hardy1891_Tess"
+                  >Tess</ref> was always right – now I know that it <hi rend="underline">is</hi> –
+                  <add place="above">always &amp;</add> profoundly right. I might have trusted
+               you!</p>
+
+
+            <closer>
+               <salute>With kindest regards &amp; regrets for the pleasure I missed </salute>
+               <salute>Sincerely <choice><abbr>yrs</abbr>
+                     <expan>yours</expan></choice></salute>
+               <signed>May Sinclair</signed>
+
+            </closer>
+         </div>
+      </body>
+   </text>
+</TEI>

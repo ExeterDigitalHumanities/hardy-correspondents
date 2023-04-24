@@ -1,0 +1,224 @@
+<?xml-model href="../../schema/hardyletter.rng" type="application/xml" 
+   schematypens="http://relaxng.org/ns/structure/1.0"?><!--<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="dhe-hl-h.4611">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+
+            <title>Letter from Harry Timbres to Thomas Hardy sharing his thoughts after reading <ref
+                  target="#bib:Hardy1891_Tess"><emph rend="italics">Tess of the
+                  d'Urbervilles</emph></ref>, 24 July 1925</title>
+            <author ref="#ps:HarryJTimbres">Harry Timbres</author>
+            <!--The editor of the tei file-->
+            <editor ref="#resp-HA">Helen Angear</editor>
+            <funder>Arts and Humanities Research Council</funder>
+            <sponsor>University of Exeter</sponsor>
+            <sponsor>Dorset County Museum</sponsor>
+            <principal>Angelique Richardson</principal>
+
+            <respStmt>
+               <persName ref="#resp:HA">Helen Angear</persName>
+               <resp>Selection</resp>
+               <resp>Proofreading</resp>
+
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:BM">Beth Mills</persName>
+               <resp>Transcription</resp>
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:HP">Hannah Petrie</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="#resp:EW">Elizabeth Williamson</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition, transcribed and edited directly from primary
+               sources</edition>
+         </editionStmt>
+         <publicationStmt>
+            <publisher>University of Exeter Digital Humanities Lab</publisher>
+            <pubPlace>Exeter, UK</pubPlace>
+            <date>November 2019</date>
+            <availability>
+               <p>The letter transcripts are licensed under a Creative Commons Attribution 4.0
+                  International License. This means that you can use these transcripts providing you
+                  acknowledge the Hardy's Correspondents project.</p>
+               <p>The letter images remain the copyright of Dorset Museum. Please contact the Museum
+                  if you would like to reuse any of the letter images.</p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <placeName ref="#pl:Dorchester">Dorchester</placeName>
+                  <institution>Dorset County Museum</institution>
+                  <idno type="DCM">H.4611</idno>
+                  <altIdentifier>
+                     <idno type="XXXX"><!-- optional - any other identifiers --></idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Letter written on <material>white paper</material> with two holes
+                              punched on each page.</p>
+                           <p>Pencil library marks on pages 2 and 6: <note type="libraryMark"
+                                 >H.4611</note>. </p>
+                           <p>Original page numbers written on the top right hand corner of each
+                              sheet of paper. </p>
+                        </support>
+                        <condition>Good</condition>
+                     </supportDesc>
+                  </objectDesc>
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Prepared as part of the AHRC/REACT Studentship on Thomas Hardy's letters, in
+               conjunction with Dorset County Museum.</p>
+         </projectDesc>
+
+      </encodingDesc>
+      <profileDesc>
+         <correspDesc>
+            <!-- Provides detailed correspondence-specific metadata, particularly concerning the communicative aspects 
+            (sending, receiving, forwarding etc.) associated with acts of correspondence. -->
+
+            <correspAction type="sent">
+               <!-- Structured description of the place, the name of a person/organisation and the date related to the sending/receiving of a message -->
+               <persName ref="#ps:HarryJTimbres">Harry Timbres</persName>
+
+               <!--Location letter sent from-->
+               <placeName ref="#pl:KenwoodAvenue5701">5701 Kenwood Avenue, Chicago, Illinois.
+                  U.S.A.</placeName>
+               <date when="1925-07-24"/>
+            </correspAction>
+            <correspAction type="received">
+               <persName ref="#ps:TH">Thomas Hardy</persName>
+            </correspAction>
+
+         </correspDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="letter">
+            <pb n="1" facs="uoedh_hl_h.4611_1.jpg"/>
+            <opener>
+
+               <dateline>
+                  <date when="1925-07-24">July 24/ 1925</date>
+               </dateline>
+
+               <salute>Dear <persName ref="#ps:TH">Thomas Hardy</persName>,</salute>
+            </opener>
+
+            <p>Why did you write "<ref target="#bib:Hardy1891_Tess">Tess of the
+               D'Urbervilles</ref>"? I wake up at night, screaming against the injustice of it, and
+               I cannot rid it from my thoughts. It is the most haunting tragedy I have ever
+               experienced.</p>
+
+            <p>Is it necessary to add sorrow to an already overburdened world, even in the form of a
+               novel? Or perhaps you have known a person, or persons, who have undergone these
+               experiences, and you wished to proclaim the injustice that had been done to them.</p>
+
+            <p>Is it the fate of some people to go through life, utterly alone, although longing and
+               yearning for true <pb n="2" facs="uoedh_hl_h.4611_2.jpg"/> companionship and never
+               finding it? Then suppose there is no life after death? Where does justice come in?
+               Where are the long years of loneliness and unrelieved pain, and impositions upon
+               innocence and helplessness made up for?</p>
+
+            <p>What hope is there for <persName ref="#ps:TessDurbeyfield">Tess</persName>, or
+                  <persName ref="#ps:AngelClare">Clare</persName>, or even <persName
+                  ref="#ps:AlecDurberville">D'Urberville</persName>, or those who have suffered as
+               they? Telling about it may prevent others from falling into snares of folly and
+               ignorance and misunderstanding, but little good will the telling of it do <persName
+                  ref="#ps:TessDurbeyfield">Tess</persName> in finding what she sought for in vain.
+               And why the exquisite touch of torturing her and <persName ref="#ps:AngelClare">
+                  Clare</persName>
+               <subst><del>with</del>
+                  <add place="above">by giving them</add></subst> the happiness they sought where it
+               was too late for them to hold it? What <pb n="3" facs="uoedh_hl_h.4611_3.jpg"
+                  xml:id="h4611a" corresp="#m01"/>
+               <milestone xml:id="m03" unit="section"/> is behind the Fate that controls these
+               things? What is the ultimate answer?</p>
+
+            <p>You are an artist and can see into the depths of sorrow and feel it, and can also
+               describe what you see and feel. What <del rend="crosshatch">what</del> of those who
+               are not artists, <del rend="strikethrough">on</del> or only half,-artists, <del
+                  rend="strikethrough">and</del> who also see &amp; feel sorrow as clearly as you,
+               but have not the gift of raising a voice in protest? They can only suffer and say
+               nothing. What hope do you offer them, or do you offer them any?</p>
+
+            <p>What is there to live for? Must we accept an inevitable Fate, which doles happiness
+               to some and sorrow to others? Have you any vision of what lies behind it all, or
+               beyond?</p>
+
+            <p>You are old, and I am young, and <pb n="4" facs="uoedh_hl_h.4611_4.jpg"/> you have
+               plumbed the depths of men's hearts. Can you not give me a notion of what the answers
+               to my questions are, before you come to the place where you know the true answers,
+               but cannot tell them? My life should be happy, considering its circumstances, but
+               sometimes I feel as if an awful chasm were opening at my feet, and there below only
+               cries of unrequited pain, unredeemed injustice, are heard. It seems that the only
+               life left after death were sorrow.</p>
+
+            <p>There are some who would say that all pain was not as bad as it seems. But I cannot
+               make fine distinctions. The tragical facts of life, are facts, and the fund of human
+                  <milestone xml:id="m01" unit="section"/>
+               <pb n="5" facs="uoedh_hl_h.4611_5.jpg"/>
+               <milestone xml:id="m04" unit="section"/> happiness will not be increased until these
+               facts are altered. In the meantime – what? And will they ever be altered? People do
+               commit unremediable folly, and do die in hopelessness, even as <persName
+                  ref="#ps:TessDurbeyfield">Tess</persName> died. Every day, appalling injustice is
+               done, which is not ameliorated in any degree by the fact that justice and mercy are
+               also sometimes done. What of those whose lives have been ruined? Why is pain? Why is
+               injustice? Are they fundamental and ultimate defects in the scheme of things, that
+               will never be altered, but must be borne? If this is an answer, then it were better
+               not to live, if by dying we could escape these <del rend="strikethrough">facts</del>
+               defects.</p>
+
+            <pb n="6" facs="uoedh_hl_h.4611_6.jpg"/>
+
+            <p>These questions sometimes almost drive me mad, but that does not bring an answer.</p>
+
+            <p>I write this in the hope that perhaps you can help me, even a little,</p>
+
+
+            <closer>
+               <salute>yours very respectfully</salute>
+               <signed>Harry <unclear>J.</unclear> Timbres.</signed>
+
+               <address>
+                  <addrLine>5701 Kenwood Avenue</addrLine>
+                  <addrLine><hi rend="underline">Chicago, Illinois.</hi> U.S.A.</addrLine>
+               </address>
+               <address>
+                  <addrLine>After September 1st.</addrLine>
+                  <addrLine>2101 Park Avenue</addrLine>
+                  <addrLine>Baltimore, Maryland, U.S.A.</addrLine>
+               </address>
+
+
+
+            </closer>
+
+
+
+         </div>
+      </body>
+   </text>
+</TEI>

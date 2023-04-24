@@ -1,0 +1,165 @@
+<?xml-model href="../../schema/hardyletter.rng" type="application/xml" 
+   schematypens="http://relaxng.org/ns/structure/1.0"?><!--<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="dhe-hl-h.3185">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+
+            <title>Letter from Florence Henniker to Thomas Hardy about a recent expedition, 6 July
+               1920</title>
+            <!--The author of the letter-->
+            <author ref="#ps:FlorenceHenniker">Thomas Hardy</author>
+            <!--The editor of the tei file-->
+            <editor ref="#resp-HA">Helen Angear</editor>
+            <funder>Arts and Humanities Research Council</funder>
+            <sponsor>University of Exeter</sponsor>
+            <sponsor>Dorset County Museum</sponsor>
+            <principal>Angelique Richardson</principal>
+
+            <respStmt>
+               <persName ref="#resp:HA">Helen Angear</persName>
+               <resp>Selection</resp>
+               <resp>Transcription</resp>
+
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:BM">Beth Mills</persName>
+               <resp>Proofreading</resp>
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:HP">Hannah Petrie</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="#resp:EW">Elizabeth Williamson</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition, transcribed and edited directly from primary
+               sources</edition>
+         </editionStmt>
+         <publicationStmt>
+            <publisher>University of Exeter Digital Humanities Lab</publisher>
+            <pubPlace>Exeter, UK</pubPlace>
+            <date>November 2019</date>
+            <availability>
+               <p>The letter transcripts are licensed under a Creative Commons Attribution 4.0
+                  International License. This means that you can use these transcripts providing you
+                  acknowledge the Hardy's Correspondents project.</p>
+               <p>The letter images remain the copyright of Dorset Museum. Please contact the Museum
+                  if you would like to reuse any of the letter images.</p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <placeName ref="#pl:Dorchester">Dorchester</placeName>
+                  <institution>Dorset County Museum</institution>
+                  <idno type="DCM">H.3185</idno>
+                  <altIdentifier>
+                     <idno type="XXXX"><!-- optional - any other identifiers --></idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Letter written on <material>cream hotel paper</material> from the
+                              Royal Hotel.</p>
+                           <p>Pencil library marks on page 4: <note type="libraryMark"
+                              >H.3185</note></p>
+                        </support>
+                        <condition>Good</condition>
+                     </supportDesc>
+                  </objectDesc>
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Prepared as part of the AHRC/REACT Studentship on Thomas Hardy's letters, in
+               conjunction with Dorset County Museum.</p>
+         </projectDesc>
+
+      </encodingDesc>
+      <profileDesc>
+         <correspDesc>
+            <!-- Provides detailed correspondence-specific metadata, particularly concerning the communicative aspects 
+            (sending, receiving, forwarding etc.) associated with acts of correspondence. -->
+
+            <correspAction type="sent">
+               <persName ref="#ps:FlorenceHenniker">Florence Henniker</persName>
+
+               <!--Location letter sent from-->
+               <placeName ref="#pl:Weymouth">The Royal Hotel, Weymouth</placeName>
+               <date when="1920-07-06">July 6. 1920</date>
+            </correspAction>
+            <correspAction type="received">
+               <persName ref="#ps:TH">Thomas Hardy</persName>
+            </correspAction>
+
+         </correspDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="letter">
+            <pb n="1" facs="uoedh_hl_h.3185_1.jpg"/>
+            <opener>
+               <address rend="letterhead">
+                  <addrLine>The Royal Hotel,</addrLine>
+                  <addrLine>Weymouth.</addrLine>
+                  <addrLine>TELEPHONE No. 262.</addrLine>
+               </address>
+               <figure>
+                  <figDesc>Top left corner: A printed black image of a lion lying in profile, facing
+                     left.</figDesc>
+               </figure>
+               <dateline>
+                  <date when="1920-07-06">July 6. <note hand="unknown">1920</note></date>
+               </dateline>
+
+               <salute>My dear friend:</salute>
+            </opener>
+
+            <p>I hope you &amp; <persName ref="#ps:FlorenceHardy">F.</persName> were not very tired
+               after our charming &amp; interesting expedition. It was delightful to see so much in
+               one afternoon. I hope that <hi rend="underline">Thursday</hi> afternoon will be as
+               lovely as this one has <pb n="2" facs="uoedh_hl_h.3185_2.jpg"/> turned out, after the
+               drenching morning. The sea has been a lovely peacock-blue. –</p>
+            <p>I shall hope to arrive with <persName ref="#ps:AnnaHirschmann">Anna</persName> at the
+               Museum at 2 – (or very soon afterward,) on <hi rend="underline">Thursday</hi>. –</p>
+
+            <p><persName ref="#ps:FlorenceHardy">Florence</persName>'s bright nosegay from
+                        <choice><abbr>y<hi rend="superscript"
+                  >r</hi>.</abbr><expan>your</expan></choice>
+               <pb n="3" facs="uoedh_hl_h.3185_3.jpg"/> garden makes a cheerful spot of colour in my
+               window. It was so kind of her to bring me those flowers –</p>
+
+            <p>Of <hi rend="underline">course no answer is expected to this</hi> - </p>
+
+            <p>Thank you for showing me so much that was interesting –</p>
+
+            <closer>
+               <salute>always <choice><abbr>yr</abbr>
+                     <expan>your</expan></choice> friend</salute>
+               <signed>FloH</signed>
+            </closer>
+            <postscript>
+               <p><choice><abbr>affec.</abbr>
+                     <expan>affectionate</expan></choice> greeting to Wessex!</p>
+            </postscript>
+
+         </div>
+      </body>
+   </text>
+</TEI>

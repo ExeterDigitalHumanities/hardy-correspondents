@@ -1,0 +1,182 @@
+<?xml-model href="../../schema/hardyletter.rng" type="application/xml" 
+   schematypens="http://relaxng.org/ns/structure/1.0"?><!--<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="dhe-hl-h.4815">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+
+            <title>Letter from Scofield Thayer to Thomas Hardy acknowledging receipt of the poem
+                  <ref target="#bib:Hardy1921_TheTwoHouses">The Two Houses</ref> for the <orgName
+                  ref="#ps:TheDial">Dial</orgName>, 8 June 1921</title>
+            <author ref="#ps:ScofieldThayer">Scofield Thayer</author>
+            <!--The editor of the tei file-->
+            <editor ref="#resp-HA">Helen Angear</editor>
+            <funder>Arts and Humanities Research Council</funder>
+            <sponsor>University of Exeter</sponsor>
+            <sponsor>Dorset County Museum</sponsor>
+            <principal>Angelique Richardson</principal>
+
+            <respStmt>
+               <persName ref="#resp:HA">Helen Angear</persName>
+               <resp>Selection</resp>
+               <resp>Transcription</resp>
+
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:BM">Beth Mills</persName>
+               <resp>Proofreading</resp>
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:HP">Hannah Petrie</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="#resp:EW">Elizabeth Williamson</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition, transcribed and edited directly from primary
+               sources</edition>
+         </editionStmt>
+         <publicationStmt>
+            <publisher>University of Exeter Digital Humanities Lab</publisher>
+            <pubPlace>Exeter, UK</pubPlace>
+            <date>November 2019</date>
+            <availability>
+               <p>The letter transcripts are licensed under a Creative Commons Attribution 4.0
+                  International License. This means that you can use these transcripts providing you
+                  acknowledge the Hardy's Correspondents project.</p>
+               <p>The letter images remain the copyright of Dorset Museum. Please contact the Museum
+                  if you would like to reuse any of the letter images.</p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <placeName ref="#pl:Dorchester">Dorchester</placeName>
+                  <institution>Dorset County Museum</institution>
+                  <idno type="DCM">H.4815</idno>
+                  <altIdentifier>
+                     <idno type="XXXX"><!-- optional - any other identifiers --></idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Letter typed on <material>cream paper</material> with printed
+                              letterhead.</p>
+                           <p>Pencil librarymarks on page 2: <note type="libraryMark" rend="pencil"
+                                 >H.4815</note>.</p>
+                           <figure>
+                              <figDesc>A printed black image of a sun dialcentred between words
+                                 'The' and 'Dial'. </figDesc>
+                           </figure>
+                           <!--  Does this still apply now moved here?             LW: suggest removing these, AR to confirm-->
+                        </support>
+                        <condition>Good</condition>
+                     </supportDesc>
+                  </objectDesc>
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Prepared as part of the AHRC/REACT Studentship on Thomas Hardy's letters, in
+               conjunction with Dorset County Museum.</p>
+         </projectDesc>
+
+      </encodingDesc>
+      <profileDesc>
+         <correspDesc>
+            <!-- Provides detailed correspondence-specific metadata, particularly concerning the communicative aspects 
+            (sending, receiving, forwarding etc.) associated with acts of correspondence. -->
+
+            <correspAction type="sent">
+               <!-- Structured description of the place, the name of a person/organisation and the date related to the sending/receiving of a message -->
+               <persName ref="#ps:ScofieldThayer">Scofield Thayer</persName>
+
+               <!--Location letter sent from-->
+               <placeName ref="#pl:WestThirteenthStreet152">152 West Thirteenth Street, New York
+                  City</placeName>
+               <date when="1921-06-08"/>
+            </correspAction>
+            <correspAction type="received">
+               <persName ref="#ps:TH">Thomas Hardy</persName>
+            </correspAction>
+
+         </correspDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="letter">
+            <pb n="1" facs="uoedh_hl_h.4815_1.jpg"/>
+
+            <opener>
+               <address rend="letterhead">
+                  <addrLine>THE DIAL</addrLine>
+                  <addrLine>152 WEST THIRTEENTH STREET, NEW YORK CITY</addrLine>
+                  <addrLine>TELEPHONE: CHELSEA 6540</addrLine>
+               </address>
+
+
+
+               <dateline>
+                  <date when="1921-06-08"> June 8, 1921</date>
+               </dateline>
+
+               <address rend="recipient">
+                  <addrLine>Thomas Hardy, Esq.</addrLine>
+                  <addrLine>Max Gate</addrLine>
+                  <addrLine>Dorchester, England</addrLine>
+               </address>
+
+
+
+               <salute>My dear Mr. Hardy:</salute>
+            </opener>
+
+            <p>Through the kind offices of <persName ref="#ps:EzraPound">Mr. Ezra Pound</persName> I
+               have received for <orgName ref="#ps:TheDial">The Dial</orgName> your poem entitled
+                  <ref target="#bib:Hardy1921_TheTwoHouses">The Two Houses</ref>. I am happy not
+               only at being able to print your work but also at being able to print a poem which
+               would confer honour upon any journal in which it appeared whether or not it bore the
+               name of <persName ref="#ps:TH">Thomas Hardy</persName>.</p>
+
+            <p><ref target="#bib:Hardy1921_TheTwoHouses">The Two Houses</ref> will appear in our
+               August number, our July number having already gone to press.</p>
+
+            <p>May one who has from childhood been a reader and admirer of yours have the pleasure
+               of printing your work often? You must know how many friends you have in this country.
+                  <persName ref="#ps:BruceRogers">Mr. Bruce Rogers</persName>, the printer, who was
+               so generous as to help us with the design of <orgName ref="#ps:TheDial">The
+                  Dial</orgName>, other exam­ples of whose work you are perhaps acquainted with,
+               when he went abroad for the first time went directly to <placeName ref="#pl:Wessex"
+                  >Wessex</placeName><!-- check ID! -->, there to visit and relive what he had
+               already known and experienced in your novels. There are many who would do as
+                  <persName ref="#ps:BruceRogers">Mr. Bruce Rogers</persName>.</p>
+
+
+            <closer>
+               <salute>Sincerely yours,</salute>
+               <signed rend="pen">Scofield Thayer</signed>
+               <signed>Editor</signed>
+               <note>ST:EW</note>
+            </closer>
+
+            <pb n="2" facs="uoedh_hl_h.4815_2.jpg"/>
+
+         </div>
+      </body>
+   </text>
+</TEI>

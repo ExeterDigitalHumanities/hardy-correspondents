@@ -1,0 +1,276 @@
+<!--<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>--><?xml-model href="../../schema/hardyletter.rng" type="application/xml" 
+   schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="dhe-hl-h.3175">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+
+            <title>Letter from Florence Henniker to Thomas Hardy on poetry, film adaptation and
+               performing animals, 17 January 1914</title>
+            <!--The author of the letter-->
+            <author ref="#ps:FlorenceHenniker">Florence Henniker</author>
+            <!--The editor of the tei file-->
+            <editor ref="#resp-HA">Helen Angear</editor>
+            <funder>Arts and Humanities Research Council</funder>
+            <sponsor>University of Exeter</sponsor>
+            <sponsor>Dorset County Museum</sponsor>
+            <principal>Angelique Richardson</principal>
+
+            <respStmt>
+               <persName ref="#resp:HA">Helen Angear</persName>
+               <resp>Selection</resp>
+               <resp>Transcription</resp>
+
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:BM">Beth Mills</persName>
+               <resp>Proofreading</resp>
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:HP">Hannah Petrie</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="#resp:EW">Elizabeth Williamson</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition, transcribed and edited directly from primary
+               sources</edition>
+         </editionStmt>
+         <publicationStmt>
+            <publisher>University of Exeter Digital Humanities Lab</publisher>
+            <pubPlace>Exeter, UK</pubPlace>
+            <date>November 2019</date>
+            <availability>
+               <p>The letter transcripts are licensed under a Creative Commons Attribution 4.0
+                  International License. This means that you can use these transcripts providing you
+                  acknowledge the Hardy's Correspondents project.</p>
+               <p>The letter images remain the copyright of Dorset Museum. Please contact the Museum
+                  if you would like to reuse any of the letter images.</p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <placeName ref="#pl:Dorchester">Dorchester</placeName>
+                  <institution>Dorset County Museum</institution>
+                  <idno type="DCM">H.3175</idno>
+                  <altIdentifier>
+                     <idno type="XXXX"><!-- optional - any other identifiers --></idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Letter written on <material>cream folded card</material> with mourning
+                              border on page 1.</p>
+                           <p>Pencil library marks on page 4: <note type="libraryMark"
+                              >H.3175</note>.</p>
+                           <p>Note that after page 4 Henniker continues writing in the top margin of
+                              the first page and continues across the margins of pages 2-3 (labelled
+                              here as pages 5-7).</p>
+                        </support>
+                        <condition>Good</condition>
+                     </supportDesc>
+                  </objectDesc>
+                  <decoDesc>
+                     <decoNote type="mourningBorder">
+                        <p>Black border on page 1.</p>
+                     </decoNote>
+                  </decoDesc>
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Prepared as part of the AHRC/REACT Studentship on Thomas Hardy's letters, in
+               conjunction with Dorset County Museum.</p>
+         </projectDesc>
+         <listPrefixDef>
+            <prefixDef ident="resp" matchPattern="([A-Z]+)"
+               replacementPattern="../metadata/participants.xml#$1">
+               <p>Private URIs with the prefix "resp" can be converted to point to a fragment in the
+                  list of participants document.</p>
+            </prefixDef>
+            <prefixDef ident="ps" matchPattern="([a-z][a-z0-9]+)" replacementPattern="people.xml#$1">
+               <p>Private URIs with the prefix "pers" can be converted to point to a fragment in the
+                  'people' document, referenced by @xml:id.</p>
+            </prefixDef>
+            <prefixDef ident="pl" matchPattern="([a-z][a-z0-9]+)" replacementPattern="places.xml#$1">
+               <p>Private URIs with the prefix "place" can be converted to point to a fragment in
+                  the 'places' document, referenced by @xml:id.</p>
+            </prefixDef>
+         </listPrefixDef>
+
+      </encodingDesc>
+      <profileDesc>
+         <correspDesc>
+            <!-- Provides detailed correspondence-specific metadata, particularly concerning the communicative aspects 
+            (sending, receiving, forwarding etc.) associated with acts of correspondence. -->
+
+            <correspAction type="sent">
+               <!-- Structured description of the place, the name of a person/organisation and the date related to the sending/receiving of a message -->
+               <persName ref="#ps:FlorenceHenniker">Florence Henniker</persName>
+
+               <!--Location letter sent from-->
+               <placeName ref="#pl:TheLittleOrchard">The Little Orchard, Shoreham, Kent</placeName>
+               <date when="1914-01-17"/>
+            </correspAction>
+            <correspAction type="received">
+               <persName ref="#ps:TH">Thomas Hardy</persName>
+            </correspAction>
+
+            <!-- correspContext> -->
+            <!-- Provides references to preceding or following correspondence related to this piece of correspondence -->
+            <!--</correspContext>-->
+            <correspContext>
+               <ref type="prev" target="dhe-hl-h.3135"> Letter from <persName ref="#ps:TH"
+                     >Hardy</persName> referring to 'performances with animals'. </ref>
+               <ref type="next" target="dhe-hl-h.3136"> Letter from <persName ref="#ps:TH"
+                     >Hardy</persName> starting a new conversational thread in which <persName
+                     ref="#ps:TH">Hardy</persName> informs <persName ref="#ps:FlorenceHenniker"
+                     >Henniker</persName> of his marriage to <persName ref="#ps:FlorenceHardy"
+                     >Florence Dugdale</persName> and regrets that she found out from the newspapers
+                  first. </ref>
+            </correspContext>
+         </correspDesc>
+
+      </profileDesc>
+      <revisionDesc>
+         <change resp="#resp-HA">
+            <p/>
+         </change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="letter">
+            <pb n="1" facs="uoedh_hl_h.3175_1.jpg"/>
+            <opener>
+               <address rend="letterhead">
+                  <addrLine>The Little Orchard,</addrLine>
+                  <addrLine>Shoreham,</addrLine>
+                  <addrLine>Kent</addrLine>
+               </address>
+
+               <dateline>
+                  <milestone unit="section" xml:id="m01"/>
+                  <date when="1914-01-17"> Jan 17. 14</date>
+               </dateline>
+               <salute>My dear friend:</salute>
+               <milestone unit="section" xml:id="m02"/>
+            </opener>
+
+            <p>Best thanks for <choice><abbr>yr.</abbr><expan>your</expan></choice> last nice long
+               letter, full of news. Also very many thanks for the fine poem in the "<name
+                  type="newspaper" ref="TheSphere">Sphere</name>". There are beautiful lines in it.
+               But of course it is <hi rend="underline">very</hi> sad.</p>
+
+            <p>I have not seen the magazine <add place="above"><unclear>conducted</unclear></add> by
+               the "uppish" young poets. Possibly there may be good things in it now &amp; again,
+               for as <persName ref="#ps:EdmundGosse">M<hi rend="superscript">r</hi>
+                  Gosse</persName> thinks there is a great deal of <pb n="2"
+                  facs="uoedh_hl_h.3175_2.jpg"/>
+               <milestone xml:id="m03" unit="section"/> almost good verse published. I think
+                  <persName ref="#ps:MillicentWedmore">Miss Wedmore</persName>'s <add place="above"
+                  >must be</add> very much above the ordinary, don't you? and I see there is a young
+                  <persName ref="#ps:ArthurBell">M<hi rend="superscript">r</hi> Arthur
+                  Bell</persName> very much praised.</p>
+
+            <p>I was really impressed by <persName ref="#ps:FrankTaylor">Frank Taylor</persName>'s
+                  "<name type="poetry-anthology">The Gallant Way</name>". They are of course <hi
+                  rend="underline">soldier</hi> poems, &amp; they have a splendid ring &amp; "go"
+               about them. One on "<name type="poem">Minden</name>" – and another on "<name
+                  type="poem">Blucher</name>" – &amp; a 3<hi rend="superscript">rd</hi>. about
+                  "<name type="poem">The Men <pb n="3" facs="uoedh_hl_h.3175_3.jpg"/>
+                  <milestone xml:id="m04" unit="section"/> Who Lead</name>" are <hi rend="underline"
+                  >excellent</hi> beyond dispute.</p>
+
+            <p>What do you think of this craze for "films"? I see you say "<ref
+                  target="#bib:Hardy1874_FarFromTheMaddingCrowd">Far from the Madding Crowd</ref>"
+               is to be done. I wonder if the system makes people lazy about reading, &amp; less
+               keen about genuine drama?</p>
+
+            <p>I am so glad you have written about performing animals. There <hi rend="underline"
+                  >may</hi> be a few cases in which <del>a few </del>
+               <add place="above">they</add> are kindly treated, &amp; learn tricks easily – (such
+               as Milner's) – but the whole thing is liable to awful abuses &amp; cruelties.</p>
+
+            <pb n="4" facs="uoedh_hl_h.3175_4.jpg"/>
+
+
+            <p> There are a few things that have happened lately which cheer one. The passing of the
+               plumage Bill in <placeName ref="#pl:America">america</placeName>, &amp; the rending
+               of the feathers from the hats of callous women delights me. But I fear the inspection
+               of the poor pit ponies is very unsatisfactory – &amp; our <persName
+                  ref="#ps:ReginaldMcKenna">M<hi rend="superscript">r</hi> McKenna</persName> has
+               behaved badly about it.</p>
+
+            <p> I hope you are getting fond of the live "<placeName ref="#pl:Wessex"
+                  >Wessex</placeName>"? –</p>
+
+            <p> This place, as I think I told you, is quite astonishingly rural. In some of the
+               country roads &amp; lanes one might be a hundred miles from <placeName
+                  ref="#pl:London">London</placeName>, instead of 23.</p>
+
+            <p> I hear from an old friend, <persName ref="#ps:FrancisChanning">Lord
+                  Channing</persName>, a very busy</p>
+
+            <pb n="5" facs="uoedh_hl_h.3175_5.jpg"/>
+            <ab>
+               <seg xml:id="h3175a" corresp="m01" style="text-orientation: sideways-left">politician
+                  in old days, that he is now, very sensibly, reading your books. I know he
+                  will</seg>
+            </ab>
+
+            <ab>
+               <seg xml:id="h3175b" corresp="m02" style="text-orientation: sideways-left">
+                  appreciate much of them very keenly. You ask about the soil – here. It is chalky,
+                  &amp; the air, I think very bracing – </seg>
+            </ab>
+            <pb n="6" facs="uoedh_hl_h.3175_6.jpg"/>
+            <ab>
+               <seg xml:id="h3175c" corresp="m03" style="text-orientation: sideways-left"> I hope to
+                  do a great deal in encouraging birds in the orchard. Please give many messages to
+                     <persName ref="#ps:FlorenceHardy">Miss Dugdale</persName> &amp; my love.
+                  Someday you &amp; she must come &amp; see me here. – By the way, I went to a
+                  little party at <persName ref="#ps:EdmundGosse">M<hi rend="superscript">r</hi>
+                     Gosse</persName>'s – the first I had been to. They were so kind in getting of
+                  interesting people to come &amp; talk to me. I </seg>
+            </ab>
+            <pb n="7" facs="uoedh_hl_h.3175_7.jpg"/>
+            <ab>
+               <seg xml:id="h3175d" corresp="m04" style="text-orientation: sideways-left">met
+                     <persName ref="#ps:BranderMatthews">D<hi rend="superscript">r</hi>
+                     Brander</persName>, &amp; also went to hear his lecture on "<name type="play"
+                     >Hamlet</name>". Many good wishes for 1914.</seg>
+            </ab>
+
+            <closer xml:id="h3175e" corresp="m05" style="text-orientation: sideways-left">
+               <salute><choice><abbr>Y<hi rend="superscript"
+                     >r</hi></abbr><expan>Your</expan></choice>
+                  <choice><abbr>affec</abbr><expan>affectionate</expan></choice> friend.</salute>
+               <signed>F.H.</signed>
+            </closer>
+
+            <!-- Library marks still under discussion. Use e.g.
+            <note type="libraryMark" rend="pencil">
+               <p><orgName ref="#DCM">D.C.M</orgName></p>
+               <p><idno n="H.3175">H / 3175 </idno></p>
+               
+            </note> -->
+         </div>
+      </body>
+   </text>
+</TEI>

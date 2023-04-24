@@ -1,0 +1,160 @@
+<?xml-model href="../../schema/hardyletter.rng" type="application/xml" 
+   schematypens="http://relaxng.org/ns/structure/1.0"?><!--<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="dhe-hl-h.5244">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+
+            <title>Letter from George Smith on terms of publishing for <ref
+                  target="#bib:Hardy1878_Native"><emph rend="italics">The Return of the
+                     Native</emph></ref>, 19 September 1878</title>
+            <author ref="#ps:GeorgeSmith">George Smith</author>
+            <!--The editor of the tei file-->
+            <editor ref="#resp-HA">Helen Angear</editor>
+            <funder>Arts and Humanities Research Council</funder>
+            <sponsor>University of Exeter</sponsor>
+            <sponsor>Dorset County Museum</sponsor>
+            <principal>Angelique Richardson</principal>
+
+            <respStmt>
+               <persName ref="#resp:HA">Helen Angear</persName>
+               <resp>Selection</resp>
+               <resp>Proofreading</resp>
+
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:BM">Beth Mills</persName>
+               <resp>Transcription</resp>
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:HP">Hannah Petrie</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="#resp:EW">Elizabeth Williamson</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition, transcribed and edited directly from primary
+               sources</edition>
+         </editionStmt>
+         <publicationStmt>
+            <publisher>University of Exeter Digital Humanities Lab</publisher>
+            <pubPlace>Exeter, UK</pubPlace>
+            <date>November 2019</date>
+            <availability>
+               <p>The letter transcripts are licensed under a Creative Commons Attribution 4.0
+                  International License. This means that you can use these transcripts providing you
+                  acknowledge the Hardy's Correspondents project.</p>
+               <p>The letter images remain the copyright of Dorset Museum. Please contact the Museum
+                  if you would like to reuse any of the letter images.</p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <placeName ref="#pl:Dorchester">Dorchester</placeName>
+                  <institution>Dorset County Museum</institution>
+                  <idno type="DCM">H.5244</idno>
+                  <altIdentifier>
+                     <idno type="XXXX"><!-- optional - any other identifiers --></idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Letter written on <material>cream paper</material> with mourning
+                              border.</p>
+                           <p>Pencil library marks on page 2: <note type="libraryMark" rend="pencil"
+                                 > H.5244</note>.</p>
+                        </support>
+                        <condition>Good</condition>
+                     </supportDesc>
+
+
+                  </objectDesc>
+                  <decoDesc>
+                     <decoNote type="mourningBorder">
+                        <p>Black border on page 1.</p>
+                     </decoNote>
+                  </decoDesc>
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Prepared as part of the AHRC/REACT Studentship on Thomas Hardy's letters, in
+               conjunction with Dorset County Museum.</p>
+         </projectDesc>
+
+      </encodingDesc>
+      <profileDesc>
+         <correspDesc>
+            <!-- Provides detailed correspondence-specific metadata, particularly concerning the communicative aspects 
+            (sending, receiving, forwarding etc.) associated with acts of correspondence. -->
+
+            <correspAction type="sent">
+               <!-- Structured description of the place, the name of a person/organisation and the date related to the sending/receiving of a message -->
+               <persName ref="#ps:GeorgeSmith">George Smith</persName>
+
+               <!--Location letter sent from-->
+               <placeName ref="#pl:WaterlooPlace15">15 Waterloo Place, S.W. London</placeName>
+               <date when="1878-09-19"/>
+            </correspAction>
+            <correspAction type="received">
+               <persName ref="#ps:TH">Thomas Hardy</persName>
+            </correspAction>
+
+         </correspDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="letter">
+            <pb n="1" facs="uoedh_hl_h.5244_1.jpg"/>
+
+            <opener>
+               <address rend="letterhead">
+                  <addrLine>15, Waterloo Place. S.W.</addrLine>
+               </address>
+               <dateline>September 19. <add place="above">th</add> 1878</dateline>
+
+
+
+               <salute>My dear Sir</salute>
+            </opener>
+
+            <p>I am sorry that I have not sooner been able to write to you about your novel <ref
+                  target="#bib:Hardy1878_Native">"The Return of the Native"</ref>.</p>
+
+            <p>I shall be happy to publish an edition of one thousand copies, and to pay you two
+               hundred pounds (£200) on pub­lication, provided you can arrange for the appearance of
+               the work in a separate form at least one month before it's com­pletion in the
+               Magazine. In the event of there being a demand for further editions I would pay you
+               £75 (seventy five pounds) for every 250 copies printed by us.</p>
+
+
+            <closer>
+               <salute>Believe me My dear Sir</salute>
+               <salute>Yours very faithfully</salute>
+               <signed>George Smith</signed>
+               <note>Thomas Hardy <choice><abbr>Esq.</abbr><expan>Esquire</expan></choice></note>
+            </closer>
+            <pb n="2" facs="uoedh_hl_h.5244_2.jpg"/>
+
+            <!-- No text on this page other than H. number -->
+
+         </div>
+      </body>
+   </text>
+</TEI>

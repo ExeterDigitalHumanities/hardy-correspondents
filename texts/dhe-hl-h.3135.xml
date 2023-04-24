@@ -1,0 +1,222 @@
+<?xml-model href="../../schema/hardyletter.rng" type="application/xml" 
+   schematypens="http://relaxng.org/ns/structure/1.0"?><!--<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="dhe-hl-h.3135">
+
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+
+            <title>Letter from Thomas Hardy to Florence Henniker on the cruelties inflicted upon
+               performing animals and various other matters, 21 December 1913.</title>
+            <!--The author of the letter-->
+            <author ref="#ps:TH">Thomas Hardy</author>
+            <!--The editor of the tei file-->
+            <editor ref="#resp-HA">Helen Angear</editor>
+            <funder>Arts and Humanities Research Council</funder>
+            <sponsor>University of Exeter</sponsor>
+            <sponsor>Dorset County Museum</sponsor>
+            <principal>Angelique Richardson</principal>
+
+            <respStmt>
+               <persName ref="#resp:HA">Helen Angear</persName>
+               <resp>Selection</resp>
+               <resp>Transcription</resp>
+
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:BM">Beth Mills</persName>
+               <resp>Proofreading</resp>
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:HP">Hannah Petrie</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="#resp:EW">Elizabeth Williamson</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition, transcribed and edited directly from primary
+               sources</edition>
+         </editionStmt>
+         <publicationStmt>
+            <publisher>University of Exeter Digital Humanities Lab</publisher>
+            <pubPlace>Exeter, UK</pubPlace>
+            <date>November 2019</date>
+            <availability>
+               <p>The letter transcripts are licensed under a Creative Commons Attribution 4.0
+                  International License. This means that you can use these transcripts providing you
+                  acknowledge the Hardy's Correspondents project.</p>
+               <p>The letter images remain the copyright of Dorset Museum. Please contact the Museum
+                  if you would like to reuse any of the letter images.</p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <placeName ref="#pl:Dorchester">Dorchester</placeName>
+                  <institution>Dorset County Museum</institution>
+                  <idno type="DCM">H.3135</idno>
+                  <altIdentifier>
+                     <idno type="XXXX"><!-- optional - any other identifiers --></idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Written on <material>thick cream paper, unwatermarked</material>.</p>
+                           <p>Pencil library marks on pages 4 and 8: <note type="libraryMark"
+                                 >H.3135</note>.</p>
+                        </support>
+                        <condition>Good</condition>
+                     </supportDesc>
+                  </objectDesc>
+                  <decoDesc>
+                     <decoNote type="mourningBorder">
+                        <p>Black border on page 1.</p>
+                     </decoNote>
+                  </decoDesc>
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Prepared as part of the AHRC/REACT Studentship on Thomas Hardy's letters, in
+               conjunction with Dorset County Museum.</p>
+         </projectDesc>
+
+      </encodingDesc>
+      <profileDesc>
+         <correspDesc>
+            <correspAction type="sent">
+               <persName ref="#ps:TH">Thomas Hardy</persName>
+               <placeName ref="#pl:MaxGate">Max Gate, Dorchester</placeName>
+               <date when="1913-12-21"/>
+            </correspAction>
+            <correspAction type="received">
+               <persName ref="#ps:FlorenceHenniker">Florence Henniker</persName>
+            </correspAction>
+
+            <!-- correspContext> -->
+            <!-- Provides references to preceding or following correspondence related to this piece of correspondence -->
+            <!--</correspContext>-->
+            <correspContext>
+               <ref type="next" target="dhe-hl-h.3175"> Reply from <persName
+                     ref="#ps:FlorenceHenniker">Henniker</persName> mentioning the Plumage Bill and
+                  treatment of circus animals. </ref>
+            </correspContext>
+         </correspDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="letter">
+            <pb n="1" facs="uoedh_hl_h.3135_1.jpg"/>
+            <opener>
+
+               <address>
+                  <addrLine>Max Gate</addrLine>
+
+               </address>
+
+               <dateline>
+                  <date when="1913-12-21">Dec 21: 1913</date>
+               </dateline>
+
+
+               <salute>My dear friend:</salute>
+            </opener>
+
+            <p>I had reserved my reply to your last kind letter till to-day, in order to make it a
+               Christmas greeting, &amp; now I have a double impulse to write, having received the
+               picture-card &amp; words on it this morning. It seems, so far as I can judge, a very
+               pretty place, but I cannot tell the sub-soil from the view. However I hope it is dry,
+               &amp; will suit you.</p>
+
+            <p> The new Christmas does not <pb n="2" facs="uoedh_hl_h.3135_2.jpg"/> exhilarate me
+               much. But of course I cannot expect it to. The worst of a sad event in middle life
+               &amp; beyond is that one does not recover from the shock as in earlier years; so I
+               simply say to myself of this Christmas, "Yet another!"</p>
+
+            <p>The alliance with <orgName type="university" ref="#ps:UniversityofCambridge"
+                  >Cambridge</orgName>, to which you allude, is pleasing: it gives me a fresh centre
+               of interest, &amp; they are all such nice friends to me there. I am intending to
+               visit it very often, but whether I shall is doubtful.</p>
+
+            <pb n="3" facs="uoedh_hl_h.3135_3.jpg"/>
+
+            <p>I read <persName ref="#ps:MillicentWedmore">Miss Wedmore</persName>'s poems, that you
+               were good enough to send,
+               <!-- there is a link to this collection of poems that could go in bib<ref target="https://archive.org/details/chieflyofheroesp00wedmiala">  -->
+               &amp; liked best those you had marked, as was natural. The half-page of <orgName
+                  type="newspaper" ref="#ps:TheSpehere">The Sphere</orgName> of this week, which I
+               enclose as a sort of <choice><abbr>Xmas</abbr>
+                  <expan>Christmas</expan></choice> card, gives a few verses I was asked for by the
+               editor, but a periodical is a chilling atmosphere for poems: the mood induced by a
+               newspaper is just the wrong one, &amp; puts them out of tune.</p>
+
+
+            <p> Do you ever see a quarterly magazine called <orgName ref="#ps:PoetryandDrama"
+                  type="periodical">"Poetry &amp; Drama"</orgName>. It is written by a group of
+               young men whose idea of verse is that <pb n="4" facs="uoedh_hl_h.3135_4.jpg"/> nobody
+               has ever known how to write it in the whole history of literature till they came
+               along to show the trick to the world; so it is amusing reading, which I think you
+               would like.</p>
+
+            <p>A <persName ref="#ps:OliveEdis">young lady</persName> came this week to photograph me
+               in colour, at the request of a friend of mine. The specimens she showed me were
+               extraordinary in their reality. But I am getting tired of it all. My niece &amp;
+                  <persName ref="#ps:FlorenceHardy">Miss Dugdale</persName> are here ministering to
+               my wants: I don't know what I should do without them, &amp; I am sorry to say that
+               just now <persName ref="#ps:FlorenceHardy">Florence</persName>
+               <pb n="5" facs="uoedh_hl_h.3135_5.jpg"/> has a bad cold. I want her to stay in bed,
+               but cannot get her to. I do not see many people. <persName ref="#ps:MrsSheridan">Mrs
+                  Sheridan</persName> says she is coming, but she has not come. <persName
+                  ref="#ps:BirdieIlchester">Lady Ilchester</persName> is at <placeName
+                  ref="#pl:MelburyHouse">Melbury</placeName>, &amp; tells me she will be there if
+               all's well till June. <persName ref="#ps:MargotAsquith">Mrs Asquith</persName> tells
+               me she is ill, &amp; going away — not for a "rest cure" — she is too weak for that
+               she says. <add place="above" rend="^">I am sorry for her</add>. <persName
+                  ref="#ps:HubertvonHerkomer">Sir H. Herkomer</persName> is doing ^films of <ref
+                  target="#bib:Hardy1874_FarFromTheMaddingCrowd">"Far from the Madding Crowd,"</ref>
+               for the picture palaces: young Herkomer came here a few days ago to get local colour,
+                  <pb n="6" facs="uoedh_hl_h.3135_6.jpg"/> &amp; has photographed the <hi
+                  rend="underline">real</hi> jug used in the malt-house.</p>
+            <p>There: that is about all the social &amp; artistic intelligence I can think of — a
+               poor supply. One thing more: did you see my letter
+               <!-- we could add a target in to the letter mentioned <ref target="https://www.fold3.com/document/295339266/">my letter</ref> -->
+               in the <orgName type="newspaper" ref="#org-TheTimes">Times</orgName> about performing
+               animals? You may not have done so, &amp; I send it on. But the words "Performing
+               Animals" do not clearly indicate the matter: what I object to most are performances
+                  <hi rend="underline">with</hi> animals — ^<add place="above">in which they are
+                  passive</add> — e.g. bringing live canaries, rabbits, pigeons, &amp;c. out of the
+               sleeve or handkerchief. Every spectator can see that the wretched creature is in the
+               greatest misery, &amp; I <pb n="7" facs="uoedh_hl_h.3135_7.jpg"/> believe that a
+               great many are "used" in these tricks — that is, tortured to death.</p>
+
+            <p>I wonder when I shall see you. Not very soon I suppose; and you have many interests
+               outside my life.</p>
+
+            <closer>
+               <salute>Your affectionate friend</salute>
+               <signed>Tho. H.</signed>
+            </closer>
+            <pb n="8" facs="uoedh_hl_h.3135_8.jpg"/>
+
+
+
+         </div>
+
+      </body>
+   </text>
+</TEI>

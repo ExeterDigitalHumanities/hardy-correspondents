@@ -1,0 +1,178 @@
+<?xml-model href="../../schema/hardyletter.rng" type="application/xml" 
+   schematypens="http://relaxng.org/ns/structure/1.0"?><!--<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="dhe-hl-h.5043b">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Draft reply from Thomas Hardy to the Royal Observatory regarding his request to
+               visit, circa. 27 November 1881</title>
+            <author ref="#ps:TH">Thomas Hardy</author>
+            <!--The editor of the tei file-->
+            <editor ref="#resp-HA">Helen Angear</editor>
+            <funder>Arts and Humanities Research Council</funder>
+            <sponsor>University of Exeter</sponsor>
+            <sponsor>Dorset County Museum</sponsor>
+            <principal>Angelique Richardson</principal>
+
+            <respStmt>
+               <persName ref="#resp:HA">Helen Angear</persName>
+               <resp>Selection</resp>
+               <resp>Transcription</resp>
+
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:HA">Helen Angear</persName>
+               <resp>Proofreading</resp>
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:HP">Hannah Petrie</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="#resp:EW">Elizabeth Williamson</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition, transcribed and edited directly from primary
+               sources</edition>
+         </editionStmt>
+         <publicationStmt>
+            <publisher>University of Exeter Digital Humanities Lab</publisher>
+            <pubPlace>Exeter, UK</pubPlace>
+            <date>November 2019</date>
+            <availability>
+               <p>The letter transcripts are licensed under a Creative Commons Attribution 4.0
+                  International License. This means that you can use these transcripts providing you
+                  acknowledge the Hardy's Correspondents project.</p>
+               <p>The letter images remain the copyright of Dorset Museum. Please contact the Museum
+                  if you would like to reuse any of the letter images.</p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <placeName ref="#pl:Dorchester">Dorchester</placeName>
+                  <institution>Dorset County Museum</institution>
+                  <idno type="DCM">H.5043b</idno>
+                  <altIdentifier>
+                     <idno type="XXXX"><!-- optional - any other identifiers --></idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Draft reply written in pencil on <material>cream paper</material>.</p>
+                           <p>Pencil library marks on page 2: <note type="libraryMark" rend="pencil"
+                                 > H.5043b</note>.</p>
+
+                        </support>
+                        <condition>Good</condition>
+
+                     </supportDesc>
+
+                  </objectDesc>
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Prepared as part of the AHRC/REACT Studentship on Thomas Hardy's letters, in
+               conjunction with Dorset County Museum.</p>
+         </projectDesc>
+
+      </encodingDesc>
+      <profileDesc>
+         <correspDesc>
+            <!-- Provides detailed correspondence-specific metadata, particularly concerning the communicative aspects 
+            (sending, receiving, forwarding etc.) associated with acts of correspondence. -->
+
+            <correspAction type="sent">
+               <persName ref="#ps:TH">Thomas Hardy</persName>
+
+               <date when="1881-11-27"/>
+            </correspAction>
+            <correspAction type="received">
+               <persName ref="#ps:EDunkin">E Dunkin</persName>
+            </correspAction>
+
+         </correspDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="letter">
+            <pb n="1" facs="uoedh_hl_h.5043b_1.jpg"/>
+
+
+
+
+            <note>(Copy)</note>
+
+
+            <head hand="#ps:TH">
+               <!-- In Hardy's hand --> Questions to be answered by persons desirous of visiting or
+               inspecting the instruments of the <orgName>Royal Observatory</orgName> at <placeName
+                  ref="#pl:Greenwich">Greenwich</placeName>. </head>
+
+
+            <!-- Answers are in Emma Hrdy's hand according to Collected Letters -->
+
+            <p hand="#EmmaHardy">1. State your name, title &amp; professional pursuit, should you
+               have any. </p>
+
+            <p hand="#EmmaHardy">
+               <persName ref="#ps:TH">Thomas Hardy</persName>, Mr, Literature: (architecture
+               formerly) (for list of works, see publishers' catalogues) </p>
+
+            <p hand="#EmmaHardy">2. State the branch of the <placeName ref="#pl:RoyalObservatory"
+                  >Observatory</placeName> to which your enquiries are directed. </p>
+
+            <p hand="#EmmaHardy"> The Observation department </p>
+
+            <p hand="#EmmaHardy">3. State whether you have an Observatory of your own, or are
+               forming one, or are in the habit of making astronomical, magnetical, or
+               meteorological observations. </p>
+            <p hand="#EmmaHardy"> Have no Observatory of my own; am not forming one; but am
+               sketching plans for one: — am not in the habit of making observations, but have
+               written astronomical passages which are quoted both in <placeName ref="#pl:England"
+                  >England</placeName> &amp; <placeName ref="#pl:America">America</placeName>. </p>
+
+            <p hand="#EmmaHardy">4. State the particular object you have in view in desiring to see
+               the <placeName ref="#pl:RoyalObservatory">Royal Observatory</placeName>. </p>
+
+            <p hand="#EmmaHardy">To ascertain if a hollow memorial pillar, with a staircase inside,
+               can be adapted for the purpose of a small observatory — &amp; how it can be roofed so
+               as not to interfere with observations — etc. etc. </p>
+
+            <p hand="#EmmaHardy">5. State the name of any gentleman of either of the Scientific
+               Societies of London, or who has repute in Science to whom you are known. </p>
+
+            <p hand="#EmmaHardy"><persName ref="#ps:ThomasHenryHuxley">Professor Huxley</persName>
+               <persName ref="#ps:RichardMoncktonMilnes">Lord Houghton</persName>
+               <persName ref="#ps:HallamTennyson">Mr Tennyson</persName>, &amp; many others — </p>
+
+
+
+
+
+
+
+            <pb n="2" facs="uoedh_hl_h.5043b_2.jpg"/>
+
+
+
+
+         </div>
+      </body>
+   </text>
+</TEI>

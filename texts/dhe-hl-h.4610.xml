@@ -1,0 +1,210 @@
+<?xml-model href="../../schema/hardyletter.rng" type="application/xml" 
+   schematypens="http://relaxng.org/ns/structure/1.0"?><!--<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="dhe-hl-h.4610">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+
+            <title>Letter from a reader, Betty Thomas, to Thomas Hardy asking him to consider her
+               for the role of <persName ref="#ps:TessDurbeyfield">Tess</persName> in a stage
+               production of his novel, 4 August 1925</title>
+            <author ref="#ps:BettyThomas">Betty Thomas</author>
+            <!--The editor of the tei file-->
+            <editor ref="#resp-HA">Helen Angear</editor>
+            <funder>Arts and Humanities Research Council</funder>
+            <sponsor>University of Exeter</sponsor>
+            <sponsor>Dorset County Museum</sponsor>
+            <principal>Angelique Richardson</principal>
+
+            <respStmt>
+               <persName ref="#resp:HA">Helen Angear</persName>
+               <resp>Selection</resp>
+               <resp>Proofreading</resp>
+
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:BM">Beth Mills</persName>
+               <resp>Transcription</resp>
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:HP">Hannah Petrie</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="#resp:EW">Elizabeth Williamson</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition, transcribed and edited directly from primary
+               sources</edition>
+         </editionStmt>
+         <publicationStmt>
+            <publisher>University of Exeter Digital Humanities Lab</publisher>
+            <pubPlace>Exeter, UK</pubPlace>
+            <date>November 2019</date>
+            <availability>
+               <p>The letter transcripts are licensed under a Creative Commons Attribution 4.0
+                  International License. This means that you can use these transcripts providing you
+                  acknowledge the Hardy's Correspondents project.</p>
+               <p>The letter images remain the copyright of Dorset Museum. Please contact the Museum
+                  if you would like to reuse any of the letter images.</p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <placeName ref="#pl:Dorchester">Dorchester</placeName>
+                  <institution>Dorset County Museum</institution>
+                  <idno type="DCM">H.4610</idno>
+                  <altIdentifier>
+                     <idno type="XXXX"><!-- optional - any other identifiers --></idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Letter written on <material>folded cream paper</material>.</p>
+                           <p>Original page numbers added at the top of pages 2 and 4.</p>
+                           <p>Pencil library mark on page 4: <note type="libraryMark"
+                              >H.4610</note>.</p>
+                           <figure>
+                              <figDesc>Dashed line separating header from body of text.</figDesc>
+                           </figure>
+                        </support>
+                        <condition>Good. Some foxing and rust marks.</condition>
+                     </supportDesc>
+                  </objectDesc>
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Prepared as part of the AHRC/REACT Studentship on Thomas Hardy's letters, in
+               conjunction with Dorset County Museum.</p>
+         </projectDesc>
+
+      </encodingDesc>
+      <profileDesc>
+         <correspDesc>
+            <!-- Provides detailed correspondence-specific metadata, particularly concerning the communicative aspects 
+            (sending, receiving, forwarding etc.) associated with acts of correspondence. -->
+
+            <correspAction type="sent">
+               <!-- Structured description of the place, the name of a person/organisation and the date related to the sending/receiving of a message -->
+               <persName ref="#ps:BettyThomas">Betty Thomas</persName>
+
+               <!--Location letter sent from-->
+               <placeName ref="#pl:LadbrokeGrove177">177 Ladbroke Grove, N. Kensington, London
+                  W10</placeName>
+               <date when="1925-08-04"/>
+            </correspAction>
+            <correspAction type="received">
+               <persName ref="#ps:TH">Thomas Hardy</persName>
+            </correspAction>
+
+         </correspDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="letter">
+            <pb n="1" facs="uoedh_hl_h.4610_1.jpg"/>
+            <opener>
+               <address>
+                  <addrLine>177 Ladbroke Grove</addrLine>
+                  <addrLine>N Kensington</addrLine>
+                  <addrLine>London W10</addrLine>
+               </address>
+               <dateline>
+                  <date when="1925-08-04">
+                     <hi rend="underline">Aug. 4<hi rend="superscript">th</hi> 25 .</hi>
+                  </date>
+               </dateline>
+               <milestone xml:id="m01" unit="section"/>
+
+               <salute>To <persName ref="#ps:TH"><abbr>M<hi rend="superscript">r</hi></abbr> Thomas
+                     Hardy</persName> Author of "<name type="novel">Tess of the
+                           <choice><sic>Durbervilles</sic><corr>D'Urbervilles</corr></choice></name>"</salute>
+
+               <salute>Dear Sir</salute>
+            </opener>
+
+
+            <p>I beg that you will condescend to read this epistle</p>
+
+            <p>I am writing with reference to an article published in <orgName ref="#ps:EveningStar"
+                  >Evening <unclear>Star</unclear></orgName> re: production of your famous book <ref
+                  target="#bib:Hardy1891_Tess">Tess of the
+                        <choice><sic>Durbervilles</sic><corr>d'Urbervilles</corr></choice></ref>: on
+               the legitimate stage.</p>
+
+            <p>I am aware that I am taking a great liberty <milestone xml:id="m03" unit="section"/>
+               <!-- check what these milestones are for and if they can be removed? -->
+               <pb n="2" facs="uoedh_hl_h.4610_3.jpg"/> in writing you, but I feel I must make an
+               attempt to gain at least an interview</p>
+
+            <p>You will think I am writing at random, but I beg to ask if I may be considered to
+               take the part of <persName ref="#ps:TessDurbeyfield">Tess</persName>. I am young
+               being twenty three, my type is truly I think of the country girl but apart from looks
+               and all other things I am so interested in <persName ref="#ps:TessDurbeyfield"><hi
+                     rend="underline">Tess</hi></persName>, because I have read it many times each
+               time more absorbed than the other, each time living the part, and then in real life
+               experienced nearly all the tra<subst><del>d</del><add place="superimposed"
+                  >g</add></subst>edies <pb n="3" facs="uoedh_hl_h.4610_2.jpg"/> of your <persName
+                  ref="#ps:TessDurbeyfield">Tess</persName>, no girl could ever have had the tragedy
+               in life that I have, without losing her mental balance or seeking oblivion in a
+               reckless existence.</p>
+
+            <p>I am not and do not profess to be an actress but my life it seems has been only a big
+               sad part and I truly feel a target to fate. I know I could play this part, I have
+               every confidence please it is not of financial benefit I am thinking although I am
+               just in ordinary circumstances, but something always tells me my suffering has been
+               for some reason.</p>
+
+            <milestone xml:id="m02" unit="section"/>
+
+            <pb n="4" facs="uoedh_hl_h.4610_4.jpg"/>
+
+            <p>I wish to impress that up to present I never have been so <choice>
+                  <sic>presumtious</sic>
+                  <corr>presumptuous</corr>
+               </choice> as to put myself forward but when I read this article I was immediately
+               resolved. I absolutely <hi rend="underline">swear</hi> I am writing the truth, to
+               tell my story would entail a lot of writing sufficient I think for a book but I feel
+               I would only be too happy to reveal my experience to you.</p>
+
+            <p>I am not a native of <placeName ref="#pl:London">London</placeName> having recently
+               journeyed here from <placeName ref="#pl:SouthWales">South Wales</placeName>.</p>
+
+            <p>Re: nationality my father was Irish and my mother Scotch</p>
+
+            <p>I was born in <placeName ref="#pl:Glasgow">Glasgow</placeName>.</p>
+
+            <p>I must thank you for reading this and incidentally apologize in taking such a
+               liberty.</p>
+
+            <ab> </ab>
+
+            <closer>
+               <salute>Yours in anticipation</salute>
+               <signed>"<abbr>M<hi rend="superscript">rs</hi></abbr>" Betty Thomas</signed>
+            </closer>
+
+            <!--Duplicate link to page 2 image
+            <pb n="2" facs="uoedh_hl_h.nnn.nn.nn_2.jpg"/>-->
+
+
+         </div>
+      </body>
+   </text>
+</TEI>

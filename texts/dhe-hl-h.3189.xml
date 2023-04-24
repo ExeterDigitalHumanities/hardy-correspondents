@@ -1,0 +1,199 @@
+<?xml-model href="../../schema/hardyletter.rng" type="application/xml" 
+   schematypens="http://relaxng.org/ns/structure/1.0"?><!--<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="dhe-hl-h.3189">
+   <!-- add above the xml:id attribute with the value'dhe-hl-h.NNNN' -->
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+
+            <title>Letter from Florence Henniker to Thomas Hardy on various matters including his
+               wife's recent visit to London 15 April 1921</title>
+            <!--The author of the letter-->
+            <author ref="#ps:FlorenceHenniker">Florence Henniker</author>
+            <!--The editor of the tei file-->
+            <editor ref="#resp-HA">Helen Angear</editor>
+            <funder>Arts and Humanities Research Council</funder>
+            <sponsor>University of Exeter</sponsor>
+            <sponsor>Dorset County Museum</sponsor>
+            <principal>Angelique Richardson</principal>
+
+            <respStmt>
+               <persName ref="#resp:HA">Helen Angear</persName>
+               <resp>Selection</resp>
+               <resp>Transcription</resp>
+
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:BM">Beth Mills</persName>
+               <resp>Proofreading</resp>
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:HP">Hannah Petrie</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="#resp:EW">Elizabeth Williamson</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition, transcribed and edited directly from primary
+               sources</edition>
+         </editionStmt>
+         <publicationStmt>
+            <publisher>University of Exeter Digital Humanities Lab</publisher>
+            <pubPlace>Exeter, UK</pubPlace>
+            <date>November 2019</date>
+            <availability>
+               <p>The letter transcripts are licensed under a Creative Commons Attribution 4.0
+                  International License. This means that you can use these transcripts providing you
+                  acknowledge the Hardy's Correspondents project.</p>
+               <p>The letter images remain the copyright of Dorset Museum. Please contact the Museum
+                  if you would like to reuse any of the letter images.</p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <placeName ref="#pl:Dorchester">Dorchester</placeName>
+                  <institution>Dorset County Museum</institution>
+                  <idno type="DCM">H.3189</idno>
+                  <altIdentifier>
+                     <idno type="XXXX"><!-- optional - any other identifiers --></idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Letter written on <material>cream folded paper</material>.</p>
+                           <p>Pencil library marks on page 4: <note type="libraryMark"
+                              >H.3189</note>.</p>
+                           <p>Note that at the end of page 4 Henniker continues writing in the top
+                              margin of the same page (labelled here as page 5).</p>
+                        </support>
+                        <condition>Good</condition>
+                     </supportDesc>
+                  </objectDesc>
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Prepared as part of the AHRC/REACT Studentship on Thomas Hardy's letters, in
+               conjunction with Dorset County Museum.</p>
+         </projectDesc>
+
+      </encodingDesc>
+      <profileDesc>
+         <correspDesc>
+            <!-- Provides detailed correspondence-specific metadata, particularly concerning the communicative aspects 
+            (sending, receiving, forwarding etc.) associated with acts of correspondence. -->
+
+            <correspAction type="sent">
+               <!-- Structured description of the place, the name of a person/organisation and the date related to the sending/receiving of a message -->
+               <!--<persName> of letter author-->
+               <persName ref="#ps:FlorenceHenniker">Florence Henniker</persName>
+
+               <!--Location letter sent from-->
+               <placeName ref="#pl:HydeParkSquare2">2 Hyde Park Square</placeName>
+               <date when="1921-04-15">ap. 15 1921</date>
+            </correspAction>
+            <correspAction type="received">
+               <persName ref="#ps:TH">Thomas Hardy</persName>
+            </correspAction>
+
+         </correspDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="letter">
+            <pb n="1" facs="uoedh_hl_h.3189_1.jpg"/>
+            <opener>
+               <address rend="letterhead">
+                  <addrLine>2, Hyde Park Square,</addrLine>
+                  <addrLine>W.2</addrLine>
+               </address>
+               <dateline>
+                  <date when="1921-04-15"><choice><abbr>Ap.</abbr>
+                        <expan>April</expan></choice> 15 1921</date>
+               </dateline>
+               <salute>My dear friend:</salute>
+            </opener>
+
+            <p>How nice of you to write to me yesterday! I hope <persName ref="#ps:FlorenceHardy"
+                  >Florence</persName> was not very tired on arriving home? I am <hi
+                  rend="underline">delighted</hi> that she came here; &amp; considering all the
+               circumstances, she was wonderfully cheerful. – She must come again – &amp; <hi
+                  rend="underline">you</hi> also must pay a little visit to <placeName
+                  ref="#pl:London">London</placeName>!</p>
+
+            <p>Could you not put up at a comfortable <pb n="2" facs="uoedh_hl_h.3189_2.jpg"/> hotel
+               near here: come to this house for <hi rend="underline">any</hi> meal you liked – or
+               to write letters – ? and you could ask <hi rend="underline">anyone you liked</hi> to
+               luncheon here, (either with, or without me!)– I am certain a change, <hi
+                  rend="underline">without</hi> fatigue, <choice><abbr>w<hi rend="superscript"
+                        >d</hi>.</abbr>
+                  <expan>would</expan></choice> be good for you. – We might motor to <persName
+                  ref="#ps:JohnKeats">Keats</persName>'s house, or some other interesting
+               places.–</p>
+
+            <pb n="3" facs="uoedh_hl_h.3189_3.jpg"/>
+
+            <p>I sat between 2 very pleasant ladies at a tea-party the other day, &amp; we talked of
+               you – One was <persName ref="#ps:LadyStanley">Lady Stanley</persName>, &amp; the
+               other <persName ref="#ps:MarjorieBowen">Marjorie Bowen</persName>, the novelist.
+                  <persName ref="#ps:LadyStanley">Lady S.</persName> mentioned "<ref
+                  target="#bib:Hardy1882_Tower">Two on a Tower</ref>" as evidently a favourite of
+               hers – I remember I ventured to tell you not long ago how good <hi
+                  rend="double-underline">I</hi> thought it. – <persName ref="#ps:MarjorieBowen"
+                  >Miss Bowen</persName> – (she is Mr<hi rend="superscript"><hi
+                     rend="double-underline">s</hi></hi> Someone–) is, I think particularly fond of
+                  "<ref target="#bib:Hardy1886_Mayor">The Mayor of Casterbridge</ref>"– <pb n="4"
+                  facs="uoedh_hl_h.3189_4.jpg"/>
+               <milestone xml:id="m01" unit="section"/>
+               <persName ref="#ps:FlorenceHardy">F.</persName> tells me that has been "filmed"?
+               –</p>
+
+            <p>There has just been quite a heavy snowstorm here. I hope it won't <hi
+                  rend="underline">lie</hi> – on account of the horses. &amp; birds. I gather that
+               the news is more hopeful this evening – My dear dog is shut out of his lovely
+                  <placeName ref="#pl:KensingtonGardens">K. Gardens</placeName> and <placeName
+                  ref="#pl:HydePark">H. PK.</placeName> as well, but I trust not for long.</p>
+
+            <p>My love to <persName ref="#ps:FlorenceHardy">F.</persName> &amp; Wessex – who must be
+               in wild spirits at her return.</p>
+
+
+
+            <closer>
+               <salute><choice><abbr>Ev</abbr>
+                     <expan>Ever</expan></choice>
+                  <choice><abbr>y<hi rend="superscript">r</hi>.</abbr><expan>your</expan></choice>
+                  <choice><abbr>affec.</abbr>
+                     <expan>affectionate</expan></choice> friend</salute>
+               <signed>Flo H</signed>
+            </closer>
+            <pb n="5" facs="uoedh_hl_h.3189_5.jpg"/>
+            <postscript>
+               <p>
+                  <seg xml:id="h3189a" corresp="m01" style="text-orientation: sideways-left">I am
+                     sorry to hear to-day that my brother has the worry &amp; anxiety of his wife
+                     having an attack of measles. It is a tiresome illness when one is grown up,
+                     &amp; he has had <hi rend="underline">so</hi>
+                     <hi rend="underline">much</hi> anxiety in his <del>life</del> life. </seg>
+               </p>
+            </postscript>
+         </div>
+      </body>
+   </text>
+</TEI>

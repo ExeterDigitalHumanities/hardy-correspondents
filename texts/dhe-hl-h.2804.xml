@@ -1,0 +1,184 @@
+<?xml-model href="../../schema/hardyletter.rng" type="application/xml" 
+   schematypens="http://relaxng.org/ns/structure/1.0"?><!--<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="dhe-hl-h.2804">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Letter from the Duchess of Hamilton to Thomas Hardy on humane slaughter methods,
+               10 April 1925</title>
+            <author ref="#ps:NinaHamilton">Nina Hamilton</author>
+            <!--The editor of the tei file-->
+            <editor ref="#resp-HA">Helen Angear</editor>
+            <funder>Arts and Humanities Research Council</funder>
+            <sponsor>University of Exeter</sponsor>
+            <sponsor>Dorset County Museum</sponsor>
+            <principal>Angelique Richardson</principal>
+
+            <respStmt>
+               <persName ref="#resp:BM">Beth Mills</persName>
+               <resp>Selection</resp>
+               <resp>Proofreading</resp>
+
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:HA">Helen Angear</persName>
+               <resp>Transcription</resp>
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:HP">Hannah Petrie</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="#resp:EW">Elizabeth Williamson</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition, transcribed and edited directly from primary
+               sources</edition>
+         </editionStmt>
+         <publicationStmt>
+            <publisher>University of Exeter Digital Humanities Lab</publisher>
+            <pubPlace>Exeter, UK</pubPlace>
+            <date>November 2019</date>
+            <availability>
+               <p>The letter transcripts are licensed under a Creative Commons Attribution 4.0
+                  International License. This means that you can use these transcripts providing you
+                  acknowledge the Hardy's Correspondents project.</p>
+               <p>The letter images remain the copyright of Dorset Museum. Please contact the Museum
+                  if you would like to reuse any of the letter images.</p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <placeName ref="#pl:Dorchester">Dorchester</placeName>
+                  <institution>Dorset County Museum</institution>
+                  <idno type="DCM">H.2804</idno>
+                  <altIdentifier>
+                     <idno type="XXXX"><!-- optional - any other identifiers --></idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Letter written on <material>cream folded paper</material>.</p>
+                           <p>Pencil library marks on page 2: <note type="libraryMark"
+                              >H.2804</note>.</p>
+                           <p>Pencil draft reply attached on an additional piece of paper.</p>
+                        </support>
+                        <condition>Good; some rust marks</condition>
+                     </supportDesc>
+                  </objectDesc>
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Prepared as part of the AHRC/REACT Studentship on Thomas Hardy's letters, in
+               conjunction with Dorset County Museum.</p>
+         </projectDesc>
+
+      </encodingDesc>
+      <profileDesc>
+         <correspDesc>
+            <!-- Provides detailed correspondence-specific metadata, particularly concerning the communicative aspects 
+            (sending, receiving, forwarding etc.) associated with acts of correspondence. -->
+
+            <correspAction type="sent">
+               <persName ref="#ps:NinaHamilton">Nina Hamilton</persName>
+               <placeName ref="#pl:FerneHouse">Ferne House, Donhead St Andrew,
+                  Shaftesbury</placeName>
+               <date when="1925-04-10"/>
+            </correspAction>
+            <correspAction type="received">
+               <persName ref="#ps:TH">Thomas Hardy</persName>
+            </correspAction>
+
+         </correspDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="letter">
+            <pb n="1" facs="uoedh_hl_h.2804_3.jpg"/>
+            <opener>
+               <!-- need to add in diagonal telephone info -->
+               <address>
+                  <addrLine>FERNE</addrLine>
+                  <addrLine>DONHEAD</addrLine>
+                  <addrLine>SHAFTESBURY.</addrLine>
+               </address>
+               <dateline>
+                  <date when="1925-04-10">
+                     <hi rend="underline">10<hi rend="superscript">th</hi> April 1925</hi>
+                  </date>
+               </dateline>
+               <!-- has a diagonal line under but day and month are above date -->
+
+               <salute>Dear M<hi rend="superscript">r</hi> Hardy</salute>
+            </opener>
+
+            <p>I know you are in sympathy with our efforts to introduce humane methods in the
+               treatment of animals <unclear>destined</unclear> for human food.</p>
+            <p>Could you see your way to write to the <orgName ref="#ps:DailyMail">Daily
+                  Mail</orgName>
+               <pb n="2" facs="uoedh_hl_h.2804_4.jpg"/> emphasizing the need for legislation to make
+               the use of the mechanical humane Killer compulsory throughout the land. It is sad
+               that we are so far behind such countries as <placeName ref="#pl:Sweden"
+                  >Sweden</placeName>, <placeName ref="#pl:Switzerland">Switzerland</placeName>
+               <placeName ref="#pl:Netherlands"> Holland</placeName>
+               <unclear>have decency</unclear> of our treatment of the animals we eat. </p>
+
+            <p>With all good wishes.</p>
+
+
+            <closer>
+               <salute>Yours sincerely</salute>
+               <signed>
+                  <unclear>&amp; Earl</unclear>
+               </signed>
+               <signed>Nina Hamilton</signed>
+               <!-- It looks as though there is an additional signature &Earl?? -->
+            </closer>
+
+
+
+
+         </div>
+      </body>
+      <back>
+
+         <div type="reply" hand="other" rend="pencil">
+            <!-- Also this has been recorded as pages 1 and 2 so need to put in milestone? -->
+            <pb n="3" facs="uoedh_hl_h.2804_1.jpg"/>
+            <dateline>26 April 1925</dateline>
+            <!-- Doesn't like it when I try to add 'date' -->
+            <opener>Dear Duchess of Hamilton.</opener>
+            <p>In reply to your letter I can say that I have made &amp; am making as many efforts as
+               I can to urge the humane methods of slaughtering upon butchers. Of course no movement
+                  ^<add place="above">to that end</add> will be absolutely successful till we get
+               public slaughter-houses &amp; I think all animal protection societies should make
+               that their object above all others.</p>
+
+            <p>Incidentally I may mention a practice that was customary among butchers when I was a
+               boy, &amp; may be customary
+               <!-- Looks like word is broken across two lines but connected by a colon rather than a hypen? -->
+               still – that of setting their young apprentices to learn the art of killing – or
+               sticking as they called it – by beginning <!-- split word as above --> upon sheep –
+               considerable cruelty <unclear>naturally</unclear> resulting from the boys'
+               inexperience. I suppose inexperience must begin somewhere before it can grow to
+               experience; but it would be well to ascertain if this is still the case.</p>
+         </div>
+      </back>
+   </text>
+</TEI>

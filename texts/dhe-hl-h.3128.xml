@@ -1,0 +1,194 @@
+<?xml-model href="../../schema/hardyletter.rng" type="application/xml" 
+   schematypens="http://relaxng.org/ns/structure/1.0"?><!--<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="dhe-hl-h.3128">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+
+            <title>Letter from Thomas Hardy to Florence Henniker discussing his travels in the South
+               West and animal welfare, among other matters, 22 August 1911. </title>
+            <!--The author of the letter-->
+            <author ref="#ps:TH">Thomas Hardy</author>
+            <!--The editor of the tei file-->
+            <editor ref="#resp-HA">Helen Angear</editor>
+            <funder>Arts and Humanities Research Council</funder>
+            <sponsor>University of Exeter</sponsor>
+            <sponsor>Dorset County Museum</sponsor>
+            <principal>Angelique Richardson</principal>
+
+            <respStmt>
+               <persName ref="#resp:HA">Helen Angear</persName>
+               <resp>Selection</resp>
+               <resp>Transcription</resp>
+
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:BM">Beth Mills</persName>
+               <resp>Proofreading</resp>
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:HP">Hannah Petrie</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="#resp:EW">Elizabeth Williamson</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition, transcribed and edited directly from primary
+               sources</edition>
+         </editionStmt>
+         <publicationStmt>
+            <publisher>University of Exeter Digital Humanities Lab</publisher>
+            <pubPlace>Exeter, UK</pubPlace>
+            <date>November 2019</date>
+            <availability>
+               <p>The letter transcripts are licensed under a Creative Commons Attribution 4.0
+                  International License. This means that you can use these transcripts providing you
+                  acknowledge the Hardy's Correspondents project.</p>
+               <p>The letter images remain the copyright of Dorset Museum. Please contact the Museum
+                  if you would like to reuse any of the letter images.</p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <placeName ref="#pl:Dorchester">Dorchester</placeName>
+                  <institution>Dorset County Museum</institution>
+                  <idno type="DCM">H.3128</idno>
+                  <altIdentifier>
+                     <idno type="XXXX"><!-- optional - any other identifiers --></idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Written on <material>thick cream paper, unwatermarked</material>.</p>
+                           <p>Pencil library marks on page 2: <note type="libraryMark"
+                              >H.3128</note>.</p>
+                           <p>Note that the fifth page of writing is written in the top margin of
+                              the fourth page.</p>
+                        </support>
+                        <condition>Good</condition>
+                     </supportDesc>
+                  </objectDesc>
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Prepared as part of the AHRC/REACT Studentship on Thomas Hardy's letters, in
+               conjunction with Dorset County Museum.</p>
+         </projectDesc>
+
+      </encodingDesc>
+      <profileDesc>
+         <correspDesc>
+            <correspAction type="sent">
+               <persName ref="#ps:TH">Thomas Hardy</persName>
+               <placeName ref="#pl:MaxGate">Max Gate, Dorchester, Dorset</placeName>
+               <date when="1911-08-22"/>
+            </correspAction>
+            <correspAction type="received">
+               <persName ref="#ps:FlorenceHenniker">Florence Henniker</persName>
+            </correspAction>
+
+         </correspDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="letter">
+            <pb n="1" facs="uoedh_hl_h.3128_1.jpg"/>
+            <opener>
+               <address rend="letterhead">
+                  <addrLine>MAX GATE,</addrLine>
+                  <addrLine>DORCHESTER.</addrLine>
+
+               </address>
+
+
+               <dateline>
+                  <date when="1911-08-22">22 Aug. 1911</date>
+               </dateline>
+
+
+
+               <salute>My dear friend:</salute>
+            </opener>
+            <p>I don't quite know where you are just now, but no doubt this missive will find you
+               out. I was most interested in your success in seeing the Coronation show by land
+               &amp; sea. Really your enter­prise is becoming almost American. I felt myself a poor
+               creature, for I went off to <placeName ref="#pl:LakeDistrict">the Lakes</placeName>
+               to be away from the millions — who did not come to Town after all. </p>
+            <pb n="2" facs="uoedh_hl_h.3128_2.jpg"/>
+
+            <p>The only thing worth mentioning that I have done since then has been a little trip I
+               took with my sister <persName ref="#ps:KateHardy">Kitty</persName> (the younger one)
+               about a fortnight ago to the north coast of <placeName ref="#pl:Somerset"
+                  >Somerset</placeName> &amp; <placeName ref="#pl:Devon">Devon</placeName>: to
+                  <placeName ref="#pl:Minehead">Minehead</placeName>, across <placeName
+                  ref="#pl:Exmoor">Exmoor</placeName> by coach (a cruel climb for the horses — 1400
+               ft, six being necessary) to <placeName ref="#pl:Lynmouth">Lynmouth</placeName> (where
+                  <persName ref="#ps:PercyShelley">Shelley</persName> &amp; <persName
+                  ref="#ps:HarrietShelley">Harriet</persName> stayed) <placeName ref="#pl:Lynton"
+                  >Lynton</placeName>, <placeName ref="#pl:Ilfracombe">Ilfracombe</placeName> by
+               steam boat, <placeName ref="#pl:ExeterCathedral">Exeter Cathedral</placeName>, <choice>
+                  <abbr>&amp;c.</abbr>
+                  <expan> et cetera</expan></choice> No sooner had we got back than the railway
+               strike began.</p>
+            <pb n="3" facs="uoedh_hl_h.3128_3.jpg"/>
+
+            <p>I have found an unexpected ally in the slaughter-house reform work — <persName
+                  ref="#ps:AldaHoare">Lady Hoare</persName>, of <placeName ref="#pl:Stourhead">Stour
+                  Head</placeName>, <placeName ref="#pl:Wiltshire"><choice><abbr>Wilts.</abbr>
+                     <expan>Wiltshire</expan></choice></placeName> She, too, is getting the
+               instruments sent about. She motors over here to tea sometimes, &amp; knowing you are
+               interested in the same causes, would like to make your acquaintance some day.</p>
+
+            <p> Steps are being taken to publish an <hi rend="underline">édition de luxe</hi> of all
+               my books — (the publishers mark their letters on the subject "private", so I suppose
+               I must <add place="above">^ask you to^</add>treat it as such). I did not feel
+               altogether elated at the<pb n="4" facs="uoedh_hl_h.3128_4.jpg"/> proposal, though it
+               will be in some respects a good thing; for it involves re-reading old books of mine,
+                  <add place="above">^written^</add> when my spirits were brisker than they are now,
+               &amp; full of artistic errors which cannot be altered.</p>
+
+            <p>I will inquire if the butchers, <choice><abbr>&amp;c</abbr>
+                  <expan>et cetera</expan></choice>, will use the pig-killer hereabout. I ought to
+               have done so before, but I have had no energy at all.</p>
+
+            <p>Will you be in <placeName ref="#pl:London">London</placeName> in the autumn, I
+               wonder? I will try to see you if you are. It occurred to me the other day that this
+               year completes <pb n="5" facs="uoedh_hl_h.3128_5.jpg"/>the eighteenth of our
+               friendship. That is rather good as between man &amp; woman, <choice><abbr>wh.</abbr>
+                  <expan>which</expan></choice> is usually so brittle.</p>
+
+
+            <closer>
+               <salute>Ever <choice><abbr>affectly</abbr>
+                     <expan>affectionately</expan></choice></salute>
+
+               <signed>Tho H.</signed>
+            </closer>
+
+
+
+
+
+
+         </div>
+
+      </body>
+   </text>
+</TEI>

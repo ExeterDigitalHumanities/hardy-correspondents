@@ -1,0 +1,214 @@
+<?xml-model href="../../schema/hardyletter.rng" type="application/xml" 
+   schematypens="http://relaxng.org/ns/structure/1.0"?><!--<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="dhe-hl-h.3178">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+
+            <title>Letter from Florence Henniker to Thomas Hardy sending him belated birthday wishes
+               and expressing her disapproval of the new physiological laboratories at Cambridge, 10
+               June 1914</title>
+
+            <!--The author of the letter-->
+            <author ref="#ps:FlorenceHenniker">Florence Henniker</author>
+            <!--The editor of the tei file-->
+            <editor ref="#resp-HA">Helen Angear</editor>
+            <funder>Arts and Humanities Research Council</funder>
+            <sponsor>University of Exeter</sponsor>
+            <sponsor>Dorset County Museum</sponsor>
+            <principal>Angelique Richardson</principal>
+
+            <respStmt>
+               <persName ref="#resp:HA">Helen Angear</persName>
+               <resp>Selection</resp>
+               <resp>Transcription</resp>
+
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:BM">Beth Mills</persName>
+               <resp>Proofreading</resp>
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:HP">Hannah Petrie</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="#resp:EW">Elizabeth Williamson</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition, transcribed and edited directly from primary
+               sources</edition>
+         </editionStmt>
+         <publicationStmt>
+            <publisher>University of Exeter Digital Humanities Lab</publisher>
+            <pubPlace>Exeter, UK</pubPlace>
+            <date>November 2019</date>
+            <availability>
+               <p>The letter transcripts are licensed under a Creative Commons Attribution 4.0
+                  International License. This means that you can use these transcripts providing you
+                  acknowledge the Hardy's Correspondents project.</p>
+               <p>The letter images remain the copyright of Dorset Museum. Please contact the Museum
+                  if you would like to reuse any of the letter images.</p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <placeName ref="#pl:Dorchester">Dorchester</placeName>
+                  <institution>Dorset County Museum</institution>
+                  <idno type="DCM">H.3178</idno>
+                  <altIdentifier>
+                     <idno type="XXXX"><!-- optional - any other identifiers --></idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Letter written on <material>cream folded paper</material> with
+                              mourning border on page 1.</p>
+                           <p>Pencil library marks on page 4: <note type="libraryMark"
+                              >H.3178</note>.</p>
+                           <p>Envelope bearing the following marks: <stamp type="postmark">Circular
+                                 mark specifying <mentioned>SEVENOAK 3.30PM 10
+                                       <unclear>INO</unclear> 14</mentioned></stamp>. <stamp
+                                 type="postage">One penny bright scarlet King George V
+                                 stamp.</stamp>
+                              <note rend="pencil">10 JN. 14 from S<unclear>coen
+                                 Dak</unclear>s.</note>
+                              <figure><figDesc>Letterhead has a black oval decorative border with
+                                    the initials F.H. at the top.</figDesc></figure></p>
+                        </support>
+                        <condition>Good</condition>
+                     </supportDesc>
+                  </objectDesc>
+                  <decoDesc>
+                     <decoNote type="mourningBorder">
+                        <p>Black border on page 1 and envelope.</p>
+                     </decoNote>
+                  </decoDesc>
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Prepared as part of the AHRC/REACT Studentship on Thomas Hardy's letters, in
+               conjunction with Dorset County Museum.</p>
+         </projectDesc>
+
+      </encodingDesc>
+      <profileDesc>
+         <correspDesc>
+            <!-- Provides detailed correspondence-specific metadata, particularly concerning the communicative aspects 
+            (sending, receiving, forwarding etc.) associated with acts of correspondence. -->
+
+            <correspAction type="sent">
+               <persName ref="#ps:FlorenceHenniker">Florence Henniker</persName>
+               <placeName ref="#pl:TheLittleOrchard">The Little Orchard, Shoreham, Kent</placeName>
+               <date when="1914-06-10"/>
+            </correspAction>
+            <correspAction type="received">
+               <persName ref="#ps:TH">Thomas Hardy</persName>
+            </correspAction>
+            
+            <!-- correspContext> -->
+            <!-- Provides references to preceding or following correspondence related to this piece of correspondence -->
+            <!--</correspContext>-->
+            <correspContext>
+               <ref type="next" target="dhe-hl-h.3138"> Letter from <persName ref="#ps:TH"
+                     >Hardy</persName>, who writes that he shares her uneasiness about the new
+                  laboratories. He also mentions a new poem that will shortly appear in <hi
+                     rend="italic">The Fortnightly Review</hi>. </ref>
+            </correspContext>
+         </correspDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="letter">
+            <pb n="1" facs="uoedh_hl_h.3178_1.jpg"/>
+            <opener>
+               <address rend="letterhead">
+                  <addrLine>The Little Orchard</addrLine>
+                  <addrLine>Shoreham</addrLine>
+                  <addrLine>Kent</addrLine>
+               </address>
+               <dateline>
+                  <date when="1914-06-10">June 10 |14</date>
+               </dateline>
+
+               <salute>My dear friend:</salute>
+            </opener>
+
+            <p>I stupidly did not realise <choice><abbr>y<hi rend="superscript"
+                     >r</hi>.</abbr><expan>your</expan></choice> birthday on the anniversary –, but
+               please accept belated, – but <hi rend="underline">very</hi> good wishes for many more
+               happy &amp; peaceful birthdays.</p>
+            <p>I am settled here, I hope, till the end of July, so hope you will both <pb n="2"
+                  facs="uoedh_hl_h.3178_2.jpg"/> come down here some day to luncheon or tea, – or
+               both?</p>
+            <p>It is only an hour from the <placeName ref="#pl:VictoriaStation">
+                  <hi rend="underline"> South Eastern</hi> &amp; <hi rend="underline"
+                     >Chatham-Victoria</hi></placeName> – &amp; I am one mile from <placeName
+                  ref="#pl:ShorehamKent">Shoreham</placeName> Station.</p>
+            <!-- Check this! -->
+            <p>I hope you have less trouble with the veins in <choice><abbr>y<hi rend="superscript"
+                        >r</hi>.</abbr><expan>your</expan></choice> leg, &amp; that you may <pb
+                  n="3" facs="uoedh_hl_h.3178_3.jpg"/> be able to mount a hill near this house, (or
+               cottage rather,) &amp; look down upon a really <hi rend="underline">glorious</hi>
+               view.</p>
+            <p>I wonder what you are now doing in the way of writing? Poetry, perhaps?</p>
+            <p>I heard a sad account, a month or so ago, of the terrible poverty &amp; distress in
+               which poor <persName ref="#ps:StephenPhillips">Stephen Phillipps</persName> now is.
+               He ought to get a pension from the Treasury. –</p>
+            <pb n="4" facs="uoedh_hl_h.3178_4.jpg"/>
+
+            <p>I am disgusted with <persName ref="#ps:PrinceArthurofConnaught">Prince A - of
+                  Connaught</persName> for opening the new physiological Laboratory at <placeName
+                  ref="#pl:UniversityofCambridge">Cambridge</placeName>, &amp; going out of his way
+               to identify himself with the worst type of vivisector. - I only wish some mad woman
+                        <choice><abbr>w<hi rend="superscript"
+                  >d</hi>.</abbr><expan>would</expan></choice> burn down that place! It is awful to
+               think of all those "<hi rend="underline">private</hi> research rooms"–. –</p>
+            <p>I hope you are getting fond of "Wessex?" Please ask <persName ref="#ps:FlorenceHardy"
+                  >Florence</persName> to write to me some day – &amp; tell me all <choice><abbr><hi
+                        rend="underline">yr</hi>.</abbr><expan>your</expan></choice> news – my best
+               love to her.</p>
+
+            <closer>
+               <salute><choice><abbr>Yr</abbr><expan>Your</expan></choice>
+                  <choice><abbr>aff.</abbr><expan>affectionate</expan></choice> friend</salute>
+               <signed>FH</signed>
+            </closer>
+
+
+         </div>
+
+
+      </body>
+
+      <back>
+         <div type="envelope">
+            <pb n="5" facs="uoedh_hl_h.3178_env1.jpg"/>
+            <p>
+               <address>
+                  <addrLine>Thomas Hardy Esq. O.M.</addrLine>
+                  <addrLine>Maxgate</addrLine>
+                  <addrLine rend="underline">Dorchester</addrLine>
+               </address>
+            </p>
+            <pb n="6" facs="uoedh_hl_h.3178_env2.jpg"/>
+         </div>
+      </back>
+   </text>
+</TEI>

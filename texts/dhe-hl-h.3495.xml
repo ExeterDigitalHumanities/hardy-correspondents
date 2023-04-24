@@ -1,0 +1,146 @@
+<?xml-model href="../../schema/hardyletter.rng" type="application/xml" 
+   schematypens="http://relaxng.org/ns/structure/1.0"?><!--<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="dhe-hl-h.3495">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+
+            <title>Letter from A. E. Housman to Thomas Hardy about visiting him in Dorchester, 11
+               July 1900</title>
+            <author ref="#ps:AlfredHousman">A. E. Hosuman</author>
+            <!--The editor of the tei file-->
+            <editor ref="#resp-HA">Helen Angear</editor>
+            <funder>Arts and Humanities Research Council</funder>
+            <sponsor>University of Exeter</sponsor>
+            <sponsor>Dorset County Museum</sponsor>
+            <principal>Angelique Richardson</principal>
+
+            <respStmt>
+               <persName ref="#resp:HA">Helen Angear</persName>
+               <resp>Selection</resp>
+               <resp>Transcription</resp>
+
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:BM">Beth Mills</persName>
+               <resp>Proofreading</resp>
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:HP">Hannah Petrie</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="#resp:EW">Elizabeth Williamson</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition, transcribed and edited directly from primary
+               sources</edition>
+         </editionStmt>
+         <publicationStmt>
+            <publisher>University of Exeter Digital Humanities Lab</publisher>
+            <pubPlace>Exeter, UK</pubPlace>
+            <date>November 2019</date>
+            <availability>
+               <p>The letter transcripts are licensed under a Creative Commons Attribution 4.0
+                  International License. This means that you can use these transcripts providing you
+                  acknowledge the Hardy's Correspondents project.</p>
+               <p>The letter images remain the copyright of Dorset Museum. Please contact the Museum
+                  if you would like to reuse any of the letter images.</p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <placeName ref="#pl:Dorchester">Dorchester</placeName>
+                  <institution>Dorset County Museum</institution>
+                  <idno type="DCM">H.3495</idno>
+                  <altIdentifier>
+                     <idno type="XXXX"><!-- optional - any other identifiers --></idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Letter written on <material>cream paper</material>. Pencil library
+                              marks on pages 4: <note type="libraryMark">H.3495</note>.</p>
+                        </support>
+                        <condition>Good</condition>
+                     </supportDesc>
+                  </objectDesc>
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Prepared as part of the AHRC/REACT Studentship on Thomas Hardy's letters, in
+               conjunction with Dorset County Museum.</p>
+         </projectDesc>
+
+      </encodingDesc>
+      <profileDesc>
+         <correspDesc>
+            <!-- Provides detailed correspondence-specific metadata, particularly concerning the communicative aspects 
+            (sending, receiving, forwarding etc.) associated with acts of correspondence. -->
+
+            <correspAction type="sent">
+               <!-- Structured description of the place, the name of a person/organisation and the date related to the sending/receiving of a message -->
+               <persName ref="#ps:AlfredHousman">A. E. Housman</persName>
+
+               <!--Location letter sent from-->
+               <placeName ref="#pl:NorthRoad17">17 North Road, Highgate</placeName>
+               <!-- Missing last part of address. -->
+               <date when="1900-07-11">11 July 1900</date>
+            </correspAction>
+            <correspAction type="received">
+               <persName ref="#ps:TH">Thomas Hardy</persName>
+            </correspAction>
+
+         </correspDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="letter">
+            <pb n="1" facs="uoedh_hl_h.3495_1.jpg"/>
+
+            <opener>
+               <note rend="pencil" hand="other">A. E. Housman - ("Shropshire Lad")</note>
+               <address>
+                  <addrLine>17 North Road</addrLine>
+                  <addrLine>Highgate <unclear>N.</unclear></addrLine>
+               </address>
+               <dateline>
+                  <date when="1874-07-11">11 July 1900</date>
+               </dateline>
+
+               <salute>Dear Mr Hardy,</salute>
+            </opener>
+
+            <p>I shall be very pleased to come, and the date you suggest will suit me excellently.
+               The first Saturday in August is the <pb n="2" facs="uoedh_hl_h.3495_2.jpg"/>
+               <pb n="3" facs="uoedh_hl_h.3495_3.jpg"/> 4<hi rend="superscript">th</hi>, so if I am
+               alive I hope you will see me then; but at present my tenure of existence is more than
+               usually precarious, as I am learning the bicycle.</p>
+
+            <closer>
+               <salute>I am yours very truly</salute>
+               <signed>A. E. Housman.</signed>. </closer>
+
+            <pb n="4" facs="uoedh_hl_h.3495_4.jpg"/>
+
+
+         </div>
+      </body>
+   </text>
+</TEI>

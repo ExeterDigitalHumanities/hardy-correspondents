@@ -1,0 +1,182 @@
+<?xml-model href="../../schema/hardyletter.rng" type="application/xml" 
+   schematypens="http://relaxng.org/ns/structure/1.0"?><!--<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="dhe-hl-h.3177">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+
+            <title>Letter from Florence Henniker to Thomas Hardy discussing his poem <ref
+                  target="#bib:Hardy1898_BeyondTheLastLamp">'Beyond the Last Lamp'</ref>, 20 March
+               1914</title>
+            <!--The author of the letter-->
+            <author ref="#ps:FlorenceHenniker">Florence Henniker</author>
+            <!--The editor of the tei file-->
+            <editor ref="#resp-HA">Helen Angear</editor>
+            <funder>Arts and Humanities Research Council</funder>
+            <sponsor>University of Exeter</sponsor>
+            <sponsor>Dorset County Museum</sponsor>
+            <principal>Angelique Richardson</principal>
+
+            <respStmt>
+               <persName ref="#resp:HA">Helen Angear</persName>
+               <resp>Selection</resp>
+               <resp>Transcription</resp>
+
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:BM">Beth Mills</persName>
+               <resp>Proofreading</resp>
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:HP">Hannah Petrie</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="#resp:EW">Elizabeth Williamson</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition, transcribed and edited directly from primary
+               sources</edition>
+         </editionStmt>
+         <publicationStmt>
+            <publisher>University of Exeter Digital Humanities Lab</publisher>
+            <pubPlace>Exeter, UK</pubPlace>
+            <date>November 2019</date>
+            <availability>
+               <p>The letter transcripts are licensed under a Creative Commons Attribution 4.0
+                  International License. This means that you can use these transcripts providing you
+                  acknowledge the Hardy's Correspondents project.</p>
+               <p>The letter images remain the copyright of Dorset Museum. Please contact the Museum
+                  if you would like to reuse any of the letter images.</p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <placeName ref="#pl:Dorchester">Dorchester</placeName>
+                  <institution>Dorset County Museum</institution>
+                  <idno type="DCM">H.3177</idno>
+                  <altIdentifier>
+                     <idno type="XXXX"><!-- optional - any other identifiers --></idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Letter written on <material>cream folded paper</material> with a
+                              mourning border on page 1.</p>
+                           <p>Pencil library marks on page 4: <note type="libraryMark"
+                              >H.3177</note>.</p>
+                           <p><figure><figDesc>Letterhead within a black oval decorative border with
+                                    the initials F.H. at the top</figDesc></figure>.</p>
+                        </support>
+                        <condition>Good</condition>
+                     </supportDesc>
+                  </objectDesc>
+                  <decoDesc>
+                     <decoNote type="mourningBorder">
+                        <p>Black border on page 1.</p>
+                     </decoNote>
+                  </decoDesc>
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Prepared as part of the AHRC/REACT Studentship on Thomas Hardy's letters, in
+               conjunction with Dorset County Museum.</p>
+         </projectDesc>
+
+      </encodingDesc>
+      <profileDesc>
+         <correspDesc>
+            <!-- Provides detailed correspondence-specific metadata, particularly concerning the communicative aspects 
+            (sending, receiving, forwarding etc.) associated with acts of correspondence. -->
+
+            <correspAction type="sent">
+               <persName ref="#ps:FlorenceHenniker">Florence Henniker</persName>
+
+               <!--Location letter sent from-->
+               <placeName ref="#pl:TheLittleOrchard">The Little Orchard, Shoreham, Kent</placeName>
+               <date when="1914-03-20"/>
+            </correspAction>
+            <correspAction type="received">
+               <persName ref="#ps:TH">Thomas Hardy</persName>
+            </correspAction>
+            
+            <!-- correspContext> -->
+            <!-- Provides references to preceding or following correspondence related to this piece of correspondence -->
+            <!--</correspContext>-->
+            <correspContext>
+               <ref type="prev" target="dhe-hl-h.3137"> Letter from <persName ref="#ps:TH"
+                     >Hardy</persName> discussing other friends’ reactions to his recent marriage,
+                  as well as referring to <persName ref="#ps:FlorenceHardy">Florence’s</persName>
+                  kindness and good nature. He encloses two unnamed poems. </ref>
+            </correspContext>
+         </correspDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="letter">
+            <pb n="1" facs="uoedh_hl_h.3177_1.jpg"/>
+            <opener>
+               <address rend="letterhead">
+                  <addrLine>The Little Orchard</addrLine>
+                  <addrLine>Shoreham</addrLine>
+                  <addrLine>Kent</addrLine>
+               </address>
+               <dateline>
+                  <date when="1914-03-20"> March 20. 14</date>
+               </dateline>
+               <salute>My dear friend:</salute>
+            </opener>
+
+            <p>How kind of you to send me the verses,
+                  <choice><abbr>wh.</abbr><expan>which</expan></choice> I am very glad to have. I
+               had seen one of them before, &amp; admired much of it. The other interesting little
+               poem was new to me. I wonder who the couple were who walked in the wind &amp; rain,
+               &amp; what <pb n="2" facs="uoedh_hl_h.3177_2.jpg"/> their story was. There might be
+               so <hi rend="underline">many</hi> possible solutions, &amp; suggestions for a novel
+               about them.</p>
+            <p> There has been snow &amp; a depressing amount of rain here, which I hope won't
+               damage my rows &amp; clusters of sweet-peas, from which <pb n="3"
+                  facs="uoedh_hl_h.3177_3.jpg"/> I <add place="above">still</add> hope for brilliant
+               results. I find this little garden an interest – &amp; I have a bird–<hi
+                  rend="underline">shelter</hi>, &amp; many boxes to encourage them to nest in the
+               orchard.</p>
+            <p>It is good of you to tell me how kindly – (<hi rend="underline">too</hi> kindly)
+                  <persName ref="#ps:FlorenceHardy">Florence</persName> –, may I call her so? –
+               thinks of me. Hers is a good opinion well worth having indeed. –</p>
+            <pb n="4" facs="uoedh_hl_h.3177_4.jpg"/>
+
+            <p>I shall hope to see you both here in the summer. I think I said I might be going
+               abroad in May, for a short time. My brother is here now, &amp; really seems very well
+               –</p>
+            <closer>
+               <salute>Always <choice><abbr>y<hi rend="superscript"
+                        >r</hi>.</abbr><expan>your</expan></choice> friend</salute>
+               <signed>FloH</signed>
+            </closer>
+            <postscript>
+
+               <p>Did you write anything <choice><abbr><hi rend="superscript"><hi rend="underline"
+                              >re</hi></hi></abbr><expan>regarding</expan></choice> the Browning
+                  Letters? </p>
+            </postscript>
+
+         </div>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,166 @@
+<?xml-model href="../../schema/hardyletter.rng" type="application/xml" 
+   schematypens="http://relaxng.org/ns/structure/1.0"?><!--<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="dhe-hl-h.5043a">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Letter from the Royal Observatory to Thomas Hardy regarding his request to visit
+               as part of his research for <ref target="#bib:Hardy1882_Tower">Two on a Tower</ref>,
+               26 November 1881</title>
+            <author ref="#ps:TH">Thomas Hardy</author>
+            <!--The editor of the tei file-->
+            <editor ref="#resp-HA">Helen Angear</editor>
+            <funder>Arts and Humanities Research Council</funder>
+            <sponsor>University of Exeter</sponsor>
+            <sponsor>Dorset County Museum</sponsor>
+            <principal>Angelique Richardson</principal>
+
+            <respStmt>
+               <persName ref="#resp:HA">Helen Angear</persName>
+               <resp>Selection</resp>
+               <resp>Transcription</resp>
+
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:HA">Helen Angear</persName>
+               <resp>Proofreading</resp>
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:HP">Hannah Petrie</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="#resp:EW">Elizabeth Williamson</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition, transcribed and edited directly from primary
+               sources</edition>
+         </editionStmt>
+         <publicationStmt>
+            <publisher>University of Exeter Digital Humanities Lab</publisher>
+            <pubPlace>Exeter, UK</pubPlace>
+            <date>November 2019</date>
+            <availability>
+               <p>The letter transcripts are licensed under a Creative Commons Attribution 4.0
+                  International License. This means that you can use these transcripts providing you
+                  acknowledge the Hardy's Correspondents project.</p>
+               <p>The letter images remain the copyright of Dorset Museum. Please contact the Museum
+                  if you would like to reuse any of the letter images.</p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <placeName ref="#pl:Dorchester">Dorchester</placeName>
+                  <institution>Dorset County Museum</institution>
+                  <idno type="DCM">H.5043a</idno>
+                  <altIdentifier>
+                     <idno type="XXXX"><!-- optional - any other identifiers --></idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Letter typed on <material>cream paper</material>.</p>
+                           <!-- Need to indicate it is a proforma like DCM one and has some numbers on it -->
+                           <p>Pencil library marks on page 2: <note type="libraryMark" rend="pencil"
+                                 > H.5043a</note>.</p>
+
+                        </support>
+                        <condition>Good</condition>
+
+                     </supportDesc>
+
+                  </objectDesc>
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Prepared as part of the AHRC/REACT Studentship on Thomas Hardy's letters, in
+               conjunction with Dorset County Museum.</p>
+         </projectDesc>
+
+      </encodingDesc>
+      <profileDesc>
+         <correspDesc>
+            <!-- Provides detailed correspondence-specific metadata, particularly concerning the communicative aspects 
+            (sending, receiving, forwarding etc.) associated with acts of correspondence. -->
+
+            <correspAction type="sent">
+               <persName ref="#ps:EDunkin">E Dunkin</persName>
+               <placeName ref="#pl:RoyalObservatory">Royal Observatory, Greenwich,
+                  London</placeName>
+               <date when="1881-11-26"/>
+            </correspAction>
+            <correspAction type="received">
+               <persName ref="#ps:TH">Thomas Hardy</persName>
+            </correspAction>
+
+         </correspDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="letter">
+            <pb n="1" facs="uoedh_hl_h.5043a_1.jpg"/>
+
+
+
+
+
+            <opener> [209] <address rend="letterhead">
+                  <addrLine>Royal Observatory, Greenwich, London, S. E.,</addrLine> </address>
+               <dateline>
+                  <date when="1881-11-26"><hi rend="typescript">18</hi>81, November 26.</date>
+                  <!-- need to indicate tgar 81 November 26 if handwritten -->
+               </dateline>
+               <!-- all typescript other than signature and name at the bottom -->
+               <salute>SIR,</salute>
+            </opener>
+
+            <p>I am requested by the Astronomer Royal to inform you that he is always desirious of
+               affording to those persons who are anxious to obtain information on Astronomical,
+               Magnetical, or Meteorological Science, such assistance as may be derived from an
+               inspection of the Instruments of the <placeName ref="#pl:RoyalObservatory">Royal
+                  Observatory</placeName>; but, at the same time, does not consider that the
+               important duties of a scientific establishment should be interfered with for the
+               gratification of mere curiosity.</p>
+
+            <p>In reference, therefore, to your application for permission to inspect the <placeName
+                  ref="#pl:RoyalObservatory">Royal Observatory</placeName>, I forward to you the
+               inclosed paper of Questions which you are requested to answer, in order that the
+               Astronomer Royal may be enabled to consider the propriety of complying with your
+               wish.</p>
+
+
+
+            <closer>
+               <salute>I am, Sir,</salute>
+               <salute>Your obedient Servant,</salute>
+               <signed>E. Dunkin</signed>
+               <address>
+                  <addrLine>To Thomas Hardy <choice><abbr>Esq.</abbr>
+                        <expan>Esquire</expan></choice></addrLine>
+               </address> [21819.] E, &amp; S. ––200.––2/75. </closer>
+
+            <pb n="2" facs="uoedh_hl_h.5043a_2.jpg"/>
+
+            <!-- Then there is a handwritten draft reply where Hardy ahs written out the questions and answered them. This is H.5043b. However it is not a letter. It has been included in the Collected Letters, though  -->
+
+
+         </div>
+      </body>
+   </text>
+</TEI>

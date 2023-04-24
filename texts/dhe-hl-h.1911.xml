@@ -1,0 +1,159 @@
+<?xml-model href="../../schema/hardyletter.rng" type="application/xml" 
+   schematypens="http://relaxng.org/ns/structure/1.0"?><!--<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="dhe-hl-h.1911">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Condolence letter from George Douglas to Thomas Hardy following the death of Emma
+               Hardy, 29 November 1912</title>
+            <author ref="#ps:GeorgeDouglas">George Douglas</author>
+            <!--The editor of the tei file-->
+            <editor ref="#resp-HA">Helen Angear</editor>
+            <funder>Arts and Humanities Research Council</funder>
+            <sponsor>University of Exeter</sponsor>
+            <sponsor>Dorset County Museum</sponsor>
+            <principal>Angelique Richardson</principal>
+
+            <respStmt>
+               <persName ref="#resp:HA">Helen Angear</persName>
+               <resp>Selection</resp>
+               <resp>Transcription</resp>
+
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:BM">Beth Mills</persName>
+               <resp>Proofreading</resp>
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:HP">Hannah Petrie</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="#resp:EW">Elizabeth Williamson</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition, transcribed and edited directly from primary
+               sources</edition>
+         </editionStmt>
+         <publicationStmt>
+            <publisher>University of Exeter Digital Humanities Lab</publisher>
+            <pubPlace>Exeter, UK</pubPlace>
+            <date>November 2019</date>
+            <availability>
+               <p>The letter transcripts are licensed under a Creative Commons Attribution 4.0
+                  International License. This means that you can use these transcripts providing you
+                  acknowledge the Hardy's Correspondents project.</p>
+               <p>The letter images remain the copyright of Dorset Museum. Please contact the Museum
+                  if you would like to reuse any of the letter images.</p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <placeName ref="#pl:Dorchester">Dorchester</placeName>
+                  <institution>Dorset County Museum</institution>
+                  <idno type="DCM">H.1911</idno>
+                  <altIdentifier>
+                     <idno type="XXXX"><!-- optional - any other identifiers --></idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Letter written on <material>cream paper</material>.</p>
+                           <p>Pencil library marks on page 2: <note type="libraryMark" rend="pencil"
+                                 > H.1911</note>.</p>
+                           <!--                           deleted markup for 'figure' as not needed in header description.-->
+                           <p>In the letterhead at the top of the letter is a printed blue crest
+                              inscribed with 'Doe or Die'. </p>
+
+                        </support>
+                        <condition>Good</condition>
+
+                     </supportDesc>
+                  </objectDesc>
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Prepared as part of the AHRC/REACT Studentship on Thomas Hardy's letters, in
+               conjunction with Dorset County Museum.</p>
+         </projectDesc>
+
+      </encodingDesc>
+      <profileDesc>
+         <correspDesc>
+            <!-- Provides detailed correspondence-specific metadata, particularly concerning the communicative aspects 
+            (sending, receiving, forwarding etc.) associated with acts of correspondence. -->
+
+            <correspAction type="sent">
+               <persName ref="#ps:GeorgeDouglas">George Douglas</persName>
+               <placeName ref="#pl:SpringwoodHouse">Springwood House, Kelso, Scotland</placeName>
+               <date when="1912-11-29"/>
+            </correspAction>
+            <correspAction type="received">
+               <persName ref="#ps:TH">Thomas Hardy</persName>
+
+            </correspAction>
+
+         </correspDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="letter">
+            <pb n="1" facs="uoedh_hl_h.1911_1.jpg"/>
+
+            <opener>
+
+
+               <address>
+                  <addrLine>Springwood</addrLine>
+                  <addrLine>Kelso</addrLine>
+
+               </address>
+               <dateline>
+                  <date when="1912-11-29">29. XI. 12</date>
+               </dateline>
+
+               <salute> My dear Hardy,</salute>
+
+            </opener>
+
+            <p>I was much grieved to read in the papers yesterday of the death of <persName
+                  ref="#ps:EmmaHardy"> M<hi rend="superscript">rs</hi> Hardy</persName>, &amp; I
+               trust you will permit me as an old friend to offer you my most sincere symnpathy in
+               your loss. I have very lively recollections of <persName ref="#ps:EmmaHardy"> M<hi
+                     rend="superscript">rs</hi> Hardy</persName>'s unfailing kindness when I visited
+               at <placeName ref="#pl:MaxGate">Max Gate</placeName> or called on you in <placeName
+                  ref="#pl:London">London</placeName>, &amp; I shall always remember her with
+               gratitude. I hope that your own health is fairly sustained, &amp; that I may see you
+               when I am again in Town, tho' that nowadays is seldom &amp; only on the shortest
+               visits.</p>
+
+
+            <closer>
+               <salute>With renewed sincere sympathy &amp; kindest remembrance,</salute>
+
+               <salute>yours ever truly</salute>
+               <signed>G. Douglas</signed>
+            </closer>
+            <pb n="2" facs="uoedh_hl_h.1911_2.jpg"/>
+
+
+         </div>
+      </body>
+   </text>
+</TEI>

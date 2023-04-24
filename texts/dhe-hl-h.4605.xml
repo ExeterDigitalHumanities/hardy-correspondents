@@ -1,0 +1,201 @@
+<?xml-model href="../../schema/hardyletter.rng" type="application/xml" 
+   schematypens="http://relaxng.org/ns/structure/1.0"?><!--<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="dhe-hl-h.4605">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Letter from a reader, Louise Moog, to Thomas Hardy expressing her love for <ref
+                  target="#bib:Hardy1891_Tess"><emph rend="italics">Tess of the
+                  d'Urbervilles</emph></ref> and her affinity with Tess, 5 July 1927</title>
+            <author ref="#ps:LouiseMoog">Louise Moog</author>
+            <!--The editor of the tei file-->
+            <editor ref="#resp-HA">Helen Angear</editor>
+            <funder>Arts and Humanities Research Council</funder>
+            <sponsor>University of Exeter</sponsor>
+            <sponsor>Dorset County Museum</sponsor>
+            <principal>Angelique Richardson</principal>
+
+            <respStmt>
+               <persName ref="#resp:HA">Helen Angear</persName>
+               <resp>Selection</resp>
+               <resp>Proofreading</resp>
+
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:BM">Beth Mills</persName>
+               <resp>Transcription</resp>
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:HP">Hannah Petrie</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="#resp:EW">Elizabeth Williamson</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition, transcribed and edited directly from primary
+               sources</edition>
+         </editionStmt>
+         <publicationStmt>
+            <publisher>University of Exeter Digital Humanities Lab</publisher>
+            <pubPlace>Exeter, UK</pubPlace>
+            <date>November 2019</date>
+            <availability>
+               <p>The letter transcripts are licensed under a Creative Commons Attribution 4.0
+                  International License. This means that you can use these transcripts providing you
+                  acknowledge the Hardy's Correspondents project.</p>
+               <p>The letter images remain the copyright of Dorset Museum. Please contact the Museum
+                  if you would like to reuse any of the letter images.</p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <placeName ref="#pl:Dorchester">Dorchester</placeName>
+                  <institution>Dorset County Museum</institution>
+                  <idno type="DCM">H.4605</idno>
+                  <altIdentifier>
+                     <idno type="XXXX"><!-- optional - any other identifiers --></idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Letter written on folded <material>cream paper</material>.</p>
+                           <p>Pencil library marks on page 4: <note type="libraryMark"
+                              >H.4605</note>.</p>
+                        </support>
+                        <condition>Good</condition>
+                     </supportDesc>
+                  </objectDesc>
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Prepared as part of the AHRC/REACT Studentship on Thomas Hardy's letters, in
+               conjunction with Dorset County Museum.</p>
+         </projectDesc>
+
+      </encodingDesc>
+      <profileDesc>
+         <correspDesc>
+            <!-- Provides detailed correspondence-specific metadata, particularly concerning the communicative aspects 
+            (sending, receiving, forwarding etc.) associated with acts of correspondence. -->
+
+            <correspAction type="sent">
+               <!-- Structured description of the place, the name of a person/organisation and the date related to the sending/receiving of a message -->
+               <persName ref="#ps:LouiseMoog">Louise Moog</persName>
+
+               <!--Location letter sent from-->
+               <placeName ref="#pl:TheHague">The Hague</placeName>
+               <date when="1927-07-05">July 5th. 1927</date>
+            </correspAction>
+            <correspAction type="received">
+               <persName ref="#ps:TH">Thomas Hardy</persName>
+            </correspAction>
+
+         </correspDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="letter">
+            <pb n="1" facs="uoedh_hl_h.4605_1.jpg"/>
+            <opener>
+               <address>
+                  <addrLine>The Hague,</addrLine>
+               </address>
+               <dateline>
+                  <date when="1927-07-05">July 5th. 1927.</date>
+               </dateline>
+               <milestone xml:id="m01" unit="section"/>
+
+               <address xml:id="h4605a" corresp="#m01">
+                  <addrLine>To Mr. Thomas Hardy,</addrLine>
+                  <addrLine>c/o Messrs. Macmillan and Ltd.</addrLine>
+                  <addrLine><hi rend="underline">London</hi>. <abbr>St.</abbr> Martin's
+                     Street.</addrLine>
+               </address>
+
+
+
+               <salute>Dear Mr. Thomas Hardy,</salute>
+               <salute>author of "<ref target="#bib:Hardy1891_Tess">Tess of the
+                  D'Urbervilles</ref>,</salute>
+            </opener>
+
+            <p>May I introduce my-self to you, I am a Dutch girl, who just finished your above
+               mentioned work and I cannot resist the desire to tell you how that work has moved me,
+               how deep an impression it made upon me.</p>
+
+            <p>I've never read a book in which I felt something of my self as in your so
+               well-painted – <persName ref="#ps:TessDurbeyfield">Tess</persName>.</p>
+
+            <p>I think <persName ref="#ps:TessDurbeyfield">Tess</persName>
+               <choice><sic>caracter</sic><corr>character</corr></choice> so beautiful, it is never
+               weak, she always gives and never asks. I think it so lovely of her, when cruel
+                  <persName ref="#ps:AngelClare">Angel</persName> has let her alone, <persName
+                  ref="#ps:TessDurbeyfield">Tess</persName> makes herself ugly and when then
+               somebody says "What a mommet of a maid" she says "I don't care ––– but I love him <pb
+                  n="2" facs="uoedh_hl_h.4605_2.jpg"/> just the same."–</p>
+
+            <p>And after all I think it not a crime when she kills that vile wretch, and not at all
+               a crime which ought to be punished – and not at all punished in that way. –</p>
+
+            <p>That killed fellow was the cause of all – the cause of her miserable life (and in the
+               same time so beautiful life)– and were not the parents <hi rend="underline"
+                  >indeed</hi> the cause of all?</p>
+
+            <p>Who deserves punishment? <persName ref="#ps:TessDurbeyfield">Tess</persName> least of
+               all.</p>
+
+            <p>I think life so difficult and several troubles I have had, I met in this book. Oh, I
+               wish that there are more people in the world as you are, for you <hi rend="underline"
+                  >understand</hi> a woman.–</p>
+
+            <p>"<ref target="#bib:Hardy1891_Tess">Tess</ref>" is the first book I read of you – and
+               I hope to read soon more of you. –</p>
+
+            <p>Many, many thanks for <ref target="#bib:Hardy1891_Tess">Tess</ref>", what beautiful
+               descriptions of nature it contains! and I hope that you live somewhere in <placeName
+                  ref="#pl:England">England</placeName> where nature is lovely and <pb n="3"
+                  facs="uoedh_hl_h.4605_3.jpg"/> life may be so much better than in a great town. I
+               wish you were my grand-father.</p>
+
+            <p>May I shake hands with you?</p>
+
+            <closer>
+               <salute>Sincerely yours</salute>
+               <signed>Louise Moog.</signed>
+               <address>
+                  <addrLine>Louise Moog,</addrLine>
+                  <addrLine><hi rend="superscript">c</hi>/o Gemeente Ziekenhuis,</addrLine>
+                  <addrLine>Zuidwal 83</addrLine>
+                  <addrLine>
+                     <hi rend="underline">Den Haag.</hi>
+                  </addrLine>
+                  <addrLine>Holland.</addrLine>
+               </address>
+
+
+
+
+            </closer>
+            <pb n="4" facs="uoedh_hl_h.4605_4.jpg"/>
+
+         </div>
+      </body>
+   </text>
+</TEI>

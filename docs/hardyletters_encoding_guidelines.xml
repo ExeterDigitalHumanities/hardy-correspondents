@@ -1,0 +1,1344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Encoding Guidelines for Hardy's Correspondents</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Publication Information</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Information about the source</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <front>
+            <docTitle>
+                <titlePart>Encoding Guidelines for Hardy's Correspondents</titlePart>
+            </docTitle>
+        </front>
+        <body>
+            <div>
+                <head>Encoding Letters</head>
+                <p>Please note that some of these examples have been simplified for clarity, and may
+                    be encoded differently in the final version of the letters. </p>
+                <div>
+                    <head>Basics</head>
+                    <p>Every letter needs to have a unique <att>xml:id</att> on the <tag>TEI</tag>
+                        element to appear in eXist. Use the catalogue number of the letter for the
+                        xml:id: <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                            <TEI xml:id="dhe-hl-h.3128"> </TEI>
+                        </egXML>
+                    </p>
+                </div>
+                <div>
+                    <head>Underlines, emphasis and other text features</head>
+                    <p>Underlines should not break a word unless there is clear intention by the
+                        writer that only part of the word should be emphasised. Remember that the
+                        reader can always view the page image to determine in their own mind whether
+                        there is any significance to a partial underline.</p>
+                    <p>For underlined text: <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                            <hi rend="underline">real</hi>
+                        </egXML><![CDATA[]]>
+                    </p>
+                    <p>For double-underlined or otherwise heavily emphasized text: <egXML
+                            xmlns="http://www.tei-c.org/ns/Examples">
+                            <hi rend="double-underline">must</hi>
+                        </egXML><![CDATA[]]>
+                    </p>
+                    <p>For italic text: <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                            <hi rend="italic">definitely</hi>
+                        </egXML>
+                    </p>
+                    <p></p>
+                </div>
+
+                <div>
+                    <head>Symbols</head>
+                    <div>
+                        <head>Transcribing symbols: &amp; &gt; &lt;</head>
+                        <p> When transcribing ampersand symbols (&amp;), you must 'escape' them by
+                            using the character reference (<![CDATA[&amp;]]>), otherwise they are
+                            read as special characters and an error will show.</p>
+                        <p>Greater-than and less-than symbols should be written as <![CDATA[&gt;]]>
+                            or <![CDATA[&lt;]]> (short for greater than or less than), otherwise
+                            Oxygen will think they are part of an element.</p>
+                        <p>In URLs, an error might show, objecting to a certain pair of letters, but
+                            it’s really because the URL contains an ampersand that hasn’t been
+                            escaped. Correcting the ampersand to the character reference should fix
+                            the error.</p>
+                        <p>Use 'insert from character map' in the Edit menu to add accents.</p>
+                        <p></p>
+                    </div>
+
+                    <div>
+                        <head>Hyphens and Dashes</head>
+                        <p>For all shortcuts, use the number pad, making sure that the number-lock
+                            is on.</p>
+                        <list>
+                            <item>Hyphen: - </item>
+                            <item>En dash: – </item>
+                        </list>
+                        <list>
+                            <item>The hyphen is used to join two separate words together. It is the
+                                shortest dash. <list>
+                                    <item>Encode this by just using the hyphen key on the
+                                        keyboard.</item>
+                                </list>
+                            </item>
+                            <item>For most other uses, the en dash is appropriate. The en dash takes
+                                its name from the fact that it is the width of a capital letter 'N'
+                                in its font. <list>
+                                    <item>Encode this by holding down the alt key, and typing 0150
+                                        on the number pad.</item>
+                                </list>
+                            </item>
+                        </list>
+                        <p>Where a hyphen is used to break a word across a line, this should be
+                            encoded as a 'no-break' or <ref target="https://en.wikipedia.org/wiki/Soft_hyphen"
+                                >soft-hyphen</ref>. This is done by using the code below: <egXML
+                                xmlns="http://www.tei-c.org/ns/Examples">&amp;#173;</egXML></p>
+                    </div>
+                </div>
+                <div>
+                    <head>Abbreviations</head>
+                    <p> For superscripted text, e.g. 24<hi rend="superscript">th</hi>: <egXML
+                            xmlns="http://www.tei-c.org/ns/Examples"> 24<hi rend="superscript"
+                                >th</hi>
+                        </egXML>
+                    </p>
+                    <p> For abbreviations, tag both the abbreviated form and the expanded version.
+                        Note that if there is a punctuation mark that is part of the abbreviated
+                        word, it must be include in the <tag>abbr</tag> tag.</p>
+                    <p>Abbreviated and superscripted text, e.g. yr.: <egXML
+                            xmlns="http://www.tei-c.org/ns/Examples">
+                            <choice>
+                                <abbr>y<hi rend="superscript">r</hi>.</abbr>
+                                <expan>your</expan>
+                            </choice>
+                        </egXML> This allows us, when reproducing the letter, to display a verbatim
+                        'diplomatic' version and an 'edited and normalised' version, but does
+                        require an editorial decision as to the meaning of the abbreviation and more
+                        markup to be inserted. </p>
+                    <p>If you don't want to provide an expansion, eg for Mr or St., then don't tag
+                        as an abbreviation.</p>
+
+                    <p>For abbreviated newspaper title: <egXML
+                            xmlns="http://www.tei-c.org/ns/Examples">
+                            <choice>
+                                <abbr>D Mail</abbr>
+                                <expan>Daily Mail</expan>
+                            </choice>
+                        </egXML>
+                    </p>
+
+                    <div>
+                        <head>Ampersands and pluses</head>
+                        <p>We have taken an editorial decision that all plus symbols should be
+                            encoded as ampersands, as that is their meaning, rather than as a new
+                            glyph - while this would be more accurate to how the text originally
+                            appears, we are interested in meaning over appearance. Encode all
+                            ampersands and pluses like this: <egXML
+                                xmlns="http://www.tei-c.org/ns/Examples">&amp;</egXML>
+                        </p>
+                        <note>
+                            <p> Henniker’s horizontal ampersand should be recorded as an ampersand
+                                as usual.</p>
+                            <p>When &amp;c is used to indicate 'etc', you can tag it as an
+                                abbreviation with expansion: <egXML
+                                    xmlns="http://www.tei-c.org/ns/Examples">
+                                    <choice>
+                                        <abbr>&amp;c</abbr>
+                                        <expan>etc.</expan>
+                                    </choice>
+                                </egXML>
+                            </p>
+                        </note>
+                    </div>
+                </div>
+                <div xml:id="add-del-sub">
+                    <head>Additions/Deletions/Substitutions</head>
+                    <p>When you as editor are noting an error or an ambiguity, you can offer a
+                        correction to the text, using <tag>sic</tag> and <tag>corr</tag>. <egXML
+                            xmlns="http://www.tei-c.org/ns/Examples"> to present life
+                                    <choice><sic>asa</sic><corr>as a</corr></choice> gilded puppet
+                        </egXML>
+                    </p>
+                    <p>When showing a word added by the <hi rend="bold">author</hi> (as opposed to
+                        by you the editor, as above), use <tag>add</tag>. You must include the place
+                        attribute and fill it in with the relevant direction. <egXML
+                            xmlns="http://www.tei-c.org/ns/Examples">
+                            <add place="above">still</add>
+                        </egXML>
+                    </p>
+                    <p>When a word/letter has been substituted, use <tag>del</tag> and
+                            <tag>add</tag>. In the example below, here Henniker had written 23
+                        instead of 24, and has crossed out the 3 and written 4 above it: <egXML
+                            xmlns="http://www.tei-c.org/ns/Examples">
+                            <dateline>
+                                <date when="1920-10-24">Oct <hi rend="underline">2 <subst>
+                                            <del>3</del>
+                                            <add place="above">4</add>
+                                        </subst>th</hi> /20</date></dateline>
+                        </egXML></p>
+                    <p>When an addition is in a different hand to the rest of the text, use the
+                            <att>hand</att> attribute, and assign it the value of the person who
+                        wrote it: <egXML xmlns="http://www.tei-c.org/ns/Examples"> it is likely to
+                            be <add hand="#ps:FlorenceHenniker">very</add> sunny </egXML> When the
+                        addition is in a different hand but you do not know whose, there is no need
+                        to add the <att>hand</att> attribute. However, if you want to make explicit
+                        the fact that the hand is different, you can add <att>hand</att> with a
+                        value of "unknown". </p>
+                </div>
+                <div>
+                    <head>Gaps and Unclear Passages</head>
+                    <p>Where text is missing in your transcription for whatever reason, use the
+                            <tag>gap</tag> element. Note that gap is an empty element so does not contain text. If you can read the text but aren't certain, use <tag>unclear</tag> instead. <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                            <gap extent="several lines" reason="tear"/>
+                        </egXML>
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                            <gap extent="3 characters" reason="illegible"/>
+                        </egXML> The attribute <att>extent</att> indicates how much you think is
+                        missing - try to keep this brief, the <att>reason</att> indicates what
+                        prevented the text from being transcribed.</p>
+                    <p>The <tag>unclear</tag> element can indicate passages where there is
+                        uncertainty or doubt about a reading - use this when you have a rough idea
+                        of what the text reads but aren't certain, meaning that this should not be
+                        used as an empty element. <!--<egXML xmlns="http://www.tei-c.org/ns/Examples">
+                            <unclear reason="overwriting"/>
+                        </egXML>-->
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                            <unclear reason="illegible">example words</unclear>
+                        </egXML>
+                    </p>
+                </div>
+
+                <div>
+                    <head>Contemporary notes on the letters</head>
+
+                    <div>
+                        <head>Authorial additions</head>
+                        <p>The element <![CDATA[<add>]]> is used for words inserted into the body of
+                            the text, typically as an amendment by the author. For authorial
+                            annotations, see section above on <ref target="#add-del-sub"
+                                >Additions/Deletions/Substitutions</ref>.</p>
+                    </div>
+
+                    <div>
+                        <head>Library marks</head>
+                        <p>Notes that are made by later librarians are transcribed in the TEI
+                            header. See the relevant section on <ref target="#physDesc">library
+                                marks</ref></p>
+                    </div>
+
+                    <div>
+                        <head>Notes</head>
+                        <p>Notes that are not either library marks or authorial additions to the
+                            main text should be recorded within a <tag>note</tag> element. You need
+                            to consider two things: <list>
+                                <item n="1">Material and colour</item>
+                                <item n="2">Note author</item>
+                            </list>
+                        </p>
+                    </div>
+
+                    <div>
+                        <head>Material and colour</head>
+                        <p>A <att>rend</att> attribute should be used to describe the material and
+                            the colour.</p>
+                        <p>For example: <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                <note rend="pencil red">amended</note>
+                            </egXML>
+                        </p>
+                        <p>Writing the material and the colour as separate entries, separated by a
+                            space, will allow us to search them more easily.</p>
+                        <p>Keep a list of all rend properties used here, so they can be reused in
+                            future. We'll need to standardize these: <lb/><att>rend</att> = pencil redpencil red-pencil redink typeset<lb/>
+                            <!--To do xxxx: Standardise list of rend values - and separate them as above -
+                                e.g. rend="red ink", rend="pencil red"-->
+                            <lb/>
+                        </p>
+                    </div>
+
+                    <div>
+                        <head>Note author</head>
+                        <p>A <att>hand</att> attribute can be used if the author of the note is
+                            different to the main author, and if you know who it is.</p>
+                        <p>The value of the <att>hand</att> attribute should be the person reference
+                            of the author, e.g. "#ps:TH" for Thomas Hardy. If you do not know who
+                            has written the note, you don't need to record the <att>hand</att>
+                            attribute. However, if you want to make explicit the fact that the hand
+                            is different (and rend does not make this clear enough), you can add
+                            hand with a value of "unknown".</p>
+                        <p>For example: <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                <note rend="pencil red" hand="#ps:TH">amended</note>
+                            </egXML>
+                        </p>
+                    </div>
+                </div>
+
+                <div>
+                    <head xml:id="names">Works, People and Places in the Letters</head>
+                    <div>
+                        <head>File formats and locations</head>
+                        <p>The <ident>metadata/people.xml</ident> and
+                                <ident>metadata/places.xml</ident> files record the details of those
+                            people and places mentioned in the letters. These files have their own
+                            format, and their own schemas, to keep the entries standardised. Please
+                            see the '<ref target="#metadata">Recording metadata in separate
+                                files</ref>' section for information on how to encode the
+                            information in these files.</p>
+                        <p>A bibliography file is currently under discussion.</p>
+                        <!--<head>Recording details of people (prosopography)</head>
+                            <p>Organisations (e.g. businesses, societies, colleges) should be placed in
+                            <ident>metadata/people.xml</ident> below the main person entries.</p>-->
+                        <!--Should organisations be placed in people.xml or places.xml? Placing in people.xml contradicts the advice below. -->
+                    </div>
+                    <div>
+                        <head>Works</head>
+                        <p>For the title of a novel, e.g. “Woodlanders”: <egXML
+                                xmlns="http://www.tei-c.org/ns/Examples"> "<ref
+                                    target="#bib:Hardy1887_Woodlanders">Woodlanders</ref>" </egXML>
+                            Note: Put Henniker’s quotation marks outside of the <tag>ref</tag> tags. </p>
+
+                        <p>For the title of a poem, e.g. "Shelley's Skylark", do similarly: <egXML
+                                xmlns="http://www.tei-c.org/ns/Examples">
+                                <p>... "<ref target="#bib:Hardy1887_ShelleysSkylark">Shelley's
+                                        Skylark</ref>"... </p>
+                            </egXML>
+                        </p>
+                        <p>For quoted lines of poetry:
+                            <!--Note: Put quoted lines of poetry in a <tag>q</tag> element. --></p>
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                            <q><l>And every spirit upon earth</l>
+                                <l>Seemed fervourless as I.</l></q>
+                        </egXML>
+                    </div>
+
+                    <div>
+                        <head>Names and references for people and fictional characters</head>
+                        <p>Both real and fictional people are encoded in the same way in the main
+                            text. The differences between the two types will instead be recorded in
+                            the <ref target="#metadata-eg-kitty"
+                                ><ident>metadata/people.xml</ident></ref> document.</p>
+
+                        <p>For real people's names, e.g. Kitty: <egXML
+                                xmlns="http://www.tei-c.org/ns/Examples" xml:id="people-eg-kitty">
+                                <persName ref="#ps:KateHardy">Kitty</persName>
+                            </egXML> Don't forget to also <ref target="#metadata-eg-kitty">add a
+                                reference to the <ident>metadata/people.xml</ident></ref> file. </p>
+
+
+                        <p>Fictional characters' names are recorded in exactly the same way in the
+                            main text. For example, Angel Clare: <egXML
+                                xmlns="http://www.tei-c.org/ns/Examples" xml:id="people-eg-angel">
+                                <persName ref="#ps:AngelClare">Angel Clare</persName>
+                            </egXML> Don't forget to also <ref target="#metadata-eg-angel">add a
+                                reference to the <ident>metadata/people.xml</ident></ref> file (and
+                            this is where the fictional encoding will be added). </p>
+
+                    </div>
+
+                    <div>
+                        <head>Organisations as people groups</head>
+                        <p>For entries that are organisations (e.g. Boston Conservatory), use
+                                <tag>orgName</tag>: <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                <orgName ref="#ps:BostonConservatory">Boston Conservatory</orgName>
+                            </egXML> Don't forget to add the reference to the
+                                <ident>metadata/people.xml</ident> file, with an <att>xml:id</att>
+                            using the same string without the '#ps:' prefix.</p>
+                    </div>
+                    <div xml:id="places">
+                        <head>Place names and place references</head>
+
+                        <div>
+                            <head>How to mark up a place</head>
+                            <p>Mark up a place reference in the text by using the <hi rend="bold"
+                                    ><![CDATA[<placeName>]]></hi> element. </p>
+                            <p>When you tag a place in a letter, check the places.xml file to see if
+                                it has an entry. If it does already, take the xml:id for that place,
+                                and add it to the <att>ref</att> for the marked-up place in your
+                                letter, remembering to prefix it with "#pl:". If it doesn't have an
+                                entry, you need to create one, then use the new xml:id in your
+                                letter. See <ref target="#metadata-places">metadata/places.xml
+                                    section</ref>. <egXML xmlns="http://www.tei-c.org/ns/Examples"
+                                        ><placeName ref="#pl:DorsetWimborne"
+                                    >Wimborne</placeName></egXML></p>
+                            <p>Mark up fictional places as you would real places, in the body of the
+                                letter. They are identified as fictional in the separate places.xml
+                                file only.</p>
+                        </div>
+
+                        <div>
+                            <head>When not to mark up a place</head>
+                            <p>The encoding of places will allow us to catalogue the places referred
+                                to in Hardy's letters. Accordingly, you should not encode places
+                                mentioned in library marks, such as Dorchester in a Dorchester
+                                County Museum stamp.</p>
+                            <p>For addresses/envelopes, only mark up place references in the
+                                correspAction section in the TEI header, see <ref
+                                    target="#correspDesc">correspDesc</ref>. This standardized
+                                information on where letters are sent to and from belongs in the TEI
+                                header, as it is 'metadata' on the letter, different from passing
+                                references to places in the text.</p>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+                <div>
+                    <head>Addresses, printed letterheads, postscripts, envelopes </head>
+
+                    <div>
+                        <head>Addresses and printed letterheads</head>
+                        <p>We want to distinguish between printed letterheads that contain
+                            addresses, and addresses that are handwritten or typed as part of the
+                            letter itself. Transcribe addresses as follows, in the <tag>opener</tag>
+                            or <tag>closer</tag>, depending on where it appears on the letter.</p>
+                        <p>For addresses that are added by the letter's author: <egXML
+                                xmlns="http://www.tei-c.org/ns/Examples">
+                                <opener>
+                                    <address>
+                                        <addrLine>The Anchorage</addrLine>
+                                        <addrLine>Pevensey Bay</addrLine>
+                                        <addrLine>Sussex</addrLine>
+                                    </address></opener>
+                            </egXML>
+                        </p>
+                        <p>For addresses that are printed as part of a set letterhead, add
+                                <att>rend</att> = "letterhead". I don't think we need to describe any graphics in the printed letterhead; instead you can describe this in the header (in supportDesc). (TO CONFIRM) <egXML
+                                xmlns="http://www.tei-c.org/ns/Examples">
+                                <opener><address rend="letterhead">
+                                        <addrLine>The Royal Hotel</addrLine>
+                                        <addrLine>Weymouth</addrLine>
+                                        <addrLine>TELEPHONE No. 262</addrLine>
+                                    </address>
+                                    <!--<figure rend="letterhead">
+                                        <figDesc>Top left corner. A printed black image of a lion
+                                            lying in profile, facing left.</figDesc>
+                                    </figure>-->
+                                </opener></egXML> If a printed letterhead has been edited, add a
+                                <tag>del</tag> and the handwritten
+                            addition in <gi>add</gi>: <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                <address rend="letterhead">
+                                    <addrLine>The Royal Hotel</addrLine>
+                                    <addrLine><del>Weymouth</del><add>Devon</add></addrLine>
+                                    <addrLine>TELEPHONE No. 262</addrLine>
+                                </address>
+                            </egXML></p>
+                        <p>If the letterhead appears on another page, you may repeat the same markup
+                            to represent it. </p>
+                        <p>For addresses that are written on the top of the letter but refer to the
+                            recipient rather than the sender, add this information in a
+                                <att>rend</att> tag so that they can be displayed differently <egXML
+                                xmlns="http://www.tei-c.org/ns/Examples">
+                                <opener><address rend="recipient">
+                                        <addrLine>Thomas Hardy</addrLine>
+                                        <addrLine>Max Gate</addrLine>
+                                    </address>
+                                </opener>
+                            </egXML>
+                        </p>
+                        <p>If there are multiple addresses given, encode them in multiple
+                                <tag>address</tag> elements.</p>
+                    </div>
+                    <div>
+                        <head>Postscripts</head>
+                        <p><egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                <postscript> P.S.
+                                                <p><choice><abbr>affec.</abbr><expan>affectionate</expan></choice>
+                                        greeting to Wessex!</p>
+                                </postscript>
+                            </egXML> Note: Even if the letter writer doesn't necessarily label this
+                            as a <tag>postscript</tag>, you can mark it up as one if you think it
+                            fits the description.</p>
+                    </div>
+
+                    <div>
+                        <head>Envelopes</head>
+                        <p>Original envelopes should be marked up at the end of the document (after
+                            the main <tag>body</tag> and after the <tag>div</tag> for the letter) in
+                            the back matter: <tag>back</tag>, with a <att>type</att> of "envelope".
+                                <hi rend="bold">For consistency, all original envelopes should be
+                                marked up as backmatter, even if they appear first in the sequence
+                                of images.</hi> If there is an archival envelope that was not part
+                            of the original letter, do not transcribe it. Instead, add a brief
+                            description in the <ref target="#physDesc">supportDesc</ref>. </p>
+                        <p>Add only transcribed text here: any postage stamps should be added to the
+                            TEI header, as descriptive metadata. See <ref target="#physDesc"
+                                >supportDesc</ref>
+                        </p>
+                        <p>If there is an address, mark it up as <tag>address</tag> with
+                                <tag>addrLines</tag>. (Note that to validate without being in
+                            another <tag>opener</tag>, these must be within a <tag>p</tag> tag.)
+                                <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                <back>
+                                    <div type="envelope">
+
+                                        <note rend="pencil">July 11 (1914) see postmark on back of
+                                            envelope</note>
+                                        <p>
+                                            <address>
+                                                <addrLine>Thomas Hardy Esq O.M.</addrLine>
+                                                <addrLine>Maxgate</addrLine>
+                                                <addLine>Dorchester</addLine>
+                                            </address>
+                                        </p>
+                                    </div>
+                                </back>
+                            </egXML></p>
+                    </div>
+
+                </div>
+                <div>
+                    <head>Enclosures</head>
+                    <p>Encode within the <![CDATA[<back>]]> tag for backmatter, after the end of the
+                        <![CDATA[<body>]]> tag. Within this, encode within a
+                        <![CDATA[div type="enclosures"]]>, and add a separate <![CDATA[<div>]]> with
+                        relevant <att>type</att> for each separate enclosure. </p>
+                    <p>Note that we may need to change our numbering system so that it doesn't clash
+                        with the milestone numbering system. </p>
+                    <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                        <back>
+                            <div type="enclosure">
+                                <head>Martha Brown. Told by Jim Lane.</head>
+                                <p>John Brown was a tranter, [etc.]</p>
+                            </div>
+                        </back>
+                    </egXML>
+                    <!--@todo Should the n value also have the H-number? e.g. H.838b-->
+                </div>
+                <div>
+                    <head>Unusual structures</head>
+                    <div>
+                        <head>Multiple letters</head>
+                        <p>If there are multiple letters in the same entry, encode each in separate
+                            <![CDATA[<div>]]>s</p>
+                    </div>
+                    <div>
+                        <head>Pencil-draft replies</head>
+                        <p>Occasionally, you will come across replies drafted in pencil by Hardy.
+                            Mark these up in a separate div after the end of the main letter, as:
+                                <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                <div type="reply" hand="#TH">...</div>
+                            </egXML>
+                        </p>
+                    </div>
+                </div>
+
+                <div xml:id="changes-of-handwriting">
+                    <head>Changes of handwriting</head>
+                    <p>When the handwriting changes, you have two different options depending on the
+                        context. If it is a contemporary addition to the body of the text (e.g.
+                        adding a word in a sentence), use the <tag>add</tag>. If it is a
+                        contemporary annotation on the letter (such as a comment or a note of the
+                        date or the sender), use <tag>note</tag>. </p>
+                    <p>For both of these, use the <att>hand</att> attribute to assign the value of
+                        the person who wrote it. If it is clear who wrote it, use the person
+                        reference, e.g "#ps:TH" for Thomas Hardy. If you do not know who wrote it,
+                        you do not need to add the <att>hand</att> attribute.</p>
+
+                    <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                        <note hand="#ps:TH">Professor Bury</note>
+                        <dateline><date when-iso="1911-05-30">May 30 1911</date></dateline>
+                        <note hand="#ps:TH">Cambridge</note>
+                    </egXML>
+                </div>
+                <div>
+                    <head>Text not written in order/sideways writing</head>
+                    <div>
+                        <head>Sideways writing</head>
+                        <p>For standalone text that is written at an angle, use, <![CDATA[@style="transform: rotateZ(-40deg)">...</style>]]>
+                            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                <ab style="transform:rotateZ(-40deg)">TELEPHONE 3924 GERRARD</ab>
+                            </egXML>
+                            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                <note style="transform:rotateZ(-90deg)">Hon. Mrs Henniker</note>
+                            </egXML>
+                        </p>
+                        <p>The axis is positioned relative to the element being rotated, and by
+                            default, it is the point at the centre of the element. So if the text is
+                            rotated counter-clockwise relative to the default angle of the rest of
+                            the text, the value will be negative, and if it is rotated clockwise,
+                            the value will be positive.</p>
+                        <p>Angles do not have to be exact - just give your best guess.</p>
+                        <p>Remember, if the sideways writing is written in a new hand, use
+                            <![CDATA[ <add>]]> or <![CDATA[ <note>]]> as appropriate. See the
+                            section on <ref target="#changes-of-handwriting">changes of
+                                handwriting</ref> above for more information. </p>
+                    </div>
+                    <div>
+                        <head>Text that is out of order</head>
+                        <list>
+                            <head>Quick checklist</head>
+                            <item n="1">Add a milestone where the text appears in the original
+                                letter, with an xml:id of m01, m02 etc.</item>
+                            <item n="2">Transcribe text and: <list>
+                                    <item n="1">Give it an <att>xml:id</att> with a value of the
+                                        H.number and a, b, or c etc.</item>
+                                    <item n="2">Give it a <att>corresp</att> with the value matching
+                                        the xml:id of the milestone; so m01, m02, etc.</item>
+                                    <item n="3">(Optional): add the <att>style</att> attribute if
+                                        the writing is at an angle</item>
+                                </list>
+                            </item>
+
+                        </list>
+                        <p>Sometimes text is written out of the main flow of the letter, for example
+                            in the margin of an earlier page because it doesn't fit. Sometimes this
+                            out-of-order text will also be written sideways (e.g. part of a
+                            paragraph that starts on page 4 and then continues written sideways in
+                            the space on page 1). </p>
+                        <p> We have made an editorial decision to encode the letters <emph>in
+                                reading order</emph> rather than in the order they appear in on the
+                            page. This means that we may sometimes need to encode text on a
+                            different page and in a different place from its original location. For
+                            instance, the last paragraph of the letter and the signature may
+                            actually appear on the first page, written upside-down or sideways in
+                            any available space.</p>
+                        <p><hi rend="bold">Step one: add a milestone</hi></p>
+                        <p>To encode this in reading order, add a <ident>milestone</ident> element
+                            at the point where the text appears in the original written letter, and
+                            give it an <ident>xml:id</ident> in the following format: <!-- Should the xml:ids include the H-number at the beginning, before the 'm'? -->
+                            <egXML xmlns="http://www.tei-c.org/ns/Examples">...will thank me for
+                                putting it this way!) <milestone xml:id="m01" unit="section"/>I
+                                fancy from the brightness of your letter... </egXML>
+                            <egXML xmlns="http://www.tei-c.org/ns/Examples"> ...I love the
+                                Woodlanders best of all your books. The Return of the Native - 2nd
+                                -/ <milestone xml:id="m03" unit="section"/>... </egXML> This marks
+                            the place where the text appeared in the original written letter.</p>
+                        <p><hi rend="bold">Step two: transcribe text and give it an xml:id and a
+                                corresp (with the corresp relating to the xml:id of the
+                                milestone)</hi></p>
+                        <p>Next, transcribe the text where it would appear in <emph>reading</emph>
+                            order. Give your segment (which could be a <tag>p</tag> tag, another
+                            structural element like <tag>closer</tag>, or an <tag>ab</tag> tag
+                            within a <tag>seg</tag> if it's after the <tag>closer</tag> of the
+                            letter) an <hi rend="bold">xml:id</hi> of its own, in the format h3176a,
+                            h3176b, h3176c, etc.</p>
+                        <p>To link it to the place where it originally appears <emph>in the physical
+                                letter</emph>, add the <hi rend="bold"><att>corresp</att></hi>
+                            attribute to the surrounding element. Give the <att>corresp</att>
+                            attribute a value matching the corresponding <att>xml:id</att> from the
+                            earlier milestone, and start it with a '#' symbol to indicate that it is
+                            looking for an xml:id. </p>
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                            <p xml:id="h3166a" corresp="#m01">I had nearly forgotten to say that
+                                    <persName ref="#ps:FlorenceHardy">
+                                    <choice><abbr>F.</abbr>
+                                        <expan>Florence</expan></choice></persName> had a letter in
+                                last Friday’s Times (Dec. 16).</p>
+                        </egXML>
+
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                            <closer xml:id="h838c" corresp="#m03">
+                                <signed><persName ref="#ps:CharlotteLBaker">Charlotte Logier
+                                        Baker</persName></signed>
+                            </closer>
+                        </egXML>
+
+                        <!--<egXML xmlns="http://www.tei-c.org/ns/Examples">
+                            <p xml:id="h3176a" corresp="#m01">- I love your prefaces - especially
+                                this: "The place is preeminently the region of dream and mystery</p>
+                        </egXML>-->
+                        <p>Number any further milestones in this format (m01, m02, m03 etc.). </p>
+                        <p><hi rend="bold">Step three (optional): add the style attribute if the
+                                writing is at an angle</hi></p>
+                        <p>Lastly, if the writing is at an angle, don't forget to add the
+                                <att>style</att> attribute, to indicate what angle the writing is
+                            at: <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                <p xml:id="h3176a" corresp="#m01" style="transform:rotateZ(180deg)"
+                                    >- I love your prefaces - especially this: "The place is
+                                    preeminently the region of dream and mystery"</p>
+                            </egXML>
+                            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                <p xml:id="h3166a" corresp="#m01" style="transform:rotateZ(180deg)"
+                                    >I had nearly forgotten to say that <persName
+                                        ref="#ps:FlorenceHardy">
+                                        <choice><abbr>F.</abbr>
+                                            <expan>Florence</expan></choice></persName> had a letter
+                                    in last Friday’s Times (Dec. 16).</p>
+                            </egXML>
+                        </p>
+                        <p>Sometimes there is content written after the closer of a letter. This
+                            won't validate if in a regular <tag>p</tag> tag, so instead use an
+                                <tag>ab</tag> tag within a <tag>seg</tag>. Alternatively, you can
+                            encode it in a postscript tag (see section above). <egXML
+                                xmlns="http://www.tei-c.org/ns/Examples">
+                                <ab>
+                                    <seg xml:id="h3175a" corresp="m01"
+                                        style="text-orientation: sideways-left">politician in old
+                                        days, that he is now, very sensibly, reading your books. I
+                                        know he will</seg>
+                                </ab>
+                            </egXML>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div>
+                <head>TEI header: Recording metadata in the same file</head>
+                <p>The <![CDATA[teiHeader]]> element contains metadata relating to that letter. Here
+                    you will record things like the author of the letter, its ID number, where it
+                    was sent from and to, and who is responsible for each different role of the
+                    encoding. You can also describe material features here.</p>
+                <div xml:id="physDesc">
+                    <head>physDesc and library marks, stamps, postmarks</head>
+                    <p>Use the supportDesc within physDesc to provide information about the material
+                        features of the letter, i.e. that which doesn't form part of the semantic
+                        content of the written epistle. </p>
+                    <p>Ensure that information given in the supportDesc is provided in proper
+                        sentences, and tag details within, as in the examples below.</p>
+                    <p>First paragraph: Describe <hi rend="bold">materials and watermark</hi> (if
+                        relevant) as follows. If there are original page numbers in the document,
+                        add <tag>p</tag> tag and a sentence within <tag>support</tag> that says
+                        "There are original page numbers", or something to this effect: <egXML
+                            xmlns="http://www.tei-c.org/ns/Examples">
+                            <support><p> There are original page numbers. <material>Folded white
+                                        paper</material> with <watermark>anchor</watermark>
+                                    watermark.</p></support>
+                        </egXML>
+                    </p>
+                    <p>Second paragraph: Describe any <hi rend="bold">library marks</hi> as follows.
+                        Note that these are separate from authorial additions or contemporary
+                        annotations. <egXML xmlns="http://www.tei-c.org/ns/Examples"><p>Pencil
+                                library marks on page 3: <note type="libraryMark">D.C.M H / 1947 .
+                                    37 . 25</note>
+                                <stamp type="libraryMark">Dorset County Museum</stamp>
+                                <note type="libraryMark">How. Bliss bequest.</note></p></egXML></p>
+                    <p>Third paragraph: Describe post-related <hi rend="bold">stamps or
+                        figures</hi>; describe any printed letterhead figures here too. See that postage stamps are described with <att>type</att>
+                        'postage' and inked postal marks with <att>type</att> 'postmark'. Transcribe
+                        any textual content in <tag>mentioned</tag> element. <egXML
+                            xmlns="http://www.tei-c.org/ns/Examples"><p>Envelope bearing the
+                                following marks: <stamp type="postage">Two halfpenny green King
+                                    George V stamps side-by-side.</stamp>
+                                <stamp type="postmark">Two circular marks side-by-side specifying
+                                        <mentioned>SEVENOAKS 3.37PM NO 20</mentioned></stamp>.
+                                        <figure><figDesc>A rectangular white address label stuck to
+                                        envelope, with decorative black border and four horizontal
+                                        red lines. <mentioned>WITH CARE.</mentioned> in red type at
+                                        top-centre of border.</figDesc>
+                                </figure></p>
+                            <p>In the letterhead at the top of the letter is a printed blue crest inscribed with 'Doe or Die'.
+                            </p></egXML></p>
+                </div>
+                <div>
+                    <head>physDesc and mourning borders</head>
+                    <p>Describe any mourning border by adding these <tag>decoDesc</tag> and
+                            <tag>decoNote</tag> elements beneath the <tag>physDesc</tag>. Remove the
+                        elements entirely if there is no border. <egXML
+                            xmlns="http://www.tei-c.org/ns/Examples"><decoDesc>
+                                <decoNote type="mourningBorder">
+                                    <p>Black border on pages 1 and 3.</p>
+                                </decoNote>
+                            </decoDesc></egXML></p>
+                </div>
+                <div>
+                    <head>physDesc and seals</head>
+                    <p>Describe any seals by adding these <tag>sealDesc</tag> and <tag>seal</tag>
+                        elements beneath the <tag>physDesc</tag>. Remove the elements entirely if
+                        there is no seal. <egXML xmlns="http://www.tei-c.org/ns/Examples"><sealDesc>
+                                <seal>
+                                    <p>Round seal in black wax.</p>
+                                </seal>
+                            </sealDesc></egXML></p>
+                </div>
+                <div xml:id="correspDesc">
+                    <head>correspDesc</head>
+                    <p> The <![CDATA[correspDesc]]> element in the <![CDATA[teiHeader]]> is designed
+                        for recording metadata in a standardised way, regardless of the way this
+                        information appears within the actual written pages of the letters. For
+                        example, an address might appear on the page of the letter itself, which you
+                        would record as it appears within the <![CDATA[ <body>]]>. However, you
+                        would then pick out the relevant location when recording the metadata as
+                        part of the teiHeader in the <![CDATA[correspDesc]]>, and record it under
+                        the <![CDATA[ <placeName>]]> element. </p>
+                    <p>For example, this: <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                            <body>
+                                <opener>
+                                    <address rend="letterhead">
+                                        <addrLine>The Avenue,</addrLine>
+                                        <addrLine>Wimborne, Dorset</addrLine>
+                                    </address>
+                                    <dateline>
+                                        <date when="1882-03-21">March 21 . 1882</date>
+                                    </dateline>
+                                    <salute>Sir,</salute>
+                                </opener>
+                            </body>
+                        </egXML> ...becomes this in the TEI header: <egXML
+                            xmlns="http://www.tei-c.org/ns/Examples">
+                            <teiHeader>
+                                <correspDesc>
+                                    <correspAction type="sent">
+                                        <persName ref="#ps:TH">Thomas Hardy</persName>
+                                        <placeName ref="#pl:TheAvenue">The Avenue</placeName>
+                                        <date when="1882-03-21"/>
+                                    </correspAction>
+                                </correspDesc>
+                            </teiHeader>
+                        </egXML> The data has been summarised and normalised in the
+                        <![CDATA[correspDesc]]>. </p>
+                </div>
+                <div>
+                    <!-- come back to this xxxx -->
+                    <head>Unknown people</head>
+                    <p>For any people whose names are unknown, use the xml:id value "unknown".
+                            <egXML xmlns="http://www.tei-c.org/ns/Examples"
+                            xml:id="intext-unknown-people">
+                            <correspAction type="sent">
+                                <persName ref="#ps:unknown">Unknown</persName>
+                            </correspAction>
+                            <correspAction type="received">
+                                <persName ref="#ps:unknown">Unknown</persName>
+                            </correspAction>
+                        </egXML>
+                    </p>
+                </div>
+            </div>
+            <div>
+                <head xml:id="metadata">Recording metadata in separate files</head>
+                <div>
+                    <p>When marking up people and places that have not been encountered previously,
+                        you will need to create a new entry in the people.xml or places.xml. If they
+                        already have an entry in these separate files, simply find it and use its
+                        xml:id in the <tag>personName</tag> or <tag>placeName</tag> tag, as
+                        explained above.</p>
+                    <!--<head>Quickreference people and places</head>
+                    <p>If you already know how to mark up people and places in the metadata, use the
+                        tables below as a quickreference guide for how to structure each individual
+                        entry. Otherwise, please read the following sections on <ref
+                            target="#metadata-people">people</ref> and <ref
+                            target="#metadata-places">places</ref>.</p>-->
+
+                    <!--<div>
+                        <head>Quickreference examples: people and places</head>
+                        <p>
+                            <table>
+                                <row>
+                                    <cell><hi rend="bold">Places</hi></cell>
+                                    <cell><hi rend="bold">People</hi></cell>
+                                </row>
+                                <row>
+
+                                    <cell>
+                                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                            <place type="town/country/street/etc." role="fictional">
+                                                <placeName role="default"/>
+                                            </place>
+                                        </egXML>
+                                    </cell>
+                                    <cell>
+                                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                            <person role="fictional">
+                                                <persName role="default"
+                                                  type="personal/pseudonym/etc."/>
+                                            </person>
+                                        </egXML>
+                                    </cell>
+                                </row>
+                            </table> Note: do not include 'role="fictional"' if person or place is
+                            real </p>
+                    </div>-->
+                </div>
+                <div>
+                    <head xml:id="metadata-people">metadata/people.xml</head>
+                    <p>Record details of the people marked up within the letters in the <hi
+                            rend="bold">people.xml file</hi>.</p>
+                    <p>Note: For information on initial marking-up <hi rend="italic">within the
+                            letters</hi>, please see the above section on <hi rend="bold"><ref
+                                target="#names">Names</ref></hi> instead – the following section is
+                        about how to record further details on them in the <ident>metadata</ident>. </p>
+
+
+                    <div>
+                        <head>Required details</head>
+                        <p>Whenever a new person is encoded in the letters, you must create a
+                            reference to them in the people.xml file, with the <att>xml:id</att>
+                            <ref target="#people-eg-kitty">matching the <att>ref</att> used in the
+                                main text</ref> (without the '#ps:' prefix)..</p>
+                        <p>When choosing <att>xml:id</att>s, use format ForenameSurname, excluding
+                            titles, unless you need to add them to disambiguate because you don't
+                            know the full name.</p>
+
+                        <div>
+                            <head xml:id="metadata-eg-kitty">persNames</head>
+                            <p>Each person entry must also contain a <tag>persName</tag> element.
+                                This records details of the person's full name or names. People may
+                                have one name by which they are known, but they will also have a
+                                surname, and may also have maiden names, nicknames or titles. For
+                                each separate name by which somebody is known, use a new persName
+                                with a relevant <att>type</att>.</p>
+                            <p>Give the primary <tag>persName</tag> a <att>role</att> of
+                                "default":</p>
+                            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                <person xml:id="FlorenceHenniker">
+                                    <persName type="personal" role="default">
+                                        <forename>Florence</forename>
+                                        <surname>Henniker</surname>
+                                    </persName>
+                                    <persName type="maiden">
+                                        <forename>Florence</forename>
+                                        <surname>Milnes</surname>
+                                    </persName>
+                                    <persName type="title">
+                                        <roleName>Lady</roleName>
+                                        <surname>Imaginary</surname>
+                                    </persName> [...] </person>
+                            </egXML>
+                        </div>
+                    </div>
+                    <div>
+                        <head>Further details</head>
+                        <p>Record the gender of the person, specifying F(female), M (male),
+                            O(other), U(unknown), N (not applicable), as follows, within the
+                                <tag>person</tag> tag: <egXML
+                                xmlns="http://www.tei-c.org/ns/Examples"><sex value="F"
+                            /></egXML></p>
+                        <p>The person and persName and sex elements are essential for the document
+                            to validate. Once you have these in place, then if you know more
+                            information about the person, you can add more detail to your entry.</p>
+                        <p>These can be included in any order, after the last <tag>persName</tag>
+                            element. For example:</p>
+                        <!--@todo - check structure of birth element - should it just contain a date, or is it fine for it to contain a placeName too?-->
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                            <occupation>Novelist</occupation>
+                            <note>Thomas Hardy's younger sister.</note>
+                            <birth when="1893-01-16">
+                                <placeName>Burra, South Australia, Australia</placeName>
+                            </birth>
+                            <death when="1923">1923</death>
+                        </egXML>
+                    </div>
+
+
+                    <div>
+                        <head xml:id="metadata-eg-angel">Fictional characters</head>
+                        <p>For fictional characters, a persName <att>role</att> of "fictional"
+                            should be added to the <tag>person</tag> element:</p>
+                        <!--<p>A reference should be added in the <ident>metadata/people.xml</ident>
+                                file, with an <att>xml:id</att>
+                                <ref target="#people-eg-angel">matching the <att>ref</att> used in the main
+                                    text</ref>, without the '#ps:' prefix, and with a persName
+                                <att>role</att> of "fictional":-->
+                        <!--</p>-->
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                            <person xml:id="AngelClare" role="fictional">
+                                <persName> [...] </persName> [...] </person>
+                        </egXML>
+                    </div>
+                    <div>
+                        <head>VIAF and Wikipedia sources</head>
+                        <p>If your person is relatively well-known, they may have an entry in the
+                            Virtual International Authority File, Library of Congress Name Authority
+                            File, WorldCat, International Standard Name Identifier, or on Wikipedia
+                            that you can link to.</p>
+                        <div>
+                            <head>VIAF, LOCNAF, WorldCat, and ISNI entries</head>
+                            <p>Add a <tag>listBibl</tag> tag with a <att>type</att> of "semantic" to
+                                your person entry, underneath the last <tag>persName</tag>
+                                entry.</p>
+                            <p>Within this, add a <tag>bibl</tag> element for each new type of entry
+                                (viaf, worldcat etc.). Give it a <att>type</att> attribute with the
+                                relevant type (see list below), and then give it an <att>n</att>
+                                attribute, with the value being the number reference to the relevant
+                                entry.</p>
+                            <p>See the examples below for more clarity:</p>
+                            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                <listBibl type="semantic">
+                                    <bibl type="viaf" n="54148778"/>
+                                    <bibl type="locnaf" n="n79046230"/>
+                                    <bibl type="worldcatident" n="lccn-n79-46230"/>
+                                    <bibl type="isni" n="0000 0001 2133 3830"/>
+                                </listBibl>
+                            </egXML>
+                        </div>
+                        <div>
+                            <head>Wikipedia entries</head>
+                            <p>Use the <tag>listBibl</tag> element to add a Wikipedia link to a
+                                    <tag>person</tag> entry. The <tag>bibl</tag>
+                                <att>type</att> should be "<hi rend="bold">wikipedia</hi>", and the
+                                    <att>n</att> attribute should be the <hi rend="bold">URL of the
+                                    Wikipedia entry</hi>.</p>
+                            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                <listBibl type="general">
+                                    <bibl type="wikipedia" n="Elizabeth_Martha_Brown"/>
+                                </listBibl>
+                            </egXML>
+                        </div>
+                        <div>
+                            <head>Other reputable web sources</head>
+                            <p>For reputable web sources other than Wikipedia or VIAF (e.g. a
+                                University website or the BBC) that you want to use as a source for
+                                information on a person in the people.xml file, these can be cited
+                                using a <att>type</att> of website and, rather than an <att>n</att>,
+                                use <att>ref</att>, as below: <egXML
+                                    xmlns="http://www.tei-c.org/ns/Examples">
+                                    <listBibl type="general">
+                                        <bibl type="website" ref="http://www.exeter.ac.uk"/>
+                                    </listBibl>
+                                </egXML>
+                            </p>
+                            <p>Note that for the Oxford Dictionary of National Biography, you can
+                                use the shortened stable URL provided at the top of the page, rather
+                                than the long URL address of the page.</p>
+                        </div>
+                        <div>
+                            <head xml:id="bibliographical-sources">Bibliographical sources</head>
+                            <p>If you want to refer to bibliographical sources within the entry for
+                                your person, you can add a <tag>listBibl</tag> with a
+                                    <att>type</att> of "academic". Within this, add a bibl with type
+                                "academic" too, and add an <att>n</att> attribute. The value of this
+                                'n' attribute should be prefixed with '#bib:', standing for
+                                'bibliography', and then the xml:id of the relevant file from the
+                                    <hi rend="bold">bibliography.xml</hi> metadata file. See the
+                                examples below:</p>
+                            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                <listBibl type="academic">
+                                    <bibl type="academic" n="#bib:HardyPinion1972"/>
+                                    <bibl type="academic" n="#bib:Purdy1944"/>
+                                    <bibl type="academic" n="#bib:Ebbatson1999"/>
+                                </listBibl>
+                            </egXML>
+                        </div>
+                    </div>
+
+                    <div>
+                        <!-- consider conflating to one unknown? xxxx -->
+                        <head>Unknowns</head>
+                        <p>For any people whose names are unknown, use the xml:id "unknown", adding
+                            a number to the end consecutively for each separate unknown person.</p>
+                        <p> Add an entry to the people.xml metadata file for each separate unknown
+                            person in the letters, and use the metadata file to see which numbers
+                            have already been used. <egXML xmlns="http://www.tei-c.org/ns/Examples"
+                                xml:id="metadata-unknown-people">
+                                <person xml:id="unknown1">
+                                    <persName type="personal" role="default"> Unknown </persName>
+                                    <note>Unknown person who wrote to Hardy about animal
+                                        rights</note>
+                                </person>
+                                <person xml:id="unknown2">
+                                    <persName type="personal" role="default"> Unknown </persName>
+                                    <note>Unknown person who wrote to Hardy about Tess of the
+                                        D'Urbervilles</note>
+                                </person>
+                            </egXML>
+                            <ref target="#intext-unknown-people">See above</ref> for how to encode
+                            unknown people within the letters. </p>
+                    </div>
+                </div>
+                <div>
+                    <head xml:id="metadata-places">metadata/places.xml</head>
+                    <p>Record details of the places mentioned in the letters in the
+                            <ident>places.xml file</ident>. (Please see the above section on <ref
+                            target="#places">Places</ref> for how to mark up names in the main text
+                        of the letters – this section is about how to record further details on them
+                        in the <ident>metadata</ident>.)</p>
+                    <div>
+                        <head xml:id="places-hierarchy">Place types and placeNames</head>
+                        <p>We have divided places into the following hierarchy, from largest to
+                            smallest, based on their definition:</p>
+                        <list>
+                            <item>Country or Territory</item>
+                            <item>County or State</item>
+                            <item>City, Town, or Village. Or Parish.</item>
+                            <item>Street</item>
+                            <item>Building</item>
+                        </list>
+                        <p>The category that your place falls into here will provide the
+                                <att>type</att> for the <tag>place</tag> element.</p>
+                        <p>The new place also needs a standardized <tag>placeName</tag>: as with
+                            people entries, give the primary place name a role of "default". <egXML
+                                xmlns="http://www.tei-c.org/ns/Examples"><place xml:id="England"
+                                    type="country">
+                                    <placeName role="default">England</placeName>
+                                </place></egXML>
+                        </p>
+
+                    </div>
+                    <!-- add example of fully encoded new location, then describe each element as separate part of workflow, below -->
+                    <div>
+                        <head>Fictional places</head>
+                        <p>Fictional places have a @role of 'fictional' added to the placeName:
+                                <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                <place xml:id="LittleHintock" type="village" role="fictional">
+                                    <placeName role="default">Little Hintock</placeName>
+                                </place>
+                            </egXML> The fictional place and its real counterpart should be encoded
+                            as separate entries in the places.xml file. If there is a real
+                            equivalent, add the real place name reference to the fictional place
+                            tag, in <att>corresp</att>. For example: <egXML
+                                xmlns="http://www.tei-c.org/ns/Examples">
+                                <place xml:id="Weatherbury" role="fictional" type="village"
+                                    corresp="#Puddletown">
+                                    <placeName role="default">Weatherbury</placeName>
+                                    <location>
+                                        <region ref="#Wessex"/>
+                                    </location>
+                                </place></egXML></p>
+                    </div>
+                    <div>
+                        <head>Assigning an id to places</head>
+                        <p>The <att>xml:id</att> should be the standard name for that place,
+                            capitalized, such as LittleHintock or England.</p>
+                        <p><hi rend="bold">Duplicate place names:</hi> If the new place shares its
+                            name with a place already recorded in the places.xml file, it gets a
+                            more detailed xml:id. Add the name of the location where the new place
+                            is located onto the end of the xml:id. For example, if Cambridge (in the
+                            UK) is already in the places file, and I come across a reference to
+                            Cambridge in Massachusetts, I give this new place a more detailed xml:id
+                            of "CambridgeMassachusetts". </p>
+
+                    </div>
+
+                    <div>
+                        <head>&lt;location&gt; element</head>
+                        <!--@todo: add information on encoding geocoordinates-->
+                        <p>The <tag>location</tag> tag describes the where the place is located.
+                            This is used to tie your <tag>place</tag> entry into the wider context
+                            of the hierarchy of places. The location tag contains two elements: one
+                            is geographical coordinates for your new place, the other references the
+                            name of the place where the new place is located, i.e. the wider
+                            location where the place can be found: think of this as the geographical
+                            context, or parent location, like 'France' for the new place
+                            'Paris'.</p>
+                        <!--<p> For example, when adding a new place entry for a building, the
+                            contextual place or parent in the location tag would be the street; for a street the
+                            contextual place would be the city/town/village; for a city/town/village
+                            this would be the county/state; and for a county/state this would be the
+                            country. Countries are the highest level in the hierarchy, and as such
+                            do not have a parent location.</p>-->
+                        <p>The contextual parent location will be added as one of three elements:
+                            either a country, region, or settlement, along with a reference to the
+                            xml:id name of that contextual place.</p>
+                        <p>See the table below to find the appropriate contextual element to add in
+                            the location tag:</p>
+                        <p>Note that if the place spans across two regions, for example Exmoor is in
+                            both Devon and Somerset, you can simply add two region elements in the
+                            location tag.</p>
+
+                        <table>
+                            <row>
+                                <cell><hi rend="bold">Your place <att>type</att>. </hi></cell>
+                                <cell><hi rend="bold">Contextual place in <tag>location</tag>
+                                        tag.</hi>
+                                </cell>
+                                <cell><hi rend="bold">Element for contextual place</hi>
+                                </cell>
+                                <cell><hi rend="bold">Example <att>ref</att> in contextual
+                                        element</hi></cell>
+                            </row>
+                            <row>
+                                <cell>country/territory</cell>
+                                <cell>we don't give countries contextual places. Usually territories
+                                    don't need a contextual country, however an editor can decide to
+                                    place a territory under a country in the hierarchy if
+                                    wanted.</cell>
+                                <cell>[no contextual place]</cell>
+                                <cell>[no id needed]</cell>
+                            </row>
+                            <row>
+                                <cell>county/state</cell>
+                                <cell>i.e. a county or state might be in England, which is defined
+                                    as a country</cell>
+                                <cell><egXML xmlns="http://www.tei-c.org/ns/Examples"
+                                        ><country/></egXML></cell>
+                                <cell><egXML xmlns="http://www.tei-c.org/ns/Examples">e.g.
+                                        ref="#England"</egXML></cell>
+                            </row>
+                            <row>
+                                <cell>city/town/village/parish</cell>
+                                <cell>i.e. a city/town/village might be in the county
+                                    Cambridgeshire, which is defined as a region</cell>
+                                <cell><egXML xmlns="http://www.tei-c.org/ns/Examples"
+                                        ><region/></egXML></cell>
+                                <cell><egXML xmlns="http://www.tei-c.org/ns/Examples">e.g.
+                                        ref="#Cambridgeshire"</egXML></cell>
+                            </row>
+                            <row>
+                                <cell>street</cell>
+                                <cell>i.e. a street is in a city or town or village, such as the
+                                    city of London, which is defined as a settlement</cell>
+                                <cell><egXML xmlns="http://www.tei-c.org/ns/Examples"
+                                        ><settlement/></egXML></cell>
+                                <cell><egXML xmlns="http://www.tei-c.org/ns/Examples">e.g.
+                                        ref="#London"</egXML></cell>
+                            </row>
+                            <row>
+                                <cell>building</cell>
+                                <cell><!--(Should building be straight within settlement, or should we add another entry for the street it's within first?) i.e. we usually want to say a building is located on a street, which is in turn within a settlement-->
+                                    i.e. we usually want to say a building is located within a
+                                    settlement</cell>
+                                <cell><egXML xmlns="http://www.tei-c.org/ns/Examples"
+                                        ><settlement/></egXML></cell>
+                                <cell><egXML xmlns="http://www.tei-c.org/ns/Examples">e.g.
+                                        ref="#London"</egXML></cell>
+                            </row>
+                        </table>
+                        <!--
+
+                        <p>Finally, you need to add a <att>ref</att> that gives the xml:id reference
+                            for the contextual place. Add this reference to the contextual place tag
+                            - i.e. country, region, settlement, or district, so that the new place
+                            is associated with its parent in the hierarchy of places.</p>-->
+
+                        <div>
+                            <head>&lt;location&gt; examples</head>
+                            <p>As earlier, here are some examples, this time with
+                                    <tag>location</tag> included: <egXML
+                                    xmlns="http://www.tei-c.org/ns/Examples">
+                                    <place xml:id="England" type="country">
+                                        <placeName role="default">England</placeName>
+                                        <location>
+                                            <!-- no contextual place needed -->
+                                            <geo>52.355500 -1.174300</geo>
+                                        </location>
+                                    </place>
+                                </egXML>
+                                <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                    <place xml:id="Dorset" type="county">
+                                        <placeName role="default">Dorset</placeName>
+                                        <location>
+                                            <country ref="#England"/>
+                                            <geo>50.833333 -2.333333</geo>
+                                        </location>
+                                    </place>
+                                </egXML>
+                                <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                    <place xml:id="Cambridge" type="city">
+                                        <placeName role="default">Cambridge</placeName>
+                                        <location>
+                                            <region ref="#Cambridgeshire"/>
+                                            <geo>52.208586 0.121883</geo>
+                                        </location>
+                                    </place>
+                                </egXML>
+                                <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                    <place xml:id="BondStreet" type="street">
+                                        <placeName role="default">Bond Street</placeName>
+                                        <location>
+                                            <settlement ref="#London"/>
+                                            <geo>51.509392 -0.141748</geo>
+                                        </location>
+                                    </place>
+                                </egXML>
+                                <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                    <place xml:id="MaxGate" type="building">
+                                        <placeName role="default">Max Gate</placeName>
+                                        <location>
+                                            <settlement ref="#Dorchester"/>
+                                            <geo>50.7079658 -2.4197747</geo>
+                                        </location>
+                                    </place>
+                                </egXML>
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+                <div>
+                    <head>Organisation name</head>
+                    <p>For an organisation name (e.g. Boston Conservatory), or any other entry that
+                        is both a place and an organisation, add within the <tag>listOrg</tag>
+                        element, and use <tag>orgName</tag>, with an xml:id <ref target="#places"
+                            >matching the one used in the main text</ref>, without the '#pl:'
+                        prefix: <!-- Change @type from building? -->
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                            <listOrg>
+                                <org xml:id="BostonConservatory" type="building">
+                                    <orgName type="default">Boston Conservatory</orgName>
+                                </org>
+                            </listOrg>
+                        </egXML>
+                        <!-- Revisit @type="default" in future - should be something else instead? -->
+                    </p>
+                </div>
+            </div>
+
+            <div>
+                <head>bibliography.xml and external links</head>
+                <p>Sometimes you might want to add in an external link to another resource, for
+                    example to written works referred to in the letters, or to add a reference to a
+                    published edition, such as a book of Hardy's poetry. However, for web resources,
+                    there is always the possibility that external sources could change their
+                    content, or could disappear altogether. Therefore, to preserve the relevant
+                    information, any external links added need to be kept track of in a
+                    bibliography, so that we have a record of their content even if they do vanish.
+                    For physical books, it is useful to record their publication information so that
+                    we can cite them properly, and readers can find them easily.</p>
+
+                <p>bibliography.xml can be found in the metadata folder. We are using a Harvard-like
+                    reference system:</p>
+
+                <div>
+                    <head>Web references</head>
+                    <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                        <listBibl type="press">
+                            <biblStruct xml:id="BBC2004ThomasHardyStourhead">
+                                <analytic>
+                                    <title level="a">Thomas Hardy at Stourhead</title>
+                                </analytic>
+                                <monogr>
+                                    <title level="s">BBC Where I Live: Wiltshire</title>
+                                    <imprint>
+                                        <date when="2004-03-10"/>
+                                    </imprint>
+                                </monogr>
+                                <ref type="url"
+                                    >http://www.bbc.co.uk/wiltshire/entertainment/days_out/thomas_hardy_stourhead.shtml</ref>
+                            </biblStruct>
+                        </listBibl>
+                    </egXML>
+                </div>
+                <div>
+                    <head>References to novels and published works</head>
+
+                    <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                        <head>Novels, Poems and Other Works by Thomas Hardy</head>
+                        <listBibl>
+                            <bibl xml:id="Hardy1872_GreenwoodTree">
+                                <author>Hardy, Thomas</author>
+                                <title level="m">Under the Greenwood Tree</title>
+                            </bibl>
+                        </listBibl>
+                    </egXML>
+
+                    <p>All <hi rend="bold">external links</hi> and <hi rend="bold">references to
+                            published works</hi> need to be added to the bibliography.</p>
+                    <p>You can then refer to items from the bibliography in your people or places
+                        entries - see the <ref target="#bibliographical-sources">section on
+                            bibliographical sources within the people.xml section</ref> of the
+                        guidelines. </p>
+                </div>
+            </div>
+            <!--<div>
+                <head>To add</head>
+                <list>
+                    <item>How to mark up marginal notes (e.g. in last page of first letter in
+                        H.4607)</item>
+                    <item>Add a standard markup guide for envelopes</item>
+                    <item>Standard way of marking up envelopes and contents still not agreed
+                        on.</item>
+                    <item>Add new way of marking up stamps once agreed on</item>
+                    <item>Add an example of how to cite one of Thomas Hardy's published works</item>
+                    <item>Expand on the bibliography section to explain it thoroughly. </item>
+                    <item>Add a section on how to add a poem/poetry to the bibliography, and how to
+                        quote it in the main text.</item>
+                    <item>Upside-down text</item>
+                </list>
+            </div>-->
+        </body>
+    </text>
+</TEI>

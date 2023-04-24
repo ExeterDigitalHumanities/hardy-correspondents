@@ -1,0 +1,194 @@
+<?xml-model href="../../schema/hardyletter.rng" type="application/xml" 
+   schematypens="http://relaxng.org/ns/structure/1.0"?><!--<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="dhe-hl-h.5508">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+
+            <title>Letter from Leslie Stephen to Thomas Hardy with suggested changes to the
+               serialisation of <ref target="#bib:Hardy1874_FarFromTheMaddingCrowd"><emph
+                     rend="italics">Far From the Madding Crowd</emph></ref>, 13 April 1874</title>
+            <author ref="#ps:LeslieStephen">Leslie Stephen</author>
+            <!--The editor of the tei file-->
+            <editor ref="#resp-HA">Helen Angear</editor>
+            <funder>Arts and Humanities Research Council</funder>
+            <sponsor>University of Exeter</sponsor>
+            <sponsor>Dorset County Museum</sponsor>
+            <principal>Angelique Richardson</principal>
+
+            <respStmt>
+               <persName ref="#resp:HA">Helen Angear</persName>
+               <resp>Selection</resp>
+               <resp>Proofreading</resp>
+
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:BM">Beth Mills</persName>
+               <resp>Transcription</resp>
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:HP">Hannah Petrie</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="#resp:EW">Elizabeth Williamson</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition, transcribed and edited directly from primary
+               sources</edition>
+         </editionStmt>
+         <publicationStmt>
+            <publisher>University of Exeter Digital Humanities Lab</publisher>
+            <pubPlace>Exeter, UK</pubPlace>
+            <date>November 2019</date>
+            <availability>
+               <p>The letter transcripts are licensed under a Creative Commons Attribution 4.0
+                  International License. This means that you can use these transcripts providing you
+                  acknowledge the Hardy's Correspondents project.</p>
+               <p>The letter images remain the copyright of Dorset Museum. Please contact the Museum
+                  if you would like to reuse any of the letter images.</p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <placeName ref="#pl:Dorchester">Dorchester</placeName>
+                  <institution>Dorset County Museum</institution>
+                  <idno type="DCM">H.5508</idno>
+                  <altIdentifier>
+                     <idno type="XXXX"><!-- optional - any other identifiers --></idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+
+                        <support>
+                           <p>Written on <material>cream paper</material>.</p>
+                           <p>Pencil library mark on page 2: <note type="libraryMark"
+                              >H.5508</note>.</p>
+                        </support>
+                        <condition>First page torn; roughly half of page missing</condition>
+                     </supportDesc>
+                  </objectDesc>
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Prepared as part of the AHRC/REACT Studentship on Thomas Hardy's letters, in
+               conjunction with Dorset County Museum.</p>
+         </projectDesc>
+
+      </encodingDesc>
+      <profileDesc>
+         <correspDesc>
+            <!-- Provides detailed correspondence-specific metadata, particularly concerning the communicative aspects 
+            (sending, receiving, forwarding etc.) associated with acts of correspondence. -->
+
+            <correspAction type="sent">
+               <!-- Structured description of the place, the name of a person/organisation and the date related to the sending/receiving of a message -->
+               <persName ref="#ps:LeslieStephen">Leslie Stephen</persName>
+
+               <!--Place sent from not specified; The Cornhill Magazine headquarters were at 15 Waterloo Place, as specified by Leslie Stephen in H.5506, but Stephen also wrote to Hardy from 8 Southwell Gardens (his home address?). All of the other letters from Stephen are from 8 Southwell Gardens. -->
+               <!--<placeName ref="#pl:WaterlooPlace15">The Cornhill Magazine, Smith Elder & Co, 15 Waterloo Place, London</placeName>-->
+               <placeName ref="#pl:SouthwellGardens8">8 Southwell Gardens, South Kensington, S.W.
+                  London</placeName>
+               <date when="1874-04-13">13 April 1874</date>
+            </correspAction>
+            <correspAction type="received">
+               <persName ref="#ps:TH">Thomas Hardy</persName>
+            </correspAction>
+
+         </correspDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="letter">
+            <pb n="1" facs="uoedh_hl_h.5508_1b.jpg"/>
+
+            <figure>
+               <figDesc>Centre, stamped in blue ink. Oval containing a bundle of corn sheaves above
+                  two crossed sickles, with THE CORNHILL MAGAZINE SMITH ELDER &amp; Co. running
+                  around inside of oval.</figDesc>
+            </figure>
+
+            <opener>
+               <address>
+                  <addrLine><!-- First line of address as written --></addrLine>
+                  <addrLine><!-- Second line of address as written --></addrLine>
+               </address>
+               <dateline>
+                  <date when="1874-04-13">13.4.74</date>
+               </dateline>
+               <salute>My dear Mr Hardy,</salute>
+            </opener>
+
+            <p>I have read the new instalments of the <ref
+                  target="#bib:Hardy1874_FarFromTheMaddingCrowd">Madding Crowd</ref> with great
+               pleasure - I think the story grows in interest &amp; is equally vigorous in
+               description. You need not be afraid of <gap reason="tearing"/></p>
+            <!--check if correct-->
+
+            <pb n="2" facs="uoedh_hl_h.5508_2.jpg"/>
+
+            <p> part of the story; <abbr>Wh.</abbr>, however, must be prefaced by the general remark
+               that <del>all</del> I object as editor, not as critic, ie. in the interest of a
+               stupid public, not from my own taste.</p>
+
+            <p>I think that the reference to the cause of <persName ref="#ps:FannyRobin"
+                  >Fanny</persName>'s death is unnecessarily emphasized. I should, I think, omit all
+               reference to it except just enough to indicate the true state of the case; &amp;
+               especially a conversation between your heroine &amp; her maid,
+                     <choice><abbr>wh.</abbr><expan>which</expan></choice> is a little unpleasant. I
+               have some doubts whether the baby is necessary at all &amp; whether it would not be
+               sufficient for <persName ref="#ps:BathshebaEverdene">Bathsheba</persName> to open the
+               coffin in order to identify the dead woman with the person she
+                  <unclear>meets</unclear> on the road. This is a point
+                     <choice><abbr>wh.</abbr><expan>which</expan></choice> you can consider. It
+               certainly rather injures the story,
+                     <del><choice><abbr>wh.</abbr><expan>which</expan></choice></del> &amp; perhaps
+               if the omission were made it might be restored on republication. But I am rather
+                  <unclear reason="illegible">necessarily</unclear> anxious to be on the safe side;
+               and should somehow be glad to omit the baby.</p>
+
+            <p>However, these changes can be easily made when the story is in type &amp; I shall
+               send it to the printers now; &amp; ask you to do what is necessary to the proofs.</p>
+
+            <!-- Pages 3 and 4 are in one  image -->
+            <pb n="3" facs="uoedh_hl_h.5508_3.jpg"/>
+
+            <p>
+               <damage agent="tearing"/>
+            </p>
+            <!-- No text on this page-->
+
+
+            <p style="transform:rotateZ(90deg)">We can talk about it when we meet. Meanwhile I am
+               more than satisfied in all other respects.</p>
+
+            <p style="transform:rotateZ(90deg)">I shall be very glad to see you when you come to
+               town. Can you dine with us on Friday the 24th at 1/4 to 8? If so, my wife bids me say
+               that she will be delighted to see you. You will find me at home any morning.</p>
+
+            <closer style="transform:rotateZ(90deg)">
+               <salute>Yours very truly</salute>
+               <signed>L. Stephen</signed>
+            </closer>
+
+
+         </div>
+      </body>
+   </text>
+</TEI>

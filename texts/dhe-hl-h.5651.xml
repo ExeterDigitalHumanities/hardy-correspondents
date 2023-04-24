@@ -1,0 +1,189 @@
+<?xml-model href="../../schema/hardyletter.rng" type="application/xml" 
+   schematypens="http://relaxng.org/ns/structure/1.0"?><!--<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="dhe-hl-h.5651">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Letter from William Tinsley to Thomas Hardy. Agreement for serialisation of <ref
+                  target="#bib:Hardy1873_PairOfBlueEyes"><emph rend="italics">A Pair of Blue
+                     Eyes</emph></ref>, 2 August 1872</title>
+            <author ref="#ps:WilliamTinsley">William Tinsley</author>
+            <!--The editor of the tei file-->
+            <editor ref="#resp-HA">Helen Angear</editor>
+            <funder>Arts and Humanities Research Council</funder>
+            <sponsor>University of Exeter</sponsor>
+            <sponsor>Dorset County Museum</sponsor>
+            <principal>Angelique Richardson</principal>
+
+            <respStmt>
+               <persName ref="#resp:HA">Helen Angear</persName>
+               <resp>Selection</resp>
+               <resp>Transcription</resp>
+
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:BM">Beth Mills</persName>
+               <resp>Proofreading</resp>
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:HP">Hannah Petrie</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="#resp:EW">Elizabeth Williamson</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition, transcribed and edited directly from primary
+               sources</edition>
+         </editionStmt>
+         <publicationStmt>
+            <publisher>University of Exeter Digital Humanities Lab</publisher>
+            <pubPlace>Exeter, UK</pubPlace>
+            <date>November 2019</date>
+            <availability>
+               <p>The letter transcripts are licensed under a Creative Commons Attribution 4.0
+                  International License. This means that you can use these transcripts providing you
+                  acknowledge the Hardy's Correspondents project.</p>
+               <p>The letter images remain the copyright of Dorset Museum. Please contact the Museum
+                  if you would like to reuse any of the letter images.</p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <placeName ref="#pl:Dorchester">Dorchester</placeName>
+                  <institution>Dorset County Museum</institution>
+                  <idno type="DCM">H.5651</idno>
+                  <altIdentifier>
+                     <idno type="XXXX"><!-- optional - any other identifiers --></idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Cream paper, folded.</p>
+                           <p>Pencil library marks on page 1: <note type="libraryMark"
+                                 >H.5651(a)</note> and envelope: <note type="libraryMark"
+                                 >H.5651(b)</note>. </p>
+                           <p>Envelope contains a <stamp type="postmark">postal mark specifying
+                                    <mentioned>LONDON PAID 1/2 JUL 2319</mentioned>
+                              </stamp>.</p>
+                        </support>
+                        <condition>Good</condition>
+
+                     </supportDesc>
+                  </objectDesc>
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Prepared as part of the AHRC/REACT Studentship on Thomas Hardy's letters, in
+               conjunction with Dorset County Museum.</p>
+         </projectDesc>
+
+      </encodingDesc>
+      <profileDesc>
+         <correspDesc>
+            <!-- Provides detailed correspondence-specific metadata, particularly concerning the communicative aspects 
+            (sending, receiving, forwarding etc.) associated with acts of correspondence. -->
+
+            <correspAction type="sent">
+               <persName ref="#ps:WilliamTinsley">William Tinsley</persName>
+               <placeName ref="#pl:CatherineStreet18">18 Catherine Street, Strand,
+                        <choice><abbr>W.C.</abbr><expan>West Central</expan></choice>,
+                  London</placeName>
+               <date when="1872-08-02"/>
+            </correspAction>
+            <correspAction type="received">
+               <persName ref="#ps:TH">Thomas Hardy</persName>
+               <placeName ref="#pl:MaxGate">Max Gate, Dorchester, Dorset</placeName>
+            </correspAction>
+
+         </correspDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="letter">
+            <pb n="1" facs="uoedh_hl_h.5651a_1.jpg"/>
+            <pb n="2" facs="uoedh_hl_h.5651a_2.jpg"/>
+            <note rend="pencil" hand="unknown">Agreement for the serial publication of "<ref
+                  target="#bib:Hardy1873_PairOfBlueEyes">A Pair of Blue Eyes</ref>" </note>
+
+            <opener>
+
+               <address rend="letterhead">
+                  <addrLine>Office of "Tinsleys' Magazine,"</addrLine>
+                  <addrLine>18, CATHERINE STREET, STRAND, W.C.</addrLine>
+               </address>
+               <dateline>
+                  <date when="1872-08-02"> Aug. 2, 1872</date>
+               </dateline>
+               <!-- Month and day written in pen. Year printed -->
+
+               <salute>Dear Sir,</salute>
+
+            </opener>
+
+            <p>In reply to your letter of the 27th of July I hereby agree to the terms therein
+               contained, viz. – </p>
+            <p> That you supply for <orgName ref="#ps:TinsleysMagazine">Tinsleys’ Magazine</orgName>
+               a novel to run for about twelve months, and to consist of about twenty pages of the
+               Magazine each month.</p>
+            <p>I am to have the right to publish a three-volume edition of the story for twelve
+               months from the date of its appearance in that form, after which all rights revert to
+               you. </p>
+            <pb n="3" facs="uoedh_hl_h.5651a_3.jpg"/>
+            <p>The whole of the copy is to be delivered to me in time to enable me to publish the
+               novel three months before its com­pletion in the Magazine. </p>
+            <p>In consideration thereof I am to pay you the sum of £200, at the rate of £15 per
+               month within a fortnight or thereabouts of the issue of each number of the Magazine —
+               the balance, £20, to be paid within a month after the publication of the three-volume
+               edition. </p>
+            <p>Should the success of the novel exceed my anticipations I agree to make you a fair
+               additional allowance. </p>
+
+
+            <closer>
+               <salute>Yours truly</salute>
+               <signed> William Tinsley</signed>
+            </closer>
+            <pb n="4" facs="uoedh_hl_h.5651a_4.jpg"/>
+
+            <note rend="red pencil" hand="unknown">Agreement for the serial publication of "<ref
+                  target="#bib:Hardy1873_PairOfBlueEyes">A Pair of Blue Eyes</ref>" </note>
+
+         </div>
+      </body>
+      <back>
+         <div type="envelope">
+            <pb n="5" facs="uoedh_hl_h.5651b_1.jpg"/>
+            <note rend="blue pencil" hand="unknown">Agreement for the Serial Publication (in
+               Tinsley's Magasine) of "<ref target="#bib:Hardy1873_PairOfBlueEyes">A Pair of Blue
+                  Eyes</ref>" Aug 2. 1872</note>
+
+            <p>
+               <address>
+                  <addrLine>THOMAS HARDY ESQ., O.M.</addrLine>
+                  <addrLine>MAX GATE,</addrLine>
+                  <addrLine>DORCHESTER.</addrLine>
+                  <addrLine>HA. 55.</addrLine>
+               </address>
+            </p>
+            <pb n="6" facs="uoedh_hl_h.5651b_2.jpg"/>
+         </div>
+      </back>
+   </text>
+</TEI>

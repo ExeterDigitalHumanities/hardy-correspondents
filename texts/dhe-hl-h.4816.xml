@@ -1,0 +1,201 @@
+<?xml-model href="../../schema/hardyletter.rng" type="application/xml" 
+   schematypens="http://relaxng.org/ns/structure/1.0"?><!--<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="dhe-hl-h.4816">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Letter from Ezra Pound to Thomas Hardy asking for his opinion on his poetry, 17
+               January 1915</title>
+            <author ref="#ps:EzraPound">Ezra Pound</author>
+            <!--The editor of the tei file-->
+            <editor ref="#resp-HA">Helen Angear</editor>
+            <funder>Arts and Humanities Research Council</funder>
+            <sponsor>University of Exeter</sponsor>
+            <sponsor>Dorset County Museum</sponsor>
+            <principal>Angelique Richardson</principal>
+
+            <respStmt>
+               <persName ref="#resp-HA">Helen Angear</persName>
+               <resp>Selection</resp>
+               <resp>Transcription</resp>
+
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp-BM">Beth Mills</persName>
+               <resp>Proofreading</resp>
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:HP">Hannah Petrie</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="#resp:EW">Elizabeth Williamson</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition, transcribed and edited directly from primary
+               sources</edition>
+         </editionStmt>
+         <publicationStmt>
+            <publisher>University of Exeter Digital Humanities Lab</publisher>
+            <pubPlace>Exeter, UK</pubPlace>
+            <date>November 2019</date>
+            <availability>
+               <p>The letter transcripts are licensed under a Creative Commons Attribution 4.0
+                  International License. This means that you can use these transcripts providing you
+                  acknowledge the Hardy's Correspondents project.</p>
+               <p>The letter images remain the copyright of Dorset Museum. Please contact the Museum
+                  if you would like to reuse any of the letter images.</p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <placeName ref="#pl:Dorchester">Dorchester</placeName>
+                  <institution>Dorset County Museum</institution>
+                  <idno type="DCM">H.4816</idno>
+                  <altIdentifier>
+                     <idno type="XXXX"><!-- optional - any other identifiers --></idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Letter written on <material>cream paper</material> with original page
+                              numbers written in the top left corner.</p>
+                           <p>Pencil library marks on pages 2, 4, 6 and 8: <note type="libraryMark"
+                                 >H.4816</note>. </p>
+                           <p>The words 'druidic' and 'generation' have been added above Pound's
+                              script on page 3. These are written in pencil in a different hand.</p>
+                        </support>
+                        <condition>Good.</condition>
+                     </supportDesc>
+                  </objectDesc>
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Prepared as part of the AHRC/REACT Studentship on Thomas Hardy's letters, in
+               conjunction with Dorset County Museum.</p>
+         </projectDesc>
+
+      </encodingDesc>
+      <profileDesc>
+         <correspDesc>
+            <!-- Provides detailed correspondence-specific metadata, particularly concerning the communicative aspects 
+            (sending, receiving, forwarding etc.) associated with acts of correspondence. -->
+
+            <correspAction type="sent">
+               <!-- Structured description of the place, the name of a person/organisation and the date related to the sending/receiving of a message -->
+               <!--<persName> of letter author-->
+               <persName ref="#ps:EzraPound">Ezra Pound</persName>
+               <placeName ref="#pl:SaintRaphael">Hotel Terminus, Saint-Raphaël, Cote d'Azur,
+                  France</placeName>
+               <!-- Need to add ID -->
+               <date when="1915-01-17"/>
+               <!-- no date on letter, need to check with DCM -->
+            </correspAction>
+            <correspAction type="received">
+               <persName ref="#ps:TH">Thomas Hardy</persName>
+            </correspAction>
+
+         </correspDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="letter">
+            <pb n="1" facs="uoedh_hl_h.4816_1.jpg"/>
+            <opener>
+
+               <address>
+                  <addrLine>Hotel Terminus</addrLine>
+                  <addrLine>St. Raphael, Cote d' Azure</addrLine>
+                  <addrLine>France.</addrLine>
+               </address>
+
+               <salute>Thomas Hardy OM</salute>
+
+
+               <salute>My Dear Thomas Hardy:</salute>
+            </opener>
+
+            <p> Of course your last <del><unclear>let</unclear></del> note does not, did not require
+               an answer — any more than my rather bold envoi of books needed acknowledgement — only
+               it is so exceedingly difficult to get any criticism whatever <add place="above"> from
+                  anyone whose reaction one respects</add> – there is the malice engendered – by
+               stupidity – to the hurried hack work of poor devils who have had to write reviews —
+               <!-- longer than an emdash? --> that if you have by any chance looked at the wretched
+               brochures again and found any specific merit or demerit, it would be <pb n="2"
+                  facs="uoedh_hl_h.4816_2.jpg"/>
+               <pb n="3" facs="uoedh_hl_h.4816_3.jpg"/> no inconsiderable kindness to send
+                  <unclear>me</unclear> word. — not a politeness – </p>
+            <p>The <name type="poem">Propertius</name> is confused. – <name type="poem">
+                  Mauberley</name> is <unclear>thin</unclear> – but one tries to comfort oneself
+               with the argument that the qualities are inherent in the subject matter. – –</p>
+            <p>It is perhaps very " <subst>
+                  <del><unclear>non</unclear></del>
+                  <add place="above">un-</add></subst> English" to regard literature as a "mystery",
+               a druidic <note rend="pencil" hand="other">druidic</note> guild, in which one
+               receives at least a few orders &amp; a few prohibitions from the generation <note
+                  rend="pencil" hand="other">generation</note> of elders.</p>
+            <p>I recognise the fact that the stuff in question may have the supreme fault of being
+               'merely uninteresting' — in which case no criticism is possible – &amp; there is no
+               remedy but the <add place="above">slender</add> chance of doing better next time. </p>
+
+            <pb n="4" facs="uoedh_hl_h.4816_4.jpg"/>
+            <pb n="5" facs="uoedh_hl_h.4816_5.jpg"/>
+            <p>I don't know that I have any other excuse to offer for writing this note. I was very
+               much surprised <subst>
+                  <del>by your first letter</del>
+                  <add place="inline">that you had heard of me at all</add></subst> — as indicated
+               in your first reply to my importunities on behalf of the <orgName ref="#ps:TheDial"
+                  >Dial</orgName>.</p>
+            <p>I don't think mere praise is any good — I know where I can get it, &amp; just what
+                  <hi rend="underline">wrong</hi> reasons will lead one or two eminent
+               contemporaries to like or tolerate certain passages. – </p>
+
+            <p>Forgive me if I blurt out this demand for more frankness than anything, save perhaps
+               a lifelong friendship, can engender between two individuals.</p>
+
+
+            <closer>
+
+               <salute>sincerely yours</salute>
+               <signed>Ezra Pound</signed>
+
+            </closer>
+            <pb n="6" facs="uoedh_hl_h.4816_6.jpg"/>
+            <pb n="7" facs="uoedh_hl_h.4816_7.jpg"/>
+
+            <postscript>
+               <p>And also concede that I know how much right you have to your quiet – and how
+                  little one ought to break in upon it – and in the end <hi rend="underline"
+                     >don't</hi>
+                  <del rend="strikethrough"><unclear>answs</unclear></del> answer this if the whole
+                  subject bores you unspeakably.</p>
+               <closer>
+                  <salute>contritely</salute>
+                  <signed>E.P.</signed>
+                  <note>Permanent address 5 Holland Place Chambers London W.8</note>
+
+               </closer>
+            </postscript>
+            <pb n="8" facs="uoedh_hl_h.4816_8.jpg"/>
+
+
+         </div>
+      </body>
+   </text>
+</TEI>

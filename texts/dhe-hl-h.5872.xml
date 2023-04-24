@@ -1,0 +1,172 @@
+<?xml-model href="../../schema/hardyletter.rng" type="application/xml" 
+   schematypens="http://relaxng.org/ns/structure/1.0"?><!--<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="dhe-hl-h.5872">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Letter from Berkeley Williams to Thomas Hardy offering condolences on the death
+               of Hardy's dog Wessex, 21 January 1927</title>
+            <author ref="#ps:BerkeleyWilliams">Berkeley C Williams</author>
+            <!--The editor of the tei file-->
+            <editor ref="#resp-HA">Helen Angear</editor>
+            <funder>Arts and Humanities Research Council</funder>
+            <sponsor>University of Exeter</sponsor>
+            <sponsor>Dorset County Museum</sponsor>
+            <principal>Angelique Richardson</principal>
+
+            <respStmt>
+               <persName ref="#resp:BM">Beth Mills</persName>
+               <resp>Selection</resp>
+               <resp>Proofreading</resp>
+
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:HA">Helen Angear</persName>
+               <resp>Transcription</resp>
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:HP">Hannah Petrie</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="#resp:EW">Elizabeth Williamson</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition, transcribed and edited directly from primary
+               sources</edition>
+         </editionStmt>
+         <publicationStmt>
+            <publisher>University of Exeter Digital Humanities Lab</publisher>
+            <pubPlace>Exeter, UK</pubPlace>
+            <date>November 2019</date>
+            <availability>
+               <p>The letter transcripts are licensed under a Creative Commons Attribution 4.0
+                  International License. This means that you can use these transcripts providing you
+                  acknowledge the Hardy's Correspondents project.</p>
+               <p>The letter images remain the copyright of Dorset Museum. Please contact the Museum
+                  if you would like to reuse any of the letter images.</p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <placeName ref="#pl:Dorchester">Dorchester</placeName>
+                  <institution>Dorset County Museum</institution>
+                  <idno type="DCM">H.5872</idno>
+                  <altIdentifier>
+                     <idno type="XXXX"><!-- optional - any other identifiers --></idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Letter written on <material>cream paper</material>.</p>
+                           <p>Pencil library marks on page 2: <note type="libraryMark" rend="pencil"
+                                 > H.5872</note>.</p>
+                        </support>
+
+
+
+                        <condition>Good</condition>
+                     </supportDesc>
+                  </objectDesc>
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Prepared as part of the AHRC/REACT Studentship on Thomas Hardy's letters, in
+               conjunction with Dorset County Museum.</p>
+         </projectDesc>
+
+      </encodingDesc>
+      <profileDesc>
+         <correspDesc>
+            <!-- Provides detailed correspondence-specific metadata, particularly concerning the communicative aspects 
+            (sending, receiving, forwarding etc.) associated with acts of correspondence. -->
+
+            <correspAction type="sent">
+               <persName ref="#ps:BerkeleyWilliams">Berkeley Williams</persName>
+               <placeName ref="#pl:EnnismoreGardens36">36 Ennismore Gardens, London</placeName>
+               <date when="1927-01-21"/>
+               <!-- Need to check format -->
+            </correspAction>
+            <correspAction type="received">
+               <persName ref="#ps:TH">Thomas Hardy</persName>
+            </correspAction>
+
+         </correspDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="letter">
+            <pb n="1" facs="uoedh_hl_h.5872_1.jpg"/>
+            <opener>
+
+
+
+
+               <dateline>
+                  <date when="1927-01-21">
+                     <choice><abbr><unclear>Jany</unclear></abbr>
+                        <expan>January</expan></choice> 21<hi rend="superscript">st</hi>
+                     1927.</date>
+               </dateline>
+               <address rend="letterhead">
+                  <addrLine>Kensington 3867</addrLine>
+                  <addrLine>36, ENNISMORE GARDENS,</addrLine>
+                  <addrLine>S.W.7.</addrLine>
+
+               </address>
+
+               <salute>Dear Mr Hardy</salute>
+            </opener>
+
+            <p>We met <persName ref="#ps:SydneyCockerell">M<hi rend="superscript">r</hi>
+                  Cockerell</persName> two nights ago at the <placeName ref="#pl:BurlingtonHouse"
+                  >Burlington House</placeName> party &amp; he told me of what I had not heard till
+               then, the loss you have had in the death of your faithful old friend Wessex. I am so
+               very sorry; as being as you know, as great a dog lover as yourself, I can realize how
+               much you miss him; and Wessex was very much of a personality <pb n="2"
+                  facs="uoedh_hl_h.5872_2.jpg"/> who occupied a very special niche in your home,
+                  <unclear>world</unclear> and your daily life. The one great drawback from which
+               dogs suffer is that they are not long lived enough but they make up for that by the
+               wealth of loving kindness they give us during the years they are with us. Please
+               accept very real sympathy from us both to you &amp; <persName ref="#ps:FlorenceHardy"
+                     >M<hi rend="superscript">rs</hi> Hardy</persName>.</p>
+            <!-- mark up rust -->
+            <p>We have sent the 2 youngest boys back to school today, but <persName
+                  ref="#ps:AlickWilliams">Alick</persName> who has had an operation on his knee,
+               won't be able to return to <placeName ref="#pl:EtonCollege">Eton</placeName> just
+               yet. My wife asks me to send <persName ref="#ps:FlorenceHardy"> M<hi
+                     rend="superscript">rs</hi> Hardy</persName> her love, &amp; I hope we may both
+               send you the same. </p>
+
+
+            <closer>
+               <salute>
+                  <choice><abbr>Yrs</abbr>
+                     <expan>Yours</expan></choice>
+                  <choice><abbr>v.</abbr>
+                     <expan>very</expan></choice> sincerely </salute>
+               <signed>Berkeley C. W. Williams</signed>
+            </closer>
+
+
+
+         </div>
+      </body>
+   </text>
+</TEI>

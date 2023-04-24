@@ -1,0 +1,172 @@
+<?xml-model href="../../schema/hardyletter.rng" type="application/xml" 
+   schematypens="http://relaxng.org/ns/structure/1.0"?><!--<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="dhe-hl-h.2573a">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+
+            <title>Copy of a letter from Cathcart Hannay to Thomas Hardy informing Hardy of the
+               death of his second cousin, Frank George, 24 August 1915</title>
+            <author ref="#ps:CathcartHannay">Brigadier-General Cathcart Hannay</author>
+            <!--The editor of the tei file-->
+            <editor ref="#resp-HA">Helen Angear</editor>
+            <funder>Arts and Humanities Research Council</funder>
+            <sponsor>University of Exeter</sponsor>
+            <sponsor>Dorset County Museum</sponsor>
+            <principal>Angelique Richardson</principal>
+
+            <respStmt>
+               <persName ref="#resp:HA">Helen Angear</persName>
+               <resp>Selection</resp>
+               <resp>Transcription</resp>
+
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:BM">Beth Mills</persName>
+               <resp>Proofreading</resp>
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:HP">Hannah Petrie</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="#resp:EW">Elizabeth Williamson</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition, transcribed and edited directly from primary
+               sources</edition>
+         </editionStmt>
+         <publicationStmt>
+            <publisher>University of Exeter Digital Humanities Lab</publisher>
+            <pubPlace>Exeter, UK</pubPlace>
+            <date>November 2019</date>
+            <availability>
+               <p>The letter transcripts are licensed under a Creative Commons Attribution 4.0
+                  International License. This means that you can use these transcripts providing you
+                  acknowledge the Hardy's Correspondents project.</p>
+               <p>The letter images remain the copyright of Dorset Museum. Please contact the Museum
+                  if you would like to reuse any of the letter images.</p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <placeName ref="#pl:Dorchester">Dorchester</placeName>
+                  <institution>Dorset County Museum</institution>
+                  <idno type="DCM">H.2573a</idno>
+                  <altIdentifier>
+                     <idno type="XXXX"><!-- optional - any other identifiers --></idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Pencil copy of original letter written on <material>cream lined
+                                 paper</material>.</p>
+                           <p>Pencil library marks on page 2: <note type="libraryMark"
+                                 >H.2573a</note></p>
+                        </support>
+                        <condition>Good</condition>
+                     </supportDesc>
+                  </objectDesc>
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Prepared as part of the AHRC/REACT Studentship on Thomas Hardy's letters, in
+               conjunction with Dorset County Museum.</p>
+         </projectDesc>
+
+      </encodingDesc>
+      <profileDesc>
+         <correspDesc>
+            <!-- Provides detailed correspondence-specific metadata, particularly concerning the communicative aspects 
+            (sending, receiving, forwarding etc.) associated with acts of correspondence. -->
+
+            <correspAction type="sent">
+               <!-- Structured description of the place, the name of a person/organisation and the date related to the sending/receiving of a message -->
+               <persName ref="#ps:CathcartHannay">Brigadier-General Cathcart Hannay</persName>
+
+               <!--Location letter sent from-->
+               <placeName ref="#pl:SuvlaBay">Suvla Bay, Gallipoli, Turkey</placeName>
+               <date when="1915-08-24"/>
+            </correspAction>
+            <correspAction type="received">
+               <persName ref="#ps:TH">Thomas Hardy</persName>
+            </correspAction>
+
+         </correspDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="letter">
+            <pb n="1" facs="uoedh_hl_h.2573a_1.jpg"/>
+
+            <opener>
+
+               <note>(Copy)</note>
+               <address rend="pencil">
+                  <addrLine>Suvla Bay</addrLine>
+               </address>
+               <dateline>
+                  <date when="1915-08-24">24/8/15</date>
+               </dateline>
+
+               <salute>Dear Mr Hardy</salute>
+            </opener>
+
+            <p>I am very sorry to have to tell you that <persName ref="#ps:FrankGeorge">Mr
+                  George</persName> was killed on 21<hi rend="superscript">st</hi> inst. – just as
+               his Company was leaving the trenches to attack. I was not with the
+                        <choice><abbr>Reg<hi rend="superscript"
+                     >t</hi>.</abbr><expan>Regiment</expan></choice> myself as I took over command
+               of the Brigade on the 19<hi rend="superscript">th</hi>. His Company Com­mander –
+                  <persName ref="#ps:CaptainGregory">Captain Gregory</persName> – told me, as he was
+               going back wounded, that <persName ref="#ps:FrankGeorge">George</persName> died
+               before he could be moved into safety. <persName ref="#ps:FrankGeorge"
+                  >George</persName> had done splendidly since we started fighting on the 7<hi
+                  rend="superscript">th</hi> – On the 17<hi rend="superscript">th</hi> he
+               distinguished himself particularly &amp; brought great credit to the 5<hi
+                  rend="superscript">th</hi> Dorset
+                     <choice><abbr>Regt,</abbr><expan>Regiment</expan></choice>, by rushing a
+               Turkish trench with his Platoon, bayonetting some 8 or 10 Turks &amp; bringing back
+               14 prisoners. I sent his name forward for reward &amp; it was forwarded by the
+               Brigade.</p>
+
+            <p>I write all this to you with the request that you will let his people know – All
+               papers &amp; <!-- mark up small tear --> addresses of next-of-kin were lost when my
+               Adjutant was killed on the 7<hi rend="superscript">th</hi>
+               <choice><abbr>inst.</abbr><expan>??</expan></choice> otherwise I <choice><abbr>sh<hi
+                        rend="superscript">d</hi></abbr><expan>should</expan></choice> not trouble
+               you. The 5<hi rend="superscript">th</hi> Dorsets have done splendidly but at a great
+               cost as our casualties have been 21 officers &amp; over 500 men, killed, wounded,
+               &amp; missing.</p>
+
+
+            <closer>
+               <salute>Believe me</salute>
+               <salute>Yours sincerely</salute>
+               <signed>Cathcart Hannay</signed>
+               <!-- Need to add in a double-line bracket  -->
+               <signed>Brig-General</signed>
+               <signed>34<hi rend="superscript">th</hi> inf Brigade</signed>
+            </closer>
+            <pb n="2" facs="uoedh_hl_h.2573a_2.jpg"/>
+
+         </div>
+      </body>
+   </text>
+</TEI>

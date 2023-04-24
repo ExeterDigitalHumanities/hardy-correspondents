@@ -1,0 +1,190 @@
+<?xml-model href="../../schema/hardyletter.rng" type="application/xml" 
+   schematypens="http://relaxng.org/ns/structure/1.0"?><!--<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="dhe-hl-h.2774">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+
+            <title>TS copy of a letter from Thomas Hardy to Edmund Gosse regarding the illustrator
+               of <ref target="#bib:Hardy1874_FarFromTheMaddingCrowd"><emph rend="italics">Far From
+                     the Madding Crowd</emph></ref>, 25 July 1906</title>
+            <author ref="#ps:TH">Thomas Hardy</author>
+            <!--The editor of the tei file-->
+            <editor ref="#resp-HA">Helen Angear</editor>
+            <funder>Arts and Humanities Research Council</funder>
+            <sponsor>University of Exeter</sponsor>
+            <sponsor>Dorset County Museum</sponsor>
+            <principal>Angelique Richardson</principal>
+
+            <respStmt>
+               <persName ref="#resp:HA">Helen Angear</persName>
+               <resp>Selection</resp>
+               <resp>Proofreading</resp>
+
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:BM">Beth Mills</persName>
+               <resp>Transcription</resp>
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:HP">Hannah Petrie</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="#resp:EW">Elizabeth Williamson</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition, transcribed and edited directly from primary
+               sources</edition>
+         </editionStmt>
+         <publicationStmt>
+            <publisher>University of Exeter Digital Humanities Lab</publisher>
+            <pubPlace>Exeter, UK</pubPlace>
+            <date>November 2019</date>
+            <availability>
+               <p>The letter transcripts are licensed under a Creative Commons Attribution 4.0
+                  International License. This means that you can use these transcripts providing you
+                  acknowledge the Hardy's Correspondents project.</p>
+               <p>The letter images remain the copyright of Dorset Museum. Please contact the Museum
+                  if you would like to reuse any of the letter images.</p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <placeName ref="#pl:Dorchester">Dorchester</placeName>
+                  <institution>Dorset County Museum</institution>
+                  <idno type="DCM">H.2774</idno>
+                  <altIdentifier>
+                     <idno type="XXXX"><!-- optional - any other identifiers --></idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>TS copy of original letter typed on <material>white
+                              paper</material>.</p>
+                           <p>Pencil library marks on page 4: <note type="libraryMark"
+                              >H.2774</note>.</p>
+                        </support>
+                        <condition>Some foxing, fading and fingerprint marks</condition>
+                     </supportDesc>
+                  </objectDesc>
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Prepared as part of the AHRC/REACT Studentship on Thomas Hardy's letters, in
+               conjunction with Dorset County Museum.</p>
+         </projectDesc>
+
+      </encodingDesc>
+      <profileDesc>
+         <correspDesc>
+            <!-- Provides detailed correspondence-specific metadata, particularly concerning the communicative aspects 
+            (sending, receiving, forwarding etc.) associated with acts of correspondence. -->
+
+            <correspAction type="sent">
+               <!-- Structured description of the place, the name of a person/organisation and the date related to the sending/receiving of a message -->
+               <persName ref="#ps:TH">Thomas Hardy</persName>
+               <placeName ref="#pl:MaxGate">Max Gate, Dorchester, Dorset</placeName>
+               <date when="1906-07-25"/>
+            </correspAction>
+            <correspAction type="received">
+               <persName ref="#ps:EdmundGosse">Edmund Gosse</persName>
+            </correspAction>
+
+            <!-- correspContext> -->
+            <!-- Provides references to preceding or following correspondence related to this piece of correspondence -->
+            <!--</correspContext>-->
+            <correspContext>
+               <ref type="prev" target="dhe-hl-h.2735"> Letter from <persName ref="#ps:EdmundGosse"
+                     >Edmund Gosse</persName> enquiring about the illustrations in <ref
+                     target="#bib:Hardy1874_FarFromTheMaddingCrowd">Far From the Madding
+                  Crowd</ref>, and enquiring about gossip regarding a mutual acquaintance </ref>
+            </correspContext>
+         </correspDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="letter">
+            <pb n="1" facs="uoedh_hl_h.2774_1.jpg"/>
+            <note rend="pencil" hand="unknown">(copy)</note>
+
+            <opener>
+               <dateline>
+                  <date when="1906-07-25">25. 7. 1906</date>
+               </dateline>
+
+               <salute>My dear Gosse:</salute>
+            </opener>
+
+            <p>The illustrator of <ref target="#bib:Hardy1874_FarFromTheMaddingCrowd">far from the
+                  Madding Crowd</ref> began as a charming young lady, <persName
+                  ref="#ps:HelenAllingham">Miss Helen Paterson</persName>, and ended as a married
+               woman – charms unknown- wife of <persName ref="#ps:WilliamAllingham"
+                  >Allingham</persName> the poet. I have never set eyes on her since she was the
+               former and I met her and corresponded with her about the pictures of the story. She
+               was the best illustrator I ever had. She and I were married about the same time in
+               the progress of our mutual work but not to each other, which I fear rather spoils the
+               information. Though I have never thought of her for the last 20 years your inquiry
+               makes me feel "quite romantical" about her (as they say here), and as she is a
+                  <placeName ref="#pl:London">London</placeName> artist, well known as <persName
+                  ref="#ps:HelenAllingham">Mrs
+               A.</persName><!--Link to Helen Allingham not working in Exist--> you might hunt her
+               up, and tell me what she <subst><del><gap/></del><add place="inline" rend="black-pen"
+                     >look</add></subst>s like as an elderly <del rend="stikethrough">widow</del>
+               woman. If you do, please give her my kind regards, but you must not add that those
+               two almost simultaneous weddings would have been one but for a stupid blunder of God
+               Almighty.</p>
+
+            <p>
+               <del>I am trying to enter into Part III</del>
+            </p>
+
+            <p>Why did you go wasting your money on that first edition! I could have sent you the
+               last edition, much more correct, the first not having been corrected by me, but
+               hurriedly set up from the magazine by the publisher.</p>
+
+            <p>I am trying to enter into Part III of the <ref
+                  target="#bib:Hardy1904-1908_TheDynasts">Dynasts</ref>. I am so sorry to learn that
+                  <persName ref="#ps:EllenGosse">Mrs Gosse</persName> is a prisoner still. Do you
+               think that if you could get her to the sea she would recover?</p>
+
+            <p>All I have heard more about <persName ref="#ps:MarieMeredith">Mrs
+                  <abbr>S.</abbr></persName> is what <persName ref="#ps:FrederickMacmillan"
+                        ><choice><abbr>F.</abbr>
+                     <expan>Frederick</expan></choice> Macmillan</persName> told me the day before I
+               left town. He said that the <choice><sic>story (like</sic><corr>story
+                  (like</corr></choice> that of the death of <persName ref="#ps:MarkTwain">Mark
+                  Twain</persName>) had been much exaggerated. The pair have for some time been
+               unable to get on well together (Her fault, I should say) and she has therefore taken
+               a flat in <placeName ref="#pl:London">London</placeName> as a bachelor woman, which
+               she comes up to for the week, going down to <placeName ref="#pl:Leatherhead"
+                  >Leatherhead</placeName>, their home, from Sat. to Mon. The "Italian Count" has
+               vanished from the narrative. I hope I may see you some time in the Autumn.</p>
+
+            <closer>
+               <salute>Sincerely yours</salute>
+               <signed>Thomas Hardy.</signed>
+            </closer>
+            <pb n="2" facs="uoedh_hl_h.2774_2.jpg"/>
+
+
+         </div>
+      </body>
+   </text>
+</TEI>

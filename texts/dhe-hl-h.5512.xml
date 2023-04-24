@@ -1,0 +1,149 @@
+<?xml-model href="../../schema/hardyletter.rng" type="application/xml" 
+   schematypens="http://relaxng.org/ns/structure/1.0"?><!--<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="dhe-hl-h.5512">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+
+            <title>Letter from Leslie Stephen to Thomas Hardy congratulating him on his recent
+               marriage to Emma Gifford, 7 December 1874</title>
+            <author ref="#ps:LeslieStephen">Leslie Stephen</author>
+            <!--The editor of the tei file-->
+            <editor ref="#resp-HA">Helen Angear</editor>
+            <funder>Arts and Humanities Research Council</funder>
+            <sponsor>University of Exeter</sponsor>
+            <sponsor>Dorset County Museum</sponsor>
+            <principal>Angelique Richardson</principal>
+
+            <respStmt>
+               <persName ref="#resp:HA">Helen Angear</persName>
+               <resp>Selection</resp>
+               <resp>Proofreading</resp>
+
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:BM">Beth Mills</persName>
+               <resp>Transcription</resp>
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:HP">Hannah Petrie</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="#resp:EW">Elizabeth Williamson</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition, transcribed and edited directly from primary
+               sources</edition>
+         </editionStmt>
+         <publicationStmt>
+            <publisher>University of Exeter Digital Humanities Lab</publisher>
+            <pubPlace>Exeter, UK</pubPlace>
+            <date>November 2019</date>
+            <availability>
+               <p>The letter transcripts are licensed under a Creative Commons Attribution 4.0
+                  International License. This means that you can use these transcripts providing you
+                  acknowledge the Hardy's Correspondents project.</p>
+               <p>The letter images remain the copyright of Dorset Museum. Please contact the Museum
+                  if you would like to reuse any of the letter images.</p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <placeName ref="#pl:Dorchester">Dorchester</placeName>
+                  <institution>Dorset County Museum</institution>
+                  <idno type="DCM">H.5512</idno>
+                  <altIdentifier>
+                     <idno type="XXXX"><!-- optional - any other identifiers --></idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Written on pale blue paper.</p>
+
+                           <p>Pencil library mark on page 2: <note type="libraryMark"
+                              >H.5512</note>.</p>
+                        </support>
+                        <condition>Good</condition>
+                     </supportDesc>
+                  </objectDesc>
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Prepared as part of the AHRC/REACT Studentship on Thomas Hardy's letters, in
+               conjunction with Dorset County Museum.</p>
+         </projectDesc>
+
+      </encodingDesc>
+      <profileDesc>
+         <correspDesc>
+            <!-- Provides detailed correspondence-specific metadata, particularly concerning the communicative aspects 
+            (sending, receiving, forwarding etc.) associated with acts of correspondence. -->
+
+            <correspAction type="sent">
+               <!-- Structured description of the place, the name of a person/organisation and the date related to the sending/receiving of a message -->
+               <persName ref="#ps:LeslieStephen">Leslie Stephen</persName>
+               <placeName ref="#pl:SouthwellGardens8">8 Southwell Gardens, South Kensington, S.W.
+                  London</placeName>
+               <date when="1874-12-07"/>
+            </correspAction>
+            <correspAction type="received">
+               <persName ref="#ps:TH">Thomas Hardy</persName>
+            </correspAction>
+
+         </correspDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="letter">
+            <pb n="1" facs="uoedh_hl_h.5512_1.jpg"/>
+
+            <opener>
+               <address>
+                  <addrLine>8 Southwell <abbr>Gns</abbr></addrLine>
+                  <addrLine>S. W.</addrLine>
+               </address>
+               <dateline>
+                  <date when="1874-12-07">7.12.74</date>
+               </dateline>
+               <salute>My dear Mr Hardy,</salute>
+            </opener>
+
+            <p>I only write two lines. 1st to congratulate you most sincerely on your marriage &amp;
+               to wish you all happiness in that state. <unclear>Secondly</unclear> to say that I
+               will write again soon about the novel. <!-- Need to reference which novel. FFMC? -->
+               <del>May</del> I hope that we may arrange for May or June; but you shall hear
+               soon.</p>
+
+            <p> Meanwhile, if you are coming to town any day, I <choice><abbr>shd</abbr>
+                  <expan>should</expan></choice> be much obliged if you would give me a call &amp;
+               talk over the matter a little.</p>
+
+
+            <closer>
+               <salute>Yours very truly</salute>
+               <signed>L. Stephen</signed>
+            </closer>
+            <pb n="2" facs="uoedh_hl_h.5512_2.jpg"/>
+            <!-- No text on this page other than H. number -->
+
+         </div>
+      </body>
+   </text>
+</TEI>

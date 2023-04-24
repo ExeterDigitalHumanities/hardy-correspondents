@@ -1,0 +1,211 @@
+<?xml-model href="../../schema/hardyletter.rng" type="application/xml" 
+   schematypens="http://relaxng.org/ns/structure/1.0"?><!--<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="dhe-hl-h.4600">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+
+            <title>Letter from Louisa Conyers to Thomas Hardy about <ref
+                  target="#bib:Hardy1891_Tess"><emph rend="italics">Tess of the
+                  d'Urbervilles</emph></ref> and the phantom Turberville coach, 1916</title>
+            <!--The author of the letter-->
+            <author ref="#ps:LouisaConyers">Louisa Conyers</author>
+            <!--The editor of the tei file-->
+            <editor ref="#resp-HA">Helen Angear</editor>
+            <funder>Arts and Humanities Research Council</funder>
+            <sponsor>University of Exeter</sponsor>
+            <sponsor>Dorset County Museum</sponsor>
+            <principal>Angelique Richardson</principal>
+
+            <respStmt>
+               <persName ref="#resp:HA">Helen Angear</persName>
+               <resp>Selection</resp>
+               <resp>Proofreading</resp>
+
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:BM">Beth Mills</persName>
+               <resp>Transcription</resp>
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:HP">Hannah Petrie</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="#resp:EW">Elizabeth Williamson</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition, transcribed and edited directly from primary
+               sources</edition>
+         </editionStmt>
+         <publicationStmt>
+            <publisher>University of Exeter Digital Humanities Lab</publisher>
+            <pubPlace>Exeter, UK</pubPlace>
+            <date>November 2019</date>
+            <availability>
+               <p>The letter transcripts are licensed under a Creative Commons Attribution 4.0
+                  International License. This means that you can use these transcripts providing you
+                  acknowledge the Hardy's Correspondents project.</p>
+               <p>The letter images remain the copyright of Dorset Museum. Please contact the Museum
+                  if you would like to reuse any of the letter images.</p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <placeName ref="#pl:Dorchester">Dorchester</placeName>
+                  <institution>Dorset County Museum</institution>
+                  <idno type="DCM">H.4600</idno>
+                  <altIdentifier>
+                     <idno type="XXXX"><!-- optional - any other identifiers --></idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Letter written on <material>cream folded paper</material>. Pencil
+                              library marks on pages 4 and 6: <note type="libraryMark"
+                              >H.4600</note>.</p>
+                        </support>
+                        <condition>Good</condition>
+                     </supportDesc>
+                  </objectDesc>
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Prepared as part of the AHRC/REACT Studentship on Thomas Hardy's letters, in
+               conjunction with Dorset County Museum.</p>
+         </projectDesc>
+
+      </encodingDesc>
+      <profileDesc>
+         <correspDesc>
+            <!-- Provides detailed correspondence-specific metadata, particularly concerning the communicative aspects 
+            (sending, receiving, forwarding etc.) associated with acts of correspondence. -->
+
+            <correspAction type="sent">
+               <!-- Structured description of the place, the name of a person/organisation and the date related to the sending/receiving of a message -->
+               <persName ref="#ps:LouisaConyers">Louisa Conyers</persName>
+
+               <!--Location letter sent from-->
+               <placeName ref="#pl:GrangeOverSands">2 Lewlands, Grange-Over-Sands,
+                  Lancashire</placeName>
+               <date when="1916">1916</date>
+               <!--No month or day given; year written in pencil in different hand-->
+            </correspAction>
+            <correspAction type="received">
+               <persName ref="#ps:TH">Thomas Hardy</persName>
+            </correspAction>
+
+         </correspDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="letter">
+            <pb n="1" facs="uoedh_hl_h.4600_1.jpg"/>
+            <note rend="pencil" hand="unknown">
+               <hi rend="underline">Turberville Coach</hi>
+            </note>
+            <opener>
+               <note rend="pencil" hand="unknown">
+                  <date when="1916">1916</date>
+               </note>
+               <address>
+                  <addrLine>2 Newlands</addrLine>
+                  <addrLine>Grange-over-Sands</addrLine>
+                  <addrLine>
+                     <choice>
+                        <abbr>Lancs.</abbr>
+                        <expan>Lancashire</expan>
+                     </choice>
+                  </addrLine>
+               </address>
+
+               <salute>
+                  <hi rend="underline">M<hi rend="superscript">r</hi>. Hardy</hi>
+               </salute>
+               <salute>Dear Sir</salute>
+            </opener>
+
+
+
+            <p>I have just been reading <ref target="#bib:Hardy1891_Tess">Tess of the
+                  D'Urbervilles</ref> and was extremely interested in it, having stayed at
+                  <placeName ref="#pl:BereRegis">Bere Regis</placeName>, especially in your
+               reference to the family Ghost (if I may call it so) of the coach four</p>
+
+            <p>It recalled to my mind an episode which puzzled me much at the time. Some years ago
+               my brother-in-law, a <placeName ref="#pl:London">London</placeName> Clergyman, took
+               duty at <placeName ref="#pl:BereRegis">Bere Regis</placeName> for the summer
+               holidays. <pb n="2" facs="uoedh_hl_h.4600_2.jpg"/> I went with my sister to keep her
+               company during the four or five weeks she was there. We were of course in the quaint
+               old Vicarage. I had a front room, &amp; the weather being hot, had my window wide
+               open.</p>
+
+            <p>One night, about midnight, I was lying half awake and half asleep when it suddenly
+               dawned on me that a coach was approaching, I heard the horn blowing &amp; the
+               galloping of the horses. As it approached nearer the shouting &amp; clatter grew
+               tremendously, &amp; from first thinking nothing of it, I grew annoyed with the <pb
+                  n="3" facs="uoedh_hl_h.4600_3.jpg"/> stupendous noise it was making: I thought
+               what a shame in a quiet village, that anyone should be allowed to drive through in
+               such a wild way, as I felt sure it would arouse every inmate. Just when it was at its
+               worst, it suddenly died away. I sprang out of bed, &amp; went to the window expecting
+               that it had stopped in the village, &amp; that there would be the talking &amp;
+               hurrying away of a few passengers. There was absolute stillness, no sound whatever,
+               &amp; after listening for some time, I returned to bed, wondering if <pb n="4"
+                  facs="uoedh_hl_h.4600_4.jpg"/> the coach had proceeded down another road, where
+               the declivity had suddenly cut off the sound. – I couldn't make it out at all, but
+               expected next day would clear the matter
+                  up<choice><sic>.</sic><corr>,</corr></choice> as a coach arriving or passing
+               though, with so much noise, I thought, would have caused a sensation in so small a
+               village.</p>
+
+            <p>However, next day, <abbr>tho'</abbr> I men­tioned it to several people, &amp; the
+               country people themselves, nobody knew anything about it or would admit that a coach
+               came through at night. For several nights I listened <pb n="5"
+                  facs="uoedh_hl_h.4600_5.jpg"/> about midnight, in the expect­ation of hearing it
+               again, but I never did so - now do you think I heard the phantom coach?</p>
+
+
+
+            <p>It really looks like it, <abbr>tho'</abbr> in that case, how should I a north-country
+               lady, &amp; having so far as I know, nothing, <unclear> &amp; no forbears</unclear>,
+               with any connection with the south-country or <placeName ref="#pl:Dorset"
+                  >Dorsetshire</placeName>, hear the
+                     <choice><sic>D'urberville</sic><corr>d'Urberville</corr></choice> coach?</p>
+
+            <p>In one thing I can corro­borate the hearing of it as bringing bad luck. I date
+                  <unclear>from</unclear> the following year, two <pb n="6"
+                  facs="uoedh_hl_h.4600_6.jpg"/> events which had a disastrous effect on my life,
+               &amp; from the effects of which I have not yet recovered - I put down to those things
+               all the ill-luck I have suffered from for years. But perhaps I ought to now attribute
+               it to the Phantom Coach?!</p>
+
+            <p>Hoping this may interest you, and thanking you very much for the pleasure you have
+               given me in your books.</p>
+
+            <closer>
+               <salute>I am</salute>
+               <salute>Yours sincerely</salute>
+               <signed>(Miss) Louisa Conyers.</signed>
+            </closer>
+
+
+         </div>
+      </body>
+   </text>
+</TEI>

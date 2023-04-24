@@ -1,0 +1,199 @@
+<?xml-model href="../../schema/hardyletter.rng" type="application/xml" 
+   schematypens="http://relaxng.org/ns/structure/1.0"?><!--<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="dhe-hl-h.4470">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+
+            <title>Letter from Horace Moule to Thomas Hardy with advice on writing, 2 July
+               1863</title>
+            <author ref="#ps:HoraceMoule">Horace Moule</author>
+            <!--The editor of the tei file-->
+            <editor ref="#resp-HA">Helen Angear</editor>
+            <funder>Arts and Humanities Research Council</funder>
+            <sponsor>University of Exeter</sponsor>
+            <sponsor>Dorset County Museum</sponsor>
+            <principal>Angelique Richardson</principal>
+
+            <respStmt>
+               <persName ref="#resp:HA">Helen Angear</persName>
+               <resp>Selection</resp>
+               <resp>Proofreading</resp>
+
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:BM">Beth Mills</persName>
+               <resp>Transcription</resp>
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:HP">Hannah Petrie</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="#resp:EW">Elizabeth Williamson</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition, transcribed and edited directly from primary
+               sources</edition>
+         </editionStmt>
+         <publicationStmt>
+            <publisher>University of Exeter Digital Humanities Lab</publisher>
+            <pubPlace>Exeter, UK</pubPlace>
+            <date>November 2019</date>
+            <availability>
+               <p>The letter transcripts are licensed under a Creative Commons Attribution 4.0
+                  International License. This means that you can use these transcripts providing you
+                  acknowledge the Hardy's Correspondents project.</p>
+               <p>The letter images remain the copyright of Dorset Museum. Please contact the Museum
+                  if you would like to reuse any of the letter images.</p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <placeName ref="#pl:Dorchester">Dorchester</placeName>
+                  <institution>Dorset County Museum</institution>
+                  <idno type="DCM">H.4470</idno>
+                  <altIdentifier>
+                     <idno type="XXXX"><!-- optional - any other identifiers --></idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Written on <material>cream paper</material>.</p>
+                           <p>Pencil library marks on page 4: <note type="libraryMark"
+                              >H.4470</note></p>
+                        </support>
+                        <condition>Good</condition>
+                     </supportDesc>
+                  </objectDesc>
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Prepared as part of the AHRC/REACT Studentship on Thomas Hardy's letters, in
+               conjunction with Dorset County Museum.</p>
+         </projectDesc>
+
+      </encodingDesc>
+      <profileDesc>
+         <correspDesc>
+            <!-- Provides detailed correspondence-specific metadata, particularly concerning the communicative aspects 
+            (sending, receiving, forwarding etc.) associated with acts of correspondence. -->
+
+            <correspAction type="sent">
+               <!-- Structured description of the place, the name of a person/organisation and the date related to the sending/receiving of a message -->
+               <persName ref="#ps:HoraceMoule">Horace Moule</persName>
+
+               <!--Location letter sent from-->
+               <placeName ref="#pl:Dorchester">Dorchester</placeName>
+               <!-- No more info on letter than Dorchester. Do we change settlement to something else or is it always settlement in Corresp Action? 
+               Could potentially be from the Vicarage in Fordington, as this was where his father lived and where he returned after university? See following:-->
+               <!--<placeName ref="#pl:StGeorgesVicarage">St George's Vicarage, Fordington, Dorchester, Dorset</placeName>-->
+               <date when="1863-07-02"/>
+            </correspAction>
+            <correspAction type="received">
+               <persName ref="#ps:TH">Thomas Hardy</persName>
+            </correspAction>
+
+         </correspDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="letter">
+            <pb n="1" facs="uoedh_hl_h.4470_1.jpg"/>
+
+            <opener>
+
+               <dateline>
+                  <date when="1863-07-02">July 2, 1863</date>
+               </dateline>
+               <address>
+                  <addrLine>Dorchester.</addrLine>
+               </address>
+
+
+               <salute>My dear Tom</salute>
+            </opener>
+
+            <p>I cannot say enough in praise of <choice><abbr>y<hi rend="superscript"
+                     >r</hi></abbr><expan>Your</expan></choice> analyses. They <hi
+                  rend="doubleunderline">must</hi> do your head good.</p>
+
+            <p><choice><abbr>Y<hi rend="superscript">r</hi></abbr><expan>Your</expan></choice>
+               conclusions about <hi rend="underline"><orgName ref="TheTimes">Times</orgName></hi>
+               style interest me much, as showing <unclear>the</unclear> vigour with
+                        <choice><abbr>w<hi rend="superscript"
+                  >h</hi>.</abbr><expan>which</expan></choice> you have set on this new scent. But I
+               do not attach <hi rend="underline">much</hi> value to that minute way of looking at
+               style. And doubtless you have only generalised thus <hi rend="underline">en
+                  passant</hi>.</p>
+
+            <p>The grand object of all in <del>writing is</del>
+               <hi rend="underline">learning to write well</hi>
+               <pb n="2" facs="uoedh_hl_h.4470_2.jpg"/> is to <unclear>gain</unclear> or to generate
+                  <hi rend="underline">something to say</hi>. Be a "full man" – "Put money in thy
+               [mental] purse". Accordingly I <choice>
+                  <abbr>w<hi rend="superscript">d.</hi></abbr>
+                  <expan>would</expan></choice> not advise you to read <persName
+                  ref="#ps:WilliamMCulloch">M'Culloch</persName> or anybody else worth reading, <hi
+                  rend="underline">for his style</hi>. Acquaint yourself with his <hi
+                  rend="double-underline">thoughts</hi>. That is the first step – Doubtless you will
+               catch from him some felicitous methods or phrases <choice>
+                  <abbr>w<hi rend="superscript">h</hi></abbr>
+                  <expan>which</expan></choice> may turn out useful in the treatment of collateral
+               subject matter. But you must in <pb n="3" facs="uoedh_hl_h.4470_3.jpg"/> the end
+               write <hi rend="underline">your own</hi> style, unless you <choice><abbr>w<hi
+                        rend="superscript">d</hi></abbr>
+                  <expan>would</expan></choice> be a mere imitator. It always appears to me that a
+               man whose mind is full of a subject, or who can before writing make his mind full of
+               it, has only to pay that attention to <subst><del rend="crossthrough"> order</del>
+                  <add place="above">method</add></subst> and arrangement which is obvious to any
+               mind of vigorous tone, in order to write well.</p>
+            <p>One more suggestion I wish to add to those sent recently. Take a subject on
+                        <choice><abbr>w<hi rend="superscript">h</hi></abbr>
+                  <expan>which</expan></choice> you <pb n="4" facs="uoedh_hl_h.4470_4.jpg"/> have
+               thought, and a blank sheet of paper. Jot down then (in brief contracted form) every
+               thought that occurs to you, just <hi rend="underline">as</hi> they occur, wholly
+               without reference to order. Then put the paper by &amp; the next day (or next time)
+               look over the <choice><abbr>MS</abbr><expan>manuscript</expan></choice>, &amp;
+               arrange it into heads.</p>
+
+            <p>I will send more before end of next week; when I hope to start for a short tour in
+                     <choice><abbr>S.</abbr>
+                  <expan>South</expan></choice> of <placeName ref="#pl:France">France</placeName>,
+               to <placeName ref="#pl:Avignon">Avignon</placeName> &amp; <placeName ref="#pl:Nimes"
+                  >Nismes</placeName> (Roman remains <choice><abbr>&amp;c</abbr>
+                  <expan>etc.</expan></choice>)</p>
+
+            <p><choice><abbr>Yr</abbr><expan>Your</expan></choice> letters are a real pleasure to
+               me.</p>
+
+
+
+            <closer>
+               <salute><unclear>Yrs</unclear> very
+                        <choice><abbr>afftc</abbr><expan>affectionately</expan></choice></salute>
+               <signed>H M M</signed>
+               <note rend="pencil"><handShift/>(Horace Moule)</note>
+            </closer>
+
+
+         </div>
+      </body>
+   </text>
+</TEI>

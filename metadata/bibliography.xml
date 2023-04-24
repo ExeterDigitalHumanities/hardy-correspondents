@@ -1,0 +1,368 @@
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Hardy's Correspondents: Bibliography</title>
+
+                <funder>Arts and Humanities Research Council</funder>
+                <sponsor>University of Exeter</sponsor>
+                <principal>Angelique Richardson</principal>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>University of Exeter Digital Humanities Lab</publisher>
+                <pubPlace>Exeter, UK</pubPlace>
+                <date>November 2019</date>
+                <availability>
+                    <p>The letter transcripts are licensed under a Creative Commons Attribution 4.0
+                        International License. This means that you can use these transcripts providing you
+                        acknowledge the Hardy's Correspondents project.</p>
+                    <p>The letter images remain the copyright of Dorset Museum. Please contact the Museum
+                        if you would like to reuse any of the letter images.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Compiled from various sources cited in individual entries</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <listBibl>
+                <head>Novels, Poems and Other Works by Thomas Hardy</head>
+
+                <listBibl>
+                    <!-- Novels mentioned in letters -->
+                    <head>Novels</head>
+                    
+
+                    <bibl xml:id="Hardy1871_Remedies">
+                        <author ref="#ps:TH">Hardy, Thomas</author>
+                        <title level="m">Desperate Remedies</title>
+                        <pubPlace>London</pubPlace>
+                        <publisher>Tinsley Brothers</publisher>
+                        <date>1871</date>
+                    </bibl>
+
+                    <bibl xml:id="Hardy1874_FarFromTheMaddingCrowd">
+                        <author ref="#ps:TH">Hardy, Thomas</author>
+                        <title level="m">Far from the Madding Crowd</title>
+                        <pubPlace>London</pubPlace>
+                        <publisher>Smith, Elder,</publisher>
+                        <date>1874</date>
+                    </bibl>
+
+
+                    <bibl xml:id="Hardy1894_JudetheObscure">
+                        <author ref="#ps:TH">Hardy, Thomas</author>
+                        <title level="m">Jude the Obscure</title>
+                        <pubPlace>London</pubPlace>
+                        <publisher>Osgood, McIlvaine</publisher>
+                        <date>1895</date>
+                        <note>First published as a magazine serial in December 1894.</note>
+                    </bibl>
+
+
+                    <bibl xml:id="Hardy1886_Mayor">
+                        <author ref="#ps:TH">Hardy, Thomas</author>
+                        <title level="m">The Mayor of Casterbridge</title>
+                        <pubPlace>London</pubPlace>
+                        <publisher>Smith, Elder,</publisher>
+                        <date>1886</date>
+                    </bibl>
+
+                    <bibl xml:id="Hardy1873_PairOfBlueEyes">
+                        <author ref="#ps:TH">Hardy, Thomas</author>
+                        <title level="m">A Pair of Blue Eyes</title>
+                        <pubPlace>London</pubPlace>
+                        <publisher>Tinsley Brothers</publisher>
+                        <date>1873</date>
+                        <note>First serialised in <ref target="#ps:TinsleysMagazine">Tinsley's
+                                Magazine</ref> between September 1872 and July 1873.</note>
+                    </bibl>
+
+                    <bibl xml:id="Hardy1878_Native">
+                        <author ref="#ps:TH">Hardy, Thomas</author>
+                        <title level="m">The Return of the Native</title>
+                        <pubPlace>London</pubPlace>
+                        <publisher>Smith, Elder,</publisher>
+                        <date>1878</date>
+                    </bibl>
+
+
+
+                    <bibl xml:id="Hardy1891_Tess">
+                        <author ref="#ps:TH">Hardy, Thomas</author>
+                        <title level="m">Tess of the d'Urbervilles</title>
+                        <pubPlace>London</pubPlace>
+                        <publisher>Osgood, McIlvaine</publisher>
+                        <date>1891</date>
+                    </bibl>
+
+
+                    <bibl xml:id="Hardy1882_Tower">
+                        <author ref="#ps:TH">Hardy, Thomas</author>
+                        <title level="m">Two on a Tower</title>
+                        <pubPlace>London</pubPlace>
+                        <publisher>Sampson Low, Marston, Searle &amp; Rivington</publisher>
+                        <date>1882</date>
+                    </bibl>
+
+
+                    <bibl xml:id="Hardy1872_GreenwoodTree">
+                        <author ref="#ps:TH">Hardy, Thomas</author>
+                        <title level="m">Under the Greenwood Tree</title>
+                        <pubPlace>London</pubPlace>
+                        <publisher>Tinsley Brothers</publisher>
+                        <date>1872</date>
+                    </bibl>
+
+
+                    <bibl xml:id="Hardy1887_Woodlanders">
+                        <author ref="#ps:TH">Hardy, Thomas</author>
+                        <title level="m">The Woodlanders</title>
+                        <pubPlace>London</pubPlace>
+                        <publisher>Macmillan</publisher>
+                        <date>1887</date>
+                    </bibl>
+
+                </listBibl>
+
+
+                <listBibl>
+                    <!-- Dramatic Works mentioned in letters -->
+                    <head>Dramatic Works</head>
+
+                    <bibl xml:id="Hardy1904-1908_TheDynasts">
+                        <author ref="#ps:TH">Hardy, Thomas</author>
+                        <title level="m">The Dynasts: a Drama of the Napoleonic Wars, in three
+                            parts, nineteen acts, &amp; one hundred and thirty scenes</title>
+                        <pubPlace>London</pubPlace>
+                        <publisher>Macmillan, Ltd.</publisher>
+                        <date>Part I, 1904</date>
+                        <date>Part II, 1906</date>
+                        <date>Part III, 1908</date>
+                    </bibl>
+
+                   
+                    </listBibl>
+
+
+
+                        
+                        <listBibl>
+                            <!-- Short Story Collections mentioned in letters -->
+                            <head>Short Story Collections</head>
+
+                            <bibl xml:id="Hardy1913_AChangedManandOtherTales">
+                                <author ref="#ps:TH">Hardy, Thomas</author>
+                                <title level="m">A Changed Man</title>
+                                <title level="a">The Waiting Supper</title>
+                                <title level="a">Alicia's Diary</title>
+                                <title level="a">The Grave by the Handpost</title>
+                                <title level="a">Enter a Dragon</title>
+                                <title level="a">A Tryst at an Ancient Earthwork</title>
+                                <title level="a">What the Shepherd Saw</title>
+                                <title level="a">A Committe-Man of 'The Terror'</title>
+                                <title level="a">Master John Horseleigh, Knight</title>
+                                <title level="a">The Duke's Reappearance</title>
+                                <title level="a">A Mere Interlude</title>
+                                <title level="a">The Romantic Adventures of a Milkmaid</title>
+                                <pubPlace>London</pubPlace>
+                                <publisher>Macmillan</publisher>
+                                <date>1913</date>
+                            </bibl>
+
+
+                            <bibl xml:id="Hardy1891_NobleDames">
+                                <author ref="#ps:TH">Hardy, Thomas</author>
+                                <title level="m">A Group of Noble Dames</title>
+                                <title level="a">The First Countess of Wessex</title>
+                                <title level="a">Barbara of the House of Grebe</title>
+                                <title level="a">The Marchioness of Stonehenge</title>
+                                <title level="a">Lady Mottisfont</title>
+                                <title level="a">The Lady Icenway</title>
+                                <title level="a">Squire Petrick's Lady</title>
+                                <title level="a">Anna, Lady Baxby</title>
+                                <title level="a">The Lady Penelope</title>
+                                <title level="a">The Duchess of Hamptonshire</title>
+                                <pubPlace>London</pubPlace>
+                                <publisher>Osgood, McIlvaine</publisher>
+                                <date>1891</date>
+                            </bibl>
+
+
+                        </listBibl>
+
+
+
+                        <listBibl>
+                            <!-- Volumes of Poetry mentioned in letters -->
+                            <head>Volumes of Poetry</head>
+                            
+                           <bibl xml:id="Hardy1919_CollectedPoems">
+                               <author ref="#ps:TH">Hardy, Thomas</author>
+                               <title level="a">Collected Poems</title>
+                               <pubPlace>London</pubPlace>
+                               <publisher>Macmillan</publisher>
+                               <date>1919</date>
+                           </bibl>
+
+                            <bibl xml:id="Hardy1914_SatiresOfCircumstance"> 
+                                <author ref="#ps:TH">Hardy, Thomas</author>
+                                <title level="m">Satires of Circumstance</title>
+                                <pubPlace>London</pubPlace>
+                                <publisher>Macmillan</publisher>
+                                <date>1914</date>
+                                <note>This volume includes the 18 poem sequence <title>Poems of
+                                        1912-1913</title> on the death of Hardy's first wife
+                                        <persName ref="#ps:EmmaHardy">Emma</persName> – extended to 21
+                                    poems in <ref target="#bib:Hardy1919_CollectedPoems"></ref>Collected Poems of 1919.</note>
+                                <title level="a">When I set out for Lyonnesse</title>
+                                <title level="a">Beyond the Last Lamp</title>
+                                <note>First published in 1898.</note>
+                                <title level="a">In the Moonlight</title>
+                                <title level="a">Before and after Summer</title>
+                                <title level="a">Beeny Cliff</title>
+                                <title level="a">Her Secret</title>
+                                <title level="a">The Death of Regret</title>
+                                <title level="a">The Workbox</title>
+                                <title level="a">"Men who march away"</title>
+                                <note>The poem "Men who march away" was published in <orgName>The
+                                        Times</orgName> on 9th September 1914 under the title “Song
+                                    of the Soldiers”.</note>
+                            </bibl>
+
+                            
+                        </listBibl>
+                
+                
+                
+                
+                        <listBibl>
+                            <!-- Individual poems mentioned by name in letters -->
+                            <head>Individual poems mentioned by name in letters</head>
+                            
+                            <bibl xml:id="Hardy1908_ASundayMorningTragedy">
+                                <author ref="#ps:TH">Hardy, Thomas</author>
+                                <title level="a">A Sunday Morning Tragedy</title>
+                                <date>1908</date>
+                                <date>1909</date>
+                            </bibl>
+                            
+                            <bibl xml:id="Hardy1921_ADecemberRainScene">
+                                <author ref="#ps:TH">Hardy, Thomas</author>
+                                <title level="a">A December Rain-Scene</title>
+                                <date>1921</date>
+                                <note>Published under this title in 1921 for <hi rend="italics"></hi>The Fortnightly Review.</note> <!--but may have been written/published as An Autumn Rain-Scene in 1904? -->
+                            </bibl>
+                            
+                 
+                            
+                            <bibl xml:id="Hardy1890_Bereft">
+                                <author ref="#ps:TH">Hardy, Thomas</author>
+                                <title level="a">Bereft, She Thinks She Dreams</title>
+                                <date>1890</date>
+                            </bibl>
+                            <bibl xml:id="Hardy1898_BeyondTheLastLamp">
+                                <author ref="#ps:TH">Hardy, Thomas</author>
+                                <title level="a">Beyond the Last Lamp</title>
+                                <date>1898</date>
+                            </bibl>
+                            
+                            <bibl xml:id="Hardy1899_Departure">
+                                <author ref="#ps:TH">Hardy, Thomas</author>
+                                <title level="a">Departure</title>
+                                <date>1899</date>
+                                <note>Included in <hi rend="italics">Poems of the Present and the Past</hi>, published in 1901.</note>
+                            </bibl>
+                            
+                            <bibl xml:id="Hardy1909_GeorgeMeredith">
+                                <author ref="#ps:TH">Hardy, Thomas</author>
+                                <title level="a">George Meredith</title>
+                                <date>1909</date>
+                                <note>Included in <hi rend="italics">Pieces Occasional and Various</hi>.</note>
+                            </bibl>
+                            
+                            <bibl xml:id="Hardy1896_InAWood">
+                                <author ref="#ps:TH">Hardy, Thomas</author>
+                                <title level="a">In a Wood</title>
+                                <date>1887:1896</date>
+                                <note>Begun in 1887 and completed in 1896.</note>
+                                <note>Published in <ref target="#bib:Hardy1898_WessexPoems">Wessex Poems and Other Verses</ref>.</note>
+                            </bibl>
+                            
+                            <bibl xml:id="Hardy1914_MenWhoMarchAway">
+                                <author ref="#ps:TH">Hardy, Thomas</author>
+                                <title level="a">Men Who March Away</title>
+                                <date>1914</date>
+                            </bibl>
+                            
+                            <bibl xml:id="Hardy1901_TheDear">
+                                <author ref="#ps:TH">Hardy, Thomas</author>
+                                <title level="a">The Dear</title>
+                                <date>1901</date>
+                                <note>Included in <hi rend="italics">Pieces Occasional and Various</hi>.</note>
+                                
+                            </bibl>
+                            
+                            <bibl xml:id="Hardy1913_ThePhantomHorseWoman">
+                                <author ref="#ps:TH">Hardy, Thomas</author>
+                                <title level="a">The Phantom Horsewoman</title>
+                                <date>1913</date>
+                               <note>Included in <hi rend="italics">Collected Poems of 1919.</hi>.</note>
+                            </bibl>
+                            
+                            <bibl xml:id="Hardy1915_ThePityOfIt">
+                                <author ref="#ps:TH">Hardy, Thomas</author>
+                                <title level="a">The Pity of It</title>
+                                <date>1915</date>
+                            </bibl>
+                            
+                            <bibl xml:id="Hardy1902_TheRashBride">
+                                <author ref="#ps:TH">Hardy, Thomas</author>
+                                <title level="a">The Rash Bride</title>
+                                <date>1902</date>
+                            </bibl>
+                            
+                            <bibl xml:id="Hardy1901_UnbornPauperChild">
+                                <author ref="#ps:TH">Hardy, Thomas</author>
+                                <title level="a">To an Unborn Pauper Child</title>
+                                <date>Circa 1898 and 1901</date>
+                            </bibl>
+                            
+                            
+                            <bibl xml:id="Hardy1887_ShelleysSkylark">
+                                <author ref="#ps:TH">Hardy, Thomas</author>
+                                <title level="a">Shelley's Skylark</title>
+                                <date>1887</date>
+                            </bibl>
+                            
+                            
+                            
+                            <bibl xml:id="Hardy1921_TheTwoHouses">
+                                <author ref="#ps:TH">Hardy, Thomas</author>
+                                <title level="a">The Two Houses</title>
+                                <date>1921</date>
+                            </bibl>
+                            
+                            <bibl xml:id="Hardy1921_Voices">
+                                <author ref="#ps:TH">Hardy, Thomas</author>
+                                <title level="a">Voices from Things Growing in a Churchyard</title>
+                                <date>1921</date>
+                                <note>Included in <hi rend="italics"></hi>Late Lyrics and Earlier.</note>
+                            </bibl>
+                            
+                            <bibl xml:id="Hardy1870_WhenISetOutForLyonnesse">
+                                <author ref="#ps:TH">Hardy, Thomas</author>
+                                <title level="a">When I set out for Lyonnesse</title>
+                                <date>1870</date>
+                            </bibl>
+                            
+                        </listBibl>
+                
+                    </listBibl>
+
+        </body>
+    </text>
+</TEI>

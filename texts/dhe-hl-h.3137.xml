@@ -1,0 +1,196 @@
+<?xml-model href="../../schema/hardyletter.rng" type="application/xml" 
+   schematypens="http://relaxng.org/ns/structure/1.0"?><!--<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="dhe-hl-h.3137">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+
+            <title>Letter from Thomas Hardy to Florence Henniker telling her more about his marriage
+               to Florence Dugdale, 6 March 1914.</title>
+            <!--The author of the letter-->
+            <author ref="#ps:TH">Thomas Hardy</author>
+            <!--The editor of the tei file-->
+            <editor ref="#resp-HA">Helen Angear</editor>
+            <funder>Arts and Humanities Research Council</funder>
+            <sponsor>University of Exeter</sponsor>
+            <sponsor>Dorset County Museum</sponsor>
+            <principal>Angelique Richardson</principal>
+
+            <respStmt>
+               <persName ref="#resp:HA">Helen Angear</persName>
+               <resp>Selection</resp>
+               <resp>Transcription</resp>
+
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:BM">Beth Mills</persName>
+               <resp>Proofreading</resp>
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:HP">Hannah Petrie</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="#resp:EW">Elizabeth Williamson</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition, transcribed and edited directly from primary
+               sources</edition>
+         </editionStmt>
+         <publicationStmt>
+            <publisher>University of Exeter Digital Humanities Lab</publisher>
+            <pubPlace>Exeter, UK</pubPlace>
+            <date>November 2019</date>
+            <availability>
+               <p>The letter transcripts are licensed under a Creative Commons Attribution 4.0
+                  International License. This means that you can use these transcripts providing you
+                  acknowledge the Hardy's Correspondents project.</p>
+               <p>The letter images remain the copyright of Dorset Museum. Please contact the Museum
+                  if you would like to reuse any of the letter images.</p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <placeName ref="#pl:Dorchester">Dorchester</placeName>
+                  <institution>Dorset County Museum</institution>
+                  <idno type="DCM">H.3137</idno>
+                  <altIdentifier>
+                     <idno type="XXXX"><!-- optional - any other identifiers --></idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>Letter written on <p><material>thick cream paper,
+                                 unwatermarked</material>.</p>
+                           <p>Pencil library marks on page 4: <note type="libraryMark"
+                              >H.3137</note>.</p>
+                           <p>Note that the fifth page of writing is written in the top margin of
+                              the first page.</p>
+                        </support>
+                        <condition>Good</condition>
+                     </supportDesc>
+                  </objectDesc>
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Prepared as part of the AHRC/REACT Studentship on Thomas Hardy's letters, in
+               conjunction with Dorset County Museum.</p>
+         </projectDesc>
+
+      </encodingDesc>
+      <profileDesc>
+         <correspDesc>
+            <correspAction type="sent">
+               <persName ref="#ps:TH">Thomas Hardy</persName>
+               <placeName ref="#pl:MaxGate">Max Gate, Dorchester</placeName>
+               <date when="1914-03-06"/>
+            </correspAction>
+            <correspAction type="received">
+               <persName ref="#ps:FlorenceHenniker">Florence Henniker</persName>
+            </correspAction>
+            
+            <!-- correspContext> -->
+            <!-- Provides references to preceding or following correspondence related to this piece of correspondence -->
+            <!--</correspContext>-->
+            <correspContext>
+               <ref type="prev" target="dhe-hl-h.3176"> Letter from <persName
+                     ref="#ps:FlorenceHenniker">Henniker</persName> revealing her surprise at the
+                  marriage, praising <persName ref="#ps:FlorenceHardy">Florence</persName> and
+                  asking what their mutual friends thought of the event. </ref>
+               <ref type="next" target="dhe-hl-h.3177"> Letter from <persName
+                     ref="#ps:FlorenceHenniker">Henniker</persName>, giving her response to one of
+                  the two poems Hardy enclosed in his previous letter. From this we can identify
+                  that the poem in question was <ref target="#bib:Hardy1898_BeyondTheLastLamp"
+                     >Beyond the Last Lamp</ref>. </ref>
+            </correspContext>
+         </correspDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="letter">
+            <pb n="1" facs="uoedh_hl_h.3137_1.jpg"/>
+            <opener>
+               <address>
+                  <addrLine>Max Gate</addrLine>
+               </address>
+
+
+               <dateline>
+                  <date when="1914-03-06">6:3:1914</date>
+               </dateline>
+
+
+
+               <salute>My dear friend:</salute>
+            </opener>
+
+            <p>I am writing again to you to answer some points on which you say you are curious (as
+               indeed I should have guessed you were), &amp; also because your letter was so kind as
+               to make me wish to write.</p>
+
+            <p> It has been a great delight to me all through that you know <persName
+                  ref="#ps:FlorenceHardy">Florence</persName> quite well, &amp; like her. As you say
+               she is very sympathetic — so much so that her own health <pb n="2"
+                  facs="uoedh_hl_h.3137_2.jpg"/> is largely dependent upon the happiness or
+               otherwise of her friends. One thing you may be sure of — her intense love &amp;
+               admiration of yourself: she often settles points by saying or thinking what <hi
+                  rend="underline">you</hi> would do in the circumstances: assuming invariably that
+               that is absolutely the right thing.</p>
+
+            <p> I rather am surprised that <hi rend="underline">you</hi> were surprised at the step
+               we have taken — such a course seeming an obvious one to me, <pb n="3"
+                  facs="uoedh_hl_h.3137_3.jpg"/> being as I was so lonely &amp; helpless. I think I
+               told you in my last letter that I am very glad she knew <persName ref="#ps:EmmaHardy"
+                  >Emma</persName> well, &amp; was liked by her even during her latter years, when
+               her mind was a little unhinged at times, &amp; she showed unreasonable dislikes. I
+               wonder if it will surprise you when I say that according to my own experience a
+               second marriage does not, or need not, obliterate an old affection, though it is
+               generally assumed that the first wife is entirely forgotten in such cases.</p>
+
+            <pb n="4" facs="uoedh_hl_h.3137_4.jpg"/>
+            <p>We are going to <placeName ref="#pl:London">London</placeName> next week, but only
+               for a day or two. I will let you know when we go up later (if we do) for a longer
+               stay, so that we may contrive to see you somehow.</p>
+
+
+            <p>Even now I have not answered your question on what people wrote about our marriage.
+               Well: they all say they foresaw it, except one besides yourself — I forget who. Of
+               course they <hi rend="underline">might</hi> say so to show their penetration or claim
+               it. But perhaps they really did.</p>
+
+            <closer>
+               <salute>With all affection I am,</salute>
+               <salute>Your sincere friend</salute>
+
+               <signed>Tho. H.</signed>
+            </closer>
+            <pb n="5" facs="uoedh_hl_h.3137_5.jpg"/>
+            <postscript style="text-orientation: sideways-left" corresp="#m01">
+               <p>I enclose <!-- could include a link to the poems--> 2 little poems of mine you may
+                  like to see. They have appeared in magazines.</p>
+               <p>T.H.</p>
+            </postscript>
+
+
+
+
+         </div>
+
+      </body>
+   </text>
+</TEI>

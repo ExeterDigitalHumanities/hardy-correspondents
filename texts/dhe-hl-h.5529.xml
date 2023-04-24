@@ -1,0 +1,203 @@
+<?xml-model href="../../schema/hardyletter.rng" type="application/xml" 
+   schematypens="http://relaxng.org/ns/structure/1.0"?><!--<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="dhe-hl-h.5529">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+
+            <title>Letter from Harold Temperley to Thomas Hardy on wife sales in <ref
+                  target="#bib:Hardy1886_Mayor"><emph rend="italics">The Mayor of
+                     Casterbridge</emph></ref>, 28 January 1924</title>
+            <!--The author of the letter-->
+            <author ref="#ps:HaroldTemperley">Harold Temperley</author>
+
+
+            <!--The editor of the tei file-->
+            <editor ref="#resp-HA">Helen Angear</editor>
+            <funder>Arts and Humanities Research Council</funder>
+            <sponsor>University of Exeter</sponsor>
+            <sponsor>Dorset County Museum</sponsor>
+            <principal>Angelique Richardson</principal>
+
+            <respStmt>
+               <persName ref="#resp:HA">Helen Angear</persName>
+               <resp>Selection</resp>
+               <resp>Transcription</resp>
+
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:BM">Beth Mills</persName>
+               <resp>Proofreading</resp>
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:HP">Hannah Petrie</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="#resp:EW">Elizabeth Williamson</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition, transcribed and edited directly from primary
+               sources</edition>
+         </editionStmt>
+         <publicationStmt>
+            <publisher>University of Exeter Digital Humanities Lab</publisher>
+            <pubPlace>Exeter, UK</pubPlace>
+            <date>November 2019</date>
+            <availability>
+               <p>The letter transcripts are licensed under a Creative Commons Attribution 4.0
+                  International License. This means that you can use these transcripts providing you
+                  acknowledge the Hardy's Correspondents project.</p>
+               <p>The letter images remain the copyright of Dorset Museum. Please contact the Museum
+                  if you would like to reuse any of the letter images.</p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <placeName ref="#pl:Dorchester">Dorchester</placeName>
+                  <institution>Dorset County Museum</institution>
+                  <idno type="DCM">H.5529</idno>
+                  <altIdentifier>
+                     <idno type="XXXX"><!-- optional - any other identifiers --></idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Letter typed on <material>thick unwatermarked paper</material>. Pencil
+                              library marks on page 2: <note type="libraryMark" rend="pencil"> H.
+                                 5529</note>. </p>
+                           <p>Enclosure not retained with the letter.</p>
+
+                        </support>
+                        <condition>Good</condition>
+                     </supportDesc>
+                  </objectDesc>
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Prepared as part of the AHRC/REACT Studentship on Thomas Hardy's letters, in
+               conjunction with Dorset County Museum.</p>
+         </projectDesc>
+
+      </encodingDesc>
+      <profileDesc>
+         <correspDesc>
+            <correspAction type="sent">
+
+               <persName ref="#ps:HaroldTemperley">Harold Temperley</persName>
+
+
+               <placeName ref="#pl:PerrynRoad18">18 Perryn Road, Acton W., London</placeName>
+               <date when="1924-01-28"/>
+            </correspAction>
+            <correspAction type="received">
+               <persName ref="#ps:TH">Thomas Hardy</persName>
+            </correspAction>
+
+         </correspDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="letter">
+            <pb n="1" facs="uoedh_hl_h.5529_1.jpg"/>
+            <opener>
+               <dateline> 28th January 1924.</dateline>
+               <address>
+                  <addrLine> Thomas Hardy, Esq., O.M., Litt.D., etc.,</addrLine>
+                  <addrLine>Max Gate</addrLine>
+                  <addrLine>Dorchester</addrLine>
+               </address>
+
+
+               <salute>Dear Mr Hardy,</salute>
+            </opener>
+
+
+            <p> As one who had the pleasure of meeting you here at <placeName
+                  ref="#pl:MagdaleneCambridge">Magdalene College</placeName>, I am venturing to
+               write to you on a subject which has always been of interest to me, and which forms a
+               striking incident in the '<ref target="#bib:Hardy1886_Mayor">Mayor of
+                  Casterbridge</ref>'. The incident there related of the sale of the wife is I
+               believe authentic to judge from your Preface. It is a curious fact that Marcellus,
+               the Chargé d'Affaires of France records the sale of wives at <placeName
+                  ref="#pl:SmithfieldMarket">Smithfield</placeName> in 1823. I find two incidents
+               confirming this in the contemporary press, but I have not come across the instance
+               you mention. I am proposing to make a short communication to the second number of the
+                  <orgName ref="CambridgeHistoricalJournal"><hi rend="italics">Cambridge Historical
+                     Journal</hi></orgName> on this subject, and I should be very grateful if you
+               could give me any information as to the case you yourself mention. In case you have
+               not seen the first number, I enclose a copy. You will see the table of contents on
+               the last page of the cover, and it would go in as a note and communication.</p>
+
+            <p> Apologising for troubling you on a subject which you have made more interesting and
+               well-known than would otherwise have been the case and which is in any circumstances
+               of considerable social interest.</p>
+
+            <closer>
+               <salute>I remain, with the greatest respect,</salute>
+               <salute>Yours very truly,</salute>
+
+               <signed>Harold Temperley</signed>
+            </closer>
+            <note rend="pencil" hand="other">
+               <choice>
+                  <abbr>T.O.</abbr>
+                  <expan>Turn Over</expan>
+               </choice>
+            </note>
+
+
+
+         </div>
+
+      </body>
+
+      <back>
+
+         <div type="reply" hand="other" rend="pencil">
+            <pb n="2" facs="uoedh_hl_h.5529_2.jpg"/>
+            <dateline>.... January 1924</dateline>
+            <opener>Dear Mr Temperley:</opener>
+            <p>(Please pardon a dictated letter, on account of weakness of sight)</p>
+            <p>In reply to your inquiry on the sale of a wife in <ref target="#bib:Hardy1886_Mayor"
+                  >The Mayor of Casterbridge</ref>, alluded to in the preface to that tale as being
+               based on fact. I can only say that in the eighteen twenties – a time assumed for the
+               incident there were many wife-sales – as you may easily see by looking through a file
+               of newspapers of that date. These sales had various features of detail, but how much
+               either sale resembled that of the story in its details I am unable to remember. (the
+               novel was written nearly 40 years ago.) I fancy a sailor was the purchaser in one of
+               the true instances, but I am not quite sure. Many thanks for the Historical
+               Journal.</p>
+
+            <closer>
+               <salute>I am,</salute>
+               <salute>Yours truly</salute>
+               <signed>Thomas Hardy.</signed>
+               <address>
+                  <addrLine><hi rend="underline"/>H. W. V. Temperley esq. M. A. </addrLine>
+               </address>
+               <salute>per.</salute>
+               <!-- Not sure how to mark this up correctly. It is not salute but a way to indicate that the letter sent was dictated and not in hardy's hand. -->
+            </closer>
+
+
+         </div>
+      </back>
+   </text>
+</TEI>

@@ -1,0 +1,223 @@
+<?xml-model href="../../schema/hardyletter.rng" type="application/xml" 
+   schematypens="http://relaxng.org/ns/structure/1.0"?><!--<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="dhe-hl-h.3166a">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Friendly letter from Thomas Hardy to Florence Henniker, 19 December 1921</title>
+            <author ref="#ps:TH">Thomas Hardy</author>
+            <!--The editor of the tei file-->
+            <editor ref="#resp-HA">Helen Angear</editor>
+            <funder>Arts and Humanities Research Council</funder>
+            <sponsor>University of Exeter</sponsor>
+            <sponsor>Dorset County Museum</sponsor>
+            <principal>Angelique Richardson</principal>
+
+            <respStmt>
+               <persName ref="#resp:BM">Beth Mills</persName>
+               <resp>Selection</resp>
+               <resp>Proofreading</resp>
+
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:HA">Helen Angear</persName>
+               <resp>Transcription</resp>
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:HP">Hannah Petrie</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="#resp:EW">Elizabeth Williamson</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition, transcribed and edited directly from primary
+               sources</edition>
+         </editionStmt>
+         <publicationStmt>
+            <publisher>University of Exeter Digital Humanities Lab</publisher>
+            <pubPlace>Exeter, UK</pubPlace>
+            <date>November 2019</date>
+            <availability>
+               <p>The letter transcripts are licensed under a Creative Commons Attribution 4.0
+                  International License. This means that you can use these transcripts providing you
+                  acknowledge the Hardy's Correspondents project.</p>
+               <p>The letter images remain the copyright of Dorset Museum. Please contact the Museum
+                  if you would like to reuse any of the letter images.</p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <placeName ref="#pl:Dorchester">Dorchester</placeName>
+                  <institution>Dorset County Museum</institution>
+                  <idno type="DCM">H.3166a</idno>
+                  <altIdentifier>
+                     <idno type="XXXX"><!-- optional - any other identifiers --></idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Letter written on folded <material>cream paper</material>.</p>
+                           <p>Pencil library marks on page 4: <note type="libraryMark" rend="pencil"
+                                 > H.3166a</note>.</p>
+
+                        </support>
+
+                        <condition>Good</condition>
+                        <!-- Need to add in about letterhead here? -->
+                     </supportDesc>
+                  </objectDesc>
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Prepared as part of the AHRC/REACT Studentship on Thomas Hardy's letters, in
+               conjunction with Dorset County Museum.</p>
+         </projectDesc>
+
+      </encodingDesc>
+      <profileDesc>
+         <correspDesc>
+            <!-- Provides detailed correspondence-specific metadata, particularly concerning the communicative aspects 
+            (sending, receiving, forwarding etc.) associated with acts of correspondence. -->
+
+            <correspAction type="sent">
+               <persName ref="#ps:TH">Thomas Hardy</persName>
+               <placeName ref="#pl:MaxGate">Max Gate</placeName>
+               <!-- Lots of variations in the Hardy to Henniker letters from H.3128 to H.3166a. Need to make this info consistent -->
+               <date when="1921-12-19"/>
+            </correspAction>
+            <correspAction type="received">
+               <persName ref="#ps:FlorenceHenniker">Florence Henniker</persName>
+            </correspAction>
+
+         </correspDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="letter">
+            <pb n="1" facs="uoedh_hl_h.3166a_1.jpg"/>
+
+            <opener>
+
+
+               <address rend="letterhead">
+                  <addrLine>Max Gate,</addrLine>
+                  <addrLine>Dorchester.</addrLine>
+               </address>
+               <dateline>
+                  <date when="1921-12-19"> 19 Dec. 1921.</date>
+               </dateline>
+
+               <salute> My dear friend.</salute>
+
+            </opener>
+
+            <p>I have delayed my reply to your kind letter a few days, to bring it into
+               Christmastide, when I know you like to receive missives, even of such a dull
+               character as mine is likely to be I fear. Thank you for your inquiries: we have
+               recovered &amp; are now as well as two aged people can hope to be (<persName
+                  ref="#ps:FlorenceHardy"><choice><abbr>F.</abbr>
+                     <expan>Florence</expan></choice></persName> will thank me for putting it this
+               way!) <milestone xml:id="m01" unit="section"/>I fancy from the brightness of your
+               letter that you are already profiting <pb n="2" facs="uoedh_hl_h.3166a_2.jpg"/> from
+               the country air, even though you must miss the people you are able to see in
+                  <placeName ref="#pl:London">London</placeName>. We are in a drizzle here today,
+               though the weather has on the whole been good. </p>
+
+            <p><placeName ref="#pl:BognorRegis">Bognor</placeName> I seem to know quite well from
+               friends, though I have never actually set foot in it – which is very stupid, as I
+               have been to <placeName ref="#pl:Chichester"> Chichester</placeName>, <placeName
+                  ref="#pl:Worthing">Worthing</placeName>, &amp; all about there several times. The
+               young architect who was the original of <persName ref="#ps:StephenSmith">Stephen
+                  Smith</persName> in "<ref target="#bib:Hardy1873_PairOfBlueEyes">A Pair of Blue
+                  Eyes</ref>" (so far as he had any original) used to be enthusiastic on <placeName
+                  ref="#pl:BognorRegis">Bognor</placeName> &amp; to go there with his family. <pb
+                  n="3" facs="uoedh_hl_h.3166a_3.jpg"/> "<placeName ref="#pl:BlakesCottage">Blake’s
+                  Cottage</placeName>" makes <placeName ref="#pl:Felpham">Felpham</placeName>
+               interesting: but which Blake does it mean? Since writing this question I have
+               discovered that it means <persName ref="#ps:WilliamBlake">Blake</persName> the poet.
+                  <persName ref="#ps:WilliamHayley">Hayley</persName> was a poetaster, <persName
+                  ref="#ps:WilliamBlake">Blake</persName>’s friend, &amp; was ridiculed by <persName
+                  ref="#ps:GeorgeByron">Byron</persName> in "English Bards." I don’t know what
+               "steyne" means, unless it is a paved way. </p>
+
+            <p>I have read very little on the Irish situation lately: it was so worrying that I had
+               to give it up. "Irish Free State" does, as you say, sound unromantic. The Ireland
+               Free State, or Irish Freeland would perhaps be less so.</p>
+
+            <p><persName ref="#ps:WalterdelaMare">Walter de la Mare</persName> has sent us his new
+               poems. They are rather too obscure, I think: but many of them have his own peculiar
+               beauty in them when you get to the bottom <pb n="4" facs="uoedh_hl_h.3166a_4.jpg"/>
+               of their meaning. </p>
+
+            <p>We were at our neighbours' the <persName ref="#ps:CecilHanbury">Hanburys</persName>
+               at <placeName ref="#pl:KingstonMaurward">Kingston Maurward</placeName> yesterday
+               afternoon. Her father, <persName ref="#ps:JohnSymonsJeune">Mr
+               Symons-Jeune</persName>, whom you met, is coming <add place="above">to them</add> to
+               stay over Christmas, so we shall see him. A very mild little poem of mine appears in
+               the <choice><abbr>Dec.</abbr><expan>December</expan></choice>
+               <orgName type="periodical" ref="#ps:Fortnightly">Fortnightly</orgName>, and to save
+               trouble I send a <add place="above">spare</add> proof of it instead of the heavy
+               magazine. I have also another – a longer one – in the Dec. <orgName type="newspaper"
+                  ref="#ps:LondonMercury">London Mercury</orgName>. It would, I think, please you
+               more than this trifling one, but I have neither proof nor magazine. The title is <ref
+                  target="#bib:Hardy1921_Voices">"Voices from things growing (in a
+                  churchyard)"</ref>.</p>
+
+
+            <p>Now I come to wishing you a happy Xmas &amp; New Year: as also does <persName
+                  ref="#ps:FlorenceHardy">
+                  <choice><abbr>F.</abbr>
+                     <expan>Florence</expan></choice></persName>, and many of them.</p>
+
+
+
+            <closer>
+               <salute>Yours affectionately</salute>
+               <signed> Th: H.</signed>
+            </closer>
+            <postscript>
+
+               <p xml:id="h3166aa" corresp="#m01" style="transform:rotateZ(180deg)">I had nearly
+                  forgotten to say that <persName ref="#ps:FlorenceHardy">
+                     <choice><abbr>F.</abbr>
+                        <expan>Florence</expan></choice></persName> had a letter in last Friday’s
+                     <orgName ref="#ps:Times"><hi rend="underline">Times</hi></orgName> (Dec 16.)
+                  about squirrels – I wonder if you saw it. Th. H. </p>
+            </postscript>
+
+         </div>
+      </body>
+      <back>
+         <div type="enclosure">
+            <!-- NEED TO MARK UP AS A POEM AS WELL? -->
+
+            <note><hi rend="underline" hand="blue pen"/>F.R. – First page in Dec issue</note>
+            <head>
+               <ref target="#bib:Hardy1921_ADecemberRainScene">A DECEMBER RAIN-SCENE</ref>.</head>
+            <l>THERE trudges one to a merrymaking</l>
+            <l>With a sturdy swing,</l>
+            <l>On whom the rain comes down.</l>
+
+            <!-- continues on but wondering if we should transcribe it or just make a note of what the enclosure is and then have the image? -->
+
+         </div>
+      </back>
+   </text>
+</TEI>

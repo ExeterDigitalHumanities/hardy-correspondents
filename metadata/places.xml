@@ -1,0 +1,3153 @@
+<!--<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>--><?xml-model href="../../schema/hardyplaces.rng" schematypens="http://relaxng.org/ns/structure/1.0" ?><?xml-model href="../../schema/hardyplaces.rng" schematypens="http://purl.oclc.org/dsdl/schematron" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Index of Places</title>
+                
+                <funder>Arts and Humanities Research Council</funder>
+                <sponsor>University of Exeter</sponsor>
+                <principal>Angelique Richardson</principal>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>University of Exeter Digital Humanities Lab</publisher>
+                <pubPlace>Exeter, UK</pubPlace>
+                <date>November 2019</date>
+                <availability>
+                    <p>The letter transcripts are licensed under a Creative Commons Attribution 4.0
+                        International License. This means that you can use these transcripts providing you
+                        acknowledge the Hardy's Correspondents project.</p>
+                    <p>The letter images remain the copyright of Dorset Museum. Please contact the Museum
+                        if you would like to reuse any of the letter images.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Compiled from various sources cited in individual entries</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <geoDecl></geoDecl>
+        </encodingDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <listPlace>
+                <head>List of Place Names</head>
+                
+
+                
+                <place xml:id="Acton" type="region">
+                    <placeName role="default">Acton</placeName>
+                    <location>
+                        <settlement ref="#London"/>
+                        <geo>51.508481 -0.274549</geo>
+                    </location>
+                    <!-- 51.50901, -0.2762 -->
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="2657697"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Acton,_London"/>
+                    </listBibl>
+                </place>
+                    
+                <place xml:id="Agra" type="city">
+                    <placeName role="default">Agra</placeName>
+                    <location>
+                        <country ref="#India"></country>
+                        <geo>27.182004 78.000570</geo>
+                    </location>
+                    <!-- 527.18333, 78.01667 -->
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="1279259"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Agra"/>
+                    </listBibl>
+                </place>
+ 
+
+                
+                <place xml:id="America" type="country">
+                    <placeName>America</placeName>
+                    <placeName role="default">United States of America</placeName>
+                    <location>
+                        <geo n="1">37.0 -95.7</geo>
+                    </location>
+                    <note>A generic reference to America</note>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="6252001"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="United_States"/>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="TheAnchoragePevenseyBay" type="building">
+                    <placeName role="default">The Ancorage, Pevensey Bay</placeName>
+                    <location>
+                        <settlement ref="#PevenseyBay"/>
+                        <geo>50.810634 0.349376</geo>
+                    </location>
+                </place>
+                
+                <place xml:id="Australia" type="country">
+                    <placeName role="default">Australia</placeName>
+                    <location>
+                        <geo>-25 135</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="2077456"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Australia"/>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="Austria" type="country">
+                    <placeName role="default">Austria</placeName>
+                    <location>
+                        <geo>47.406210 14.187559</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="2782113"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Austria"/>
+                    </listBibl>
+                    <!-- 47.33333, 13.33333 -->
+                </place>
+                
+                
+                <place xml:id="Attisham" type="parish"> 
+                    <placeName role="default">Attisham</placeName>
+                    
+                    <location>
+                        <region type="county" ref="#Dorset"/>
+                        <geo>50.4822 2.517</geo> <!--provided by Sophie from OS so may need tweaking in terms of formatting for Tei?  Latitude: 50° 48' 22" N
+
+Longitude: 2° 51' 7" W
+-->
+                        
+                    </location>
+                </place>
+                
+                <!--Would like to add a geo reference but can't find a street of this name in Wimborne.-->
+                <!--There is an Avenue Road, but it is unlikely to be the right one (BM)-->
+                <place xml:id="TheAvenue" type="street">
+                    <placeName role="default">The Avenue</placeName>
+                    <location>
+                        <settlement type="town" ref="#Wimborne"/>
+                        <note>Unknown location where Hardy lived for a period.</note> 
+                    </location>
+                </place>
+ 
+
+                
+                <place xml:id="Avignon" type="city">
+                    <placeName role="default">Avignon</placeName>
+                    <location>
+                        <country type="country" ref="#France"/>
+                        <geo>43.949608 4.805335</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="3035681"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Avignon"/>
+                    </listBibl>
+                    <!--        43.94834, 4.80892 -->
+                </place>
+                
+                <place xml:id="Balayan" type="town"> <!-- Municipality in Philippines-->
+                    <placeName role="default">Balayan</placeName>
+                    <location>
+                        <region type="county" ref="#Batangas"/>   
+                        <geo>13.937058 120.700241</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="1728336"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Balayan"/>
+                    </listBibl>
+                    <!-- 13.93714, 120.73224 -->
+                </place>
+                
+                <place xml:id="BarnesTheatre" type="building">
+                    <placeName role="default">Barnes Theatre</placeName>
+                    <location>
+                        <!--Now called Olympic Studios; see http://www.olympicstudios.co.uk/history/ (BM)-->
+                        <settlement type="city" ref="#London"/>
+                        <geo>51.475200 -0.241275</geo>
+                    </location>
+                    <note>Having different names before and afterwards, the building was named "Barnes Theatre" during the 1920s. An adaptation of "Tess" was performed here.</note>
+                </place>
+                
+                <place xml:id="Batangas" type="county"><!-- Not a county but a province. Has different structures. Equivalent is a Barangay. -->
+                    <placeName role="default">Batangas</placeName>
+                    <location>
+                        <country ref="#Philippines"/>
+                        <geo>13.982174 120.873196</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="1726280"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Batangas"/>
+                    </listBibl>
+                    <!-- 13.7567, 121.0584 -->
+                </place>
+                
+                <place xml:id="Beaminster" type="town">
+                    <placeName role="default">Beaminster</placeName>
+                    <location>
+                        <region type="county" ref="#Dorset"/>
+                        <geo>50.810956 -2.743120</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="2656100"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Beaminster"/>
+                    </listBibl>
+                    <!-- 50.809, -2.7391 -->
+                </place>
+                
+                <place xml:id="Beeny" type="village"> <!-- Really a hamlet -->
+                    <placeName role="default">Beeny</placeName>
+                    <location>
+                        <region type="county" ref="#Cornwall"/>
+                        <geo>50.703172 -4.671803</geo>
+                    </location>
+                </place>
+                 
+                <place xml:id="BeenyCliff" type="geographical"> 
+                    <placeName role="default">Beeny Cliff</placeName>
+                    <location>
+                        <settlement ref="#Beeny"/>                         
+                        <geo>50.703142 -4.681635</geo> 
+                    </location>
+                </place>
+                
+                <place xml:id="BereRegis" type="village"><!--it is also a parish-->
+                    <placeName role="default">Bere Regis</placeName>
+                    <location>
+                        <region type="county" ref="#Dorset"/>
+                        <geo n="1">50.753400 -2.220357</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="2655862"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Bere-Regis"></bibl>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="Berkshire" type="county">
+                    <placeName role="default">Berkshire</placeName>
+                    <location>
+                        <country ref="#England"/>
+                        <geo>51.416667 -1</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="2655856"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Berkshire"/>
+                    </listBibl>
+                    <!-- 51.5, -1.25 Info above is for West Berkshire! -->
+                </place>
+                
+                <place xml:id="Bettiscombe" type="village">
+                    <placeName role="default">Bettiscombe</placeName>
+                    <location>
+                        <region type="county" ref="#Dorset"/>
+                        <geo>50.796020 -2.854268</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="7295012"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Bettiscombe"/>
+                    </listBibl>
+                    <!-- 50.79752, -2.85237 -->
+                </place>
+                
+                <place xml:id="BexhillRoad87" type="building">
+                    <placeName role="default">87 Bexhill Road</placeName>
+                    <location>
+                        <settlement ref="#London"/>
+                        <geo>51.449983 -0.032436</geo>
+                    </location>
+                </place>
+                
+                <place xml:id="BirdsmoorGate" type="village">
+                    <placeName role="default">Birdsmoor Gate</placeName>
+                    <location>
+                        <region type="county" ref="#Dorset"/>
+                        <geo>50.804825 -2.864629</geo>
+                    </location>
+                </place>
+                   
+                <place xml:id="Blackdown" type="village">
+                    <placeName role="default">Blackdown</placeName>
+                    <location>
+                        <region type="county" ref="#Dorset"/>
+                        <geo>50.825231 -2.858375</geo>
+                    </location>
+                </place>
+                
+                <place xml:id="Blackheath" type="region">
+                    <placeName role="default">Blackheath</placeName>
+                    <location>
+                        <settlement type="city" ref="#London"/>
+                        <geo>51.465986 0.009006</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="6947041"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Blackheath_London"/>
+                    </listBibl>
+                    <!--51.4647, 0.0079  -->
+                </place>
+                
+                <place xml:id="Blackpool" type="town">
+                    <placeName role="default">Blackpool</placeName>
+                    <location>
+                        <region type="county" ref="#Lancashire"/>
+                        <geo>53.814444 -3.030384</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="3333127"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Blackpool"/>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="BlakesCottage" type="building">
+                    <placeName role="default">Blake's Cottage</placeName>
+                    <location>
+                        <settlement type="town" ref="#Felpham"/> 
+                    </location>
+                    <listBibl type="general">
+                        <bibl type="website" ref="http://www.blakecottage.org/"/>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="BognorRegis" type="town">
+                    <placeName role="default">Bognor Regis</placeName>
+                    <location>
+                        <region type="county" ref="#WestSussex"/>
+                        <geo>50.783067 -0.673075</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="2655262"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Bognor_Regis"></bibl>
+                    </listBibl>
+                    <!-- 50.78206, -0.67978
+                
+ -->
+                </place>     
+                
+                <place xml:id="Bolton" type="city">
+                    <placeName role="default">Bolton</placeName>
+                    <location>
+                        <region type="county" ref="#Lancashire"/>
+                        <geo>53.576873 -2.428240</geo>
+                    </location>
+                </place>
+                
+                <place xml:id="BondStreet" type="street">
+                    <placeName role="default">Bond Street</placeName>
+                    <location>
+                        <settlement type="city" ref="#London"/>
+                        <geo>51.550301 0.004128</geo>
+                    </location>
+                    <!--  <note>A major shopping street in London's West End since the eighteenth century.</note>-->
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Bond_Street"/>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="Boscastle" type="town">
+                    <placeName role="default">Boscastle</placeName>
+                    <location>
+                        <region type="county" ref="#Cornwall"/>
+                        <geo>50.687291 -4.693040</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="2655148"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Boscastle"/>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="Boston" type="city">
+                    <placeName role="default">Boston</placeName>
+                    <location>
+                        <region type="state" ref="#Massachusetts"/>
+                        <geo>42.360759 -71.058532</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="4930956"/>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="Bournemouth" type="town">
+                    <placeName role="default">Bournemouth</placeName>
+                    <location>
+                        <region type="county" ref="#Dorset"/>
+                        <geo>50.721076 -1.881397</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="2655095"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Bournemouth"/>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="Brazil" type="country">
+                    <placeName role="default">Brazil</placeName>
+                    <location>
+                        <geo>-8.574054 -55.624808</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="3469034"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Brazil"/>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="Bridport" type="town">
+                    <placeName role="default">Bridport</placeName>
+                    <location>
+                        <region type="county" ref="#Dorset"/>
+                        <geo>50.733727 -2.758395</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="2654726"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Bridport"/>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="Broadwindsor" type="village">
+                    <placeName role="default">Broadwindsor</placeName>
+                    <location>
+                        <region type="county" ref="#Dorset"/>
+                        <geo>50.819794 -2.798625</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="2654623"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Broadwindsor"/>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="BrookStreet59a" type="building">
+                    <placeName role="default">59a Brook Street</placeName>
+                    <location>
+                        <settlement type="city" ref="#London"/>
+                        <geo>51.512546 -0.148434</geo>
+                    </location>
+                    <!--  <note>Location of Macmillan's Magazine.</note>-->
+                </place>
+                
+                <place xml:id="BuckburyFitzpiers" type="village" role="fictional">
+                    <placeName role="default">Buckbury Fitzpiers</placeName>
+                    <location>
+                        <region type="county" ref="#Dorset"/>
+                    </location>
+                    <!--no geonames entry-->
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Thomas_Hardy%27s_Wessex"/>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="BucklandNewton" type="village">
+                    <placeName role="default">Buckland Newton</placeName>
+                    <location>
+                        <region type="county" ref="#Dorset"/>
+                        <geo>50.845432 -2.443322</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="2654398"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Buckland_Newton"/>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="BurlingtonHouse" type="building">
+                    <placeName role="default">Burlington House</placeName>
+                    <location>
+                        <settlement type="city" ref="#London"/>
+                        <geo>51.509302 -0.139703</geo>                        
+                    </location>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Burlington_House"/>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="Bude" type="town">
+                    <placeName role="default">Bude</placeName>
+                    <location>
+                        <region type="county" ref="#Cornwall"/>
+                        <geo>50.827383 -4.546144</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="2654380"/>
+                    
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Bude"/>
+                    </listBibl>
+                </place>
+
+
+                
+                <place xml:id="Canada" type="country">
+                    <placeName role="default">Canada</placeName>
+                    <location>
+                        <geo>59.972692 -113.352105</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="6251999"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Canada"/>
+                    </listBibl>
+                </place>
+
+                
+                <place xml:id="CliffWithoutAName" role="fictional" type="geographical" corresp="#BeenyCliff">
+                    <placeName role="default">Cliff without a Name</placeName>
+                    <location>
+                        <region type="county" ref="#Cornwall"/> 
+                        <note>Cornwall is referred to as Off Wessex.</note>
+                    </location>
+                    <note>Suggested further reading: <ref target="#bib:Hardy1873_PairOfBlueEyes"><hi rend="italics">A Pair of Blue Eyes</hi></ref>.</note> 
+                </place>
+
+                <place xml:id="Cambridge" type="city">
+                    <placeName role="default">Cambridge</placeName>
+                    <location>
+                        <region type="county" ref="#Cambridgeshire"/>
+                        <geo>52.208586 0.121883</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="2653941"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Cambridge"/>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="Cambridgeshire" type="county">
+                    <placeName role="default">Cambridgeshire</placeName>
+                    <location>
+                        <country ref="#England"/>
+                        <geo>52.339058 0.059058</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="11609029"/> 
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Cambridgeshire"/>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="CatherineStreet18" type="building">
+                    <placeName role="default">18 Catherine Street</placeName>
+                    <location>
+                        <settlement type="city" ref="#London"/>
+                        <geo>51.512374 -0.119727</geo> 
+                    </location>
+                </place>
+
+               
+                
+           
+                <place xml:id="UniversityofCambridge" type="village">
+                    <placeName role="default">University of Cambridge</placeName>
+                    <location>
+                        <settlement type="city" ref="#Cambridge"/>
+                        <geo>52.204326 0.114984</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="7288046"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="University_of_Cambridge"/>
+                    </listBibl>
+
+                </place>
+               
+               
+
+                
+                
+                <place xml:id="ChelseaStation" type="building">
+                    <placeName role="default">Chelsea Station</placeName>
+                    <location>
+                        <settlement type="city" ref="#London"/>  
+                        <geo>51.480564 -0.188517</geo>
+                    </location>                    
+                    <note>Chelsea Station was renamed Chelsea and Fulham Station on 25th November
+                        1902. It was closed in 1940.</note>
+                </place>
+                
+                <place xml:id="ChelseaStreet" type="street">
+                    <placeName role="default">Chelsea Street</placeName>
+                    <location>
+                        <settlement type="city" ref="#London"/>
+                    </location>
+                </place>
+                
+                <place xml:id="Cheshire" type="county">
+                    <placeName role="default">Cheshire</placeName>
+                    <location>
+                        <country type="country" ref="#England"/>
+                        <geo>53.170922 -2.615096</geo>
+                    </location>
+                </place>
+                
+                <place xml:id="Chicago" type="city">
+                    <placeName role="default">Chicago</placeName>
+                    <location>
+                       <region type="state" ref="#Illinois"/> 
+                        <geo>41.840563 -87.677170</geo>
+                    </location>
+                </place>
+                
+                <place xml:id="Chichester" type="city">
+                    <placeName role="default">Chichester</placeName>
+                    <location>
+                        <region type="county" ref="#WestSussex"/>
+                        <geo>50.838440 -0.774935</geo>
+                    </location>                    
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Chichester"></bibl>
+                    </listBibl>
+                </place>
+
+                
+                
+                
+                <place xml:id="ClothFair" type="street">
+                    <placeName role="default">Cloth Fair</placeName>
+                    <location>
+                        <settlement type="city" ref="#London"/>
+                        <geo>51.519051 -0.099785</geo>
+                    </location>
+                </place>
+                
+                <place xml:id="Colorado" type="state">
+                    <placeName role="default">Colorado</placeName>
+                    <location>
+                        <country type="country" ref="#America"/>
+                        <geo>40.597237 -106.255457</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="5417618"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Colorado"/>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="Cornwall" type="county">
+                    <placeName role="default">Cornwall</placeName>
+                    <location>
+                        <country type="country" ref="#England"/>
+                        <geo>50.456770 -4.770748</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="2652355"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Cornwall"/>
+                    </listBibl>
+                    
+                </place>
+
+                
+                <place xml:id="Crewe" type="town">
+                    <placeName role="default">Crewe</placeName>
+                    <location>
+                        <region type="county" ref="#Cheshire"/>
+                        <geo>53.101024 -2.444167</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="2652002"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Crewe"/>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="Crewkerne" type="town">
+                    <placeName role="default">Crewkerne</placeName>
+                    <location>
+                        <region type="county" ref="#Somerset"/>
+                        <geo>50.883010 -2.795877</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="2652000"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Crewekerne"/>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="Cumbria" type="county">
+                    <placeName role="default">Cumbria</placeName>
+                    <location>
+                        <country ref="#England"/>
+                        <geo>54.621854 -2.944134</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="2651712"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Cumbria"/>
+                    </listBibl>
+                    
+                </place>
+                
+                <place xml:id="Dartmoor" type="geographical">
+                    <placeName role="default">Dartmoor</placeName>
+                    <location>
+                        <region type="county" ref="#Devon"/>
+                        <geo>50.566667 -4.0</geo>
+                    </location>
+                    <note>A National Park in the South West of England. <!-- noted for its moorland and
+                        industrial archaeology --></note>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="10244122"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Dartmoor"/>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="Dartmouth" type="town">
+                    <placeName role="default">Dartmouth</placeName>
+                    <location>
+                        <region type="county" ref="#Devon"/>
+                        <geo>50.354030 -3.579406</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="2651498"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Dartmouth"/>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="DelamereTerrace29" type="building">
+                    <placeName role="default">29 Delamere Terrace</placeName>
+                    <location>
+                        <settlement type="city" ref="#London"/>
+                        <geo>51.521688 -0.185823</geo>    
+                    </location>
+                    
+                </place>
+                
+                <place xml:id="Denchworth" type="village">
+                    <placeName role="default">Denchworth</placeName>
+                    <location>
+                        <region type="county" ref="#Oxfordshire"/>
+                        <geo>51.62645 -1.45846</geo>
+                    </location>
+                    <note>Denchworth was part of Berkshire until the 1974 boundary changes transferred the Vale of White Horse to Oxfordshire. </note>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="7292140"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Denchworth"/>
+                            
+                    </listBibl>
+                </place>
+                
+                <place xml:id="Devon" type="county">
+                    <placeName role="default">Devon</placeName>
+                    <location>
+                        <region type="country" ref="#England"/>
+                        <geo>50.7 -3.8</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="2651292"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Devon"/>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="DonheadStAndrew" type="village">
+                    <placeName role="default">Donhead St Andrew</placeName>
+                    <location>
+                        <region type="county" ref="#Wiltshire"/>
+                        <geo>51.023034 -2.118002</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="2651122"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Donhead_St_Andrew"/>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="Dorchester" type="town">
+                    <placeName role="default">Dorchester</placeName>
+                    <location>
+                        <region type="county" ref="#Dorset"/>
+                        <geo>50.711533 -2.441255</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="2651101"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Dorchester,_Dorset"/>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="DorsetCountyMuseum" type="building">
+                    <placeName role="default">Dorset County Museum</placeName> <!-- Might need to take out 'County' at a later date as name is changing -->
+                    <location>
+                        <settlement ref="#Dorchester"/>
+                        <geo>50.715508 -2.437209</geo>
+                    </location>
+                    <listBibl type="general">
+                        <bibl type="website" n="https://dorsetcountymuseum.org/"/>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="Dorset" type="county">
+                    <placeName role="default">Dorset</placeName>
+                    <location>
+                        <country ref="#England"/>
+                        <geo>50.833333 -2.333333</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="2651079"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Dorset"/>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="EastSussex" type="county">
+                    <placeName role="default">East Sussex</placeName>
+                    <location>
+                        <country ref="#England"/>
+                        <geo>50.955845 0.250217</geo>
+                    </location>
+                </place>
+   
+   
+                
+                
+                <place xml:id="EgdonHeath" role="fictional" type="geographical">
+                    <placeName role="default">Egdon Heath</placeName>
+                    <location>
+                        <region type="county" ref="#Wessex"/>
+                    </location>
+                    <listBibl type="academic">
+                        <bibl type="academic" n="Hardy1878_ReturnNative"/>
+                    </listBibl>
+                    <!--no geonames entry-->
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Egdon_Heath"/>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="Enfield" type="town">
+                    <placeName role="default">Enfield</placeName>
+                    <location>
+                        <settlement type="city" ref="#London"/>
+                        <geo>51.6516 -0.0837</geo>
+                    </location>
+                    <note>A borough in north London.</note>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="2649997"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="London_Borough_of_Enfield"/>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="England" type="country">
+                    <placeName role="default">England</placeName>
+                    <location>
+                        <geo n="2">52.355500 -1.174300</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="6269131"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="England"/>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="EnnismoreGardens36" type="building">
+                    <placeName role="default">36 Ennismore Gardens</placeName>
+                    <location>
+                        <settlement type="city" ref="#London"/>
+                        <geo>51.499124 -0.169814</geo>
+                    </location>
+                </place>
+                
+                <place xml:id="Essex" type="county">
+                    <placeName role="default">Essex</placeName>
+                    <location>
+                        <country ref="#England"/>
+                        <geo>51.816137 0.478702</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="2649889"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Essex"/>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="EtonCollege" type="building">
+                    <placeName role="default">Eton College</placeName>
+                    <location>
+                        <settlement type="town" ref="#Windsor"/>
+                        <geo>51.495792 -0.604457</geo>
+                    </location>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Eton_College"/>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="Exeter" type="city">
+                    <placeName role="default">Exeter</placeName>
+                    <location>
+                        <region type="county" ref="#Devon"/>
+                        <geo>50.7236 -3.52751</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="2649808"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Exeter"/>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="ExeterCathedral" type="building">
+                    <placeName role="default">Exeter Cathedral</placeName>
+                    <location>
+                        <settlement type="city" ref="#Exeter"/>
+                        <geo>50.722440 -3.529910</geo>
+                    </location>
+                    <note>Exeter Cathedral, formally known as the Cathedral Church of Saint Peter at Exeter, is an Anglican cathedral, 
+                        and the seat of the Bishop of Exeter, in the city of Exeter, Devon, in South West England.</note>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="6619873"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Exeter_Cathedral"/>
+                    </listBibl>
+                </place>
+
+                <place xml:id="Exmoor" type="geographical">
+                    <placeName role="default">Exmoor</placeName>
+                    <location>
+                        <region type="county" ref="#Devon"/>
+                        <region type="county" ref="#Somerset"/>
+                        <geo>51.14349 -3.653087</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="2649801"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Exmoor"/>
+                    </listBibl>
+                </place>
+                
+
+                
+                <place xml:id="Faringdon" type="town">
+                    <placeName role="default">Faringdon</placeName>
+                    <location>
+                        <region type="county" ref="#Oxfordshire"/>
+                        <geo>51.659190 -1.584696</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="264986"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Faringdon"/>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="Felpham" type="village">
+                    <placeName role="default">Felpham</placeName>
+                    <location>
+                        <region type="county" ref="#WestSussex"/>
+                        <geo>50.794580 -0.645047</geo>
+                    </location>     
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="2649576"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Felpham"></bibl>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="FerneHouse" type="building">
+                    <placeName role="default">Ferne House</placeName>
+                    <location>
+                        <settlement type="village" ref="#DonheadStAndrew"/>
+                        <geo>51.002622 -2.102208</geo>
+                    </location>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Ferne_House"/> <!-- Second House in wiki link was owned by Hamiltons and used as an animal sanctuary. -->
+                    </listBibl>
+                </place>
+
+                
+                <place xml:id="France" type="country">
+                    <placeName role="default">France</placeName>
+                    <location>
+                        <geo>47.243137 2.777387</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="3017382"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="France"></bibl>
+                    </listBibl>
+                </place>
+                
+
+                <place xml:id="Gallipoli" type="geographical">
+                    <placeName role="default">Gallipoli</placeName>
+                    <location>
+                        <country ref="#Turkey"/>
+                        <geo>40.333343 26.500023</geo>
+                        <note>The Gallipoli Campaign took place in the First World War.</note>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="746980"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Gallipoli"></bibl>
+                    </listBibl>
+                    
+                </place>
+
+
+                <place xml:id="Germany" type="country">
+                    <placeName role="default">Germany</placeName>
+                    <location>
+                        <geo>50.799388 9.963316</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="2921044"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Germany"/>
+                    </listBibl>
+                </place>
+
+                
+     
+     
+                <place xml:id="Glasgow" type="city">
+                    <placeName role="default">Glasgow</placeName>
+                    <location>
+                        <country type="country" ref="#Scotland"/>
+                        <geo>55.86515 -4.25763</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="2648579"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Glasgow"/>
+                    </listBibl>
+                </place>
+                
+                
+                <place xml:id="Gloucestershire" type="county">
+                    <placeName role="default">Gloucestershire</placeName>
+                    <location>
+                        <country type="country" ref="#England"/>
+                        <geo>51.83333 -2.16667</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="2648404"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Gloucestershire"/>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="GrangeOverSands" type="town">
+                    <placeName role="default">Grange-over-Sands</placeName>
+                    <location>
+                        <region type="county" ref="#Lancashire" to="1974"/>
+                        <region type="county" ref="#Cumbria" from="1974"/>
+                        <geo>54.191070 -2.910692</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="6931071"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Grange-over-Sands"/>
+                    </listBibl>
+                    
+                </place>
+                
+                <place xml:id="Greece" type="country">
+                    <placeName role="default">Greece</placeName>
+                    <location>
+                        <geo>39.451152 22.162743</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="390903"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Greece"/>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="Greenwich" type="town">
+                    <placeName role="default">Greenwich</placeName>
+                    <location>
+                        <settlement type="city" ref="#London"/>
+                        <geo>51.45 0.05</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="3333147"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Greenwich"/>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="TheGreen17" type="building">
+                    <placeName role="default">17 The Green</placeName>
+                    <location>
+                        <settlement type="town" ref="#Richmond"/>  
+                        <geo>51.462860 -0.306884</geo>
+                    </location>
+                </place>
+                
+                <place xml:id="TheHague" type="city">
+                    <placeName role="default">The Hague</placeName>
+                    <location>
+                        <region type="province" ref="#SouthHolland"></region> 
+                        <geo>52.070220 4.296976</geo>
+                    </location>
+                </place>
+                
+               <place xml:id="HardyRoad30" type="building">
+                   <placeName role="default">30 Hardy Road</placeName>
+                   <location>
+                       <settlement type="region" ref="#Blackheath"/>
+                       <geo>51.480920 0.013564</geo>
+                   </location>
+               </place>
+                
+                <place xml:id="HigherBockhampton" type="hamlet">
+                    <placeName role="default">Higher Bockhampton</placeName>
+                    <location>
+                        <region type="county" ref="#Dorset"/>
+                        <geo>50.73091 -2.39257</geo>
+                    </location>
+                    <note>Higher Bockhampton is a tiny hamlet on the edge of Puddletown Heath containing the woodland cottage where Thomas Hardy was born on 2 June 1840. </note>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="7302256"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="website" ref="https://www.visit-dorset.com/explore/higher-bockhampton-p1124053"/>
+                    </listBibl>
+                    
+                </place>
+                
+                <place xml:id="HogarthHouse" type="building">
+                    <placeName role="default">Hogarth House, Paradise Road</placeName>
+                    <location>
+                        <settlement type="town" ref="#Richmond"/>
+                        <geo>51.460383 -0.301643</geo>
+                    </location>
+                </place>
+                
+                <place xml:id="InglethorpeManor" type="building">
+                    <placeName role="default">Inglethorpe Manor</placeName>
+                    <location>
+                        <settlement type="town" ref="#Wisbech"/>
+                        <geo>52.643556 0.189971</geo>
+                    </location>
+                </place>
+                    
+                
+                <place xml:id="HammersmithTerrace8" type="building">
+                    <placeName role="default">8 Hammersmith Terrace</placeName>
+                    <location>
+                        <settlement type="city" ref="#London"/>
+                        <geo>51.489818 -0.242553</geo>
+                    </location>
+                    <note>Home of May Morris, daughter of William Morris.</note>
+                </place>
+
+                
+                
+                <place xml:id="HanoverTerrace17" type="building">
+                    <placeName role="default">17 Hanover Terrace</placeName>
+                    <location>
+                        <region type="region" ref="#RegentsPark"/>
+                        <geo>51.528070 -0.163340</geo>                        
+                    </location>
+                </place>
+                
+                <place xml:id="HenriettaStreet11" type="building">
+                    <placeName role="default">11 Henrietta Street</placeName>
+                    <location>
+                        <settlement type="region" ref="#CoventGarden"/>
+                        <geo>51.511051 -0.123627</geo>
+                    </location> 
+                </place>
+                
+                <place xml:id="CoventGarden" type="region">
+                    <placeName role="default">Covent Garden</placeName>
+                    <location>
+                        <settlement type="city" ref="#London"/>
+                        <geo>51.511795 -0.123193</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="2652222"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Covent_Garden"/>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="HollandPlaceChambers5" type="building">
+                    <placeName role="default">5 Holland Place Chambers</placeName>
+                    <location>
+                        <settlement type="city" ref="#London"/>
+                        <geo>51.503549 -0.192270</geo>
+                    </location>
+                </place>
+                
+                <place xml:id="HolyTrinityChurch" type="building">
+                    <placeName role="default">Holy Trinity Church</placeName>
+                    <location>
+                        <settlement ref="#Blackdown"/>
+                        <geo>50.824042 -2.858364</geo>
+                    </location>
+                </place>
+                
+                <place xml:id="HomeOffice" type="building">
+                    <placeName role="default">Home Office</placeName>
+                    <location>
+                        <settlement ref="#London"/>
+                        <geo>51.502731 -0.127621</geo>
+                    </location>
+                    <note>The Home Office was located in the main building of the Foreign and Commonwealth
+                    Office, on King Charles Street, until 1978.</note>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Home_Office"/>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="HydePark" type="street">
+                    <placeName role="default">Hyde Park</placeName>
+                    <location>
+                        <settlement type="city" ref="#London"/>
+                        <geo rend="area">51.507300 -0.165700</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="2646325"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Hyde_Park,_London"/>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="HydeParkSquare" type="street">
+                    <placeName role="default">Hyde Park Square</placeName>
+                    <location>
+                        <settlement type="city" ref="#London"/>
+                        <geo>51.514001 -0.169057</geo>
+                    </location>
+                  <!--    <note>Various of the letters from <persName ref="#ps:FlorenceHenniker"/>Florence
+                        Henniker are addressed from 2 Hyde Park Square</note>     -->               
+                </place>
+                
+                <place xml:id="HydeParkSquare2" type="building">
+                    <placeName role="default">2 Hyde Park Square</placeName>
+                    <location>
+                        <settlement ref="#London"/>
+                        <geo>51.514015 -0.169004</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="9963734"/> <!-- now a hotel -->
+                    </listBibl>
+                    
+                </place>
+                
+                <place xml:id="Ilfracombe" type="parish">
+                    <placeName role="default">Ilfracombe</placeName>
+                    <location>
+                        <region type="county" ref="#Devon"/>
+                        <geo>51.205919 -4.126865</geo>
+                    </location> 
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="2646276"/>
+                    </listBibl>
+                   <listBibl type="general">
+                       <bibl type="wikipedia" n="Ilfracombe"/>
+                   </listBibl>
+                </place>
+                
+                <place xml:id="Illinois" type="state">
+                    <placeName role="default">Illinois</placeName>
+                    <location>
+                        <country ref="#America"/>
+                        <geo>40.276262 -89.714283</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="4896861"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Illinois"/>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="India" type="country">
+                    <placeName role="default">India</placeName>
+                    <note>A generic reference to India</note>
+                    <location>
+                        <geo n="1">20.593700 78.962900</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="1269750"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="India"/>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="IsleofSlingers" type="region" role="fictional" corresp="#Portland">
+                    <placeName role="default">Isle of Slingers</placeName>
+                    <location>
+                        <region type="county" ref="#Wessex"/>
+                    </location>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Thomas_Hardy%27s_Wessex"/>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="Istanbul" type="city">
+                    <placeName role="default">Istanbul</placeName>
+                    <placeName role="other">Constantinople</placeName><!-- called Constantinople informally until 20thC--> 
+                    <location>
+                        <country ref="#Turkey"/>
+                        <geo>41.011834 28.952234</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="745044"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Istanbul"/>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="Kalymnos" type="territory"><!--It is a municipality-->
+                    <placeName role="default">Kalymnos</placeName>
+                    <location>
+                        <country ref="#Greece"/>
+                        <geo>36.953873 26.979868</geo>
+                    </location>  
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="261507"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Kalymnos"/>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="KelmscottHouse" type="building"> <!-- 26 Upper Mall -->
+                    <placeName role="default">Kelmscott House</placeName>
+                    <location>
+                        <settlement type="city" ref="#London"/>
+                        <geo>51.490574 -0.235580</geo> 
+                    </location>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Kelmscott_House"/>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="Kelso" type="town">
+                    <placeName role="default">Kelso</placeName>
+                    <location>
+                        <country ref="#Scotland"/>
+                        <geo>55.600639 -2.432201</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="2645849"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Kelso"/>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="KensingtonGardens" type="village">
+                    <placeName role="default">Kensington Gardens</placeName>
+                    <location>
+                        <settlement type="city" ref="#London"/>
+                        <geo>51.506710 -0.180446</geo>
+                    </location> 
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="10376997"/>
+                    </listBibl>
+                    
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Kensington_Gardens"/>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="Kent" type="county">
+                    <placeName role="default">Kent</placeName>
+                    <location>
+                        <country ref="#England"/>
+                        <geo>51.208250 0.648843</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="11609038"/> 
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Kent"/>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="KenwoodAvenue5701" type="building">
+                    <placeName role="default">5701 Kenwood Avenue, Chicago, Illinois, U.S.A.</placeName>
+                    <location>
+                        <region ref="#Chicago" type="city"></region>
+                        <geo>41.791441 -87.592734</geo>
+                    </location>
+                </place>
+              
+
+                
+                <place xml:id="KingsHouse" type="building">
+                    <placeName role="default">King's House</placeName>
+                    <location>
+                        <settlement type="city" ref="#Salisbury"/>
+                        <geo>51.0645 -1.8001</geo>
+                    </location>
+                </place>
+      
+                <place xml:id="KingstonLacy" type="building">
+                    <placeName role="default">Kingston Lacy</placeName>
+                    <location>
+                        <settlement type="town" ref="#Wimborne"/>
+                        <geo>50.810944 -2.031697</geo>
+                    </location>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Kingston_Lacy"/>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="KingstonMaurward" type="building"> <!-- Also an estate? -->
+                    <placeName role="default">Kingston Maurward</placeName>
+                    <location>
+                        <region type="county" ref="#Dorset"/><!-- Two miles outside Dorchester -->
+                        <geo>50.7183 -2.4048</geo>
+                    </location>
+                    
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Kingston_Maurward_House"></bibl>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="LadbrokeGrove177" type="building">
+                    <placeName role="default">177 Ladbroke Grove</placeName>
+                    <location>
+                        <settlement ref="#London"/>
+                        <geo>51.518340 -0.210798</geo>
+                    </location>
+                </place>
+                
+                <place xml:id="LakeDistrict" type="geographical">
+                    <placeName role="default">The Lake District</placeName>
+                    <placeName>The Lakes</placeName>;
+                    <placeName>Lakeland</placeName>
+                    <location>
+                        <region type="county" ref="#Cumbria"/>
+                        <geo>54.491330 -3.100976</geo>
+                    </location>
+                    <note>A mountainous region in North-West England, also referred to as 'the
+                        Lakes'.</note>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="2645022"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Lake_District"/>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="Lancashire" type="county">
+                    <placeName role="default">Lancashire</placeName>
+                    <location>
+                        <country ref="#England"/>
+                        <geo>53.914243 -2.591281</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="11609047"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Lancashire"></bibl>
+                    </listBibl>
+                    <!-- 53.84331, -2.63001 -->
+                </place>
+ 
+
+                
+                
+                <place xml:id="Leatherhead" type="town">
+                    <placeName role="default">Leatherhead</placeName>
+                    <location>
+                        <region type="county" ref="#Surrey"/>
+                        <geo>51.296780 -0.331144</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="2644726"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Leatherhead"/>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="LewesdonHill" type="geographical">
+                    <placeName role="default">Lewesdon Hill</placeName>
+                    <location>
+                        <region type="county" ref="#Dorset"/>
+                        <geo>50.807050 -2.799114</geo>
+                    </location>
+                    <note>Next to Pilsdon Pen</note>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Lewesdon_Hill"/>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="Liechtenstein" type="country">
+                    <placeName role="default">Liechtenstein</placeName>
+                    <location>
+                        <geo>47.159333 9.534058</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="3042058"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Leatherhead"/>
+                    </listBibl>
+                    <!--47.16667, 9.53333  -->
+                </place>
+
+                <place xml:id="LittleCoxwell" type="village">
+                    <placeName role="default">Little Coxwell</placeName>
+                    <location>
+                        <region type="county" ref="#Oxfordshire"/>
+                        <geo>51.641550 -1.590977</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="7300966"/>
+                    </listBibl>
+                    
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Little_Coxwell"/>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="LittleHintock" role="fictional" type="village">
+                    <placeName role="default">Little Hintock</placeName>
+                    <location>
+                        <region type="county" ref="#Wessex"/>
+                    </location>
+                    <note>Fictional landmark on Wessex map.</note>
+                  
+                    <listBibl type="general">
+                        <bibl type="website" ref="https://www.bl.uk/collection-items/map-of-thomas-hardys-wessex"/>
+                    </listBibl>
+                    <!-- Note that one of the letter-writers thinks that Little Hintock corresponds to Minterne Parva
+                    (the letter misspells this as Mintern). --> <!-- Edmund Gosse (HA) -->
+                </place>
+                
+                <place xml:id="Hintocks" role="fictional" type="geographical">
+                    <placeName role="default">Hintocks</placeName>
+                    <location>
+                        <region type="county" ref="#Wessex"/>
+                    </location>
+                    <note>A wooded fictional region of Wessex. The Hintocks consist of Great Hintock, Kings Hintock, and Little Hintock.  See <placeName ref="#ps:LittleHintock"/>.</note>
+                    <note>Further reading: <ref target="#bib:Hardy1887_Woodlanders"><hi rend="italics">The Woodlanders</hi></ref>.</note>
+                    <!-- It may also be worth noting that it is one of the “most elusive of the regions in which the Wessex novels are set” (Denys Kay-Robinson, Hardy’s Wessex Reappraised, 1972, p.131) due to Hardy’s shifting of the locations between the different editions.  --> 
+                    
+                    
+                    
+                    <listBibl type="general">
+                        <bibl type="website" ref="https://www.bl.uk/collection-items/map-of-thomas-hardys-wessex"/>
+                    </listBibl> 
+                </place>
+                
+                <place xml:id="TheLittleOrchard" type="building">
+                    <placeName role="default">The Little Orchard</placeName>
+                    <location>
+                        <settlement type="village" ref="#ShorehamKent"/>
+                        <!--<geo>51.333441 0.177873</geo>--> <!-- commented out because exact coordinates not available -->
+                    </location>
+                    <note>Various of the letters from <persName ref="#ps:FlorenceHenniker"/>Florence Henniker are addressed from The Little Orchard, Shoreham.
+                        Henniker moved to this address in 1913.</note>
+                    <!--Geo location is for Shoreham as unsure of building's location (BM)-->
+                </place>
+
+
+                
+                
+                <place xml:id="London" type="city">
+                    <placeName role="default">London</placeName>
+                    <location>
+                        <country type="country" ref="#England"/>
+                        <geo>51.507222 -0.1275</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="2643743"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="London"/>
+                    </listBibl>
+                </place>
+
+                
+                <place xml:id="Lynmouth" type="village">
+                <placeName role="default">Lynmouth</placeName>
+                <location>
+                    <region type="county" ref="#Devon"/>
+                    <geo>51.229719 -3.829166</geo>
+                </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="2643291"/>
+                    </listBibl>
+                <listBibl type="general">
+                    <bibl type="wikipedia" n="Lynmouth"/>
+                </listBibl>
+                    <!--51.23132, -3.83311  -->
+                </place>
+                
+                <place xml:id="Lynton" type="town">
+                <placeName role="default">Lynton</placeName>
+                <location>
+                    <region type="county" ref="#Devon"/>
+                    <geo>51.229815 -3.840172</geo>
+                </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="2643285"/>
+                    </listBibl>
+                <listBibl type="general">
+                    <bibl type="wikipedia" n="Lynton"/>
+                </listBibl>
+                    <!-- 51.22968, -3.84131 -->
+            </place>
+                
+                <place xml:id="ArnoldHighSchool" type="building">
+                    <placeName role="default">Arnold High School for Girls</placeName>
+                    <location>
+                        <settlement ref="#Blackpool"/>
+                        <geo>53.789872 -3.046909</geo>
+                    </location>
+                </place>
+
+
+                
+                <place xml:id="MagdaleneCambridge" type="building">
+                    <placeName role="default">Magdalene College</placeName>
+                    <location>
+                        <settlement ref="#Cambridge"/>
+                        <geo>52.210751 0.116081</geo>
+                    </location>
+                </place>
+
+
+
+                <place xml:id="MarlboroughRoad" type="street">
+                    <placeName role="default">Marlborough Road</placeName>
+                    <location>
+                        <region type="county" ref="#Middlesex" to="1965"/>
+                        <region type="county" ref="#Surrey" from="1965"/>
+                        <geo>51.431274 -0.476324</geo>
+                    </location>
+                </place>
+                
+                <place  xml:id="Marldon" type="village">
+                    <placeName role="default">Marldon</placeName>
+                    <location>
+                        <region type="county" ref="#Devon"/>
+                        <geo>50.460109 -3.600079</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="7300286"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Marldon"/>
+                    </listBibl>
+                    <!-- 50.46248, -3.60573 -->
+                </place>
+                
+                <place xml:id="MarloesRoad1" type="building">
+                    <placeName role="default">1 Marloes Road, Kensington</placeName>
+                    <location>
+                        <settlement ref="#London"/>
+                        <geo>51.495388 -0.192478</geo>
+                    </location>
+                </place>
+                
+                <place xml:id="MarshwoodVale" type="geographical">
+                    <placeName role="default">Marshwood Vale</placeName>
+                    <location>
+                        <region type="county" ref="#Dorset"/>
+                        <geo>50.800964 -2.886857</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="7293426"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Marshwood_Vale"/>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="Massachusetts" type="state">
+                    <placeName role="default">Massachusetts</placeName>
+                    <location>
+                        <country type="country" ref="#America"/>
+                        <geo>42.36565 -71.10832</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="6254926"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Massachusetts"/>
+                    </listBibl>
+                    <!--42.36565, -71.10832  -->
+                </place>
+
+
+                
+                <place xml:id="MaxGate" type="building">
+                    <placeName role="default">Max Gate</placeName>
+                    <location>
+                        <settlement type="town" ref="#Dorchester"/>
+                        <geo>50.708179 -2.419987</geo>
+                    </location>
+                    <note>Max Gate was designed by <persName ref="#ps:TH">Hardy</persName> himself,
+                        and built in <date when-iso="1885">1885</date>.</note>
+                    <note>In <date when="1940">1940</date>, the house was left to the National
+                        Trust.</note>                    
+                    <listBibl type="general">
+                        <bibl type="website" ref="https://www.nationaltrust.org.uk/max-gate">National Trust website for Max Gate</bibl>
+                        <bibl type="wikipedia" n="Max_Gate"/>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="MelburyHouse" type="building">
+                    <placeName role="default">Melbury House</placeName>
+                    <location>
+                        <!--<region type="town">Melbury Sampford</region>-->
+                        <region type="county" ref="#Dorset"/>
+                        <geo>50.8520 -2.6027</geo>
+                    </location>
+                    <note>The family seat of the Strangways family, passing to the <persName ref="#ps:Ilchester1">1st Earl of Ilchester</persName> by
+                        marriage.</note>
+                    <!--no geonames entry-->
+                    <!--Note that Melbury House is potentially within the parish of 'Melbury Sampford', but that
+                    the village of this name vanished in the sixteenth century, so we should not record it as
+                    being within Melbury Sampford and should instead skip straight up to Dorset. --> 
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Melbury_House"/>
+                    </listBibl>
+                </place>
+
+
+                
+                <place xml:id="Middlesex" type="county">
+                    <placeName role="default">Middlesex</placeName>
+                    <location>
+                        <country ref="#England"/>
+                        <geo>51.439456 -0.468428</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="2642605"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Middlesex"/>
+                    </listBibl>
+                    <!-- 51.5, -0.41667 -->
+                </place>
+                
+                <place xml:id="Minehead" type="town">
+                    <placeName role="default">Minehead</placeName>
+                    <location>
+                        <region type="county" ref="#Somerset"/>
+                        <geo>51.204601 -3.481212</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="2642450"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Minehead"/>
+                    </listBibl>
+                    <!-- 51.20452, -3.48284 -->
+                </place>
+                
+                
+                
+                <!-- Minterne Parva looks as though it is just a street, but it seems to be labelled
+                as some kind of area in Google Maps. Definitely not a town or village, 
+                but does seem to be something other than just a street. Should we leave it as type="street",
+                -->
+                <place xml:id="MinterneParva" type="street">
+                    <placeName role="default">Minterne Parva</placeName>
+                    <location>
+                        <settlement type="village" ref="#BucklandNewton"/>
+                        <!--<region type="county">Dorset</region>-->
+                        <geo>50.829857 -2.478489</geo>
+                    </location>
+                    <!--no geonames entry-->
+                </place>
+                
+                <place xml:id="Mosterton" type="parish">
+                    <placeName role="default">Mosterton</placeName>
+                    <location>
+                        <region type="county" ref="#Dorset"/>
+                        <geo>50.84672 -2.7766</geo>
+                    </location>
+                    <note>Mosterton is a village and civil parish in Dorset, England, situated approximately 3 miles north of Beaminster.</note>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="7296620"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Mosterton"/>
+                    </listBibl>
+                </place>
+                
+              
+                <place xml:id="Myanmar" type="country">
+                    <placeName to="1989">Burma</placeName>
+                    <placeName role="default">Myanmar</placeName>
+                    <location>
+                        <geo>21.626386 96.211931</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="1327865"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Myanmar"/>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="Netherlands" type="country">
+                    <placeName role="default">Netherlands</placeName>
+                    <placeName role="other">Holland</placeName>
+                    <location>
+                        <geo>52.087351 5.363790</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="2750405"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Netherlands"/>
+                    </listBibl>
+                    <!-- 52.25, 5.75 -->
+                </place>  
+                
+                <place xml:id="NewCaledonia" type="territory">
+                    <placeName role="default">New Caledonia</placeName>
+                    <location>
+                        <region type="geographical" ref="#SouthPacific"/>
+                        <!--<country ref="#France"/>--><!--We've commented this out because NC isn't within France, and we can describe its political relationship to France below. -->
+                        <geo>-21.371842 165.500318</geo>
+                        <note>New Caledonia is an overseas French territory located in the South Pacific.</note>
+                    </location>
+                    <listBibl type="semantic">
+                    <bibl type="geonames" n="2750405"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="New_Caledonia"/>
+                    </listBibl>
+                    <!-- -21.5, 165.5 -->
+                </place>
+                
+                <place xml:id="SouthPacific" type="geographical">
+                    <placeName role="default">South Pacific</placeName>
+                </place>
+                
+                <place xml:id="NewSouthWales" type="state">
+                    <placeName role="default">New South Wales</placeName>
+                    <location>
+                        <country ref="#Australia"/>
+                        <geo>-33 146</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="2155400"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="New_South_Wales"/>
+                    </listBibl>
+                    <!-- -33, 146 -->
+                </place>
+                
+                <place xml:id="NewtonMA" type="city">
+                    <placeName role="default">Newton</placeName>
+                    <location>
+                        <region type="state" ref="#Massachusetts"/>
+                        <geo>42.330364 -71.205447</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="4945283"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Newton,_Massachusetts"/>
+                    </listBibl>
+                    <!--42.33704, -71.20922  -->
+                </place>
+                
+                <place xml:id="NewYork" type="city">
+                    <placeName role="default">New York</placeName>
+                    <location>
+                        <region type="state" ref="#NewYorkState"/>
+                        <geo>40.714872 -73.886439</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="5128581"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="New_York"/>
+                    </listBibl>
+                    <!--40.71427, -74.00597  -->
+                </place>
+                
+                <place xml:id="NewYorkState" type="state">
+                    <placeName role="default">New York State</placeName>
+                    <location>
+                        <country ref="#America"/>
+                        <geo>42.878974 -75.924045</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="5128638"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="New_York_(state)"/>
+                    </listBibl>
+                    <!-- 43.00035, -75.4999 -->
+                </place>
+                
+                <place xml:id="Nimes" type="city">
+                    <placeName role="default">Nimes</placeName>
+                    <location>
+                        <country type="country" ref="#France"/>
+                        <geo>43.836471 4.359858</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="2990363"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Nimes"/>
+                    </listBibl>
+                    <!-- 43.83378, 4.35962 -->
+                </place>
+                
+                <place xml:id="NorthRoad17" type="building">
+                    <placeName role="default">17 North Road</placeName>
+                    <location>
+                        <settlement ref="#London"/>
+                        <geo>51.572377 -0.150279</geo>
+                    </location>
+                </place>
+                
+                
+                
+                <place xml:id="OkefordFitzpaine" type="village">
+                    <placeName role="default">Okeford Fitzpaine</placeName>
+                    <location>
+                        <region type="county" ref="#Dorset"/>
+                        <geo>50.898446 -2.276773</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="11593352"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Okeford_Fitzpaine"/>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="Okehampton" type="town">
+                    <placeName role="default">Okehampton</placeName>
+                    <location>
+                        <region type="county" ref="#Devon"/>
+                        <geo>50.738502 -4.004259</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="2641049"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Okehampton"/>
+                    </listBibl>
+                    <!-- 50.73841, -4.0016 -->
+                </place>
+                
+                <place xml:id="OldWindsorRoad" type="street">
+                    <placeName role="default">Old Windsor Road, Wentworth</placeName>
+                    <location>
+                        <settlement type="city" ref="#Sydney"></settlement>
+                        <geo>-33.783816 150.969762</geo>
+                    </location>
+                </place>
+                
+                <place xml:id="Oxford" type="city">
+                    <placeName role="default">Oxford</placeName>
+                    <location>
+                        <region type="county" ref="#Oxfordshire"/>
+                        <geo>51.751944 -1.257778</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="2640729"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Oxford"/>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="Oxfordshire" type="county">
+                    <placeName role="default">Oxfordshire</placeName>
+                    <location>
+                        <country type="country" ref="#England"/>
+                        <geo>51.83333 -1.25</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="2640726"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Oxfordshire"/>
+                    </listBibl>
+                    <!-- 51.83333, -1.25 -->
+                </place>
+                
+                <place xml:id="PerrynRoad18" type="building">
+                    <placeName role="default">18 Perryn Road</placeName>
+                    <location>
+                        <settlement ref="#Acton"/>
+                        <geo>51.511016 -0.261068</geo>
+                    </location>
+                   
+                    
+                </place>
+                
+                <place xml:id="PevenseyBay" type="village">
+                    <placeName role="default">Pevensey Bay</placeName>
+                    <location>
+                        <region type="county" ref="#EastSussex"/>
+                        <geo>50.813613 0.350486</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="8224279"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Pevensey_Bay"/>
+                    </listBibl>
+                    <!--50.81242, 0.34864  -->
+                </place>
+                
+                <place xml:id="Philippines" type="country">
+                    <placeName role="default">Philippines</placeName>
+                    <location>
+                        <geo>13 122</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="1694008"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Philippines"/>
+                    </listBibl>
+                    <!--13, 122  -->
+               </place>
+                
+                <place xml:id="PilsdonPen" type="geographical">
+                    <placeName role="default">Pilsdon Pen</placeName>
+                    <location>
+                        <region type="county" ref="#Dorset"/>
+                        <geo>50.801079 -2.833334</geo>
+                    </location>
+                    <note>Situated at the north end of Marshwood Vale</note>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="2640286"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Pilsdon_Pen"/>
+                    </listBibl>
+                </place>
+              
+              
+
+                
+                <place xml:id="Plymouth" type="city">
+                    <placeName role="default">Plymouth</placeName>
+                    <location>
+                        <region type="county" ref="#Devon"/>
+                        <geo>50.371389 -4.142222</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="2640194"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Plymouth"/>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="Portishead" type="town">
+                    <placeName role="default">Portishead</placeName>
+                    <location>
+                        <region type="county" ref="#Somerset"/>
+                        <geo>51.486497 -2.768325</geo>                        
+                    </location>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Portishead,_Somerset"/>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="Portland" type="region">
+                    <placeName role="default">Isle of Portland</placeName>
+                    <placeName>Portland</placeName>
+                    <location>
+                        <region type="county" ref="#Dorset"/>
+                        <geo>50.549324 -2.434441</geo>
+                    </location>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Isle_of_Portland"/>
+                    </listBibl>
+                </place>
+                
+                
+                
+                <place xml:id="PortlandHarbour" type="geographical"> <!-- Not a bulding  -->
+                    <placeName role="default">Portland Harbour</placeName>
+                    <location>
+                        <settlement ref="#Portland"/>
+                        <geo>50.58333 -2.45</geo> 
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="2640031"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Portland_Harbour"/>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="PortlandBill" type="geographical">
+                    <placeName role="default">Portland Bill</placeName>
+                    <location>
+                        <settlement ref="#Portland"/>
+                        <geo>50.514444 -2.457222</geo>
+                        <note>Portland Bill is a narrow promontory at the southern end of the Isle of Portland.</note>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="2640033"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Portland_Bill"/>
+                    </listBibl>
+                    <!-- 50.51316, -2.45655 -->
+                </place>
+
+
+
+                
+                <place xml:id="Richmond" type="town">
+                    <placeName role="default">Richmond</placeName>
+                    <location>
+                        <settlement ref="#London"></settlement>
+                        <geo>51.456 -0.301</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="2639389"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Richmond"/>
+                    </listBibl>
+                    <!--51.46171, -0.30633  -->
+                </place>
+                
+                <place xml:id="Racedown" type="building">
+                    <placeName role="default">Racedown</placeName>
+                    <location>
+                        <settlement ref="#Broadwindsor"/>
+                        <geo>50.811500 -2.860877</geo>
+                    </location>
+                   
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Blackdown,_Dorset"/>
+                        <!--  <bibl type="wikipedia" n="Reginald_Pinney"/>-->
+                    </listBibl>
+                </place>
+
+
+                
+               
+                
+                <place xml:id="Sydney" type="city">
+                    <placeName role="default">Sydney</placeName>
+                    <location>
+                        <region type="state" ref="#NewSouthWales"/>
+                        <geo>-33.86785, 151.20732</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="2147714"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Sydney"/>
+                    </listBibl>
+                    <!-- -33.86785, 151.20732 -->
+                </place>
+                                
+                
+                
+                <place xml:id="Reinacherstrasse" type="street">
+                    <placeName role="default">Reinacherstrasse</placeName>
+                    <location>
+                        <settlement type="city" ref="#Zürich"/>
+                        <geo>47.366055, 8.560404</geo>
+                    </location>
+                </place>
+                
+                <!--Note that for Reinacherstrasse, Zürich, have also put in an entry for the street that
+                    this building is on, using the prefix of 'Zürich' as that's the city it's 
+                    within, rather than using a region as we might have done if it was in the UK. -->
+              
+                <place xml:id="Reinacherstrasse3" type="building">
+                    <placeName role="default">3 Reinacherstrasse, Zürich</placeName>
+                    <location>
+                        <district type="street" ref="#Reinacherstrasse"/>
+                        <geo>47.366578 8.560125</geo>
+                    </location>
+                    <note>The address of Lina Baumann, a fan of Hardy who wrote to him on 19 January 1926, 
+                        asking if she could send him matter from a lecture that she gave in Zürich</note>
+                </place>
+                
+                <place xml:id="Rhine" type="geographical">
+                    <placeName role="default">Rhine</placeName>
+                    <location>
+                        <country type="country" ref="#Switzerland"/>
+                        <country type="country" ref="#Liechtenstein"/>
+                        <country type="country" ref="#Austria"/>
+                        <country type="country" ref="#Germany"/>
+                        <country type="country" ref="#France"/>
+                        <country type="country" ref="#Netherlands"/>
+                        <geo>50.656408 7.204418</geo>
+                    </location>
+                </place>
+                
+                <place xml:id="RiversideCottage" type="building">
+                    <placeName role="default">Riverside Cottage</placeName>
+                    <location>
+                        <settlement type="village" ref="#Beaminster"/>
+                        <geo>50.78351 -2.74822</geo>
+                        <!-- No pin for Riverside Cottage on Google Maps -->
+                        <!-- 50.78351, -2.74822 are the coordinates for River Cottage -->
+                    </location>
+                </place>
+                
+                <place xml:id="RoyalAlbertHall" type="building">
+                    <placeName role="default">Royal Albert Hall</placeName>
+                    <location>
+                        <settlement type="city" ref="#London"/>
+                        <geo>51.500942 -0.177366</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="6944344"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Royal_Albert_Hall"/>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="RoyalObservatory" type="building">
+                    <placeName role="default">Royal Observatory Greenwich</placeName>
+                    <location>
+                        <settlement type="town" ref="#Greenwich"/>
+                        <geo>51.47687 -0.00041</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="6295636"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Royal_Observatory,_Greenwich"/>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="Russia" type="country">
+                    <placeName role="default">Russia</placeName>
+                    <location>
+                        <geo>61.142215 94.291054</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="2017370"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Russia"/>
+                    </listBibl>
+                    <!-- 60, 100 -->
+                </place>
+                
+                <place xml:id="Rye" type="town">
+                    <placeName role="default">Rye</placeName>
+                    <location>
+                        <region type="county" ref="#EastSussex"/>
+                        <geo>50.950616 0.737287</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="7297997"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Rye,_East_Sussex"/>
+                    </listBibl>
+                </place>  
+                
+                <place xml:id="Salisbury" type="city">
+                    <placeName role="default">Salisbury</placeName>
+                    <location>
+                        <region type="county" ref="#Wiltshire"/>
+                        <geo>51.06931 -1.79569</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="2638664"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Salisbury"></bibl>
+                    </listBibl>
+                </place>
+                             
+                <place xml:id="Scotland" type="country">
+                    <placeName role="default">Scotland</placeName>
+                    <location>
+                        <geo>56.616222 -4.012497</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="2638360"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Scotland"></bibl>
+                    </listBibl>
+                    <!-- 56, -4 -->
+                </place>
+                     
+                <place xml:id="Sevenoaks" type="town">
+                    <placeName role="default">Sevenoaks</placeName>
+                    <location>
+                        <region type="county" ref="#Kent"/>
+                        <geo>51.272508 0.190814</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="2638187"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Sevenoaks"/>
+                    </listBibl>
+                </place>
+
+
+                
+                <place xml:id="Sherborne" type="town">
+                    <placeName role="default">Sherborne</placeName>
+                    <location>
+                        <region type="county" ref="#Dorset"/>
+                        <geo>50.947993 -2.514492</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="2638033"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Sherborne"/>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="ShertonAbbas" role="fictional" type="town" corresp="#Sherborne">
+                    <placeName role="default">Sherton Abbas</placeName>
+                    <location>
+                        <region type="county" ref="#Wessex"/>
+                    </location>
+                    <!--no geonames entry-->
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Thomas_Hardy%27s_Wessex"/>
+                    </listBibl>
+                </place>
+
+
+
+                
+                
+                <place xml:id="ShorehamKent" type="village">
+                    <placeName role="default">Shoreham</placeName>
+                    <location>
+                        <region type="county" ref="#Kent"/>
+                        <geo>51.333441 0.177873</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="2637917"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Shoreham"/>
+                    </listBibl>
+                    <!-- 51.3334, 0.17801 -->
+                </place>
+
+
+
+
+
+               <place xml:id="Skerryvore" type="building">
+                   <placeName role="default">Skerryvore</placeName>
+                       <location>
+                           <settlement type="town" ref="#Bournemouth"/> 
+                           <geo>50.719431 -1.904281</geo> <!-- N.B. This is where Skerryvore Gardens is as a marker for the original house which was destroyed in WW2 -->
+                       </location>
+                   <note> Skerryvore was on 61 Alum Chine Road, but was destroyed during the Second World War. 
+                       It was in this house, named after the lighthouse designed by Alan Stevenson, that RLS and Fanny settled for the rest of their stay in Bournemouth.</note>
+                       <listBibl type="general">
+                           <bibl type="website" ref="http://robert-louis-stevenson.org/bournemouth/"></bibl>
+                       </listBibl>
+               </place>
+                
+                <place xml:id="Smithfield" type="undefined"><!--wikipedia says it's a locality-->
+                    <placeName role="default">Smithfield</placeName>
+                    <location>
+                        <settlement type="city" ref="#London"/>
+                        <geo>51.519696 -0.103129</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="12088631"/> <!-- same as smithfield market? -->
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Smithfield,_London"/>
+                    </listBibl>
+                    
+                </place>  
+                
+                <place xml:id="SmithfieldMarket" type="building">
+                    <placeName role="default">Smithfield Market</placeName>
+                    <location>
+                        <settlement type="city" ref="#London"/>
+                        <geo>51.519529 -0.101214</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="12088631"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="SSmithfield,_London#The_market"/>
+                    </listBibl>
+                    <!--   <note>There are many reports of wife-selling at Smithfield, London's 800-year-old market.</note>-->
+                    <!-- 51.51932, -0.10155 -->
+                </place>
+                
+                <place xml:id="Somerset" type="county">
+                    <placeName role="default">Somerset</placeName>
+                    <location>
+                        <country ref="#England"/>
+                        <geo>51.102050 -2.914474</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="2637532"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Somerset"/>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="SouthamptonStreet8" type="building">
+                    <placeName role="default">8-11 Southampton Street</placeName>
+                    <location>
+                        <region type="street" ref="#Strand"/>
+                        <geo>51.510983 -0.121773</geo>
+                    </location>
+                </place>
+                
+                <place xml:id="Strand" type="street">
+                    <placeName role="default">Strand</placeName>
+                    <location>
+                        <settlement type="city" ref="#London"/>
+                        <geo>51.511301 -0.119323</geo>
+                    </location>
+                </place>
+                
+                <place xml:id="SouthHolland" type="region">
+                    <placeName role="default">South Holland</placeName>
+                    <placeName role="other">Provincie Zuid-Holland</placeName>
+                    <location>
+                        <country ref="#Netherlands"/>
+                        <geo>52 4.66667</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="2743698"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="South_Holland"/>
+                    </listBibl>
+                    <!-- 52, 4.66667 -->
+                </place>
+                
+                <place xml:id="SouthWales" type="region">
+                    <placeName role="default">South Wales</placeName>
+                    <location>
+                        <country ref="#Wales"/>
+                        <geo>51.760690 -3.428148</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="7302127"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="South_Wales"/>
+                    </listBibl>
+                    <!-- 51.68333, -3.38333 -->
+                </place>
+                
+                <place xml:id="SouthwellGardens8" type="building">
+                    <placeName role="default">8 Southwell Gardens</placeName>
+                    <location>
+                        <settlement ref="#London"/>
+                        <geo>51.496063 -0.184599</geo>
+                    </location>
+                </place>
+
+                
+                <place xml:id="SpringwoodHouse" type="building"> 
+                    <placeName role="default">Springwood House</placeName>
+                    <location>
+                        <settlement type="town" ref="#Kelso"/>
+                        <geo>55.595724 -2.439155</geo>
+                        <!--geo ref is for Springwood Park; see http://www.kelso.bordernet.co.uk/names/springwood.html-->
+                    </location>                    
+                </place>
+                
+                <place xml:id="StaplesBarton" type="building">
+                    <placeName role="default">Staple's Barton</placeName>
+                    <placeName>Staples Farm</placeName>
+                    <location>
+                        <settlement type="village" ref="#BirdsmoorGate"/>
+                        <geo>50.804743 -2.864683</geo>
+                    </location>
+                </place>
+                
+                <place xml:id="StAnnsVillas22" type="building">
+                    <placeName role="default">22 St Ann's Villas</placeName>
+                    <location>
+                        <settlement type="city" ref="#London"/>
+                        <geo>51.507183 -0.214700</geo>
+                    </location>
+                </place>   
+                
+                <place xml:id="StanleyPlace" type="building">
+                    <placeName role="default">Stanley Place</placeName>
+                    <location>
+                        <region type="street" ref="#ChelseaStreet"/>
+                    </location>
+                </place>
+
+                
+                
+                
+                <place xml:id="Stinsford" type="parish">
+                    <placeName role="default">Stinsford</placeName>
+                    <location>
+                        <region type="county" ref="#Dorset"/>
+                        <geo>50.718630 -2.410319</geo>
+                    </location>
+                    <note>Stinsford is a civil parish and village or hamlet in southwest Dorset, England, one
+                        mile east of Dorchester. The parish includes the settlements of Higher and
+                        Lower Bockhampton.</note>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="7302255"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Stinsford"/>
+                    </listBibl>
+                </place>
+                
+                
+                <place xml:id="StinsfordHill" type="street">
+                    <placeName role="default">Stinsford Hill</placeName>
+                    <location>
+                        <settlement type="village" ref="#Stinsford"/>
+                        <geo>50.719631 -2.417064</geo>
+                    </location>
+                    <listBibl type="general">
+                        <bibl type="website" ref="https://www.streetlist.co.uk/dt/dt2/dt2-8/stinsford-hill"/>
+                    </listBibl>
+                </place>
+                <!-- Stinsford
+50.72991, -2.41192
+7298419
+ -->
+                
+                <!-- type="estate" as well as type="building"? The estate includes the village of Stourton, 
+                a mansion, and 1,000 acres of land. -->
+                <place xml:id="Stourhead" type="building">
+                    <placeName role="default">Stourhead</placeName>
+                    <placeName>Stourhead House</placeName>
+                    <location>
+                        <region type="county" ref="#Wiltshire"/>
+                        <geo>51.105425 -2.317978</geo>
+                    </location>
+                    <note>Stourhead House is a Palladian mansion with 18th-century landscape
+                        gardens, both open to the public as a National Trust property.</note>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="7627146"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="website" ref="https://www.nationaltrust.org.uk/stourhead"/>
+                        <bibl type="wikipedia" n="Stourhead"/>
+                    </listBibl>
+                </place>
+                
+
+                <place xml:id="StJamesSquare19" type="building"> 
+                    <placeName role="default">19 St James' Square</placeName>
+                    <location>
+                        <settlement type="city" ref="#London"/>
+                        <geo>51.506695 -0.136157</geo>
+                    </location>
+                    <note>Address of <persName ref="#ps:NinaHamilton">Nina Douglas-Hamilton, Duchess of Hamilton</persName>.</note>
+                </place>
+                
+                <place xml:id="StJuliotChurch" type="building"> 
+                    <placeName role="default">St Juliot Church</placeName>
+                    <location>
+                        <settlement ref="#StJuliot"/>
+                        <geo>50.690859 -4.650426</geo>
+                    </location>                   
+                    <note>The church was restored by Thomas Hardy and it was here that he met his first wife Emma Gifford.</note>
+                    <listBibl type="general">
+                        <bibl type="website" ref="http://www.strattondeanery.co.uk/stjuliot.html"/>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="StJuliot" type="parish">
+                    <placeName role="default">St. Juliot</placeName> 
+                    <location>
+                        <region type="county" ref="#Cornwall"/>  
+                        <geo>50.699283 -4.655020</geo>
+                    </location>         
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="7300044"/>
+                    </listBibl>
+                    <listBibl type="general">
+                       
+                        <bibl type="wikipedia" n="St_Juliot"/>
+                    </listBibl>
+                    <!-- 50.69408, -4.64946 -->
+                </place>
+                
+                <place xml:id="SaintRaphael" type="town">
+                    <placeName role="default">Saint-Raphaël</placeName>
+                    <location>
+                        <country type="country" ref="#France"/>
+                        <geo>43.425225 6.768136</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="2977246"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        
+                        <bibl type="wikipedia" n="Saint_Raphael"/>
+                    </listBibl>
+                    <!--  43.42332, 6.7735-->
+                </place>
+                
+                <place xml:id="StratfordPlace13" type="building">
+                    <placeName role="default">13 Stratford Place</placeName>
+                    <location>
+                        <settlement type="city" ref="#London"/>
+                        <geo>51.515054 -0.149292</geo>
+                    </location>
+                </place>
+
+
+
+                
+                <place xml:id="StratfordPlace" type="street">
+                    <placeName role="default">Stratford Place</placeName>
+                    <location>
+                        <settlement type="city" ref="#London"/>
+                        <geo>51.514933 -0.149238</geo>
+                    </location>
+                    <note>A small road in London, off Oxford Street.</note>                   
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Stratford_Place"/>
+                    </listBibl>
+                </place>
+
+                <place xml:id="Suffolk" type="county">
+                    <placeName role="default">Suffolk</placeName>
+                    <location>
+                        <country ref="#England"/>
+                        <geo>52.215646 1.070518</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="2636561"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        
+                        <bibl type="wikipedia" n="Suffolk"/>
+                    </listBibl>
+                    <!--52.16667, 1  -->
+                </place>
+                
+                <place xml:id="Surrey" type="county">
+                    <placeName role="default">Surrey</placeName>
+                    <location>
+                        <country type="country" ref="#England"/>
+                        <geo>51.279908 -0.456198</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="2636512"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        
+                        <bibl type="wikipedia" n="Surrey"/>
+                    </listBibl>
+                    <!-- 51.25, -0.33333 -->
+                </place>
+                
+                <place xml:id="Surbiton" type="town">
+                    <placeName role="default">Surbiton</placeName>
+                    <location>
+                        <settlement type="city" ref="#London"/>
+                        <geo>51.394201 -0.303042</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="6690866"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Surbiton"/>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="SussexPlace3" type="building">
+                    <placeName role="default">3 Sussex Place</placeName>
+                    <location>
+                        <settlement ref="#London"/>
+                        <geo>51.514539 -0.172721</geo>
+                    </location>
+                    <note>A residence of Florence Henniker.</note>
+                </place>
+                
+                <place xml:id="SuvlaBay" type="geographical">
+                    <placeName role="default">Suvla Bay</placeName>
+                    <location>
+                        <region type="region" ref="#Gallipoli"/>
+                        <geo>40.311058 26.244070</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="751993"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Sulva"/>
+                    </listBibl>
+                    <!-- 40.30522, 26.22846 -->
+                </place>
+                
+                
+                <place xml:id="Swanage" type="town">
+                    <placeName role="default">Swanage</placeName>
+                    <location>
+                        <region type="county" ref="#Dorset"/>
+                        <geo>50.60923 -1.9626</geo>
+                        
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="2636445"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Swanage"/>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="Sweden" type="country">
+                    <placeName role="default">Sweden</placeName>
+                    <location>
+                        <geo>62.842747 16.655390</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="2661886"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Sweden"/>
+                    </listBibl>
+                    <!-- 62, 15 -->
+                </place>
+                
+                <place xml:id="Switzerland" type="country">
+                    <placeName role="default">Switzerland</placeName>
+                    <location>
+                        <geo>46.710312 8.383379</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="2658434"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Switzerland"/>
+                    </listBibl>
+                    <!--47.00016 8.01427  -->
+                </place>
+                
+                <place xml:id="TajMahal" type="building">
+                    <placeName role="default">Taj Mahal</placeName>
+                    <location>
+                        <settlement type="city" ref="#Agra"></settlement>
+                        <geo>27.17502 78.04207</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="1255231"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Taj_Mahal"/>
+                    </listBibl>
+                </place>
+                
+                <place  xml:id="TheOldVicarage" type="building">
+                    <placeName role="default">The Old Vicarage</placeName>
+                    <location>
+                        <settlement type="town" ref="#Dorchester"/>
+                        <!--No building called this in Dorchester (does have The Old Rectory). Nearby 
+                            possibilities: Stinsford, Puddletown, Martinstown)-->
+                    </location>
+                    
+                </place>
+                
+                <place xml:id="RegentsPark" type="region">
+                    <placeName role="default">Regent's Park</placeName>
+                    <!--   <placeName role="official">The Revent's Park</placeName>-->
+                    <location>
+                        <settlement ref="#London"/>
+                        <geo>51.531244 -0.157023</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="12048393"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Regent%27s_Park"/>
+                    </listBibl>
+                    <!-- 51.53077, -0.14255 -->
+                </place>
+                
+                <place xml:id="Truro" type="city">
+                    <placeName role="default">Truro</placeName>
+                    <location>
+                        <region type="county" ref="#Cornwall"/>
+                        <geo>50.263439 -5.051084</geo> 
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="2635412"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Truro"/>
+                    </listBibl>
+                    <!-- 50.26526, -5.05436 -->
+                </place>
+                
+                <place xml:id="Turkey" type="country">
+                    <placeName role="default">Turkey</placeName>
+                    <location>
+                        <geo>38.313243 35.689030</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="298795"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Turkey"/>
+                    </listBibl>
+                    <!-- 39, 35 -->
+                </place>
+          
+                <place xml:id="VictoriaStation" type="building">
+                    <placeName role="default">Victoria Station</placeName>
+                    <placeName>London Victoria</placeName>
+                    <placeName>Victoria</placeName>
+                    <location>
+                        <settlement type="city" ref="#London"/>
+                        <geo>51.494772 -0.143620</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="2634959"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="London_Victoria_station"/>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="Wales" type="country">
+                    <placeName role="default">Wales</placeName>
+                    <location>
+                        <geo>52.348417 -3.395189</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="2634895"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Wales"/>
+                    </listBibl>
+                    <!-- 52.5, -3.5 -->
+                </place>
+                
+                <place xml:id="Wantage" type="town">
+                    <placeName role="default">Wantage</placeName>
+                        <location>
+                         <region type="county" ref="#Oxfordshire"/>
+                            <geo>51.58846 -1.42565</geo>
+                        </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="2634801"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Wantage"/>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="WaterlooPlace" type="street">
+                    <placeName role="default">Waterloo Place</placeName>
+                    <location>
+                        <region type="city" ref="#London"/>
+                        <geo>51.507500 -0.132908</geo>
+                    </location>
+                </place>
+                
+                <place xml:id="WaterlooPlace15" type="building">
+                    <placeName role="default">15 Waterloo Place</placeName>
+                    <location>
+                        <region type="street" ref="#WaterlooPlace"/>
+                        <geo>51.507492 -0.132899</geo>
+                    </location>
+                    <note>Headquarters of publishers Smith, Elder co. and address of Hardy's publisher Leslie Stephen.</note>
+                </place>
+                
+                <place xml:id="Weatherbury" role="fictional" type="village" corresp="#Puddletown">
+                    <placeName role="default">Weatherbury</placeName>
+                    <location>
+                        <region type="county" ref="#Wessex"/>
+                    </location>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Thomas_Hardy%27s_Wessex"/>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="Wessex" role="fictional" type="county" corresp="#Berkshire #Devon #Dorset #Hampshire #Somerset #Wiltshire">
+                    <placeName role="default">Wessex</placeName>
+
+                    <location>
+                        <country ref="#England"/>
+                        <!--<bibl type="ThomasHardyAssociation">
+                            <ptr
+                                target="http://thethomashardyassociation.org/images/maps/wessexmaps.htm"
+                            />
+                        </bibl>-->
+                        <!--no geonames entry-->
+                        <listBibl type="general">                 
+                            <bibl type="website" ref="http://thethomashardyassociation.org/images/maps/wessexmaps.htm"/>
+                            <bibl type="wikipedia" n="Thomas_Hardy%27s_Wessex"/>
+                        </listBibl>
+                    </location>
+                    <note>Wessex was an Anglo-Saxon kingdom in the south of Great Britain, from 519
+                        until England was unified by Æthelstan in the early 10th century. </note>
+                </place>
+                
+                <place xml:id="WestSussex" type="county">
+                    <placeName role="default">West Sussex</placeName>
+                    <location>
+                        <country type="country" ref="#England"/>
+                        <geo>50.961817 -0.495409</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="2634258"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="West_Sussex"/>
+                    </listBibl>
+                    <!-- 51, -0.41667 -->
+                </place>
+                
+                <place xml:id="WestThirteenthStreet152" type="building">
+                    <placeName role="default">152 West Thirteenth Street</placeName>
+                    <location>
+                        <settlement ref="#NewYork"/>
+                        <geo>40.737460 -73.999588</geo>
+                    </location>
+                </place>
+                    
+                <place xml:id="Weymouth" type="town">
+                    <placeName role="default">Weymouth</placeName>
+                    <location>
+                        <region type="county" ref="#Dorset"/>
+                        <geo>50.615313 -2.457832</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="2634202"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Weymouth,_Dorset"/>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="TheWhiteHartHotel" type="building">
+                    <placeName role="default">The White Hart Hotel</placeName>
+                    <location>
+                        <settlement ref="#Okehampton"/>
+                        <geo>50.738924 -4.003321</geo>
+                    </location>
+                </place>
+
+                <place xml:id="Wiltshire" type="county">
+                    <placeName role="default">Wiltshire</placeName>
+                    <location>
+                        <country type="country" ref="#England"/>
+                        <geo>51.333333 -1.916667</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="2633868"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Wiltshire"/>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="Wimborne" type="town">
+                    <placeName role="default">Wimborne</placeName>
+                    <placeName>Wimborne Minster</placeName>
+                    <location>
+                        <region type="county" ref="#Dorset"/>
+                        <geo>50.801292 -1.983128</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="7293390"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Wimborne_Minster"/>
+                    </listBibl>
+                </place>
+                
+                <place xml:id="Windsor" type="town">
+                    <placeName role="default">Windsor</placeName>
+                    <location>
+                        <region type="county" ref="#Berkshire"/>
+                        <geo>51.483058 -0.613629</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="2633842"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Windsor"/>
+                    </listBibl>
+                    <!-- 51.48333, -0.6 -->
+                </place>
+                
+                <place xml:id="Wisbech" type="town">
+                    <placeName role="default">Wisbech</placeName>
+                    <location>
+                        <region type="county" ref="#Cambridgeshire"/>
+                        <geo>52.666325 0.158792</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="2633771"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Wisbech"/>
+                    </listBibl>
+                    <!-- 52.66622, 0.15938 -->
+                </place>
+
+
+                
+                <place xml:id="Worthing" type="town">
+                    <placeName role="default">Worthing</placeName>
+                    <location>
+                        <region type="county" ref="#WestSussex"/>
+                        <geo>50.819185 -0.373659</geo>
+                    </location>   
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="2633521"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Worthing"/>
+                    </listBibl>
+                    <!-- 50.81795, -0.37538 -->
+                </place>
+                
+                <place xml:id="Yangon" type="city">
+                    <placeName to="1989">Rangoon</placeName>
+                    <placeName role="default">Yangon</placeName>
+                    <location>
+                        <country ref="#Myanmar"></country>
+                        <geo>16.922855 96.142321</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="1298824"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Yangon"/>
+                    </listBibl>
+                    <!--  16.80528, 96.15611-->
+                </place>
+                
+                <place xml:id="YorkHouse" type="building">
+                    <placeName role="default">York House, Portugal Street</placeName>
+                    <location>
+                        <settlement type="city" ref="#London"/>
+                        <geo>51.515090 -0.116077</geo> <!-- This is for Portugal Street itself as York House doesn't appear to exist anymore -->
+                    </location>
+                    <note>Office of the League for Prohibition of Cruel Sports</note>
+                </place>
+                
+                <place xml:id="Zürich" type="city">
+                    <placeName role="default">Zürich</placeName>
+                    <location>
+                        <country ref="#Switzerland"/>
+                        <geo>47.374007 8.541522</geo>
+                    </location>
+                    <listBibl type="semantic">
+                        <bibl type="geonames" n="2657896"/>
+                    </listBibl>
+                    <listBibl type="general">
+                        <bibl type="wikipedia" n="Z%C3%BCrich"/>
+                    </listBibl>     
+                    <!-- 47.36667, 8.55 -->
+                </place>
+            </listPlace>           
+        </body>
+    </text>
+</TEI>
+
+<!-- Notes  --> 
+
+<!-- Charlotte Van Arnhem has provided a translation of a Dutch newspaper article 
+    about a man's sale of his wife in 1925. The town/area Agnietenwijk is referenced
+    in one of the letters to Hardy about a recent (1925) wife sale.
+    
+    Agnietenwijk in the Netherlands was an area of houses that was demolished in the
+    1930s to build new houses.
+    
+    By the looks of it, the area in the city of Arnhem that
+    used to be known as the Agnietenwijk has changed names to Klarendal. --> 
+    

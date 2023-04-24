@@ -1,0 +1,190 @@
+<?xml-model href="../../schema/hardyletter.rng" type="application/xml" 
+   schematypens="http://relaxng.org/ns/structure/1.0"?><!--<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="dhe-hl-h.3173_1">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+
+            <title>Letter from Florence Henniker to Thomas Hardy on various topics including
+               gardening and Hardy's poetry, 25 October 1913</title>
+            <!--The author of the letter-->
+            <author ref="#ps:FlorenceHenniker">Florence Henniker</author>
+            <!--The editor of the tei file-->
+            <editor ref="#resp-HA">Helen Angear</editor>
+            <funder>Arts and Humanities Research Council</funder>
+            <sponsor>University of Exeter</sponsor>
+            <sponsor>Dorset County Museum</sponsor>
+            <principal>Angelique Richardson</principal>
+
+            <respStmt>
+               <persName ref="#resp:HA">Helen Angear</persName>
+               <resp>Selection</resp>
+               <resp>Transcription</resp>
+
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:BM">Beth Mills</persName>
+               <resp>Proofreading</resp>
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:HP">Hannah Petrie</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="#resp:EW">Elizabeth Williamson</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition, transcribed and edited directly from primary
+               sources</edition>
+         </editionStmt>
+         <publicationStmt>
+            <publisher>University of Exeter Digital Humanities Lab</publisher>
+            <pubPlace>Exeter, UK</pubPlace>
+            <date>November 2019</date>
+            <availability>
+               <p>The letter transcripts are licensed under a Creative Commons Attribution 4.0
+                  International License. This means that you can use these transcripts providing you
+                  acknowledge the Hardy's Correspondents project.</p>
+               <p>The letter images remain the copyright of Dorset Museum. Please contact the Museum
+                  if you would like to reuse any of the letter images.</p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <placeName ref="#pl:Dorchester">Dorchester</placeName>
+                  <institution>Dorset County Museum</institution>
+                  <idno type="DCM">H.3173</idno>
+                  <altIdentifier>
+                     <idno type="XXXX"><!-- optional - any other identifiers --></idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Letter written on <material>thin paper</material> with mourning
+                              border.</p>
+                           <p>Pencil library marks on page 2: <note type="libraryMark"
+                              >H.3173</note></p>
+                        </support>
+                        <condition>Good</condition>
+                     </supportDesc>
+                  </objectDesc>
+                  <decoDesc>
+                     <decoNote type="mourningBorder">
+                        <p>Black border on page 1.</p>
+                     </decoNote>
+                  </decoDesc>
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Prepared as part of the AHRC/REACT Studentship on Thomas Hardy's letters, in
+               conjunction with Dorset County Museum.</p>
+         </projectDesc>
+
+      </encodingDesc>
+      <profileDesc>
+         <correspDesc>
+            <!-- Provides detailed correspondence-specific metadata, particularly concerning the communicative aspects 
+            (sending, receiving, forwarding etc.) associated with acts of correspondence. -->
+
+            <correspAction type="sent">
+               <!-- Structured description of the place, the name of a person/organisation and the date related to the sending/receiving of a message -->
+               <persName ref="#ps:FlorenceHenniker">Florence Henniker</persName>
+
+               <!--Location letter sent from-->
+               <placeName ref="#pl:StratfordPlace13">13 Stratford Place, W. London</placeName>
+               <date when="1913-10-25"/>
+            </correspAction>
+            <correspAction type="received">
+               <persName ref="#ps:TH">Thomas Hardy</persName>
+            </correspAction>
+
+         </correspDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="letter">
+            <pb n="1" facs="uoedh_hl_h.3173_1.jpg"/>
+            <opener>
+
+               <note rend="pencil" hand="other" style="text-orientation:sideways-right">
+                  <persName ref="#ps:FlorenceHenniker">Hon. Mrs Henniker</persName>
+               </note>
+               <address rend="letterhead">
+                  <addrLine>13 Stratford Place, W.</addrLine>
+                  <addrLine>TELEPHONE 3924 GERRARD</addrLine>
+               </address>
+               <dateline>
+                  <date when="1913-10-25">Oct 25.(13</date>
+               </dateline>
+
+               <salute>My dear friend:</salute>
+            </opener>
+
+            <p>Needless to say I was delighted to receive the book from you, with its charming
+               inscription. Only <hi rend="underline">yesterday</hi> I read some very pleasant
+               things about you &amp; it in "<orgName type="newspaper" ref="#ps:DailyMail"
+                        ><choice><abbr>D</abbr><expan>Daily</expan></choice> Mail</orgName>" &amp;
+                  "<orgName type="newspaper" ref="#ps:EveningStandard"
+                        ><choice><abbr>Evg</abbr><expan>Evening</expan></choice> Standard</orgName>"
+               – It must have been rather hard work to get it all put together? but I am sure dear
+                  <persName ref="#ps:FlorenceHardy">Miss Dugdale</persName> helped you very much. I
+               shall write again &amp; tell you which stories appeal most to me. <persName
+                  ref="#ps:FlorenceHardy">Miss
+                     <choice><abbr>D.</abbr><expan>Dugdale</expan></choice></persName> will have
+               given you my message of thanks for
+                  <choice><abbr>yr</abbr><expan>your</expan></choice>
+               <hi rend="underline">very</hi>
+               <hi rend="underline">kind</hi> thought of asking me to stay &amp; see the play. But I
+               am not going to any plays at present, &amp; on Monday return to my quiet little
+               cottage in <!--Shoreham, Kent?--><placeName ref="#pl:ShorehamKent"
+                  >Shoreham</placeName>, to superintend gardening operations. Some day I hope you
+               will spare a day or two, to come &amp; see me there? <pb n="2"
+                  facs="uoedh_hl_h.3173_2.jpg"/> It is a beautiful neighbourhood, full of interest
+               of all kinds.</p>
+
+            <p>I was at <placeName ref="#pl:Crewe">Crewe</placeName> about a week ago, &amp; among
+               the guests was <persName ref="#ps:LordNewton">Lord Newton</persName>, who is as you a
+               brilliant speaker, &amp; who has just published <persName ref="#ps:LordLyons">Lord
+                  Lyons</persName>'s biography. He is an enthusiastic admirer of <hi
+                  rend="underline">yours</hi>, (of "<ref target="#bib:Hardy1891_Tess">Tess</ref>", I
+               gathered very especially.) That was the book he talked of. I can't help believing
+               that it <hi rend="underline">is</hi>
+               <choice><abbr>yr</abbr><expan>your</expan></choice> high water mark?</p>
+
+            <p>I see you don't say in the preface to <choice><abbr>y<hi rend="superscript"
+                        >r.</hi><expan>your</expan></abbr></choice> new book in what magazines the
+               stories have appeared?</p>
+
+            <p>I am going to send you a little book of verses by <persName
+                  ref="#ps:MillicentWedmore">Miss Wedmore</persName>, which are really very good I
+               think. You may find some in it that are sympathetic to you I hope.</p>
+
+            <p>Best thanks again for the book – &amp; your kind thoughts.</p>
+
+            <closer>
+               <salute>Always <choice><abbr>yr</abbr><expan>your</expan></choice> friend</salute>
+               <signed>FH.</signed>
+            </closer>
+
+
+
+         </div>
+      </body>
+   </text>
+</TEI>

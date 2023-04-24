@@ -1,0 +1,148 @@
+<?xml-model href="../../schema/hardyletter.rng" type="application/xml" 
+   schematypens="http://relaxng.org/ns/structure/1.0"?><!--<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="dhe-hl-h.1543">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+
+            <title>Letter from Gertrude Bugler to Thomas Hardy thanking him for sending her a copy
+               of <ref target="#bib:Hardy1887_Woodlanders">
+                  <emph rend="italics">The Woodlanders</emph></ref>, 8 March 1925</title>
+            <author ref="#ps:GertrudeBugler">Gertrude Bugler</author>
+            <!--The editor of the tei file-->
+            <editor ref="#resp-HA">Helen Angear</editor>
+            <funder>Arts and Humanities Research Council</funder>
+            <sponsor>University of Exeter</sponsor>
+            <sponsor>Dorset County Museum</sponsor>
+            <principal>Angelique Richardson</principal>
+
+            <respStmt>
+               <persName ref="#resp:HA">Helen Angear</persName>
+               <resp>Selection</resp>
+               <resp>Proofreading</resp>
+
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:BM">Beth Mills</persName>
+               <resp>Transcription</resp>
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:HP">Hannah Petrie</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="#resp:EW">Elizabeth Williamson</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition, transcribed and edited directly from primary
+               sources</edition>
+         </editionStmt>
+         <publicationStmt>
+            <publisher>University of Exeter Digital Humanities Lab</publisher>
+            <pubPlace>Exeter, UK</pubPlace>
+            <date>November 2019</date>
+            <availability>
+               <p>The letter transcripts are licensed under a Creative Commons Attribution 4.0
+                  International License. This means that you can use these transcripts providing you
+                  acknowledge the Hardy's Correspondents project.</p>
+               <p>The letter images remain the copyright of Dorset Museum. Please contact the Museum
+                  if you would like to reuse any of the letter images.</p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <placeName ref="#pl:Dorchester">Dorchester</placeName>
+                  <institution>Dorset County Museum</institution>
+                  <idno type="DCM">H.1543</idno>
+                  <altIdentifier>
+                     <idno type="XXXX"><!-- optional - any other identifiers --></idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Paper with rough edges and paperclip rust marks.</p>
+                           <p>Pencil library mark on page 4: <note type="libraryMark"
+                              >H.1543</note></p>
+                        </support>
+                        <condition>Good</condition>
+                     </supportDesc>
+                  </objectDesc>
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Prepared as part of the AHRC/REACT Studentship on Thomas Hardy's letters, in
+               conjunction with Dorset County Museum.</p>
+         </projectDesc>
+
+      </encodingDesc>
+      <profileDesc>
+         <correspDesc>
+            <!-- Provides detailed correspondence-specific metadata, particularly concerning the communicative aspects 
+            (sending, receiving, forwarding etc.) associated with acts of correspondence. -->
+
+            <correspAction type="sent">
+               <persName ref="#ps:GertrudeBugler">Gertrude Bugler</persName>
+               <placeName ref="#pl:RiversideCottage">Riverside Cottage</placeName>
+               <date when="1925-03-08"/>
+
+            </correspAction>
+            <correspAction type="received">
+               <persName ref="#ps:TH">Thomas Hardy</persName>
+            </correspAction>
+
+         </correspDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="letter">
+            <pb n="1" facs="uoedh_hl_h.1543_1.jpg"/>
+            <opener>
+               <dateline>
+                  <date when="1925-03-08">March 8</date>
+               </dateline>
+               <date>
+                  <note hand="unknown" rend="pencil">1925</note>
+               </date>
+               <salute>Dear Mr Hardy</salute>
+            </opener>
+
+            <p>I thank you very sincerely for sending "<ref target="#bib:Hardy1887_Woodlanders">The
+                  Wood­landers</ref>" for my birthday, it is useless for me to try to tell you how
+               much I shall always value my three beautiful books.</p>
+
+            <pb n="2" facs="uoedh_hl_h.1543_2.jpg"/>
+
+            <pb n="3" facs="uoedh_hl_h.1543_3.jpg"/>
+
+            <p>I am so very glad too to know that you are not annoyed with me about the Haymarket
+               Matineés</p>
+
+            <closer>
+               <salute>Yours sincerely</salute>
+               <signed>Gertrude Bugler</signed>
+            </closer>
+            <pb n="4" facs="uoedh_hl_h.1543_4.jpg"/>
+
+            <idno n="H.1543">H.1543</idno>
+
+
+         </div>
+      </body>
+   </text>
+</TEI>

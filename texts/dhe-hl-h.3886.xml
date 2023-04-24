@@ -1,0 +1,506 @@
+<?xml-model href="../../schema/hardyletter.rng" type="application/xml" 
+   schematypens="http://relaxng.org/ns/structure/1.0"?><!--<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="dhe-hl-h.3886">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+
+            <title>Letter from a reader, Thomas X. Lewis, to Thomas Hardy expressing admiration for
+               his writing, 17 May 1926</title>
+            <author ref="#ps:ThomasXLewis">Thomas X. Lewis</author>
+            <!--The editor of the tei file-->
+            <editor ref="#resp-HA">Helen Angear</editor>
+            <funder>Arts and Humanities Research Council</funder>
+            <sponsor>University of Exeter</sponsor>
+            <sponsor>Dorset County Museum</sponsor>
+            <principal>Angelique Richardson</principal>
+
+            <respStmt>
+               <persName ref="#resp:HA">Helen Angear</persName>
+               <resp>Selection</resp>
+               <resp>Proofreading</resp>
+
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:BM">Beth Mills</persName>
+               <resp>Transcription</resp>
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:HP">Hannah Petrie</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="#resp:EW">Elizabeth Williamson</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition, transcribed and edited directly from primary
+               sources</edition>
+         </editionStmt>
+         <publicationStmt>
+            <publisher>University of Exeter Digital Humanities Lab</publisher>
+            <pubPlace>Exeter, UK</pubPlace>
+            <date>November 2019</date>
+            <availability>
+               <p>The letter transcripts are licensed under a Creative Commons Attribution 4.0
+                  International License. This means that you can use these transcripts providing you
+                  acknowledge the Hardy's Correspondents project.</p>
+               <p>The letter images remain the copyright of Dorset Museum. Please contact the Museum
+                  if you would like to reuse any of the letter images.</p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <placeName ref="#pl:Dorchester">Dorchester</placeName>
+                  <institution>Dorset County Museum</institution>
+                  <idno type="DCM">H.3886</idno>
+                  <altIdentifier>
+                     <idno type="XXXX"><!-- optional - any other identifiers --></idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Letter written on a mixture of paper types and differently sized
+                              sheets of cream paper. Original page numbers have been written in
+                              brackets at the top of pages: 1, 2 and 3.</p>
+
+                           <p>The letter was sent c/o the Editor of "Strand" Magazine. The address
+                              is written on a small piece of paper glued to the opening page of the
+                              letter. </p>
+                        </support>
+                        <condition>Good. Some slight tearing at the edges and
+                           discolouring.</condition>
+                     </supportDesc>
+                  </objectDesc>
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Prepared as part of the AHRC/REACT Studentship on Thomas Hardy's letters, in
+               conjunction with Dorset County Museum.</p>
+         </projectDesc>
+
+      </encodingDesc>
+      <profileDesc>
+         <correspDesc>
+            <!-- Provides detailed correspondence-specific metadata, particularly concerning the communicative aspects 
+            (sending, receiving, forwarding etc.) associated with acts of correspondence. -->
+
+            <correspAction type="sent">
+               <!-- Structured description of the place, the name of a person/organisation and the date related to the sending/receiving of a message -->
+               <persName ref="#ps:ThomasXLewis">Thomas X. Lewis</persName>
+
+               <!--Location letter sent from-->
+               <placeName ref="#pl:Yangon">Rangoon, Burma, India</placeName>
+               <date when="1926-05-17">17/5/26</date>
+            </correspAction>
+            <correspAction type="received">
+               <persName ref="#ps:TH">Thomas Hardy</persName>
+               <placeName ref="#pl:SouthamptonStreet8">8 to 11 Southampton Street, Strand, London,
+                        <choice><abbr>W.C.</abbr><expan>West Central</expan></choice></placeName>
+            </correspAction>
+
+         </correspDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="letter">
+            <pb n="1" facs="uoedh_hl_h.3886_1.jpg"/>
+            <opener>
+               <salute>To</salute>
+               <!-- or should this be 'head'? -->
+               <address>
+                  <!-- check - do we need the markup for Strand and George Newnes here? -->
+                  <persName ref="#ps:TH">Thomas Hardy
+                           <choice><abbr>Esq.</abbr><expan>Esquire</expan></choice></persName>
+                  <addrLine>c/o THE EDITOR.</addrLine>
+                  <orgName type="periodical">"STRAND" MAGAZINE.</orgName>
+                  <addrLine><persName ref="#ps:GeorgeNewnes">GEORGE NEWNES</persName>,
+                     LTD.</addrLine>
+                  <addrLine>8 to 11. SOUTHAMPTON STREET.</addrLine>
+                  <addrLine>STRAND.</addrLine>
+                  <addrLine>LONDON <unclear>WES</unclear></addrLine>
+                  <addrLine>ENGLAND</addrLine>
+               </address>
+
+            </opener>
+
+
+            <pb n="2" facs="uoedh_hl_h.3886_3.jpg"/>
+            <note rend="pencil" hand="other">1926 </note>
+            <opener>
+
+               <salute>
+                  <hi rend="underline">Dear Sir</hi>
+               </salute>
+            </opener>
+
+            <p>I have been writing this letter to you since 1921, Somehow my letters seemed too
+               impulsive, and gave me away too much to a stranger at the
+                  <unclear>Antipodes</unclear>. — when re-read after a month's mellowing, so to
+               speak. Under the terrible obsession, which "<ref
+                  target="#bib:Hardy1894_JudetheObscure">Jude</ref>" and "<ref
+                  target="#bib:Hardy1891_Tess"> Tess</ref>" brought on me, — my letters to you
+               (lucky, I burnt them) seemed to me like the ravings of a lunatic, and to tell you the
+               truth, — I was thoroughly unbalanced for months. <ref
+                  target="#bib:Hardy1894_JudetheObscure">Jude</ref>! the very name used to give me
+               palpitation!! I am much saner now, and have not touched any book <add place="above"
+                  >by</add> you for two years, - so I can now write with a detached mind.</p>
+
+            <p>But please do not let me weary you, — I will just say a few words, — for I will never
+               be able to rest till I do, — You are a <hi rend="underline">wonder novelist</hi>. I
+               believe you to be the greatest writer that has ever lived, to say nothing of the
+               greatest living. I looked you up in the <name type="encyclopaedia">Encyclopaedia
+                  Britannica</name>, — It gives a <unclear>bald foul</unclear> account of your
+               career! It said that "<ref target="#bib:Hardy1894_JudetheObscure">Jude</ref>" was
+               your most <hi rend="underline">unpopular work</hi>!!! And I think "<ref
+                  target="#bib:Hardy1894_JudetheObscure">Jude</ref>" to be an immortal book. — the
+               fools!! (I beg your pardon).</p>
+
+            <p>I could go down on my knees, before such greatness and
+                     <choice><sic>consumate</sic><corr>consummate</corr></choice> genius as yours, —
+               and I mean it.</p>
+
+            <p>This is how I came to discover you. — I was <pb n="3" facs="uoedh_hl_h.3886_4.jpg"/>
+               <pb n="4" facs="uoedh_hl_h.3886_5.jpg"/> looking in one day at the free public
+               library, and I saw a series of books by <persName ref="#ps:TH"
+                        ><choice><abbr>T.</abbr><expan>Thomas</expan></choice> Hardy</persName>. The
+               name meant nothing to me, for I had studied only the lives of dead authors in
+               College. — Something about the "nice binding" made me choose one, — and I did not
+               rest till I had read all the rest. I made enquiries, but nobody seemed to know
+                  <persName ref="#ps:TH"><choice><abbr>T.</abbr><expan>Thomas</expan></choice>
+                  Hardy</persName>. I wrote a letter to the <orgName type="newspaper">Rangoon
+                  Gazette</orgName>, – and I was told that <persName ref="#ps:TH"
+                        ><choice><abbr>T.</abbr><expan>Thomas</expan></choice> Hardy</persName> was
+               a living novelist, and just celebrated his jubilee <choice><abbr>etc</abbr><expan>et
+                     cetera</expan></choice>
+               <choice><abbr>etc.</abbr><expan>et cetera</expan></choice>. You can imagine my
+               feelings!</p>
+
+            <p>M<subst><del>y</del><add place="superimposed">r</add></subst> Hardy! I am not exactly
+               what is understood as a white man. I have never been out of <placeName
+                  ref="#pl:India">India</placeName>. But in my little sphere, books have been of
+               great solace to me. Please do not think me extravagant or insincere if I say that if
+               every word and letter in your Immortal works "<ref
+                  target="#bib:Hardy1894_JudetheObscure">Jude, the Obscure</ref>," "<ref
+                  target="#bib:Hardy1891_Tess">Tess</ref>" and the REST. were to be engraved on
+               solid sheets of pure gold and the whole of your works compiled and embossed with all
+               the most precious jewels in the world, then placed reverentially on a diamond studded
+               altar in a <placeName ref="#pl:TajMahal">Taj Mahal</placeName>, for all posterity to
+               behold and be lost in everlasting wonder, it would not yet be a fitting tribute to
+               your immortal Godlike, — supernatural genius.</p>
+
+            <p>One day, I hope to work my passage to <placeName ref="#pl:England"
+                  >England</placeName> and behold with my own eyes so great a man. I wish also to
+               take my degree in Engineering. I am only 26. <pb n="5" facs="uoedh_hl_h.3886_6.jpg"/>
+               <pb n="6" facs="uoedh_hl_h.3886_7.jpg"/> and am more or less a square man in a round
+               hole. I used to have literary leanings, which I crushed early.</p>
+
+            <p>I enclose the saner ravings which perusal of your books have periodically brought on
+               me. They are extracts from my scrap book and diary. Will you forgive me for sending
+               them? My perceptions and sense of perspective sometimes gets obscured by my feelings,
+               – but you may know more from what I have held back than from what I have confessed.
+               that I have been through fire, – but far from coming forth purified – all the finer
+               feelings and capacity for delicate thought and joy, – have been singed and evaporated
+               away. Now what remains of a bald, wretched husk, - burnt and smelling evilly, -
+               hating itself life, and everything morbidly, – blind to everything good, — abnormally
+               sensitive to the wicked in this world, – lies in a welter of misery, — in engineering
+               parlance, — the limit of elasticity having been over-reached, – a permanent set a
+               strain occurred.</p>
+
+            <p>Your characters are my most intimate friends and companions in misfortune. They
+               console and reconcile me to my lot and cheer me on while pointing with ghostly
+               fingers to the brightness on the <add place="above">dark</add> Horizon, which I
+               consider my RELEASE, and DISSOLUTION. I have lived — suffered — died, — and
+               resurrected several times in your works — have been reincarnated over and over again.
+               So, for giving me just the <pb n="7" facs="uoedh_hl_h.3886_8.jpg"/> solace I needed,
+               and my greatest friends, "<ref target="#bib:Hardy1894_JudetheObscure">Jude</ref>" and
+                  "<ref target="#bib:Hardy1891_Tess">Tess</ref>,"
+               <!-- check - should this be the characters not the texts? --> - I am under an eternal
+               debt of gratitude to their creator.</p>
+
+            <p>Now, that I have at last achieved this letter; — I am happy.</p>
+            <closer>
+               <salute>I remain</salute>
+               <salute>Your humblest <subst><del>a</del><add place="superimposed"
+                  >A</add></subst>dmirer</salute>
+               <signed>ThoXLewis</signed>
+
+               <date>17/5/26.</date>
+               <milestone xml:id="m01" unit="section"/>
+               <address>
+                  <persName ref="#ps:ThomasXLewis">THOMAS. X. LEWIS.</persName>
+                  <addrLine>PUMP HOUSE ENGINEER</addrLine>
+                  <addrLine>H.M. ADMIRALTY OIL FUEL DEPÔT</addrLine>
+                  <addrLine>SEIKKI REFINERY P.O.,</addrLine>
+                  <addrLine><placeName ref="#pl:Yangon">RANGOON</placeName>,</addrLine>
+                  <addrLine><placeName ref="#pl:Myanmar">BURMA</placeName>,</addrLine>
+                  <addrLine>
+                     <placeName ref="#pl:India">INDIA</placeName>
+                  </addrLine>
+               </address>
+            </closer>
+            <postscript>
+               <p>P.S. I am afraid to post this letter. — I am nervous — hypersensitiveness!! It may
+                  find its way to the wastepaper basket – like the rest. Perhaps I have been
+                  overpresumptuous. — I — a nobody! I throw myself on your magnanimity and mercy.
+                  Forgive me I <hi rend="underline">had</hi> to write, – otherwise <persName
+                     ref="#ps:JudeFawley">Jude</persName> would not let me rest</p>
+               <signed>ThoXLewis</signed>
+            </postscript>
+
+         </div>
+
+      </body>
+      <back>
+         <div type="enclosure">
+            <pb n="8" facs="uoedh_hl_h.3886_9.jpg"/>
+            <head rend="handwritten">(extract from my diary &amp; scrapbook)</head>
+            <div type="entry" rend="typed">
+               <note place="margin">1/9/21.</note>
+
+               <p>I have just finished reading a novel of <persName ref="#ps:TH">Thomas
+                     Hardy</persName> "<ref target="#bib:Hardy1887_Woodlanders"> The
+                           <choice><sic>Woodlander's</sic>
+                        <corr>Woodlanders</corr></choice></ref>," is the title of this particular
+                  one. It is exactly 9-10pm. as I write and my impressions of the novel are so
+                  inexplicable, so subtle and so productive of a tender sympathy and sadness that
+                  sleep has been chased away from my eyelids.</p>
+
+               <p>.................................. His (<persName ref="#ps:GilesWinterborne"
+                     >Winterborne</persName>'s) was a pure, undiluted passion, that had nothing in
+                  it of the grosser nature seen in temperaments of less finer fibre, – a passion, –
+                  so sacred, so true, so nearly approximating to anything that could be sublime on
+                  this earth – the devotion of a simple, manly nature, that suffered self-immolation
+                  for the dear object of its regard. – too beautiful – too noble for words. Cool,
+                  heartless cynic as I am turning out to be, – contemplation of such a love, the
+                  like of which I have never come across in the material form – in reality, I mean,
+                  - awakes my heart to the romantic ideals of ignorant childhood, whose dreams
+                  fancy-woven were one productive of a delightful fairyland.</p>
+
+               <p><persName ref="#ps:TH">Thomas Hardy</persName>,– in my opinion, in his subtlety,
+                  in his art <choice><sic>rankshigh</sic>
+                     <corr>ranks high</corr></choice> above more boosted novelists of any time or
+                  country. I have all along been anal<subst><del><unclear>i</unclear></del><add
+                        place="superimposed" rend="pen">y</add></subst>sing my impressions, checking
+                  them with their direct cause – taking notes mentally registering
+                        <choice><abbr>etc</abbr><expan>et cetera</expan></choice>, contrasting cause
+                  and effect,– as the wondrously vivid narrative passes in delightful, sad <add
+                     place="inline" rend="pen">,</add> whimsical, soul stirring episodes before my
+                     me<add place="above" rend="pen">n</add>tal vision, and I have been struck -
+                  dumb - founded with the with the subtle, exquisite art and marvellous
+                  psychological insight of <persName ref="#ps:TH"
+                           ><choice><abbr>T.</abbr><expan>Thomas</expan></choice> Hardy</persName>.
+                  There is one other, who shows this quality - <persName
+                     ref="#ps:WilliamShakespeare">Shakespeare</persName>. His (<persName
+                     ref="#ps:TH">Hardy</persName>'s plots are - well, I cannot find words to
+                  express their peculiar similarity to tra-<lb/><subst><del>j</del><add
+                        place="superimposed" rend="pen">g</add></subst>edies with which the world is
+                  full. His inimitable style goes into rare, deep, penetrating, psychological
+                  analysis. His characters live. In short his stories are more vivid than everyday
+                  scenes and everyday happenings, with this quality as an appendage - while in
+                  essence taking of the <choice><sic>trajedy</sic>
+                     <corr>tragedy</corr></choice>, sorrow, unexpectedness of this world,- the
+                  utterly sordid is left out. There is enough cynicism in the characters to give
+                  them just the right amount <choice><sic>on</sic><corr>of</corr></choice>
+                           inter<subst><del><unclear>s</unclear></del><add place="superimposed"
+                        >e</add></subst>st, and love - the passion - is exhibited as a more rarefied
+                  emotion than its more sordid replica of poor imperfect humanity.</p>
+
+               <p><persName ref="#ps:IvanTurgenev">Ivan Turgenev</persName>'s "dream world" has some
+                  approximation to the more practical tone of <persName ref="#ps:TH"
+                     >Hardy</persName>'s novels.</p>
+
+               <p><choice><abbr>N.B.</abbr><expan>nota bene ('note well')</expan></choice> – I must
+                  get a full <unclear>oc</unclear> collection of all the works of <persName
+                     ref="#ps:TH">Hardy</persName> and <persName ref="#ps:IvanTurgenev">
+                     Turgenev</persName> for perusal as well as the gratifying sense of possesion,
+                  when I have money, – possibly when I have finished my apprentice time and passed
+                  out.</p>
+            </div>
+
+            <div type="entry" rend="typed">
+               <note place="margin">2/9/2<subst><del><gap/></del><add place="superimposed"
+                        rend="pen">1</add></subst></note>
+
+               <p>(11.30 p.m.) - I cannot get rid of that sadness - melancholy which enwrapped me
+                  like a dark, soft mantle after reading "<ref target="#bib:Hardy1887_Woodlanders"
+                           ><choice><sic>Woodlander's</sic><corr>Woodlanders</corr></choice></ref>"
+                  - A certain depression, which I am loth to part with,– a certain tension in the
+                  strings of my heart, strings <choice><sic>s</sic><corr/></choice>
+                  <pb n="9" facs="uoedh_hl_h.3886_10.jpg"/>
+                  <pb n="10" facs="uoedh_hl_h.3886_11.jpg"/>
+                  <note type="page-number" place="top-centre">( 2 )</note> still vibrating with the
+                  echo of "<ref target="#bib:Hardy1887_Woodlanders"
+                           ><choice><sic>Woodlander's</sic><corr>Woodlanders</corr></choice></ref>",
+                  I feel strangely at a loss to express this feeling. <persName
+                     ref="#ps:GraceMelbury">Grace</persName>'s turning to her husband after her
+                  passion,- true feeling for <persName ref="#ps:GilesWinterborne"
+                     >Winterborne</persName>, now nine months in the grave – and poor <persName
+                     ref="#ps:MartySouth">Marty South</persName>'s going alone to his grave - and
+                  her words<hi rend="pen">,</hi> her sublimity as she apostrophises him, she loved
+                  with such a lasting<hi rend="pen">,</hi> enduring love – she, a girl, heroically
+                  battling against so many troubles which a malignant fate had thrust upon her, –
+                  whose form had not yet showed the <hi rend="pen">'</hi>contours of womanhood<hi
+                     rend="pen">'</hi> – with her words, "<q>Now my own, own love, you are mine and
+                           <subst><del>my</del><add place="above" rend="pen">ony</add></subst> mine
+                     for she (Grace) has forgot 'ee at last,
+                           <choice><abbr>altho'</abbr><expan>although</expan></choice> for her you
+                     died! But I – when ever I get up I'll think of 'ee. Whenever I plant the young
+                     larches, I'll think that none planted as you planted,- If ever I forgot your
+                     name, let me forget home and heaven! But no, no, my love, I never can forget
+                     'ee for you was a good man and did good things!</q>" Poor - poor <persName
+                     ref="#ps:MartySouth">Marty</persName>!!</p>
+
+               <p>These words end the book. <persName ref="#ps:MartySouth">Marty</persName>'s love
+                  for <persName ref="#ps:GilesWinterborne">Winterborne</persName> was never
+                  returned, and the simple confession over his grave,
+                        <choice><abbr>altho'</abbr><expan>although</expan></choice> in the events
+                  and turmoil before his death, she kept silent as the grave -
+                        <subst><del>)</del><add place="superimposed">(</add></subst> even when
+                  visiting his tomb with <persName ref="#ps:GraceMelbury">Grace</persName>) this
+                  simple confession plucks one's heartstrings – the poor girl opening her aching
+                        hea<subst><del>t</del><add place="superimposed">r</add></subst>t over his
+                  grave strikes a vibrant, pathetic note, – redolent of all the frailties, the joys,
+                  sorrow impotency of poor humanity Human emotion evanescent a fitful
+                  fever..................................... <persName ref="#ps:GraceMelbury">Mrs
+                           <choice><sic>Fitzpier's</sic><corr>Fitzpiers's</corr></choice></persName>
+                  love and her aversion to her faithless husband................ Thus the totally
+                  unforeseen happens. What feelings were in operation in <persName
+                     ref="#ps:GraceMelbury">Mrs
+                           <choice><sic>Fitzpier's</sic><corr>Fitzpiers's</corr></choice></persName>
+                  heart, how the enshrined memory of <persName ref="#ps:GilesWinterborne"
+                     >Winterborne</persName> gets totally subverted, – how she turns slowly to her
+                  husband are all brought before the
+                     <choice><sic>minds</sic><corr>mind's</corr></choice> vision by the consummate
+                  genius of <persName ref="#ps:TH">Hardy</persName>. To Hell with conventional
+                        <choice><sic>plots It</sic><corr>plots. It</corr></choice> does not depict
+                  life. In making his heroine go back to her husband,
+                        <choice><abbr>altho</abbr><expan>although</expan></choice> it makes painful
+                  reading, <persName ref="#ps:TH">Hardy</persName> strikes a true note of
+                  unconventionality, thoroughly consistent with Life. That is why his works, his
+                  characters, are so re<add place="above" rend="pen">a</add>listic. They are true to
+                  life. He shows how frail human nature is - there is just enough cynicism to make
+                  his story charming without diverging from the truth. How true ! How true and sad !
+                  the <choice><sic>readers crys</sic><corr>reader cries</corr></choice> with tears
+                  in his eyes. Then he strikes a note of sublimity in <persName ref="#ps:MartySouth"
+                     >Marty South</persName>, "<q>the lonesome
+                  lass</q>"............................. grave...... diction superb ! Divine
+                     <persName ref="#ps:TH"><choice><abbr>T.</abbr><expan>Thomas</expan></choice>
+                     Hardy</persName>.</p>
+
+               <note rend="pen">2/9/21</note>
+               <note rend="pen">ThoXLewis</note>
+            </div>
+
+
+            <pb n="11" facs="uoedh_hl_h.3886_12.jpg"/>
+            <pb n="12" facs="uoedh_hl_h.3886_13.jpg"/>
+
+            <div type="entry" rend="pen">
+               <note type="page-number" place="top-centre">(1)</note>
+               <note place="margin"><unclear>1</unclear>0/7/24</note>
+
+               <p>I have just come to the end of "<ref target="#bib:Hardy1894_JudetheObscure">Jude,
+                     the obscure</ref>," another of <persName ref="#ps:TH">Hardy</persName>'s
+                  marvellous, inimitable works, - masterpieces. If ever, I, by the grace of God,
+                  meet this man (I believe he is still living) I will kneel and kiss the hem of his
+                  garment! - absolutely! - This man is supernatural! - What he writes is not of
+                  mortal brain or mind or intellect. I have never in the whole wide range of classic
+                  and standard literature, ever come across his name, spoken of either as a genius
+                  of otherwise. It was by the merest accident that I picked up one of his novels, –
+                  how I bless the day! – – and then it was as if I had never known what character
+                  portrayal, – what life mirrored in the magic of words, – how tragedy is brought up
+                  and served <del><gap/></del> living, palpitating – was. I repeat again - this man
+                  is not born of woman. I have read all his works, – and this last one, I found by
+                  accident and the pleasure – pain it has given me – the depths it has stirred me –
+                  My God! – is it possible for mere fiction to do this much? I feel still as in a
+                  dream and everything unreal, except the scenes, the characters, the sorrow, the
+                  tragedy of this immortal book. I feel again the sadness of all things on this
+                  earth. – the vanity of earthly gain – the spectre at the feast. Oh! what suffering
+                  we mortals are destined from our birth – fretful, struggling, burning, acting <pb
+                     n="13" facs="uoedh_hl_h.3886_14.jpg"/>
+                  <pb n="14" facs="uoedh_hl_h.3886_15.jpg"/>
+                  <note type="page-number" place="top-centre">(2)</note> till puff! - and out of the
+                  world again, <lb/>and all the time this old world turns on heedless, unfeeling</p>
+
+               <p><persName ref="#ps:TH">Hardy</persName> has made his characters more real than
+                  myself, <subst>
+                     <del><gap/></del>
+                     <add place="superimposed">it</add>
+                  </subst> seems to me, and this story more true than my life and surroundings. I
+                  can't believe it is a story Oh it cannot be - cannot be - it is more - much more,
+                  it is real tragedy, real life, - handled and depicted by a masterly hand immortal
+                  genius - a man not of this earth, – or born of woman – this fact is forced upon
+                  me, every<del><gap/></del> time I read a chapter and see the way – the manner –
+                  oh! words are useless. – useless. – My humour is too deep for words.</p>
+
+               <signed>
+                  <unclear>TXL</unclear>
+               </signed>
+               <!--Lewis' signature-->
+            </div>
+
+            <div type="entry" rend="pen">
+               <note place="margin">11/7/24</note>
+
+               <p>I can't sleep – I can't think, – "<ref target="#bib:Hardy1894_JudetheObscure"
+                     >Jude</ref>" haunts, - All the sad characters and incidents of that wonderful
+                  book haunts me, - and I feel inexpressibly depressed A settled melancholy,
+                  oppressive and sadly sweet has fallen on me and my heart is affected to its core.
+                  I wish I had never read it.</p>
+
+               <p>The whole work is a biography, in which the biographer does not appear. He never
+                  obtrudes himself in the slightest. He does not condemn, counsel, remark, or
+                  criticize. The life of a man accursed is shown, from his boyhood to his death. -
+                  Love, passion, fever, and fret, - derision and disaster <pb n="15"
+                     facs="uoedh_hl_h.3886_16.jpg"/>
+                  <pb n="16" facs="uoedh_hl_h.3886_17.jpg"/>
+                  <note type="page-number" place="top-centre">(3)</note> are all shown too vividly
+                  and the reader loses a sense of his individuality and his surroudings and it is
+                  days before he can <del>dis</del> emerge from the individuality of the hero and
+                  the reality of the fictitious scenes lose their vividness. He feels and suffers
+                  with these characters, and if he has not a strong heart, – emotions strong and
+                  terrible are sure to grip him, – and it were better for him to leave <persName
+                     ref="#ps:TH">Hardy</persName> alone.</p>
+
+               <p>I am actually afraid to go near "<ref target="#bib:Hardy1894_JudetheObscure">Jude,
+                     the obscure</ref>," – it lies on the dressing table – I can see it, – but I
+                  avoid going near it, – my eye accidentally alighting on it makes my heart beat
+                  irregular and give a stifling sensation.</p>
+
+               <p>Many would say that <persName ref="#ps:TH">Hardy</persName> was unhealthy morbid,
+                  but that is only condemning what they would not understand, and does not come in
+                  their daily materialistic, prosaic lives. <persName ref="#ps:TH">Hardy</persName>
+                  deals with the higher passions, - refined love and sentiments unknown, to the
+                  gross individual. He is essentially unconventional, – so is life! – I worship
+                     <del>hi</del> I worship him, and am lost in wonder at his performance of such
+                  miracle. Such power – <choice><sic>consumate</sic><corr>consummate</corr></choice>
+                  genius, – Why does not the whole country raise him up and place him on his proper
+                  pedestal. Fools! Fools!!</p>
+               <lb/>
+
+               <signed>
+                  <unclear>Tho</unclear>
+               </signed>
+               <!--Lewis' signature-->
+
+            </div>
+         </div>
+      </back>
+   </text>
+</TEI>

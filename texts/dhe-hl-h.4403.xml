@@ -1,0 +1,170 @@
+<?xml-model href="../../schema/hardyletter.rng" type="application/xml" 
+   schematypens="http://relaxng.org/ns/structure/1.0"?><!--<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="dhe-hl-h.4403">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+
+            <title>Letter from Mowbray Morris, editor at Macmillan, to Thomas Hardy discussing <ref
+                  target="#bib:Hardy1887_Woodlanders"><emph rend="italics">The
+                  Woodlanders</emph></ref>, 19 September 1886</title>
+            <author ref="#ps:MowbrayMorris">Mowbray Morris</author>
+            <!--The editor of the tei file-->
+            <editor ref="#resp-HA">Helen Angear</editor>
+            <funder>Arts and Humanities Research Council</funder>
+            <sponsor>University of Exeter</sponsor>
+            <sponsor>Dorset County Museum</sponsor>
+            <principal>Angelique Richardson</principal>
+
+            <respStmt>
+               <persName ref="#resp:HA">Helen Angear</persName>
+               <resp>Selection</resp>
+               <resp>Transcription</resp>
+
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:BM">Beth Mills</persName>
+               <resp>Proofreading</resp>
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:HP">Hannah Petrie</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="#resp:EW">Elizabeth Williamson</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition, transcribed and edited directly from primary
+               sources</edition>
+         </editionStmt>
+         <publicationStmt>
+            <publisher>University of Exeter Digital Humanities Lab</publisher>
+            <pubPlace>Exeter, UK</pubPlace>
+            <date>November 2019</date>
+            <availability>
+               <p>The letter transcripts are licensed under a Creative Commons Attribution 4.0
+                  International License. This means that you can use these transcripts providing you
+                  acknowledge the Hardy's Correspondents project.</p>
+               <p>The letter images remain the copyright of Dorset Museum. Please contact the Museum
+                  if you would like to reuse any of the letter images.</p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <placeName ref="#pl:Dorchester">Dorchester</placeName>
+                  <institution>Dorset County Museum</institution>
+                  <idno type="DCM">H.4403</idno>
+                  <altIdentifier>
+                     <idno type="XXXX"><!-- optional - any other identifiers --></idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Letter written on <material>cream paper</material></p>
+                           <p>Pencil library mark on page 4: <note type="libraryMark"
+                              >H.4403</note>.</p>
+                        </support>
+                        <condition>Good</condition>
+                     </supportDesc>
+                  </objectDesc>
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Prepared as part of the AHRC/REACT Studentship on Thomas Hardy's letters, in
+               conjunction with Dorset County Museum.</p>
+         </projectDesc>
+
+      </encodingDesc>
+      <profileDesc>
+         <correspDesc>
+            <!-- Provides detailed correspondence-specific metadata, particularly concerning the communicative aspects 
+            (sending, receiving, forwarding etc.) associated with acts of correspondence. -->
+
+            <correspAction type="sent">
+               <persName ref="#ps:MowbrayMorris">Mowbray Morris</persName>
+               <placeName ref="#pl:BrookStreet59a">Macmillan's Magazine, 59a Brook Street, Grosvenor
+                  Square, London</placeName>
+               <date when="1886-09-19"/>
+            </correspAction>
+            <correspAction type="received">
+               <persName ref="#ps:TH">Thomas Hardy</persName>
+            </correspAction>
+
+         </correspDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="letter">
+            <pb n="1" facs="uoedh_hl_h.4403_1.jpg"/>
+            <opener>
+               <address rend="letterhead">
+                  <addrLine>MACMILLAN'S</addrLine>
+                  <addrLine>MAGAZINE.</addrLine>
+               </address>
+               <address rend="hadnwritten">
+                  <addrLine>59a Brook Street</addrLine>
+                  <addrLine>Grosvenor Square</addrLine>
+
+               </address>
+
+               <dateline>
+                  <date when="1886-09-19">September 19<hi rend="superscript"><hi rend="underline"
+                           >th</hi></hi> 1886</date>
+               </dateline>
+
+               <salute>My dear Sir,</salute>
+            </opener>
+
+            <p>I have had to cut <ref target="#bib:Hardy1887_Woodlanders">The Woodlanders</ref>
+               (which is, I think, a particularly good number) short at chapter twenty-six — as it
+               happens, a very convenient resting-place: and I send you the remainder of the proof,
+               which may be useful.</p>
+            <p>You will, I am sure, not mind my giving you a gentle hint on one small matter — the
+               affair between <persName ref="#ps:SukeDamson">Miss Damson</persName> and <persName
+                  ref="#ps:EdredFitzpiers">the Doctor</persName>. I am not afraid (as you may
+               imagine) for <pb n="2" facs="uoedh_hl_h.4403_2.jpg"/> my own morals: but we have, I
+               fancy, rather a queer public: <subst>
+                  <del rend="strikethrough"><gap reason="deleted"/></del>
+                  <add place="above">pious</add>
+               </subst> Scottish souls who take offence wondrous easily. Already, in my short
+               editorial career, I have received a Round Robin concerning some offence against
+               morality that had been smelled out in our pages! The offence was not in "<ref
+                  target="#bib:Hardy1887_Woodlanders">The Woodlanders</ref>", by the way: it had
+               been committed before you began. Of course, it is very annoying to have to reckon for
+               such asses: still, I can't help it; an Editor must be <unclear>commercial</unclear>
+               as well as <unclear>literary</unclear>; and <pb n="3" facs="uoedh_hl_h.4403_3.jpg"/>
+               the magazine has scarcely so abundant a sale that I can afford to disregard any
+               section of its readers. So, I think, if you can continue not to bring the fair
+                  <persName ref="#ps:SukeDamson">Miss Suke</persName> to too open shame, it would be
+               as well. Let the human frailty be construed mild. </p>
+
+
+            <closer>
+               <salute>Yours very truly,</salute>
+               <signed>Mowbray Morris.</signed>
+
+            </closer>
+            <pb n="4" facs="uoedh_hl_h.4403_4.jpg"/>
+
+
+
+         </div>
+      </body>
+   </text>
+</TEI>

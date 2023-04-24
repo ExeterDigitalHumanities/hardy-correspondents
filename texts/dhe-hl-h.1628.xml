@@ -1,0 +1,179 @@
+<?xml-model href="../../schema/hardyletter.rng" type="application/xml" 
+   schematypens="http://relaxng.org/ns/structure/1.0"?><!--<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="dhe-hl-h.1628">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+
+            <title>Letter from William Courtney to Thomas Hardy declining to publish the poem <ref
+                  target="#bib:Hardy1908_ASundayMorningTragedy">'A Sunday Morning Tragedy'</ref> in
+               the <orgName ref="#ps:FortnightlyReview">
+                  <hi rend="italics">Fortnightly Review</hi></orgName>, 3 October 1907</title>
+            <author ref="#ps:WilliamCourtney">W. L. Courtney</author>
+            <!--The editor of the tei file-->
+            <editor ref="#resp-HA">Helen Angear</editor>
+            <funder>Arts and Humanities Research Council</funder>
+            <sponsor>University of Exeter</sponsor>
+            <sponsor>Dorset County Museum</sponsor>
+            <principal>Angelique Richardson</principal>
+
+            <respStmt>
+               <persName ref="#resp:HA">Helen Angear</persName>
+               <resp>Selection</resp>
+               <resp>Proofreading</resp>
+
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:BM">Beth Mills</persName>
+               <resp>Transcription</resp>
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:HP">Hannah Petrie</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="#resp:EW">Elizabeth Williamson</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition, transcribed and edited directly from primary
+               sources</edition>
+         </editionStmt>
+         <publicationStmt>
+            <publisher>University of Exeter Digital Humanities Lab</publisher>
+            <pubPlace>Exeter, UK</pubPlace>
+            <date>November 2019</date>
+            <availability>
+               <p>The letter transcripts are licensed under a Creative Commons Attribution 4.0
+                  International License. This means that you can use these transcripts providing you
+                  acknowledge the Hardy's Correspondents project.</p>
+               <p>The letter images remain the copyright of Dorset Museum. Please contact the Museum
+                  if you would like to reuse any of the letter images.</p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <placeName ref="#pl:Dorchester">Dorchester</placeName>
+                  <institution>Dorset County Museum</institution>
+                  <idno type="DCM">H.1628</idno>
+                  <altIdentifier>
+                     <idno type="XXXX"><!-- optional - any other identifiers --></idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Typed on <material>cream paper</material> with a letterhead.</p>
+                           <p>Pencil library mark on page 2: <note type="libraryMark"
+                              >H.1628</note>.</p>
+                        </support>
+
+                        <!-- 
+                           Telephone N<hi rend="superscript">o</hi>
+                           Letter TS -->
+                        <condition>Good</condition>
+                     </supportDesc>
+                  </objectDesc>
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Prepared as part of the AHRC/REACT Studentship on Thomas Hardy's letters, in
+               conjunction with Dorset County Museum.</p>
+         </projectDesc>
+
+      </encodingDesc>
+      <profileDesc>
+         <correspDesc>
+            <!-- Provides detailed correspondence-specific metadata, particularly concerning the communicative aspects 
+            (sending, receiving, forwarding etc.) associated with acts of correspondence. -->
+
+            <correspAction type="sent">
+               <!-- Structured description of the place, the name of a person/organisation and the date related to the sending/receiving of a message -->
+               <persName ref="#ps:WilliamCourtney">W. L. Courtney</persName>
+
+               <!--Location letter sent from-->
+               <placeName ref="#pl:HenriettaStreet11">11 Henrietta Street, Covent Garden, London, W.
+                  C.</placeName>
+               <date when="1907-10-03"/>
+            </correspAction>
+            <correspAction type="received">
+               <persName ref="#ps:TH">Thomas Hardy</persName>
+            </correspAction>
+           
+         </correspDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="letter">
+            <pb n="1" facs="uoedh_hl_h.1628_1.jpg"/>
+
+            <opener>
+
+
+               <address rend="letterhead">
+                  <addrLine>Telephone N<hi rend="superscript">o.</hi> 2711. GERRARD.</addrLine>
+                  <addrLine>Telegraphic Address, "PICKWICK, LONDON."</addrLine>
+
+                  <addrLine>CHAPMAN &amp; HALL, LIMITED.</addrLine>
+                  <addrLine>FORTNIGHTLY REVIEW.</addrLine>
+
+                  <addrLine>11 Henrietta Street</addrLine>
+                  <addrLine>Covent Garden</addrLine>
+                  <addrLine>London</addrLine>
+                  <addrLine>W.C.</addrLine>
+               </address>
+
+
+               <dateline>
+                  <date when="1907-10-03">October 3rd 1907</date>
+               </dateline>
+
+               <salute>Thomas Hardy, Esq.</salute>
+
+               <salute>Dear Mr. Hardy,</salute>
+
+            </opener>
+
+            <p>I have read with deep interest the poem you were good enough to send me, entitled
+                  <ref target="#bib:Hardy1908_ASundayMorningTragedy">"A Sunday Morning
+                  Tragedy"</ref>. You know how proud I am that you send your poems to me, and how
+               glad I have been on several occasions to publish them. But I fear that I cannot
+               possibly publish your latest poem, because of its subject. Personally I sometimes
+               have a doubt whether even the greatest art can illustrate certain themes, or rather a
+               certain class of horrors. I remember hearing a great lawyer say once that the worst
+               cruelties were hidden away in law reports, and rightly so hidden, because if they
+               were published to the world the world could not endure them.</p>
+
+            <p>Pray forgive my inability, which you must put down to the fact that the "<orgName
+                  ref="#ps:FortnightlyReview">Fortnightly Review</orgName>" circulates among
+               families.</p>
+
+
+            <closer>
+               <salute>Faithfully yours,</salute>
+               <signed>WLCourtney</signed>
+               <signed>W. L. COURTNEY</signed>
+               <signed>(Editor Fort: Review)</signed>
+            </closer>
+            <pb n="2" facs="uoedh_hl_h.1628_2.jpg"/>
+
+
+         </div>
+         <div> </div>
+      </body>
+   </text>
+</TEI>

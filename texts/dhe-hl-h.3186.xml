@@ -1,0 +1,211 @@
+<?xml-model href="../../schema/hardyletter.rng" type="application/xml" 
+   schematypens="http://relaxng.org/ns/structure/1.0"?><!--<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="dhe-hl-h.3186">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+
+            <title>Letter from Florence Henniker to Thomas Hardy about the death of her dog, the
+               Council of Justice and <ref target="#bib:Hardy1882_Tower">
+                  <emph rend="italics">Two on a Tower</emph></ref>, 24 October 1920</title>
+            <!--The author of the letter-->
+            <author ref="#ps:FlorenceHenniker">Florence Henniker</author>
+            <!--The editor of the tei file-->
+            <editor ref="#resp-HA">Helen Angear</editor>
+            <funder>Arts and Humanities Research Council</funder>
+            <sponsor>University of Exeter</sponsor>
+            <sponsor>Dorset County Museum</sponsor>
+            <principal>Angelique Richardson</principal>
+
+            <respStmt>
+               <persName ref="#resp:HA">Helen Angear</persName>
+               <resp>Selection</resp>
+               <resp>Transcription</resp>
+
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:BM">Beth Mills</persName>
+               <resp>Proofreading</resp>
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:HP">Hannah Petrie</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="#resp:EW">Elizabeth Williamson</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition, transcribed and edited directly from primary
+               sources</edition>
+         </editionStmt>
+         <publicationStmt>
+            <publisher>University of Exeter Digital Humanities Lab</publisher>
+            <pubPlace>Exeter, UK</pubPlace>
+            <date>November 2019</date>
+            <availability>
+               <p>The letter transcripts are licensed under a Creative Commons Attribution 4.0
+                  International License. This means that you can use these transcripts providing you
+                  acknowledge the Hardy's Correspondents project.</p>
+               <p>The letter images remain the copyright of Dorset Museum. Please contact the Museum
+                  if you would like to reuse any of the letter images.</p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <placeName ref="#pl:Dorchester">Dorchester</placeName>
+                  <institution>Dorset County Museum</institution>
+                  <idno type="DCM">H.3186</idno>
+                  <altIdentifier>
+                     <idno type="XXXX"><!-- optional - any other identifiers --></idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Letter written on <material>cream paper</material>.</p>
+                           <p>Pencil library marks on page 4: <note type="libraryMark"
+                              >H.3186</note>.</p>
+                           <p>Note that after page 4 Henniker continues writing in the top margin of
+                              the first page and writes across the margin of page 2 (labelled here
+                              as pages 5-6).</p>
+                        </support>
+                        <condition>Good. Slight foxing.</condition>
+                     </supportDesc>
+                  </objectDesc>
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Prepared as part of the AHRC/REACT Studentship on Thomas Hardy's letters, in
+               conjunction with Dorset County Museum.</p>
+         </projectDesc>
+
+      </encodingDesc>
+      <profileDesc>
+         <correspDesc>
+            <!-- Provides detailed correspondence-specific metadata, particularly concerning the communicative aspects 
+            (sending, receiving, forwarding etc.) associated with acts of correspondence. -->
+
+            <correspAction type="sent">
+               <persName ref="#ps:FlorenceHenniker">Florence Henniker</persName>
+
+               <!--Location letter sent from-->
+               <placeName ref="#pl:SussexPlace3">3 Sussex Place, Lancaster Gate, London,
+                  W.2.</placeName>
+               <date when="1920-10-24">24 October 1920</date>
+            </correspAction>
+            <correspAction type="received">
+               <persName ref="#ps:TH">Thomas Hardy</persName>
+            </correspAction>
+
+         </correspDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="letter">
+            <pb n="1" facs="uoedh_hl_h.3186_1.jpg"/>
+            <opener>
+               <address rend="letterhead">
+                  <addrLine>3, SUSSEX PLACE,</addrLine>
+                  <addrLine>LANCASTER GATE, W.2.</addrLine>
+               </address>
+               <dateline><date when="1920-10-24">Oct <hi rend="underline">2<subst><del>3</del><add
+                              place="superimposed">4</add></subst>th</hi>
+                  /20</date>--&gt;</dateline>
+
+               <milestone xml:id="m01" unit="section"/>
+
+               <salute>My dear friend:</salute>
+            </opener>
+
+            <p>I know you have been thinking kindly of me in my grief at losing dear faithful
+               Milner. He had such a beautiful character – &amp; was so devoted a friend. – I did
+                  <add place="above">&amp; do,</add> love him. –</p>
+            <p>Please tell dear <persName ref="#ps:FlorenceHardy"><choice><abbr>F.</abbr>
+                     <expan>Florence</expan></choice></persName> I will send her a few more of the
+                  "<persName ref="#ps:JackLondon">Jack London</persName>" papers, &amp; it will be
+               splendid if she gets them signed.–</p>
+
+            <pb n="2" facs="uoedh_hl_h.3186_2.jpg"/>
+
+            <milestone xml:id="m02" unit="section"/>
+            <milestone xml:id="m03" unit="section"/>
+            <milestone xml:id="m04" unit="section"/>
+
+            <p>I am glad to tell you that I think our "Council of Justice" will, under new auspices,
+               do excellent work. The <choice><abbr>Sec.<hi rend="superscript">y</hi></abbr>
+                  <expan>Secretary</expan></choice>, <persName ref="#ps:MissWood">Miss
+                  Wood</persName>, seems very capable <del>as</del> well as enthusiastic, &amp; a
+               Canadian ex-officer, (who seems to be well off &amp; prosperous) has given us a
+               beautiful office in <placeName ref="#pl:BondStreet">Bond <choice><abbr>St</abbr>
+                     <expan>Street</expan></choice></placeName> for meetings, &amp; is also
+               personally, I think certainly keen on the subject of humane slaughtering – <pb n="3"
+                  facs="uoedh_hl_h.3186_3.jpg"/> I went to a Committee meeting not long ago –.</p>
+
+            <p>I have read "<ref target="#bib:Hardy1882_Tower">Two on a Tower</ref>" with pleasure
+               and interest. I don't wonder you thought it "rather clever" when you looked into it
+               the other day! – Perhaps it is curious that it is not one of the novels <hi
+                  rend="underline">more</hi> talked of? – It seems to me that the actual interest of
+                  <hi rend="underline">the story</hi> is so wonderfully well main­tained – with the
+               un-expec­ted <add place="above">things</add> that happens &amp; - I suppose <persName
+                  ref="#ps:SwithinStCleeve">Swithin</persName> married <persName
+                  ref="#ps:TabithaLark">Tabitha Lark</persName> very soon? – I only hope she was
+               kind to the dear little yellow-haired boy. – You meant, I imagine, that the <pb n="4"
+                  facs="uoedh_hl_h.3186_4.jpg"/> Bishop found out the truth, &amp; was vindictive in
+               temper in consequence –? –</p>
+
+            <p>I see that <persName ref="#ps:ClementShorter">Mr Shorter</persName> has married
+               again. Do you know anything of his wife? – I was actually asked by <persName
+                  ref="#ps:GeorgeCWilliamson">D<hi rend="superscript">r.</hi> Williamson</persName>
+               to write an essay in the <persName ref="#ps:JohnKeats">Keats</persName> book on my
+               recollections of my father's conversation about him. But I really could not remember
+               anything; &amp; besides, I am not equal to writing an essay worthy of that book. – I
+               hear you are contributing a poem? –</p>
+            <pb n="5" facs="uoedh_hl_h.3186_5.jpg"/>
+            <ab>
+               <seg xml:id="h3186a" corresp="#m01" style="transform:rotateZ(-90deg)">I have been
+                  having a good deal of electric treatment – &amp; now I</seg>
+            </ab>
+            <pb n="6" facs="uoedh_hl_h.3186_6.jpg"/>
+            <ab>
+               <seg xml:id="h3186b" corresp="#m02" style="transform:rotateZ(-90deg)">am <hi
+                     rend="underline">much</hi> better - having had no pain for some weeks. Fogs <hi
+                     rend="underline">are</hi> beginning, I am sorry to say –</seg>
+            </ab>
+            <ab>
+               <seg xml:id="h3186c" corresp="#m03" style="transform:rotateZ(-90deg)">My best love to
+                     <persName ref="#ps:FlorenceHardy"/>F. &amp; Wessex.</seg>
+            </ab>
+
+            <closer xml:id="h3186d" corresp="#m04" style="transform:rotateZ(-90deg)">
+               <salute><choice><abbr>Ev</abbr>
+                     <expan>Ever</expan></choice>
+                  <choice><abbr>y<hi rend="superscript">r</hi></abbr>
+                     <expan>your</expan>
+                  </choice>
+                  <choice><abbr>affec.</abbr>
+                     <expan>affectionate</expan></choice> friend</salute>
+               <signed>Flo H.</signed>
+            </closer>
+
+
+
+
+         </div>
+      </body>
+   </text>
+</TEI>

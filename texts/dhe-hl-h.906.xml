@@ -1,0 +1,168 @@
+<?xml-model href="../../schema/hardyletter.rng" type="application/xml" 
+   schematypens="http://relaxng.org/ns/structure/1.0"?><!--<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="dhe-hl-h.906">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Letter from a reader, Lina Baumann, to Thomas Hardy showing appreciation for his
+               writing, 19 January 1926</title>
+            <author ref="#ps:LinaBaumann">Lina Baumann</author>
+            <!--The editor of the tei file-->
+            <editor ref="#resp-HA">Helen Angear</editor>
+            <funder>Arts and Humanities Research Council</funder>
+            <sponsor>University of Exeter</sponsor>
+            <sponsor>Dorset County Museum</sponsor>
+            <principal>Angelique Richardson</principal>
+
+            <respStmt>
+               <persName ref="#resp:HA">Helen Angear</persName>
+               <resp>Selection</resp>
+               <resp>Proofreading</resp>
+
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:BM">Beth Mills</persName>
+               <resp>Transcription</resp>
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:HP">Hannah Petrie</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="#resp:EW">Elizabeth Williamson</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition, transcribed and edited directly from primary
+               sources</edition>
+         </editionStmt>
+         <publicationStmt>
+            <publisher>University of Exeter Digital Humanities Lab</publisher>
+            <pubPlace>Exeter, UK</pubPlace>
+            <date>November 2019</date>
+            <availability>
+               <p>The letter transcripts are licensed under a Creative Commons Attribution 4.0
+                  International License. This means that you can use these transcripts providing you
+                  acknowledge the Hardy's Correspondents project.</p>
+               <p>The letter images remain the copyright of Dorset Museum. Please contact the Museum
+                  if you would like to reuse any of the letter images.</p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <placeName ref="#pl:Dorchester">Dorchester</placeName>
+                  <institution>Dorset County Museum</institution>
+                  <idno type="DCM">H.906</idno>
+                  <altIdentifier>
+                     <idno type="XXXX"><!-- optional - any other identifiers --></idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Letter written on <material>cream folded paper</material>.</p>
+                           <p>Pencil library mark on page 2: <note type="libraryMark">H.906</note>. </p>
+                           <p>Enclsoures mentioned in the letter have not been retained with it.</p>
+                        </support>
+                        <condition>Good. Slight paperclip rusting on back page.</condition>
+                     </supportDesc>
+                  </objectDesc>
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Prepared as part of the AHRC/REACT Studentship on Thomas Hardy's letters, in
+               conjunction with Dorset County Museum.</p>
+         </projectDesc>
+
+      </encodingDesc>
+      <profileDesc>
+         <correspDesc>
+            <!-- Provides detailed correspondence-specific metadata, particularly concerning the communicative aspects 
+            (sending, receiving, forwarding etc.) associated with acts of correspondence. -->
+
+            <correspAction type="sent">
+               <!-- Structured description of the place, the name of a person/organisation and the date related to the sending/receiving of a message -->
+               <persName ref="#ps:LinaBaumann">Lina Baumann</persName>
+
+               <!--Location letter sent from-->
+               <placeName ref="#pl:Reinacherstrasse3">3 Reinacherstrasse, Zürich 7</placeName>
+               <date when="1926-01-19"/>
+            </correspAction>
+            <correspAction type="received">
+               <persName ref="#ps:TH">Thomas Hardy</persName>
+            </correspAction>
+
+         </correspDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="letter">
+            <pb n="1" facs="uoedh_hl_h.906_1.jpg"/>
+            <opener>
+               <address>
+                  <addrLine>3 Reinacherstrasse</addrLine>
+                  <addrLine>Zürich</addrLine>
+               </address>
+               <dateline>
+                  <date when="1926-01-19">January, 19<hi rend="superscript"><hi rend="underline"
+                           >th</hi></hi>1926.</date>
+               </dateline>
+
+               <address rend="recipient">
+
+                  <addrLine>Thomas Hardy, <choice><abbr>Esq <hi rend="superscript">re</hi></abbr>
+                        <expan>Esquire</expan></choice></addrLine>
+                  <addrLine><placeName ref="#pl:Dorchester">Dorchester</placeName>.</addrLine>
+               </address>
+
+               <salute>Dear Sir,</salute>
+            </opener>
+
+
+            <p>Will you allow me to send you by this post two little essays which contain the
+               principal matter of <pb n="2" facs="uoedh_hl_h.906_2.jpg"/> a lecture I gave last
+               year to an English speaking club here in <placeName ref="#pl:Zürich"
+                  >Zürich</placeName>.</p>
+
+            <p>For many years I have been an ardent admirer &amp; lover of your wonderful work. The
+               humour in some of your novels reminds me sometimes of our own poet <persName
+                  ref="#ps:GottfriedKeller">Gottfried Keller</persName>, who also possesses that
+               tender irony that <pb n="3" facs="uoedh_hl_h.906_3.jpg"/> gives some of your
+               characters such a rich humanity.</p>
+
+            <p>My oldest pupils – girls of eighteen &amp; nineteen – have also been reading some of
+               your poems these last four years; also <ref target="#bib:Hardy1872_GreenwoodTree"
+                  >Under the Greenwood Tree</ref> &amp; <ref
+                  target="#bib:Hardy1874_FarFromTheMaddingCrowd">Far from the Madding Crowd</ref>,
+               &amp; have always got much human insight &amp; many lasting impressions of the power-
+                  <pb n="4" facs="uoedh_hl_h.906_4.jpg"/> ful character-drawing &amp; artistic
+               beauty of your books.</p>
+
+            <p>I thank you from my heart for all the beauty &amp; grandeur of your books, by which
+               you have made the world the richer &amp; your readers more understanding &amp; more
+               humane.</p>
+
+            <closer>
+               <salute>Yours very sincerely</salute>
+               <signed>Lina Baumann.</signed>
+            </closer>
+
+
+         </div>
+      </body>
+   </text>
+</TEI>

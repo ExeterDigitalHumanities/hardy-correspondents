@@ -1,0 +1,185 @@
+<?xml-model href="../../schema/hardyletter.rng" type="application/xml" 
+   schematypens="http://relaxng.org/ns/structure/1.0"?><!--<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="dhe-hl-h.3192a">
+   <!-- add above the xml:id attribute with the value'dhe-hl-h.NNNN' -->
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+
+            <title>Statement from Florence Henniker stipulating that on her death all the letters
+               she received from Thomas Hardy should be given to Florence Hardy, 9 November
+               1922</title>
+            <!--The author of the letter-->
+            <author ref="#ps:FlorenceHenniker">Florence Henniker</author>
+            <!--The editor of the tei file-->
+            <editor ref="#resp-HA">Helen Angear</editor>
+            <funder>Arts and Humanities Research Council</funder>
+            <sponsor>University of Exeter</sponsor>
+            <sponsor>Dorset County Museum</sponsor>
+            <principal>Angelique Richardson</principal>
+
+            <respStmt>
+               <persName ref="#resp:HA">Helen Angear</persName>
+               <resp>Selection</resp>
+               <resp>Transcription</resp>
+
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:BM">Beth Mills</persName>
+               <resp>Proofreading</resp>
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:HP">Hannah Petrie</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="#resp:EW">Elizabeth Williamson</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition, transcribed and edited directly from primary
+               sources</edition>
+         </editionStmt>
+         <publicationStmt>
+            <publisher>University of Exeter Digital Humanities Lab</publisher>
+            <pubPlace>Exeter, UK</pubPlace>
+            <date>November 2019</date>
+            <availability>
+               <p>The letter transcripts are licensed under a Creative Commons Attribution 4.0
+                  International License. This means that you can use these transcripts providing you
+                  acknowledge the Hardy's Correspondents project.</p>
+               <p>The letter images remain the copyright of Dorset Museum. Please contact the Museum
+                  if you would like to reuse any of the letter images.</p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <placeName ref="#pl:Dorchester">Dorchester</placeName>
+                  <institution>Dorset County Museum</institution>
+                  <idno type="DCM">H.3192</idno>
+                  <altIdentifier>
+                     <idno type="XXXX"><!-- optional - any other identifiers --></idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Statement written on cream paper.</p>
+                           <p>Pencil library marks on page 4: <note type="libraryMark" rend="pencil"
+                                 > H.3192a</note>.</p>
+                           <p>Page 2 contains notes written in a different hand.</p>
+                        </support>
+                        <condition>Good</condition>
+                     </supportDesc>
+                  </objectDesc>
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Prepared as part of the AHRC/REACT Studentship on Thomas Hardy's letters, in
+               conjunction with Dorset County Museum.</p>
+         </projectDesc>
+
+      </encodingDesc>
+      <profileDesc>
+         <correspDesc>
+            <!-- Provides detailed correspondence-specific metadata, particularly concerning the communicative aspects 
+            (sending, receiving, forwarding etc.) associated with acts of correspondence. -->
+
+            <correspAction type="sent">
+               <!-- Structured description of the place, the name of a person/organisation and the date related to the sending/receiving of a message -->
+               <!--<persName> of letter author-->
+               <persName ref="#ps:FlorenceHenniker">Florence Henniker</persName>
+
+               <!--Location letter sent from-->
+               <placeName ref="#pl:HydeParkSquare2">2. Hyde Park Square W.2</placeName>
+               <date when="1922-11-09">November 9th <hi rend="underline">1922</hi></date>
+            </correspAction>
+            <correspAction type="received">
+               <persName ref="#ps:unknown">Unknown</persName>
+            </correspAction>
+
+         </correspDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="letter">
+            <pb n="1" facs="uoedh_hl_h.3192a_1.jpg"/>
+            <opener>
+               <address rend="letterhead">
+                  <addrLine>
+                     <del>TEL.:</del>
+                  </addrLine>
+                  <addrLine>
+                     <del>HORNSEY</del>
+                  </addrLine>
+                  <addrLine>
+                     <del>941.</del>
+                  </addrLine>
+               </address>
+               <address rend="letterhead">
+                  <addrLine>
+                     <del>FAIRSEAT,</del>
+                  </addrLine>
+                  <addrLine>
+                     <del>HIGHGATE HILL,</del>
+                  </addrLine>
+                  <addrLine>
+                     <del>N.6.</del>
+                  </addrLine>
+               </address>
+               <address>
+                  <addrLine>
+                     <hi rend="underline">2. Hyde Park Square</hi>
+                  </addrLine>
+                  <addrLine>
+                     <hi rend="underline">W.2</hi>
+                  </addrLine>
+               </address>
+               <dateline>
+                  <date when="1922-11-09">November 9<hi rend="superscript">th</hi>
+                     <hi rend="underline">1922</hi></date>
+               </dateline>
+               <salute><!--NO OPENING--></salute>
+            </opener>
+
+            <p>I wish all the letters written to me by <persName ref="#ps:TH">M<hi
+                     rend="superscript">r</hi> Thomas Hardy</persName> to be given to <persName
+                  ref="#ps:FlorenceHardy">M<hi rend="superscript">rs</hi> Thomas Hardy</persName>
+               after my death.</p>
+
+            <closer>
+               <salute><!--NO CLOSER--></salute>
+               <signed>Florence <unclear>Ell</unclear> Henniker.</signed>
+            </closer>
+
+            <pb n="2" facs="uoedh_hl_h.3192a_2.jpg"/>
+            <note hand="other">
+               <p>203 pages</p>
+               <p>(2 halfsize counted as 1)</p>
+               <p>2 cards.</p>
+            </note>
+            <pb n="3" facs="uoedh_hl_h.3192a_3.jpg"/>
+
+            <pb n="4" facs="uoedh_hl_h.3192a_4.jpg"/>
+
+
+
+
+         </div>
+      </body>
+   </text>
+</TEI>

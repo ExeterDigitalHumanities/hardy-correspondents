@@ -1,0 +1,201 @@
+<?xml-model href="../../schema/hardyletter.rng" type="application/xml" 
+   schematypens="http://relaxng.org/ns/structure/1.0"?><!--<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="dhe-hl-h.3482">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+
+            <title>Copy of a letter from Thomas Hardy to Arthur Hopkins about illustrations for <ref
+                  target="#bib:Hardy1878_Native">
+                  <emph rend="italics">The Return of the Native</emph></ref>, 20 February
+               1878</title>
+            <author ref="#ps:TH">Thomas Hardy</author>
+            <!--The editor of the tei file-->
+            <editor ref="#resp-HA">Helen Angear</editor>
+            <funder>Arts and Humanities Research Council</funder>
+            <sponsor>University of Exeter</sponsor>
+            <sponsor>Dorset County Museum</sponsor>
+            <principal>Angelique Richardson</principal>
+
+            <respStmt>
+               <persName ref="#resp:HA">Helen Angear</persName>
+               <resp>Selection</resp>
+               <resp>Transcription</resp>
+
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:BM">Beth Mills</persName>
+               <resp>Proofreading</resp>
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:HP">Hannah Petrie</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="#resp:EW">Elizabeth Williamson</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition, transcribed and edited directly from primary
+               sources</edition>
+         </editionStmt>
+         <publicationStmt>
+            <publisher>University of Exeter Digital Humanities Lab</publisher>
+            <pubPlace>Exeter, UK</pubPlace>
+            <date>November 2019</date>
+            <availability>
+               <p>The letter transcripts are licensed under a Creative Commons Attribution 4.0
+                  International License. This means that you can use these transcripts providing you
+                  acknowledge the Hardy's Correspondents project.</p>
+               <p>The letter images remain the copyright of Dorset Museum. Please contact the Museum
+                  if you would like to reuse any of the letter images.</p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <placeName ref="#pl:Dorchester">Dorchester</placeName>
+                  <institution>Dorset County Museum</institution>
+                  <idno type="DCM">H.3482</idno>
+                  <altIdentifier>
+                     <idno type="XXXX"><!-- optional - any other identifiers --></idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>This is a copy of the original handwritten letter, reproduced on
+                                 <material>photocopier paper</material>.</p>
+                           <p>Pencil library marks on pages 2 and 4 <note type="libraryMark"
+                                 >H.3482</note></p>
+                        </support>
+                        <condition>Good</condition>
+                     </supportDesc>
+                  </objectDesc>
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Prepared as part of the AHRC/REACT Studentship on Thomas Hardy's letters, in
+               conjunction with Dorset County Museum.</p>
+         </projectDesc>
+
+      </encodingDesc>
+      <profileDesc>
+         <correspDesc>
+            <!-- Provides detailed correspondence-specific metadata, particularly concerning the communicative aspects 
+            (sending, receiving, forwarding etc.) associated with acts of correspondence. -->
+
+            <correspAction type="sent">
+               <!-- Structured description of the place, the name of a person/organisation and the date related to the sending/receiving of a message -->
+               <persName ref="#ps:TH">Thomas Hardy</persName>
+
+               <!--Location letter sent from-->
+               <placeName ref="#pl:MaxGate">Max Gate, Dorchester, Dorset</placeName>
+               <date when="1878-02-20"/>
+            </correspAction>
+            <correspAction type="received">
+               <persName ref="#ps:ArthurHopkins">Arthur Hopkins</persName>
+            </correspAction>
+            
+            <!-- correspContext> -->
+            <!-- Provides references to preceding or following correspondence related to this piece of correspondence -->
+            <!--</correspContext>-->
+            <correspContext>
+               <ref type="prev" target="dhe-hl-h.3481"/>
+            </correspContext>
+
+         </correspDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="letter">
+            <pb n="1" facs="uoedh_hl_h.3482_1.jpg"/>
+            <note hand="unknown">(see page 257)</note>
+            <!-- Need to check about these annotations as it is on a photocopy of original letter. -->
+            <note hand="unknown">May 1878</note>
+
+            <opener>
+
+               <dateline>
+                  <date when="1878-02-20">February 20. 1878</date>
+               </dateline>
+
+
+               <salute>My dear Sir,</salute>
+            </opener>
+
+            <p>I think you have chosen well for the May illustration – certainly the incident after
+               the mumming, with the mummers looking on, will be better than the mumming performance
+               itself. <persName ref="#ps:EustaciaVye">Eustacia</persName> in boy's clothes, though
+               pleasant enough to the imagination, would perhaps be unsafe as a picture. The sketch
+               of a mummer's dress which I sent was merely intended to show the general system on
+               which they used to decorate themselves: the surcoat or tunic was formed of a white
+               smockfrock rather shorter than usual, tied in round the waist by a <pb n="2"
+                  facs="uoedh_hl_h.3482_2.jpg"/> strap – this was almost invariably the groundwork
+               of the costume: thus.</p>
+
+            <!-- Three illustrations here with annotations below -->
+            <figure>
+               <figDesc>Sketch of an original smock</figDesc>
+               <p>original smockf<hi rend="superscript">k</hi>.</p>
+            </figure>
+            <figure>
+               <figDesc>Sketch of a smock tied in.</figDesc>
+               <p>same tied in</p>
+            </figure>
+            <figure>
+               <figDesc>Sketch of a smock decorated with ribbon.</figDesc>
+               <p>same decorated with ribbon</p>
+            </figure>
+
+
+            <p>The figure in these sketches is however too short, except the third. The helmet was
+               made of pasteboard, &amp; was much like one of those articles called "tea-cosys"
+               which people use now a days for keeping the tea-pot warm, <figure place="inline"
+                     ><figDesc>Sketch of the helmet</figDesc></figure> with a tuft at the top. The
+               sword was wood, of course, &amp; the <hi rend="underline">staff</hi>, which was never
+               dispensed with, consisted of a straight stick the size of a broom handle, 5 or 6 feet
+               long, with small sticks inserted cross wise at the <pb n="3"
+                  facs="uoedh_hl_h.3482_3.jpg"/> upper end: from the end of these small sticks paper
+               tassels dangled. <figure><figDesc>Sketch of staff which appears next to the writing
+                     on left side of the page</figDesc><p>Mummer's staff or spear</p></figure> This
+               was held erect in the left hand while the sword was brandished in the right. Father
+               Christmas was a conventional figure – an old man with a humpback, &amp; a great
+               club.</p>
+            <p>I should prefer to leave <persName ref="#ps:ClymYeobright">Clym</persName>'s face
+               entirely to you. A thoughtful young man of 25 is all that can be shown, as the
+               particulars of his appearance given in the story are too minute to be represented in
+               a small drawing.</p>
+
+            <p>A mummer or two in the <del>corner of the </del> picture would make it very
+               interesting – but do not be at all hampered by my suggestions <pb n="4"
+                  facs="uoedh_hl_h.3482_4.jpg"/> for I may attach an undue importance to the
+               mummers. </p>
+
+
+            <closer>
+
+               <salute>Very truly yours</salute>
+
+               <signed>Thomas Hardy.</signed>
+
+            </closer>
+
+
+         </div>
+      </body>
+   </text>
+</TEI>

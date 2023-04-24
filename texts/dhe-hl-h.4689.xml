@@ -1,0 +1,179 @@
+<?xml-model href="../../schema/hardyletter.rng" type="application/xml" 
+   schematypens="http://relaxng.org/ns/structure/1.0"?><!--<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="dhe-hl-h.4689">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Letter from W. R. Paton to Thomas Hardy on the use of horses in war, 9 February
+               1899</title>
+            <author ref="#ps:WRPaton">William Roger Paton</author>
+            <editor ref="#resp-HA">Helen Angear</editor>
+            <funder>Arts and Humanities Research Council</funder>
+            <sponsor>University of Exeter</sponsor>
+            <sponsor>Dorset County Museum</sponsor>
+            <principal>Angelique Richardson</principal>
+
+            <respStmt>
+               <persName ref="#resp:HA">Helen Angear</persName>
+               <resp>Selection</resp>
+               <resp>Transcription</resp>
+
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:BM">Beth Mills</persName>
+               <resp>Proofreading</resp>
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:HP">Hannah Petrie</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="#resp:EW">Elizabeth Williamson</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition, transcribed and edited directly from primary
+               sources</edition>
+         </editionStmt>
+         <publicationStmt>
+            <publisher>University of Exeter Digital Humanities Lab</publisher>
+            <pubPlace>Exeter, UK</pubPlace>
+            <date>November 2019</date>
+            <availability>
+               <p>The letter transcripts are licensed under a Creative Commons Attribution 4.0
+                  International License. This means that you can use these transcripts providing you
+                  acknowledge the Hardy's Correspondents project.</p>
+               <p>The letter images remain the copyright of Dorset Museum. Please contact the Museum
+                  if you would like to reuse any of the letter images.</p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <placeName ref="#pl:Dorchester">Dorchester</placeName>
+                  <institution>Dorset County Museum</institution>
+                  <idno type="DCM">H.4689</idno>
+                  <altIdentifier>
+                     <idno type="XXXX"><!-- optional - any other identifiers --></idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support><p>Letter written on <material>cream paper</material></p>.
+                              <p>Pencil library marks on page 2: <note type="libraryMark"
+                                 >H.4689</note>.</p>
+                        </support>
+                        <condition>Good</condition>
+                     </supportDesc>
+                  </objectDesc>
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Prepared as part of the AHRC/REACT Studentship on Thomas Hardy's letters, in
+               conjunction with Dorset County Museum.</p>
+         </projectDesc>
+
+      </encodingDesc>
+      <profileDesc>
+         <correspDesc>
+            <!-- Provides detailed correspondence-specific metadata, particularly concerning the communicative aspects 
+            (sending, receiving, forwarding etc.) associated with acts of correspondence. -->
+
+            <correspAction type="sent">
+               <persName ref="#ps:WRPaton">William Roger Paton</persName>
+               <placeName ref="#pl:Kalymnos">Calymnos, via Smyrna, Turkey</placeName>
+               <!--Do we need file for Smyrna? -->
+               <date when="1899-02-09"/>
+            </correspAction>
+            <correspAction type="received">
+               <persName ref="#ps:TH">Thomas Hardy</persName>
+            </correspAction>
+
+         </correspDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="letter">
+            <pb n="1" facs="uoedh_hl_h.4689_1.jpg"/>
+            <note hand="unknown" rend="pencil" style="transform:rotateZ(-90deg)"><hi
+                  rend="underline">W.R. Paton</hi> (horses in war)</note>
+
+            <opener>
+               <address>
+                  <addrLine>Calymnos</addrLine>
+                  <addrLine>via Smyrna</addrLine>
+                  <addrLine>Turkey</addrLine>
+               </address>
+               <dateline><date when="1899-02-09">Feb 9th /99</date>.</dateline>
+
+
+
+               <salute>My dear Sir</salute>
+            </opener>
+
+            <p>I am glad to see that you have taken up the cause of the horses.
+                     It<del><unclear>s</unclear></del> has always seemed to me that the use of
+               horses in war is a thing that cannot long be maintained in view of the growing
+               sympathy with the dumb animals – one of the best fruits of modern civilization. It is
+               no whit less barbarous than their use in bull-fights, a thing con­demned by all
+               persons of right feeling &amp; <del><gap reason="deleted"/></del> only supported by
+               those whom every person of right feeling recognises to be modern savages. Of course,
+               as you say, the poor brutes do not know what they die for, as it is the privilege of
+               the soldier to know.</p>
+            <!--possible paragraph break here-->
+
+            <p>Numbers of shallow-minded people <subst><del><unclear>w</unclear></del><add
+                     place="above">-</add></subst> people too who love horses – would say that <subst>
+                  <del>they</del>
+                  <add place="above">the horses</add>
+               </subst> enjoy a charge. They enjoy <del rend="scribble"
+               >it</del><!--change rend desc.?--> of course the excitement &amp; the rivalry in the
+               race up to the moment when they are shot, but they don't enjoy their death,
+               agony.</p>
+
+            <p>I admire the <persName ref="#ps:NicholasII">Czar</persName>, but I should have
+               admired him more if he had suggested the abolition of cavalry. I scarcely suppose <pb
+                  n="2" facs="uoedh_hl_h.4689_2.jpg"/> that this reform is in the <hi
+                  rend="underline">near</hi> future; but, as you say, the development of the
+               mechanism of war may enforce it, before a senti­ment, which may seem now to many
+               maudlin, but which <hi rend="underline">must</hi> continue to grow, enforces it. This
+               sentiment has still in antagonism to it the sentiment of the middle ages which
+               descends to us <subst><del>o</del><add place="superimposed">w</add></subst>ith the
+               words "knight" &amp; chivalrous; it has in antagonism to it the sentiment created by
+               the glorious exploits of caval­ry in war. <del>This latter</del>These antagonistic
+               sentiments should be tempered by the reflection that the names of the heroic <add
+                  place="above">war-</add> horses do not <add place="above">usually</add> survive
+               like the names of renowned racers, whose success puts money in the pockets of their
+               owners &amp; backers. How few do survive – <del><unclear reason="illegible"
+                     >Buce's</unclear></del> Achilles' horses &amp; Bucephalus &amp; Brigliador
+               &amp; Marbot's Lisette. So that even if the horses have some obscure sense of
+               sacrifice for fame, this is not satisfied. As a fact I think they have none &amp; are
+               simply butchered But <subst>
+                  <del>crack</del>
+                  <add place="above">to propose</add>
+               </subst> to disestablish crack cavalry regiments is still beyond the daring of the
+                  <persName ref="#ps:NicholasII">Czar</persName></p>
+
+            <closer>
+               <salute>yours obediently</salute>
+               <signed>W. R. Paton</signed>
+            </closer>
+
+
+         </div>
+      </body>
+   </text>
+</TEI>

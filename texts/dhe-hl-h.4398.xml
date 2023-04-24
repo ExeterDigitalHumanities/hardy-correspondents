@@ -1,0 +1,166 @@
+<?xml-model href="../../schema/hardyletter.rng" type="application/xml" 
+   schematypens="http://relaxng.org/ns/structure/1.0"?><!--<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="dhe-hl-h.4398">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+
+            <title>Letter from May Morris to Thomas Hardy asking permission to include a quotation
+               in an introduction to her father's collected works, 23 April 1915. In this letter May
+               Morris refers to <ref target="#bib:Hardy1891_Tess">Tess of the d'Urbervilles</ref>
+               but the reference is to <ref target="#bib:Hardy1874_FarFromTheMaddingCrowd">Far from
+                  the Madding Crowd</ref>. </title>
+
+
+            <author ref="#ps:MayMorris">May Morris</author>
+            <!--The editor of the tei file-->
+            <editor ref="#resp-HA">Helen Angear</editor>
+            <funder>Arts and Humanities Research Council</funder>
+            <sponsor>University of Exeter</sponsor>
+            <sponsor>Dorset County Museum</sponsor>
+            <principal>Angelique Richardson</principal>
+
+            <respStmt>
+               <persName ref="#resp:HA">Helen Angear</persName>
+               <resp>Selection</resp>
+               <resp>Transcription</resp>
+
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:BM">Beth Mills</persName>
+               <resp>Proofreading</resp>
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:HP">Hannah Petrie</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="#resp:EW">Elizabeth Williamson</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition, transcribed and edited directly from primary
+               sources</edition>
+         </editionStmt>
+         <publicationStmt>
+            <publisher>University of Exeter Digital Humanities Lab</publisher>
+            <pubPlace>Exeter, UK</pubPlace>
+            <date>November 2019</date>
+            <availability>
+               <p>The letter transcripts are licensed under a Creative Commons Attribution 4.0
+                  International License. This means that you can use these transcripts providing you
+                  acknowledge the Hardy's Correspondents project.</p>
+               <p>The letter images remain the copyright of Dorset Museum. Please contact the Museum
+                  if you would like to reuse any of the letter images.</p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <placeName ref="#pl:Dorchester">Dorchester</placeName>
+                  <institution>Dorset County Museum</institution>
+                  <idno type="DCM">H.4398</idno>
+                  <altIdentifier>
+                     <idno type="XXXX"><!-- optional - any other identifiers --></idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Letter written on <material>cream card</material>.</p>
+                           <p>Pencil library marks on page 4: <note type="libraryMark"
+                              >H.4398</note></p>
+                        </support>
+                        <condition>Good</condition>
+                     </supportDesc>
+                  </objectDesc>
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Prepared as part of the AHRC/REACT Studentship on Thomas Hardy's letters, in
+               conjunction with Dorset County Museum.</p>
+         </projectDesc>
+
+      </encodingDesc>
+      <profileDesc>
+         <correspDesc>
+            <!-- Provides detailed correspondence-specific metadata, particularly concerning the communicative aspects 
+            (sending, receiving, forwarding etc.) associated with acts of correspondence. -->
+
+            <correspAction type="sent">
+               <persName ref="#ps:MayMorris">May Morris</persName>
+               <placeName ref="#pl:HammersmithTerrace8">8 Hammersmith Terrace, London,
+                  W.</placeName>
+               <date when="1915-04-23"/>
+            </correspAction>
+            <correspAction type="received">
+               <persName ref="#ps:TH">Thomas Hardy</persName>
+            </correspAction>
+
+         </correspDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="letter">
+            <pb n="1" facs="uoedh_hl_h.4398_1.jpg"/>
+            <opener>
+               <address rend="letterhead">
+                  <addrLine>From</addrLine>
+
+                  <addrLine>Miss May Morris, 8 Hammersmith Terrace, London, W.</addrLine>
+               </address>
+               <dateline>
+                  <date when="1915-04-23">23<hi rend="superscript">rd</hi> April 1915</date>
+               </dateline>
+
+               <salute>Dear Sir</salute>
+            </opener>
+
+            <p>I am writing to ask a favour of you: I am writing some notes on <placeName
+                  ref="#pl:Oxfordshire">Oxfordshire</placeName> and <placeName
+                  ref="#pl:Gloucestershire">Gloucestershire</placeName> places that my father
+                  <persName ref="#ps:WilliamMorris">William Morris</persName> was attracted to, one
+               of them being a noble little barn at <placeName ref="#pl:LittleCoxwell">Little
+                  Coxwell</placeName>, near <placeName ref="#pl:Faringdon">Farringdon</placeName>
+               <!-- Check Note: misspelling of Faringdon?--><!--Note: Add hierarchy location to xml:id-->.
+               Many years ago when <ref target="#bib:Hardy1891_Tess">Tess of the D'Urbervilles</ref>
+               first appeared, we all read with great pleasure the account of the great barn in that
+               delightful and tragic book, and I would ask your kind permission to quote the passage
+               (here enclosed). The notes in question are merely an introduction to one of the 24
+               volumes of my father's <ref
+                  target="https://archive.org/details/collectedworksw00morrgoog">Collected
+                  Works</ref> which I am now engaged in editing, and I am describing many happy
+               wanderings <pb n="2" facs="uoedh_hl_h.4398_2.jpg"/>
+               <pb n="3" facs="uoedh_hl_h.4398_3.jpg"/> we had with him round about the country.</p>
+            <p>I would be grateful if I might have an early answer, as I stupidly put off writing
+               until rather late</p>
+
+
+
+            <closer>
+               <salute>Believe me</salute>
+               <salute>Yours sincerely</salute>
+               <signed>May Morris</signed>
+            </closer>
+            <pb n="4" facs="uoedh_hl_h.4398_4.jpg"/>
+         </div>
+         <!--<supportDesc> <!-\-\- Check if this is correct - indicates envelope has black border-\->
+            <support>Black border</support>
+         </supportDesc>-->
+
+      </body>
+   </text>
+</TEI>

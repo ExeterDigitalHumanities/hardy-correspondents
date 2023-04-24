@@ -1,0 +1,202 @@
+<?xml-model href="../../schema/hardyletter.rng" type="application/xml" 
+   schematypens="http://relaxng.org/ns/structure/1.0"?><!--<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="dhe-hl-h.5506">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Letter from Leslie Stephen to Thomas Hardy suggesting a change to one of the
+               chapters in the serilaised version of <ref
+                  target="#bib:Hardy1874_FarFromTheMaddingCrowd"><emph rend="italics">Far From the
+                     Madding Crowd</emph></ref>, 17 February 1874</title>
+            <author ref="#ps:LeslieStephen">Leslie Stephen</author>
+            <!--The editor of the tei file-->
+            <editor ref="#resp-HA">Helen Angear</editor>
+            <funder>Arts and Humanities Research Council</funder>
+            <sponsor>University of Exeter</sponsor>
+            <sponsor>Dorset County Museum</sponsor>
+            <principal>Angelique Richardson</principal>
+
+            <respStmt>
+               <persName ref="#resp:HA">Helen Angear</persName>
+               <resp>Selection</resp>
+               <resp>Proofreading</resp>
+
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:BM">Beth Mills</persName>
+               <resp>Transcription</resp>
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:HP">Hannah Petrie</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="#resp:EW">Elizabeth Williamson</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition, transcribed and edited directly from primary
+               sources</edition>
+         </editionStmt>
+         <publicationStmt>
+            <publisher>University of Exeter Digital Humanities Lab</publisher>
+            <pubPlace>Exeter, UK</pubPlace>
+            <date>November 2019</date>
+            <availability>
+               <p>The letter transcripts are licensed under a Creative Commons Attribution 4.0
+                  International License. This means that you can use these transcripts providing you
+                  acknowledge the Hardy's Correspondents project.</p>
+               <p>The letter images remain the copyright of Dorset Museum. Please contact the Museum
+                  if you would like to reuse any of the letter images.</p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <placeName ref="#pl:Dorchester">Dorchester</placeName>
+                  <institution>Dorset County Museum</institution>
+                  <idno type="DCM">H.5506</idno>
+                  <altIdentifier>
+                     <idno type="XXXX"><!-- optional - any other identifiers --></idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Written on <material>cream paper</material>.</p>
+                           <p>Pencil library mark on page 2: <note type="libraryMark"
+                              >H.5506</note>.</p>
+                        </support>
+                        <condition>Good</condition>
+                     </supportDesc>
+                  </objectDesc>
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Prepared as part of the AHRC/REACT Studentship on Thomas Hardy's letters, in
+               conjunction with Dorset County Museum.</p>
+         </projectDesc>
+
+      </encodingDesc>
+      <profileDesc>
+         <correspDesc>
+            <!-- Provides detailed correspondence-specific metadata, particularly concerning the communicative aspects 
+            (sending, receiving, forwarding etc.) associated with acts of correspondence. -->
+
+            <correspAction type="sent">
+               <!-- Structured description of the place, the name of a person/organisation and the date related to the sending/receiving of a message -->
+               <persName ref="#ps:LeslieStephen">Leslie Stephen</persName>
+               <placeName ref="#pl:SouthwellGardens8">8 Southwell Gardens, South Kensington, S.W.
+                  London</placeName>
+               <date when="1874-02-17">17 February 1874</date>
+            </correspAction>
+            <correspAction type="received">
+               <persName ref="#ps:TH">Thomas Hardy</persName>
+            </correspAction>
+
+         </correspDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="letter">
+            <pb n="1" facs="uoedh_hl_h.5506_1.jpg"/>
+
+
+
+
+            <opener>
+               <address rend="letterhead">
+                  <addrLine>THE CORNHILL MAGAZINE</addrLine>
+                  <addrLine>SMITH ELDER &amp; Co.</addrLine>
+               </address>
+               <!--<figure rend="letterhead">
+                  <figDesc>Blue ink oval stamp in centre, containing a bundle of corn sheaves above two crossed sickles.</figDesc>
+               </figure>-->
+
+               <address>
+                  <addrLine>8 Southwell Gardens</addrLine>
+               </address>
+               <dateline>
+                  <date when="1874-02-17">17.2.74</date>
+               </dateline>
+               <salute>My dear Mr Hardy,</salute>
+            </opener>
+
+            <p>I have read through your <abbr>MS</abbr> with very great pleasure; though I had seen
+               most of it before. As you ask me for my opinion I will say frankly that I think the
+               sheepshearing rather long for <subst>
+                  <del>the</del>
+                  <add place="superimposed">our</add>
+               </subst> present purpose. When the novel appears as a whole, it may very well come in
+               in <choice><sic>it's</sic><corr>its</corr></choice> present form. For periodical
+               purposes, I think it rather delays the action unnecessarily. What I should be
+               inclined to do would be simply to omit the chapter headed the "shearing supper" &amp;
+               to add a few paragraphs to the succeeding and preceding, just explaining that there
+               has been a supper. The chapter on the "Great Barn" &amp; that called "a merry time"
+               seem to me to be excellent &amp; I would not omit <subst>
+                  <del><unclear>either</unclear></del>
+                  <add place="superimposed">them</add>
+               </subst> or shorten them. The other seems to me the least good of the three - &amp;
+                  <unclear>therefore</unclear> the best to abridge. I don't know whether anything
+               turns on the <pb n="2" facs="uoedh_hl_h.5506_2.jpg"/> bailiff's story; but I don't
+               think it necessary.</p>
+
+            <p>I shall take the <abbr>MS</abbr> to <orgName ref="#ps:SmithElderCo">Smith &amp;
+                  Elder</orgName>'s today &amp; will tell them that they will hear from you. Please
+               write to them (to <orgName ref="#ps:SmithElderCo">S.E &amp; Co</orgName>
+               <placeName ref="#pl:WaterlooPlace15">15 Waterloo Place <add place="below"> S.
+                     W.</add></placeName>)<!--check add is correct--> &amp; say whether the whole is
+               to be printed as it stands; or whether the chapter I mention is to be omitted; or
+               whether you would like to have the <abbr>MS</abbr> again to alter previously to
+               printing. Do whichever judgement commands.</p>
+
+            <p>I have heard of the story from many people &amp; have only heard one opinion of its
+               merits, <abbr>wh.</abbr> coincides with my own. As it goes on &amp; gets more into
+               the action, I am sure that the opinion will be higher still. In short, I think you
+               have every reason to be satisfied &amp; encouraged.</p>
+
+            <p>
+               <orgName ref="#ps:TheSpectator">The Spectator</orgName>'s instincts are better than
+                     <choice><sic>it's</sic><corr>its</corr></choice> reasons. It generally
+               recognises a good thing; but almost always talks nonsense about the causes of
+                     <choice><sic>it's</sic><corr>its</corr></choice> admiration. As for the
+               supposed affinity to <persName ref="#ps:GeorgeEliot">George Eliot</persName>, it
+               consists, I think, simply in this that you have both treated rustics of the farming
+               class in a humorous manner - <persName ref="#ps:RachelPoyser">Mrs Poyser</persName>
+               would be at home I think, in <placeName ref="#pl:Weatherbury">Weatherbury</placeName>
+               - but you need not be afraid of such criticisms. You are original <pb n="3"
+                  facs="uoedh_hl_h.5506_3-4.jpg"/> &amp; can stand on your own legs.</p>
+
+            <closer>
+               <salute>Yours very truly</salute>
+               <!--Erroneous apostrophe in original-->
+               <signed>Leslie Stephen</signed>
+            </closer>
+
+            <postscript>
+               <p>I have said frankly what I thought; but I hope you will not attach too much
+                  importance to my criticism - Do exactly what you think right - I shall be content.
+                           <subst><del><unclear>T</unclear></del><add place="superimposed"
+                     >V</add></subst>ery likely, it will be best for you to see the whole in print
+                  before <unclear>acting</unclear>; if so, <del>do</del> let it go to the press as
+                  it stands</p>
+            </postscript>
+
+
+         </div>
+      </body>
+   </text>
+</TEI>

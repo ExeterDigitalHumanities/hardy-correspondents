@@ -1,0 +1,175 @@
+<?xml-model href="../../schema/hardyletter.rng" type="application/xml" 
+   schematypens="http://relaxng.org/ns/structure/1.0"?><!--<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="dhe-hl-h.709">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Letter from Thomas Hardy to Dorset County Museum's curator John Acland regarding
+               presentation of a collection of his books for the museum library, 6 February
+               1908</title>
+            <author ref="#ps:TH">Thomas Hardy</author>
+            <!--The editor of the tei file-->
+            <editor ref="#resp-HA">Helen Angear</editor>
+            <funder>Arts and Humanities Research Council</funder>
+            <sponsor>University of Exeter</sponsor>
+            <sponsor>Dorset County Museum</sponsor>
+            <principal>Angelique Richardson</principal>
+
+            <respStmt>
+               <persName ref="#resp:HA">Helen Angear</persName>
+               <resp>Selection</resp>
+               <resp>Transcription</resp>
+
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:BM">Beth Mills</persName>
+               <resp>Proofreading</resp>
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:HP">Hannah Petrie</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="#resp:EW">Elizabeth Williamson</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition, transcribed and edited directly from primary
+               sources</edition>
+         </editionStmt>
+         <publicationStmt>
+            <publisher>University of Exeter Digital Humanities Lab</publisher>
+            <pubPlace>Exeter, UK</pubPlace>
+            <date>November 2019</date>
+            <availability>
+               <p>The letter transcripts are licensed under a Creative Commons Attribution 4.0
+                  International License. This means that you can use these transcripts providing you
+                  acknowledge the Hardy's Correspondents project.</p>
+               <p>The letter images remain the copyright of Dorset Museum. Please contact the Museum
+                  if you would like to reuse any of the letter images.</p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <placeName ref="#pl:Dorchester">Dorchester</placeName>
+                  <institution>Dorset County Museum</institution>
+                  <idno type="DCM">H.709</idno>
+                  <altIdentifier>
+                     <idno type="XXXX"><!-- optional - any other identifiers --></idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Letter written on <material>cream paper</material>.</p>
+                           <p>Pencil library marks on page 2: <note type="libraryMark" rend="pencil"
+                                 > H.709</note>.</p>
+
+                        </support>
+                        <condition>Good</condition>
+                        <!-- But torn on left-hand side and some foxing -->
+
+                     </supportDesc>
+
+                  </objectDesc>
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Prepared as part of the AHRC/REACT Studentship on Thomas Hardy's letters, in
+               conjunction with Dorset County Museum.</p>
+         </projectDesc>
+
+      </encodingDesc>
+      <profileDesc>
+         <correspDesc>
+            <!-- Provides detailed correspondence-specific metadata, particularly concerning the communicative aspects 
+            (sending, receiving, forwarding etc.) associated with acts of correspondence. -->
+
+            <correspAction type="sent">
+               <persName ref="#ps:TH">Thomas Hardy</persName>
+               <placeName ref="#pl:MaxGate">Max Gate, Dorchester, Dorset</placeName>
+               <date when="1908-02-06"/>
+            </correspAction>
+            <correspAction type="received">
+               <persName ref="#ps:JohnAcland">John E. Acland</persName>
+               <placeName ref="#pl:DorsetCountyMuseum">Dorset County Museum, Dorchester,
+                  Dorset</placeName>
+            </correspAction>
+
+         </correspDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="letter">
+            <pb n="1" facs="uoedh_hl_h.709_1.jpg"/>
+
+            <note style="transform:rotateZ(-40deg)">
+               <p><choice><abbr>Ans<hi rend="superscript">d</hi>.</abbr>
+                     <expan>Answer</expan></choice> 7<hi rend="superscript">th</hi> Feb. Reminder
+                     12<hi rend="superscript">th</hi> Dec: 1908</p>
+            </note>
+
+            <opener>
+
+
+               <address>
+                  <addrLine>Max Gate</addrLine>
+               </address>
+               <dateline>
+                  <date when="1908-02-06"> Feb 6. 1908</date>
+               </dateline>
+
+               <salute>Dear Captain Acland:</salute>
+
+            </opener>
+
+            <p>I will with much pleasure present the Museum Library with the books you suggest. As
+               the copies you already have are of various editions, &amp; some of them contain
+               errors corrected in more recent &amp; uniform editions, I think I should prefer to
+               give a complete set, all alike in style. I will bear this in mind when I see my
+               publishers.</p>
+
+            <p>I shall be quite willing to sign them. There is, however, one reason <pb n="2"
+                  facs="uoedh_hl_h.709_2.jpg"/> which may make it advisable that I should not do so,
+               namely that books so signed have a tendency to disappear from libraries, or, at
+               least, to have the title-page torn out, or whatever leaf the name is written on. This
+               point can be considered later on. </p>
+
+            <closer>
+
+               <salute>Yours very truly</salute>
+               <signed>T. Hardy.</signed>
+
+            </closer>
+
+            <postscript>
+
+               <p>P.S. I am enjoying the book <persName ref="#ps:NorahAcland">Mrs Acland</persName>
+                  was kind enough to send, &amp; am taking great care of it. When I return it I mean
+                  to write to her about it.</p>
+
+               <closer>
+                  <signed>T.H.</signed>
+               </closer>
+
+            </postscript>
+
+
+         </div>
+      </body>
+   </text>
+</TEI>

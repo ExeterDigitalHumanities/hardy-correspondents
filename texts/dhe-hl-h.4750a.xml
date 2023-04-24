@@ -1,0 +1,331 @@
+<?xml-model href="../../schema/hardyletter.rng" type="application/xml" 
+   schematypens="http://relaxng.org/ns/structure/1.0"?><!--<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="dhe-hl-h.4750a">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Letter from Lady Hester Pinney to Thomas Hardy regarding the case of Martha
+               Brown, 16 January 1926</title>
+            <author ref="#ps:HesterPinney">Lady Hester Pinney</author>
+            <!--The editor of the tei file-->
+            <editor ref="#resp-HA">Helen Angear</editor>
+            <funder>Arts and Humanities Research Council</funder>
+            <sponsor>University of Exeter</sponsor>
+            <sponsor>Dorset County Museum</sponsor>
+            <principal>Angelique Richardson</principal>
+
+            <respStmt>
+               <persName ref="#resp:HA">Helen Angear</persName>
+               <resp>Selection</resp>
+               <resp>Transcription</resp>
+
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:BM">Beth Mills</persName>
+               <resp>Proofreading</resp>
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:HP">Hannah Petrie</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="#resp:EW">Elizabeth Williamson</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition, transcribed and edited directly from primary
+               sources</edition>
+         </editionStmt>
+         <publicationStmt>
+            <publisher>University of Exeter Digital Humanities Lab</publisher>
+            <pubPlace>Exeter, UK</pubPlace>
+            <date>November 2019</date>
+            <availability>
+               <p>The letter transcripts are licensed under a Creative Commons Attribution 4.0
+                  International License. This means that you can use these transcripts providing you
+                  acknowledge the Hardy's Correspondents project.</p>
+               <p>The letter images remain the copyright of Dorset Museum. Please contact the Museum
+                  if you would like to reuse any of the letter images.</p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <placeName ref="#pl:Dorchester">Dorchester</placeName>
+                  <institution>Dorset County Museum</institution>
+                  <idno type="DCM">H.4750a</idno>
+                  <altIdentifier>
+                     <idno type="XXXX"><!-- optional - any other identifiers --></idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support><p>Letter written on <material>cream paper</material></p>.
+                              <p>Pencil library marks on pages 2 and 4: <note type="libraryMark"
+                                 >H.4750(a)</note>. Pencil library marks on pages 6 and 8: <note
+                                 type="libraryMark">H.4750(b)</note>
+                           </p>
+                           <p>The letter is accompanied by several enclosures, including a typed
+                              copy of oral account given by one of Martha Brown's neighbours Jim
+                              Lane, H.4750(b). </p>
+                           <!-- We could also include one of the other enclosures H.4750d, which is a photo of Jim Lane? I ahve not transcribed the other enclosure H.4750 c which is a seprarate account and there is also e, which is a sketch of a headstone. -->
+                        </support>
+                        <condition>Good; some rust marks</condition>
+                     </supportDesc>
+                  </objectDesc>
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Prepared as part of the AHRC/REACT Studentship on Thomas Hardy's letters, in
+               conjunction with Dorset County Museum.</p>
+         </projectDesc>
+
+      </encodingDesc>
+      <profileDesc>
+         <correspDesc>
+            <!-- Provides detailed correspondence-specific metadata, particularly concerning the communicative aspects 
+            (sending, receiving, forwarding etc.) associated with acts of correspondence. -->
+
+            <correspAction type="sent">
+               <persName ref="#ps:HesterPinney">Lady Hester Pinney</persName>
+               <placeName ref="#pl:Racedown">Racedown, Crewkerne, Somerset</placeName>
+               <date when="1926-01-16">January 16 1926</date>
+            </correspAction>
+            <correspAction type="received">
+               <persName ref="#ps:TH">Thomas Hardy</persName>
+            </correspAction>
+                       
+         </correspDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="letter">
+            <pb n="1" facs="uoedh_hl_h.4750a_1.jpg"/>
+            <opener>
+               <!-- Can we markup rotation? -->
+               <address rend="letterhead">
+                  <addrLine>TELEGRAMS, THORNCOMBE.</addrLine>
+                  <addrLine>STATION CREWKERNE 7 MILES.</addrLine>
+               </address>
+
+               <address rend="letterhead">
+                  <addrLine>RACEDOWN,</addrLine>
+                  <addrLine>CREWKERNE,</addrLine>
+                  <addrLine>SOMERSET.</addrLine>
+               </address>
+               <dateline>
+                  <date when="1926-01-16">January 16<hi rend="superscript">th</hi> 26</date>
+               </dateline>
+
+               <salute>My dear M<hi rend="superscript">r.</hi> Hardy</salute>
+            </opener>
+
+            <p>Here is the story of <persName ref="#ps:MarthaBrown">Martha Brown</persName>, as I
+               find it, still fresh in the memory of our older neighbours. It was very close to us
+               as the site of where <persName ref="#ps:MarthaBrown">Martha</persName>'s cottage was
+               can be seen from the room <pb n="2" facs="uoedh_hl_h.4750a_2.jpg"/> where you had
+               tea. Though just in the Parish of <placeName ref="#pl:Broadwindsor"
+                  >Broadwindsor</placeName> it is almost the furtherest point from the Village. Many
+               of the cottages <damage agent="rust">have</damage> fallen down since &amp; not been
+               rebuilt, <placeName ref="#pl:BirdsmoorGate">Birdsmore Gate</placeName>
+               <!-- needs checking --> was quite a hamlet in those days &amp; these little
+                  <unclear>colonies</unclear> have quite a different outlook on life, &amp; it dies
+               hard. At our little village Club we often sit round our stove &amp; talk of
+                  <placeName ref="#pl:Blackdown">Blackdown</placeName> in the old days. The old
+                  <persName ref="#ps:JimLane">Lane</persName>, whose story I send, is one of the old
+               school, a gentle old man whose hard life <pb n="3" facs="uoedh_hl_h.4750a_3.jpg"/>
+               <!-- has address and telegram info as a letterhead at top of page 3, encode as a figure? or use pointer? -->has
+               not affected his generous outlook on life &amp; his simple moral code. He went out to
+               work at 8. for 1/. a week, walking 2 or 3 miles to his work, married young &amp;
+               buried his frail little wife a few months ago &amp; has been very lonesome since.
+               They reared 13 children, &amp; one grandson, from a few days old, who makes a home
+               for the old man now, in one of our cottages — <pb n="4" facs="uoedh_hl_h.4750a_4.jpg"
+               /> He served us loyally, when we started farming in the War, &amp; was the man I
+               spoke of, who insisted on the hand drawn reed, &amp; taught our children how to do
+               it, in our ball crush.</p>
+            <p>Some day, if I may, I will come &amp; have a talk over poor <persName
+                  ref="#ps:MarthaBrown">Martha</persName> &amp; her day.</p>
+
+
+
+            <closer>
+               <salute>With every good wish</salute>
+               <salute>Yours very sincerely</salute>
+               <signed>Hester Pinney</signed>
+            </closer>
+
+
+         </div>
+      </body>
+      <back>
+         <div type="enclosure">
+            <pb n="5" facs="uoedh_hl_h.4750b_1.jpg"/>
+            <div type="typescript">
+               <head>
+                  <hi rend="underline"><persName ref="#ps:MarthaBrown">Martha Brown</persName>. Told
+                     by <persName ref="#ps:JimLane">Jim Lane</persName>. 13.1.26</hi>
+               </head>
+
+               <p><persName ref="#ps:JohnBrown">John Brown</persName> was a tranter, his wife
+                     <persName ref="#ps:MarthaBrown">Martha</persName> kept a small shop <persName
+                     ref="#ps:MaryPowell">Mary Powell</persName> also kept a small shop at
+                     <placeName ref="#pl:BirdsmoorGate">Birdsmoregate.</placeName>
+                  <persName ref="#ps:JohnBrown">John Brown</persName> he did bide about with <unclear>
+                     <del rend="strikethrough">her</del></unclear> her <note rend="handwritten"><add
+                        place="above" rend="pencil">[<persName ref="#ps:MaryPowell">Mary
+                           P.</persName>] <!-- how do we encode a gapfill line? --></add>
+                  </note>— a bad man. <persName ref="#ps:MarthaBrown">Martha</persName> went along
+                  there one night and found her husband on <persName ref="#ps:MaryPowell">Mary
+                     Powell</persName>'s knee, she <note rend="handwritten"><add place="above"
+                        rend="pencil">[<persName ref="#ps:MarthaBrown"
+                     >Martha</persName>]</add></note> was at the window ^<note rend="hadnwritten"
+                        ><add place="above" rend="pencil">[outside]</add></note>
+                  <!-- need to indiacte that this is 
+               handwritten whereas rest is TS-->and
+                  she see'd him there, she went home and got there first. After <persName
+                     ref="#ps:JohnBrown">John</persName> came home, he sat by the fire untying his
+                  boots <del rend="strikethrough">.</del>, I expect they had a few words, you know.
+                  She had a little axe and hit him on the head., (because he had been along with
+                  that other woman). She hit him the same night and the blood <del
+                     rend="strikethrough">did</del> made a stain on <damage agent="rust">the
+                     wall</damage> as never could be got out not till the house fell down, it was
+                  near <placeName ref="#pl:StaplesBarton">Staple's
+                  barton</placeName><!--need place file for this-->. To make the tale good <note
+                     rend="handwritten">^<add place="above" rend="pencil">[of it being an
+                        accident]</add></note>
+                  <damage agent="rust">
+                     <persName ref="#ps:MarthaBrown">Martha</persName></damage> had a horse and she
+                  carried a hat and a halter down to the field to make people think the horse kicked
+                  him but her <note rend="handwritten"><add place="above">the horse</add></note>
+                  didn't because she killed him there and then, and his headstone be out to
+                     <placeName ref="#pl:HolyTrinityChurch">Blackdown church</placeName> 50 year and
+                  more; I don't mind exactly.</p>
+               <p>I were a young man at the time and weren't married. <persName ref="#ps:MaryPowell"
+                     >Mary Powell</persName> ought to be ^<add place="above" rend="pencil"> [have
+                     been]</add> hanged instead because she did uphold a man to her house.</p>
+               <p><persName ref="#ps:MarthaBrown">Martha Brown</persName> were hung at <placeName
+                     ref="#pl:Dorchester">Dorchester</placeName> and <del rend="strikethrough"
+                     >tried</del> openly no <add place="above" rend="pencil">[woman's]</add>
+                  <!-- need to check how to
+            indicate that addition is directly above deletion-->
+                  <del>one's</del> bin hung openly since. They went about <del rend="strikethrough"
+                     >th</del> and found the things <add place="above" rend="pencil">[she]</add>
+                  <del>they</del> killed he with. There were a bleeding hair on the hatchet. Poor
+                     <persName ref="#ps:MarthaBrown">Mrs Brown</persName> hired a trap and went and
+                  bought her mourning and all out to <placeName ref="#pl:Crewkerne"
+                     >Crewkerne</placeName>, she never thought she were going to be hanged. There
+                  was one <persName ref="#ps:Richard">Richard</persName> a carpenter, he found out
+                  all about it, he was on the jury and he saw the hole in his head and found the
+                  hatchet in a little house in the garden. <persName ref="#ps:MaryPowell"
+                     >Mary</persName> had money and I suppose <persName ref="#ps:JohnBrown"
+                     >John</persName> liked the younger woman better, she was younger and smarter
+                  but <persName ref="#ps:MarthaBrown">Martha</persName> was a nice <pb n="6"
+                     facs="uoedh_hl_h.4750b_2.jpg"/>
+                  <pb n="7" facs="uoedh_hl_h.4750b_3.jpg"/> looking lady too. Me and<del>our</del>
+                  one or two of other lads went to see the man's body on Sunday morning about 12,
+                  before dinner, but they <add place="above" rend="pencil">[she?]</add> wouldn't let
+                  us see he. <persName ref="#ps:MarthaBrown">Martha</persName> came to the door and
+                  said. "The horse have kicked poor <persName ref="#ps:JohnBrown">John</persName>
+                     and<del>k</del> killed he." She was not a bit sad, as bright as ever I see'd
+                  her. After we heard what had happened we went down to the field and see'd the hat
+                  and halter. But <persName ref="#ps:JohnBrown">John Brown</persName> was not there
+                     ^<add place="above" rend="pencil">[where he was killed]</add>, he was up home.
+                  Of course they blame^<add place="above" rend="pencil">d</add>
+                  <persName ref="#ps:MaryPowell">Mary Powell</persName> because she did uphold a man
+                  to her house. <persName ref="#ps:MaryPowell">Mary Powell</persName>'s husband,
+                  whom she <choice><sic>marrie-d</sic><corr>married</corr></choice> after this, was
+                  an old man, she had one before called <persName ref="#ps:Davies"
+                  >Davies</persName>, a butcher and she had two sons and a daugh-ter <add
+                     place="above" rend="black ink">see note</add>. I think <persName
+                     ref="#ps:MarthaBrown">Martha</persName> was hung in her black silk dress and
+                  buried in it too. I went to the funeral ^<add place="above" hand="unknown"
+                     rend="black ink">(<persName ref="#ps:JohnBrown">John Brown</persName>'s)</add>,
+                  I remember it well better than I can things of three year ago.</p>
+               <p>I'll tell you another thing <persName ref="#ps:MaryPowell">Mary Powell</persName>
+                  used to go out to <placeName ref="#pl:Attisham"><choice><sic>Attesham</sic>
+                        <corr>Attisham</corr></choice></placeName> to do a bit of washing. One
+                  morning she rode up-along <add place="above" rend="pencil">[with]</add>
+                  <del>of</del>
+                  <persName ref="#ps:JohnBrown">Mr Brown</persName>. <persName ref="#ps:ThomasSmith"
+                     >Thomas Smith</persName>, a thatcher went to buy a bit of 'baccy of <persName
+                     ref="#ps:MarthaBrown">Mrs Brown</persName> and he said <del>=</del> "I see'd
+                     <persName ref="#ps:MaryPowell">Mrs Powell</persName> riding along <del>of</del>
+                  <add rend="pencil" place="inline">[with]</add> your husband.
+                        <choice><sic>that</sic><corr>That</corr></choice>
+                  <note hand="other"><add place="above" rend="pencil">[fired?]</add></note> filled
+                  her <del rend="strikethorugh"><unclear reason="deletion">worst</unclear></del> up
+                  worse, and that very <del rend="strikethrough">nigt</del> night she killed him.
+                     <persName ref="#ps:ThomasSmith">Thomas Smith</persName> didn't ought to have
+                  gone in and said <add place="above" rend="pencil">[any]</add>
+                  <del>no</del>thing. <persName ref="#ps:JohnBrown">John Brown</persName> went home
+                  took his horse out and all.</p>
+               <p>Every one used to go to <persName ref="#ps:MaryPowell">Mary Powell</persName>'s
+                  shop, people went when they didn't want to buy nothing. She had money but her
+                  chil-dren soon got rid of it for her.</p>
+               <p>One woman went to see <persName ref="#ps:MarthaBrown">Martha</persName> hung.
+                     <persName ref="#ps:ElizaPlumber">Mrs Eliza Plumber</persName>, (shepherd's wife
+                  down to <placeName ref="#pl:Bettiscombe">Bettiscombe</placeName> she hired to get
+                  there and she saw her hanged. <persName ref="#ps:MarthaBrown">Martha</persName>
+                  was drove to it. <persName ref="#ps:JohnBrown">John Brown</persName> was a very
+                  nice man and<del>so</del> so was <persName ref="#ps:MarthaBrown">Mrs
+                     Brown</persName>. I can't think how it did <pb n="8"
+                     facs="uoedh_hl_h.4750b_4.jpg"/>
+                  <pb n="9" facs="uoedh_hl_h.4750b_5.jpg"/> happen, he used to have a drop or two to
+                  drink going about on his job, he had to. It wouldn't have<del rend="strikethrough"
+                     >h</del> happened otherwise. "It is hard to be killed for other
+                        <choice><sic>folks</sic><corr>folks'</corr></choice> wrong." </p>
+               <p>A later conversation with <persName ref="#ps:MrsBailey"/>M<hi rend="superscript"
+                     >rs</hi> Bailey (75) corrected some of the above, she remembers all the talk
+                  when she was a very little girl but tells me that <persName ref="#ps:MaryPowell"
+                     >Mary "Powell"</persName> was "Davies" at the time of the murder, she married
+                     <del rend="strikethrough"><gap reason="cancelled"/>
+                     <unclear>Davies</unclear></del>
+                  <add place="above">Powell</add> later. <del rend="strikethrough">She</del>
+                  <add place="above"><persName ref="#ps:MrsBailey">Mrs Bailey</persName></add> was
+                  indignant at the slur cast on <persName ref="#ps:MaryPowell">Mary</persName>'s
+                  character &amp; then told me — when noone was near — "Her,, son, young Davies, was
+                  my first sweetheart" &amp; "I wouldn't have been allowed to walk out with him if
+                  his mother hadn't been quite as she should be." She rather contradicted herself
+                  later by telling me that <persName ref="#ps:MaryPowell">Mary Davies</persName>
+                  started to walk to <placeName ref="#pl:Dorchester">Dorchester</placeName> to see
+                     <persName ref="#ps:MarthaBrown">Martha</persName> hung, but when she got as far
+                  as <unclear><placeName ref="#pl:Broadwindsor">Broadwindsor</placeName></unclear>
+                  (8 miles off) they came out &amp; told <unclear>w</unclear>ould get mobbed of she
+                  went there — so she turned back.</p>
+
+               <p>An old spinster, <persName ref="#ps:MaryPhilips">Mary
+                     Philip<unclear>s</unclear></persName>, of <placeName ref="#pl:Broadwindsor"
+                     >Broadwindsor</placeName> told me her next door neighbour <persName
+                     ref="#ps:AmeliaDale">Amelia Dale</persName>, (who died a year ago in the Mental
+                  Hospital) had walked all the way from <placeName ref="#pl:Mosterton"
+                     >Mosterton</placeName> to <placeName ref="#pl:Dorchester"
+                     >Dorchester</placeName>, with 13 others, to see <persName ref="#ps:MarthaBrown"
+                     >Martha</persName> hung, &amp; "she was hung in a black silk gown" <persName
+                     ref="#ps:MrsBailey">Mrs Bailey</persName> said it was satin &amp; satin went
+                  out of fashion for some time after! <persName ref="#ps:MrsBailey">Mrs
+                     Bailey</persName> tells me. </p>
+               <p> The whole story <del rend="strikethrough">seems</del>
+                  <add place="above">was</add> to <del rend="strikethrough">have been</del>
+                  published in a Sunday pape, a few years ago – but old <persName ref="#ps:JimLane"
+                     >Lane</persName> can't read or write, so his story would be uninfluenced by
+                  this.</p>
+
+
+            </div>
+         </div>
+      </back>
+   </text>
+</TEI>

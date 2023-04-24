@@ -1,0 +1,173 @@
+<?xml-model href="../../schema/hardyletter.rng" type="application/xml" 
+   schematypens="http://relaxng.org/ns/structure/1.0"?><!--<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="dhe-hl-h.2712">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Letter from Edmund Gosse to Thomas Hardy, about <ref
+                  target="#bib:Hardy1887_Woodlanders">
+                  <emph rend="italics">The Woodlanders</emph></ref>, 22 March 1887</title>
+            <!-- need to add in previous and next links to three letters in Vol 1 of the Collected Letters of TH in Past Masters p.159 and 163 -->
+            <!--The editor of the tei file-->
+            <editor ref="#resp-HA">Helen Angear</editor>
+            <funder>Arts and Humanities Research Council</funder>
+            <sponsor>University of Exeter</sponsor>
+            <sponsor>Dorset County Museum</sponsor>
+            <principal>Angelique Richardson</principal>
+
+            <respStmt>
+               <persName ref="#resp:HA">Helen Angear</persName>
+               <resp>Selection</resp>
+               <resp>Transcription</resp>
+
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:BM">Beth Mills</persName>
+               <resp>Proofreading</resp>
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:HP">Hannah Petrie</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="#resp:EW">Elizabeth Williamson</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition, transcribed and edited directly from primary
+               sources</edition>
+         </editionStmt>
+         <publicationStmt>
+            <publisher>University of Exeter Digital Humanities Lab</publisher>
+            <pubPlace>Exeter, UK</pubPlace>
+            <date>November 2019</date>
+            <availability>
+               <p>The letter transcripts are licensed under a Creative Commons Attribution 4.0
+                  International License. This means that you can use these transcripts providing you
+                  acknowledge the Hardy's Correspondents project.</p>
+               <p>The letter images remain the copyright of Dorset Museum. Please contact the Museum
+                  if you would like to reuse any of the letter images.</p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <placeName ref="#pl:Dorchester">Dorchester</placeName>
+                  <institution>Dorset County Museum</institution>
+                  <idno type="DCM">H.2712</idno>
+                  <altIdentifier>
+                     <idno type="XXXX"><!-- optional - any other identifiers --></idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Written on <material>cream paper</material>.</p>
+                           <p>Pencil library marks on page 2: <note type="libraryMark"
+                              >H.2712</note>.</p>
+                        </support>
+                        <condition>Good.</condition>
+                     </supportDesc>
+                  </objectDesc>
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Prepared as part of the AHRC/REACT Studentship on Thomas Hardy's letters, in
+               conjunction with Dorset County Museum.</p>
+         </projectDesc>
+
+      </encodingDesc>
+      <profileDesc>
+         <correspDesc>
+            <!-- Provides detailed correspondence-specific metadata, particularly concerning the communicative aspects 
+            (sending, receiving, forwarding etc.) associated with acts of correspondence. -->
+
+            <correspAction type="sent">
+               <!-- Structured description of the place, the name of a person/organisation and the date related to the sending/receiving of a message -->
+               <!--<persName> of letter author-->
+               <persName ref="#ps:EdmundGosse">Edmund Gosse</persName>
+
+               <placeName ref="#pl:DelamereTerrace29">29, Delamere Terrace, Westbourne Square, W.
+                  London</placeName>
+               <date when="1887-03-22"/>
+            </correspAction>
+            <correspAction type="received">
+               <persName ref="#ps:TH">Thomas Hardy</persName>
+            </correspAction>
+
+         </correspDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="letter">
+            <pb n="1" facs="uoedh_hl_h.2712_1.jpg"/>
+            <opener>
+               <address rend="letterhead">
+                  <addrLine>29. Delamere Terrace</addrLine>
+                  <addrLine>Westborne Square W.</addrLine>
+               </address>
+               <dateline>
+                  <date when="1887-03-22">22.3.87</date>
+               </dateline>
+               <salute>My dear Hardy,</salute>
+            </opener>
+
+            <p>Very many thanks for the gift of "<ref target="#bib:Hardy1887_Woodlanders">The
+                  Woodlanders</ref>".</p>
+
+            <p>I was so much disgusted with the way the critics treated "<ref
+                  target="#bib:Hardy1886_Mayor">The Mayor</ref>" that I have
+                     <del><unclear>got</unclear></del>
+               <add place="above">gone</add> in this time for an arrant piece of log-rolling. I have
+               persuaded the <orgName type="periodical" ref="#ps:SaturdayReview">"Saturday
+                  Review"</orgName> to let me notice the <ref target="#bib:Hardy1887_Woodlanders"
+                  >"Woodlanders"</ref> &amp; I have stirred up <persName ref="#ps:CoventryPatmore"
+                  >Coventry </persName>
+               <pb n="2" facs="uoedh_hl_h.2712_2.jpg"/>
+               <persName ref="#ps:CoventryPatmore">Patmore</persName> to make the same attempt in
+               the <orgName type="periodical" ref="#ps:StJamesGazette">St. James's
+               Gazette</orgName>. If he succeeds you will have, at all events, two conscientious
+               reviewers. Last time it did not seem to me that you had one.</p>
+            <p>I have formed an idea that <placeName ref="#pl:LittleHintock">Little
+                  Hintock</placeName> is more or less a study of <placeName ref="#pl:MinterneParva">
+                  Mintern Parva</placeName>. I dare say I <pb n="3" facs="uoedh_hl_h.2712_3.jpg"/>
+               am quite wrong. I wonder if <placeName ref="#pl:BuckburyFitzpiers"
+                  >Buckbury-Fitzpiers</placeName> is not a kind of hybrid between <placeName
+                  ref="#pl:OkefordFitzpaine">Okeford-Fitzpaine</placeName> &amp; <placeName
+                  ref="#pl:BucklandNewton">Buckland-Newton</placeName>? Of course <placeName
+                  ref="#pl:ShertonAbbas">Sherton Abbas</placeName> is <placeName ref="#pl:Sherborne"
+                  >Sherborne</placeName>? If one of these guesses is wrong, they all are, for they
+               fit together like a puzzle.</p>
+
+            <p> Your book is one <pb n="4" facs="uoedh_hl_h.2712_4.jpg"/> of the most beautiful that
+               you have written. The first volume starts off rather stiffly, but the second is
+               superb, as warm and rich as a Titian. I have not yet read the third.</p>
+
+
+            <closer>
+               <salute>Ever sincerely yours</salute>
+               <signed>Edmund Gosse</signed>
+            </closer>
+
+            <postscript>
+               <p>How many details have I already heard from your lips!</p>
+            </postscript>
+
+
+         </div>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,241 @@
+<?xml-model href="../../schema/hardyletter.rng" type="application/xml" 
+   schematypens="http://relaxng.org/ns/structure/1.0"?><!--<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="dhe-hl-h.4152">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+
+            <title>Letter from Katharine Macquoid to Thomas Hardy on the character of Bathsheba in
+                  <ref target="#bib:Hardy1874_FarFromTheMaddingCrowd"><emph rend="italics">Far from
+                     the Madding Crowd</emph></ref>, 18 November 1874</title>
+            <author ref="#ps:KatharineMacquoid">Katharine Maquoid</author>
+            <!--The editor of the tei file-->
+            <editor ref="#resp-HA">Helen Angear</editor>
+            <funder>Arts and Humanities Research Council</funder>
+            <sponsor>University of Exeter</sponsor>
+            <sponsor>Dorset County Museum</sponsor>
+            <principal>Angelique Richardson</principal>
+
+            <respStmt>
+               <persName ref="#resp:HA">Helen Angear</persName>
+               <resp>Selection</resp>
+               <resp>Proofreading</resp>
+
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:BM">Beth Mills</persName>
+               <resp>Transcription</resp>
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:HP">Hannah Petrie</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="#resp:EW">Elizabeth Williamson</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition, transcribed and edited directly from primary
+               sources</edition>
+         </editionStmt>
+         <publicationStmt>
+            <publisher>University of Exeter Digital Humanities Lab</publisher>
+            <pubPlace>Exeter, UK</pubPlace>
+            <date>November 2019</date>
+            <availability>
+               <p>The letter transcripts are licensed under a Creative Commons Attribution 4.0
+                  International License. This means that you can use these transcripts providing you
+                  acknowledge the Hardy's Correspondents project.</p>
+               <p>The letter images remain the copyright of Dorset Museum. Please contact the Museum
+                  if you would like to reuse any of the letter images.</p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <placeName ref="#pl:Dorchester">Dorchester</placeName>
+                  <institution>Dorset County Museum</institution>
+                  <idno type="DCM">H.4152</idno>
+                  <altIdentifier>
+                     <idno type="XXXX"><!-- optional - any other identifiers --></idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Written on <material>folded cream paper</material>.</p>
+                        </support>
+                        <condition>Good</condition>
+                     </supportDesc>
+                  </objectDesc>
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Prepared as part of the AHRC/REACT Studentship on Thomas Hardy's letters, in
+               conjunction with Dorset County Museum.</p>
+         </projectDesc>
+
+      </encodingDesc>
+      <profileDesc>
+         <correspDesc>
+            <!-- Provides detailed correspondence-specific metadata, particularly concerning the communicative aspects 
+            (sending, receiving, forwarding etc.) associated with acts of correspondence. -->
+
+            <correspAction type="sent">
+               <!-- Structured description of the place, the name of a person/organisation and the date related to the sending/receiving of a message -->
+               <persName ref="#ps:KatharineMacquoid">Katharine Macquoid</persName>
+               <!--Profile needed-->
+
+               <!--Location letter sent from-->
+               <placeName ref="#pl:StanleyPlace">Stanley Place, Chelsea Street, London</placeName>
+               <!--Can't find any details for this place-->
+               <date when="1874-11-18">Nov: 18th 1874</date>
+            </correspAction>
+            <correspAction type="received">
+               <persName ref="#ps:TH">Thomas Hardy</persName>
+            </correspAction>
+
+         </correspDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="letter">
+            <pb n="1" facs="uoedh_hl_h.4152_1.jpg"/>
+            <opener>
+               <address>
+                  <addrLine>Stanley Place</addrLine>
+                  <addrLine>Chelsea <choice><abbr>Str.</abbr>
+                        <expan>Street</expan></choice></addrLine>
+               </address>
+               <dateline>
+                  <date when="1874-11-18">Nov: 18th 1874</date>
+               </dateline>
+               <salute>My dear Sir</salute>
+            </opener>
+
+            <p>Thank you very much for your kind &amp; patient answer to my letters – it was a
+               relief – for after I sent it (I observe you say a woman always feels this - the
+               remark is in <ref target="#bib:Hardy1871_Remedies">Desperate Remedies</ref>
+               <choice>
+                  <abbr>wh:</abbr>
+                  <expan>which</expan>
+               </choice> we have been reading since I wrote) I felt sorry – it seemed rather
+               presumptuous in <hi rend="underline">me</hi> to find fault with <hi rend="underline"
+                  >you</hi> -</p>
+            <p>I began to write only meaning to send our thanks – not <pb n="2"
+                  facs="uoedh_hl_h.4152_2.jpg"/> criticism &amp; then this idea
+                     <choice><abbr>wh:</abbr><expan>which</expan></choice> I confess had been some
+               time latent got into words.</p>
+
+            <p>I feel now too late that it was ungrateful to find fault with <persName
+                  ref="#ps:BathshebaEverdene">Bathsheba</persName> who must have cost you infinite
+               time &amp; labour to create – She is almost always true to herself but then her
+               nature is such that of a true woman – because she is centred on self.</p>
+
+            <p>You have not understood me – I quite agree that the ordinary type of woman
+                        <choice><abbr>sh<hi rend="superscript"
+                  >d</hi></abbr><expan>should</expan></choice> not be idealised into a book heroine
+               -</p>
+
+            <p>I have not time now to discuss what you say of <del><unclear>the</unclear></del>
+               women of real life – but I fancy we are not agreed thereon -</p>
+
+            <p>But your letter shows that you hold as we do that the novelist's kingdom is something
+               much greater than the "public" <subst><del>need</del><add place="above">idea of
+                     it</add></subst> &amp; therefore I feel courage to speak without fear of
+               ridicule –</p>
+
+            <p>I have tried to paint a good woman <pb n="3" facs="uoedh_hl_h.4152_3.jpg"/> &amp; I
+               know I have failed – but when I think of <persName ref="#ps:Cordelia"
+                  >Cordelia</persName> I know it can be done – <persName ref="#ps:DorotheaBrooke"
+                  >Dorothea Brooke</persName> &amp; <persName ref="#ps:DinahMorris">Dinah
+                  Morris</persName> are not what I mean – they are too superhuman – <persName
+                  ref="#ps:DorotheaBrooke">Dorothea</persName> is a pure faultless pagan – &amp;
+                  <persName ref="#ps:DinahMorris">Dinah</persName> is too much of a female Priest –
+                  <persName ref="#ps:ElizabethGaskell">M<hi rend="superscript">rs</hi>
+                  Gaskell</persName>'s <persName ref="#ps:MollyGibson">Molly</persName> comes nearer
+               to poor humanity, but I fancy a dash of sauciness or even of naughtiness would much
+               improve <persName ref="#ps:MollyGibson">Molly</persName> - for I think true art never
+               outsteps nature – </p>
+            <p> Last night just as your letter came – my <subst><del><gap/></del><add
+                     place="superimposed">h</add></subst>usband read aloud a sentence from November
+                  "<ref target="#bib:Hardy1874_FarFromTheMaddingCrowd"><choice>
+                     <sic>Farfromthe &amp;c</sic>
+                     <corr>Far From the Madding Crowd</corr>
+                  </choice></ref>" (I believe he dotes on that book-) <q>"the soul is the slave of
+                  the body"</q> – now I believe here <unclear>lies</unclear> the germ of my
+               dissatisfaction with your <pb n="4" facs="uoedh_hl_h.4152_4.jpg"/> heroines – If men
+               like to believe this axiom as regards themselves – they may but I am sure it is false
+               as regards women – that is women who recognise duty as a principle &amp; <persName
+                  ref="#ps:BathshebaEverdene">Bathsheba</persName> does this– I do not want a
+               heroine to be very clever – but I want her to have a soul
+                     <choice><abbr>wh:</abbr><expan>which</expan></choice> is not entirely governed
+               by her body - novel-writers seem to think "a deal" more of the last than of the
+                  <unclear reason="illegible">first</unclear>
+               <subst>
+                  <del rend="double-strikethrough">yet</del>
+                  <add place="above">and doubtless</add>
+               </subst> a heroine must have beauty – Even in life a woman seems to miss her vocation
+               who has not some special charm &amp; is rarely less vain if she have it not- but she
+               need not think only about <hi rend="underline">men</hi> – if she loves – then she
+               cannot love too well – but she will love just as intensely – just as ardently- if she
+               is simple &amp; pure-minded &amp; <pb n="5" facs="uoedh_hl_h.4152_5.jpg"/> noble
+               natured – as if she is only made of flesh &amp; blood – with a soul governed by her
+               body -</p>
+
+            <p>This is no answer to your letter – I cannot write an answer without getting into
+               Chapters – do not be alarmed at the length of this letter – I <add place="above"
+                  >very</add> rarely write one – I have not time – only just now I am laid up &amp;
+               unable to do <hi rend="underline">work</hi> writing-</p>
+
+            <p>But I should like to <hi rend="underline">talk</hi> this out with you – our
+               admiration for your writing is so great that we shall much like to make your
+               acquaintance – We live within five minutes walk of <placeName
+                  ref="#pl:ChelseaStation">Chelsea Station</placeName>
+               <pb n="6" facs="uoedh_hl_h.4152_6.jpg"/> on S. Westernline &amp; are easily reached
+               from <placeName ref="#pl:Surbiton">Surbiton</placeName> - We are always at home on
+               Sunday as well as on Tuesday after three <choice><abbr>oclk</abbr>
+                  <expan>o'clock</expan></choice> - &amp; shall be heartily glad to see you if you
+               will take the trouble to come –</p>
+
+            <p>I ought to tell you that I like <persName ref="#ps:GabrielOak">Gabriel Oak</persName>
+               – except for one thing – almost better than any man I know in a novel – better than
+                  <persName ref="#ps:AdamBede">Adam Bede</persName> – <persName ref="#ps:GabrielOak"
+                  >Gabriel</persName> has the special qualities I love – I began to like <name
+                  type="character">M<hi rend="superscipt">r</hi> Knight</name> – but he is a brute
+                  <pb n="7" facs="uoedh_hl_h.4152_7.jpg"/> to that poor little girl – she is full of
+               falsehood &amp; folly but then she loved him –</p>
+
+            <closer>
+               <salute>I am</salute>
+               <salute>yours truly</salute>
+               <signed>Katharine S Macquoid</signed>
+            </closer>
+            <postscript>
+               <p>My husband wishes much to know in what county <persName
+                     ref="#ps:BathshebaEverdene">Bathsheba</persName>'s farm is. <!--<figure>
+                     <figDesc>Small horizontal semi-circle drawn in ink after text</figDesc>
+                  </figure>-->
+                  <!--                  deleted figure because I think it means a full stop-->
+               </p>
+            </postscript>
+
+            <!--<pb n="8" facs="uoedh_hl_h.4152_8u.jpg"/>-->
+
+         </div>
+      </body>
+   </text>
+</TEI>

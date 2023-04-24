@@ -1,0 +1,228 @@
+<?xml-model href="../../schema/hardyletter.rng" type="application/xml" 
+   schematypens="http://relaxng.org/ns/structure/1.0"?><!--<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="dhe-hl-h.3179">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+
+            <title>Letter from Florence Henniker to Thomas Hardy on his poetry, the Irish question
+               and her home, 11 July 1914</title>
+            <!--The author of the letter-->
+            <author ref="#ps:FlorenceHenniker">Florence Henniker</author>
+            <!--The editor of the tei file-->
+            <editor ref="#resp-HA">Helen Angear</editor>
+            <funder>Arts and Humanities Research Council</funder>
+            <sponsor>University of Exeter</sponsor>
+            <sponsor>Dorset County Museum</sponsor>
+            <principal>Angelique Richardson</principal>
+
+            <respStmt>
+               <persName ref="#resp:HA">Helen Angear</persName>
+               <resp>Selection</resp>
+               <resp>Transcription</resp>
+
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:BM">Beth Mills</persName>
+               <resp>Proofreading</resp>
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:HP">Hannah Petrie</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="#resp:EW">Elizabeth Williamson</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition, transcribed and edited directly from primary
+               sources</edition>
+         </editionStmt>
+         <publicationStmt>
+            <publisher>University of Exeter Digital Humanities Lab</publisher>
+            <pubPlace>Exeter, UK</pubPlace>
+            <date>November 2019</date>
+            <availability>
+               <p>The letter transcripts are licensed under a Creative Commons Attribution 4.0
+                  International License. This means that you can use these transcripts providing you
+                  acknowledge the Hardy's Correspondents project.</p>
+               <p>The letter images remain the copyright of Dorset Museum. Please contact the Museum
+                  if you would like to reuse any of the letter images.</p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <placeName ref="#pl:Dorchester">Dorchester</placeName>
+                  <institution>Dorset County Museum</institution>
+                  <idno type="DCM">H.3179</idno>
+                  <altIdentifier>
+                     <idno type="XXXX"><!-- optional - any other identifiers --></idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+
+                     <!--<supportDesc> <!-\-\- Check if this is correct - indicates envelope has black border-\->
+            <support>Black border</support>
+         </supportDesc>-->
+
+                     <supportDesc>
+                        <support>
+                           <p>Letter written on <material>cream folded paper with mourning border on
+                                 page 1.</material></p>
+                           <p>Pencil library marks on page 4: <note type="libraryMark"
+                              >H.3179</note>.</p>
+                           <p>Note that after page 4 Henniker continues writing in the top margin of
+                              the first page (labelled here as page 5) and adds a postscript in the
+                              margin of page 4 (postscript labelled here as page 6).</p>
+
+
+
+                           <p>Envelope bearing the following marks: <stamp type="postmark">Circular
+                                 mark specifying <mentioned>SEVENOAKS 9 45 pm 12
+                                       <unclear>U</unclear>Y 14</mentioned></stamp>. <stamp
+                                 type="postage">One penny bright scarlet King George V
+                                 stamp.</stamp>
+                              <note rend="pencil">July 11 (1914) see postmark on back of
+                                 envelope</note>. <figure><figDesc>Letterhead has a black oval
+                                    decorative border with the initials F.H. at the
+                                 top.</figDesc></figure></p>
+                        </support>
+                        <condition>Good</condition>
+
+                     </supportDesc>
+
+                  </objectDesc>
+                  <decoDesc>
+                     <decoNote type="mourningBorder">
+                        <p>Black border on page 1.</p>
+                     </decoNote>
+                  </decoDesc>
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Prepared as part of the AHRC/REACT Studentship on Thomas Hardy's letters, in
+               conjunction with Dorset County Museum.</p>
+         </projectDesc>
+
+      </encodingDesc>
+      <profileDesc>
+         <correspDesc>
+            <!-- Provides detailed correspondence-specific metadata, particularly concerning the communicative aspects 
+            (sending, receiving, forwarding etc.) associated with acts of correspondence. -->
+
+            <correspAction type="sent">
+               <persName ref="#ps:FlorenceHenniker">Florence Henniker</persName>
+               <placeName ref="#pl:TheLittleOrchard">The Little Orchard, Shoreham, Kent</placeName>
+               <date when="1914-07-11"/>
+            </correspAction>
+            <correspAction type="received">
+               <persName ref="#ps:TH">Thomas Hardy</persName>
+            </correspAction>
+            
+            <!-- correspContext> -->
+            <!-- Provides references to preceding or following correspondence related to this piece of correspondence -->
+            <!--</correspContext>-->
+            <correspContext>
+               <ref type="prev" target="dhe-hl-h.3138"> Letter from <persName ref="#ps:TH"
+                     >Hardy</persName> discussing his life, his poetry and the issue of vivisection.
+               </ref>
+            </correspContext>
+         </correspDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="letter">
+            <pb n="1" facs="uoedh_hl_h.3179_1.jpg"/>
+            <milestone xml:id="m01" unit="section"/>
+            <opener>
+               <address rend="letterhead">
+                  <addrLine>The Little Orchard</addrLine>
+                  <addrLine>Shoreham</addrLine>
+                  <addrLine>Kent</addrLine>
+               </address>
+
+               <dateline>
+                  <date when="1914-07-11">July 11</date>
+               </dateline>
+
+               <salute>My dear friend:</salute>
+            </opener>
+
+            <p>I am so afraid I did not say – or did I? how much I liked that pathetic little poem
+                     <choice><abbr>wh.</abbr><expan>which</expan></choice> you so kindly sent. I am
+               afraid it is true of <del>so</del>
+               <del>many</del> most times beside the summer – that one does not know how great the
+                     <del><unclear reason="illegible">their</unclear></del> happiness is that they
+               give us, until the <pb n="2" facs="uoedh_hl_h.3179_2.jpg"/> autumn comes!</p>
+            <p>I feel that <hi rend="underline">your</hi> life now must be very serene &amp; happy
+               with such a sympathetic understanding companion as <persName ref="#ps:FlorenceHardy"
+                  >Florence</persName>.</p>
+            <p>I hope you don't find this quite unusual heat <hi rend="underline">very</hi> trying?
+               It is excessively <pb n="3" facs="uoedh_hl_h.3179_3.jpg"/> hot here to-day. &amp;
+               there was such a curious <hi rend="underline">brief</hi> hurricane just now. The
+               leaves &amp; dust &amp; blossoms – I think, had exactly the effect of a heavy shower
+                  <add place="above">of rain</add> blown across towards the orchard.</p>
+            <p>Milner feels the heat very much, more of course than the short coated Wessex.</p>
+            <p>I wonder if the Irish question is interesting you <pb n="4"
+                  facs="uoedh_hl_h.3179_4.jpg"/> much?</p>
+            <milestone xml:id="m02" unit="section"/>
+
+            <p>I am afraid all this political work is a terrible strain for my brother – He is very
+               highly strung – &amp; it must be most nerve-exhausting.</p>
+            <p>I hope you had a nice time with <persName ref="#ps:SusanJeune">Lady St
+                  Helier</persName> – &amp; no doubt you met pleasant &amp; appreciative people.</p>
+            <p>The effect of the Shoreham air seems to be that the inhabitants become
+                        <choice><sic><hi rend="underline"
+                     >extraordin<unclear>ary</unclear></hi></sic><corr>extraordinarily</corr></choice>
+               <hi rend="underline">self-satisfied</hi> &amp; <hi rend="underline"
+                  >self-absorbed</hi>!</p>
+            <pb n="5" facs="uoedh_hl_h.3179_5.jpg"/>
+            <p xml:id="h3179a" corresp="m01" style="transform:rotateZ(-90deg)">I can't say I care
+               for my neighbours here! I hope I shall not become <hi rend="underline">very</hi> smug
+               and egotistical. However, I mean if I can to be more in <placeName ref="#pl:London"
+                  >London</placeName> than I have been lately. With my best love to Florence.</p>
+
+
+            <closer>
+               <salute><unclear>From</unclear>
+                  <choice><abbr>yr</abbr><expan>your</expan></choice>
+                  <choice><abbr>affec.</abbr><expan>affectionate</expan></choice> friend</salute>
+               <signed>FloH</signed>
+            </closer>
+            <pb n="6" facs="uoedh_hl_h.3179_6.jpg"/>
+            <postscript xml:id="h3179b" corresp="m02" style="transform:rotateZ(-90deg)">
+               <p>Is your garden very dried up? I hope you have many dear birds in it.</p>
+            </postscript>
+
+
+         </div>
+      </body>
+      <back>
+         <div type="envelope">
+            <pb n="7" facs="uoedh_hl_h.3179_env1.jpg"/>
+            <p>
+               <address>
+                  <addrLine>Thomas Hardy Esq O.M.</addrLine>
+                  <addrLine>Maxgate</addrLine>
+                  <addrLine>Dorchester</addrLine>
+               </address>
+            </p>
+            <pb n="8" facs="uoedh_hl_h.3179_env2.jpg"/>
+         </div>
+      </back>
+   </text>
+</TEI>

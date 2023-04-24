@@ -1,0 +1,234 @@
+<?xml-model href="../../schema/hardyletter.rng" type="application/xml" 
+   schematypens="http://relaxng.org/ns/structure/1.0"?><!--<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="dhe-hl-h.3191">
+   <!-- add above the xml:id attribute with the value'dhe-hl-h.NNNN' -->
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+
+            <title>Letter from Florence Henniker to Thomas Hardy about film adaptations and various
+               other matters, 5 July 1921</title>
+            <!--The author of the letter-->
+            <author ref="#ps:FlorenceHenniker">Florence Henniker</author>
+            <!--The editor of the tei file-->
+            <editor ref="#resp-HA">Helen Angear</editor>
+            <funder>Arts and Humanities Research Council</funder>
+            <sponsor>University of Exeter</sponsor>
+            <sponsor>Dorset County Museum</sponsor>
+            <principal>Angelique Richardson</principal>
+
+            <respStmt>
+               <persName ref="#resp:HA">Helen Angear</persName>
+               <resp>Selection</resp>
+               <resp>Transcription</resp>
+
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:BM">Beth Mills</persName>
+               <resp>Proofreading</resp>
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:HP">Hannah Petrie</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="#resp:EW">Elizabeth Williamson</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition, transcribed and edited directly from primary
+               sources</edition>
+         </editionStmt>
+         <publicationStmt>
+            <publisher>University of Exeter Digital Humanities Lab</publisher>
+            <pubPlace>Exeter, UK</pubPlace>
+            <date>November 2019</date>
+            <availability>
+               <p>The letter transcripts are licensed under a Creative Commons Attribution 4.0
+                  International License. This means that you can use these transcripts providing you
+                  acknowledge the Hardy's Correspondents project.</p>
+               <p>The letter images remain the copyright of Dorset Museum. Please contact the Museum
+                  if you would like to reuse any of the letter images.</p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <placeName ref="#pl:Dorchester">Dorchester</placeName>
+                  <institution ref="#ps:DCM">Dorset County Museum</institution>
+                  <idno type="DCM">H.3191</idno>
+                  <altIdentifier>
+                     <idno type="XXXX"><!-- optional - any other identifiers --></idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Letter written on <material>cream folded paper</material>.</p>
+                           <p>Pencil library marks on pages 4 and 8: <note type="libraryMark"
+                                 >H.3191</note>.</p>
+                           <p>Note that after page 8 Henniker continues writing in the margin of
+                              page 5 (labelled here as page 9).</p>
+                        </support>
+                        <condition>Good</condition>
+                     </supportDesc>
+                  </objectDesc>
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Prepared as part of the AHRC/REACT Studentship on Thomas Hardy's letters, in
+               conjunction with Dorset County Museum.</p>
+         </projectDesc>
+
+      </encodingDesc>
+      <profileDesc>
+         <correspDesc>
+            <!-- Provides detailed correspondence-specific metadata, particularly concerning the communicative aspects 
+            (sending, receiving, forwarding etc.) associated with acts of correspondence. -->
+
+            <correspAction type="sent">
+               <!-- Structured description of the place, the name of a person/organisation and the date related to the sending/receiving of a message -->
+               <!--<persName> of letter author-->
+               <persName ref="#ps:FlorenceHenniker">Florence Henniker</persName>
+
+               <!--Location letter sent from-->
+               <placeName ref="#pl:HydeParkSquare2">2, Hyde Park Square, W.2.</placeName>
+               <date when="1921-07-05">July 5. 1921</date>
+            </correspAction>
+            <correspAction type="received">
+               <persName ref="#ps:TH">Thomas Hardy</persName>
+            </correspAction>
+
+         </correspDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="letter">
+            <pb n="1" facs="uoedh_hl_h.3191_1.jpg"/>
+            <opener>
+               <address rend="letterhead">
+                  <addrLine>2, Hyde Park Square</addrLine>
+                  <addrLine>W.2.</addrLine>
+               </address>
+               <dateline>
+                  <date when="1921-07-05">July 5. 1921</date>
+               </dateline>
+               <salute>My dear friend –</salute>
+
+            </opener>
+
+            <p>Thank you for <choice><abbr>y<hi rend="superscript"
+                  >r</hi>.</abbr><expan>your</expan></choice> cheerful &amp; pleasant letter – &amp;
+               also for the kindness in telling me of another <placeName ref="#pl:Weymouth"
+                  >Weymouth</placeName> Hotel. But alas! my finances won't allow of anything so
+               pleasant <hi rend="underline">now</hi> as a visit to your lovely coast, or
+               motor-drives round <placeName ref="#pl:Wessex">Wessex</placeName> with you &amp;
+                  <persName ref="#ps:FlorenceHardy">F</persName>. –</p>
+
+            <p>I have, as yet, failed to sell my house, owing, I suppose to the depressing &amp;
+               universal "slump" <pb n="2" facs="uoedh_hl_h.3191_2.jpg"/> which has overtaken us -
+               But I do hope that in a short time the outlook may be brighter – I wish you
+                        <choice><abbr>w<hi rend="superscript"/>d.</abbr>
+                  <expan>would</expan></choice> both come to <placeName ref="#pl:London"
+                  >London</placeName> for a few days when this very dry weather comes to an end, as
+               I suppose it must soon. The park is like cocoa-nut matting, &amp; I fear our beloved
+               birds are having a bad time. –</p>
+
+            <pb n="3" facs="uoedh_hl_h.3191_3.jpg"/>
+
+            <p>How amusing your <hi rend="underline">Film</hi> experiences must have been! It seems
+               marvellous to complete a whole book in one day. I don't suppose the film-actor can be
+               a person of very high calibre, as a rule ? – <hi rend="underline">I</hi> shall never
+               become a frequenter of the "movies", as I think them so bad for the eyes. –</p>
+
+            <p>I am glad you have had some agreeable visitors. <persName ref="#ps:WalterdelaMare"
+                     >M<hi rend="superscript">r</hi> De La Mare</persName> struck me as very
+               pleasant, unspoilt &amp; simple, &amp; I admire some of his work greatly, as I
+               daresay you do? – I am sure you are very kind to the young <pb n="4"
+                  facs="uoedh_hl_h.3191_4.jpg"/> Georgians. <persName ref="#ps:WalterdelaMare">De La
+                  M.</persName> is, however, on a different footing, isn't he? from most of
+               them.</p>
+
+            <p>I went to the <persName ref="#ps:EdmundGosse">Gosses</persName> last Sunday. He was
+               in excellent spirits, &amp; youthful as ever – Of course we talked about you. I met
+               there 3 of the typical young Poets, who signed the address to you – A brother &amp;
+               sister – she with an <hi rend="underline">extraordinary</hi> hat, like a bad specimen
+               of – shall we say, Gothic architecture (-<add place="above">the</add>
+               <persName ref="#ps:EdithSitwell">Sitwells</persName>–) I think she wrote in a
+               detestable little book called "Wheels.".</p>
+
+
+            <p>By the way, they were not <hi rend="underline">all</hi> very young <pb n="5"
+                  facs="uoedh_hl_h.3191_5.jpg"/>
+               <milestone xml:id="m01" unit="section"/>
+               <milestone xml:id="m02" unit="section"/> authors who signed the document –! –</p>
+
+
+            <p>I have just finished a book, translated from the Italian of <persName
+                  ref="#ps:GuglielmoFerrero">Ferrero</persName> called "Ancient Rome &amp; Modern
+               America"– It gives one a good deal to think about, &amp; some of it
+                        <choice><abbr>w<hi rend="superscript">d</hi>.</abbr>
+                  <expan>would</expan></choice> interest you, perhaps–? –</p>
+
+            <p>Did you hear of the stroke of dreadfully bad luck which 3. of the poets, including
+                  <persName ref="#ps:WalterdelaMare">M<hi rend="superscript">r</hi> de la
+                  Mare</persName> have had? It appears <pb n="6" facs="uoedh_hl_h.3191_6.jpg"/> that
+               they were each given a sum of money from the sale of <persName ref="#ps:RupertBrooke"
+                  >Rupert Brooke</persName>'s works, – &amp; <hi rend="underline">now</hi>, after a
+               lapse of some years, it is discovered that the income-tax was not paid! It seems <hi
+                  rend="underline">cruelly</hi> hard to come down on these men for some hundreds of
+               pounds, which they certainly could not <pb n="7" facs="uoedh_hl_h.3191_7.jpg"/> pay
+               except with the <hi rend="underline">greatest</hi> difficulty &amp; worry.</p>
+
+            <p>My sister-in-law is quite well again, thanks – &amp; I daresay an enforced rest
+               really did her good–</p>
+
+            <p>I remember thinking <persName ref="#ps:MrJeune">M<hi rend="superscript">r</hi>
+                  Jeune</persName>, <!--possible relative of Lady St Helier?--> whom I met at tea
+               with you, very pleasant company. I hope he is better.</p>
+
+            <p>I hope some day to meet <pb n="8" facs="uoedh_hl_h.3191_8.jpg"/> the <persName
+                  ref="#ps:JohnGalsworthy">Galsworthys</persName>. Do you think he would find me too
+               dully respectable?–</p>
+
+            <p>I wonder if this craze for prize-fights &amp; games is a sign of great decadence? But
+               the Press seems to have no sense of proportion – There was more fuss and larger
+               headlines on the death of <persName ref="#ps:JeanetteChurchill"
+                        ><choice><abbr>Ly</abbr>
+                     <expan>Lady</expan></choice> Randolph Churchill</persName> than there would
+               have been <add place="above">about the passing of the</add> most celebrated writers,
+               or soldiers – <choice><abbr>&amp;c.</abbr><expan>et cetera</expan></choice></p>
+
+            <p>Best of love to <persName ref="#ps:FlorenceHardy">Florence</persName>,
+                     <choice><abbr>&amp;c.</abbr><expan>et cetera</expan></choice></p>
+            <pb n="9" facs="uoedh_hl_h.3191_9.jpg"/>
+            <ab>
+               <seg xml:id="h3191a" corresp="m01" style="text-orientation:sideways-left">greetings
+                  to Wessex.</seg>
+            </ab>
+
+            <closer xml:id="h3191b" corresp="m02" style="text-orientation:sideways-left">
+               <salute><choice><abbr>Y</abbr><expan>Your</expan></choice>
+                  <choice><abbr>affec<hi rend="superscript">t</hi></abbr>
+                     <expan>affectionate</expan></choice> friend</salute>
+               <signed>Flo H.</signed>
+            </closer>
+
+
+         </div>
+      </body>
+   </text>
+</TEI>

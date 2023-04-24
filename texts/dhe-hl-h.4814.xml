@@ -1,0 +1,207 @@
+<?xml-model href="../../schema/hardyletter.rng" type="application/xml" 
+   schematypens="http://relaxng.org/ns/structure/1.0"?><!--<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="dhe-hl-h.4814">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Letter from Ezra Pound to Thomas Hardy inviting him to contribute a poem to the
+                  <orgName ref="#ps:TheDial">Dial</orgName>, 13 November 1920</title>
+            <author ref="#ps:EzraPound">Ezra Pound</author>
+            <!--The editor of the tei file-->
+            <editor ref="#resp-HA">Helen Angear</editor>
+            <funder>Arts and Humanities Research Council</funder>
+            <sponsor>University of Exeter</sponsor>
+            <sponsor>Dorset County Museum</sponsor>
+            <principal>Angelique Richardson</principal>
+
+            <respStmt>
+               <persName ref="#resp:BM">Beth Mills</persName>
+               <resp>Selection</resp>
+               <resp>Proofreading</resp>
+
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:HA">Helen Angear</persName>
+               <resp>Transcription</resp>
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:HP">Hannah Petrie</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="#resp:EW">Elizabeth Williamson</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition, transcribed and edited directly from primary
+               sources</edition>
+         </editionStmt>
+         <publicationStmt>
+            <publisher>University of Exeter Digital Humanities Lab</publisher>
+            <pubPlace>Exeter, UK</pubPlace>
+            <date>November 2019</date>
+            <availability>
+               <p>The letter transcripts are licensed under a Creative Commons Attribution 4.0
+                  International License. This means that you can use these transcripts providing you
+                  acknowledge the Hardy's Correspondents project.</p>
+               <p>The letter images remain the copyright of Dorset Museum. Please contact the Museum
+                  if you would like to reuse any of the letter images.</p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <placeName ref="#pl:Dorchester">Dorchester</placeName>
+                  <institution>Dorset County Museum</institution>
+                  <idno type="DCM">H.4814</idno>
+                  <altIdentifier>
+                     <idno type="XXXX"><!-- optional - any other identifiers --></idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Letter typed on <material>cream paper with extensive letterhead on
+                                 left side</material>: </p>
+                           <p rend="letterhead">THE DIAL.</p>
+                           <p rend="letterhead">Edited by <persName ref="#ps:ScofieldThayer"
+                                 >Scofield Thayer</persName></p>
+                           <p rend="letterhead">152 W. 13th St. New York.</p>
+                           <p rend="letterhead">Will print during 1920-21 the inedited writings of
+                                 <persName ref="#ps:RemydeGourmont">REMY DE GOURMONT</persName>; and
+                              has already received acceptable manuscript or promises of
+                              collaboration from</p>
+                           <note>
+                              <p>A list of thirty-five names are printed on the left side of the
+                                 paper</p>
+                           </note>
+                           <!-- CHECK PERSON FILE id for Remy -->
+                           <p>Additional information incuded in the letterhead on the top right:
+                                 <note rend="letterhead">For subscriptions, etc. refer to F.B.
+                                 Neumayer, 70, Charing Cross Road, W.C. 2. 2/6 one copy; yearly
+                                 subscription 25/-</note>
+                              <!-- Need to check how to do money symbols --></p>
+
+                           <p>The body of the letter is typed, with the date and signature
+                              handwritten.</p>
+                           <p>Pencil library marks on page 2: <note type="libraryMark" rend="pencil"
+                                 > H.4814</note>.</p>
+                        </support>
+                        <condition>Good</condition>
+
+                     </supportDesc>
+
+                  </objectDesc>
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Prepared as part of the AHRC/REACT Studentship on Thomas Hardy's letters, in
+               conjunction with Dorset County Museum.</p>
+         </projectDesc>
+
+      </encodingDesc>
+      <profileDesc>
+         <correspDesc>
+            <!-- Provides detailed correspondence-specific metadata, particularly concerning the communicative aspects 
+            (sending, receiving, forwarding etc.) associated with acts of correspondence. -->
+
+            <correspAction type="sent">
+               <persName ref="#ps:EzraPound">Ezra Pound</persName>
+               <placeName ref="#pl:HollandPlaceChambers5">5 Holland Place Chambers, London
+                  W.8.</placeName>
+               <date when="1920-11-13"/>
+            </correspAction>
+            <correspAction type="received">
+               <persName ref="#ps:TH">Thomas Hardy</persName>
+            </correspAction>
+
+         </correspDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="letter">
+            <pb n="1" facs="uoedh_hl_h.4814_1.jpg"/>
+
+
+
+            <opener>
+
+               <dateline>
+                  <date when="1920-11-13">
+                     <ab style="transform:rotateZ(-40deg)">13-11-1920.</ab>
+                  </date>
+               </dateline>
+
+               <address rend="letterhead">
+                  <addrLine>Agency — </addrLine>
+                  <addrLine>5, HOLLAND PLACE CHAMBERS,</addrLine>
+                  <addrLine>LONDON, W.8.</addrLine>
+               </address>
+
+
+
+               <salute rend="typescript">Thomas Hardy: O.M.</salute>
+               <salute rend="typescript">Dear Mr Hardy:</salute>
+
+            </opener>
+
+            <p rend="typescript"> I am sending you today the November issue of <orgName
+                  ref="#ps:TheDial"> THE DIAL</orgName> in the hope of convincing you that it is a
+               suitable place for your work to appear, for <placeName ref="#pl:America"
+                  >America</placeName>.</p>
+
+            <p>The company is at least as good as is to be found in any other current publication.
+               The Gourmont and Morland are taken from <choice><abbr>mss.</abbr>
+                  <expan>manuscripts</expan></choice> which have <hi rend="underline">not</hi> yet
+               been published in French.</p>
+
+            <p>I think also you will find our rates of payment as high as those of other periodicals
+               .. in any case it is quite easy for you or your agent to demand what you like.</p>
+
+            <p>Hoping, in my "official capacity" for the honour of your collaboration; and asking as
+               a private person that you accept an expression of my long-standing admiration of your
+               poetry and of your prose, and in especial of <ref target="#bib:Hardy1886_Mayor">The
+                  Mayor Casterbridge</ref> and the <ref target="#bib:Hardy1891_NobleDames">Noble
+                  Dames</ref>.</p>
+
+
+            <closer>
+
+               <salute>Believe me yours very sincerely</salute>
+               <signed>Ezra Pound</signed>
+               <!-- handwritten in pen -->
+            </closer>
+            <note rend="pencil" hand="#ps:TH">T.O.</note>
+            <!-- or other hand? -->
+
+            <pb n="2" facs="uoedh_hl_h.4814_2.jpg"/>
+
+
+         </div>
+
+      </body>
+      <back>
+         <div type="reply" hand="#ps:TH">
+            <!-- Or secretary? -->
+            <dateline>
+               <date when="1920-11-28">Nov 28. 1920</date>
+            </dateline>
+            <p> [Ans].... Have been searching, but have not found one that will
+                  <unclear>really</unclear> suit. However, will hunt again.</p>
+         </div>
+      </back>
+   </text>
+</TEI>

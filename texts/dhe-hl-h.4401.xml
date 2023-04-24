@@ -1,0 +1,168 @@
+<?xml-model href="../../schema/hardyletter.rng" type="application/xml" 
+   schematypens="http://relaxng.org/ns/structure/1.0"?><!--<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="dhe-hl-h.4401">
+   <!-- Weber no is 464 -->
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+
+            <title>Letter from William Morris to Thomas Hardy on <ref
+                  target="#bib:Hardy1874_FarFromTheMaddingCrowd"><emph rend="italics">Far from the
+                     Madding Crowd</emph></ref> &amp; <ref target="#bib:Hardy1878_Native"><emph
+                     rend="italics">The Return of the Native</emph></ref>, 15 December 1891</title>
+            <author ref="#ps:WilliamMorris">William Morris</author>
+            <!--The editor of the tei file-->
+            <editor ref="#resp-HA">Helen Angear</editor>
+            <funder>Arts and Humanities Research Council</funder>
+            <sponsor>University of Exeter</sponsor>
+            <sponsor>Dorset County Museum</sponsor>
+            <principal>Angelique Richardson</principal>
+
+            <respStmt>
+               <persName ref="#resp:HA">Helen Angear</persName>
+               <resp>Selection</resp>
+               <resp>Transcription</resp>
+
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:BM">Beth Mills</persName>
+               <resp>Proofreading</resp>
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:HP">Hannah Petrie</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="#resp:EW">Elizabeth Williamson</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition, transcribed and edited directly from primary
+               sources</edition>
+         </editionStmt>
+         <publicationStmt>
+            <publisher>University of Exeter Digital Humanities Lab</publisher>
+            <pubPlace>Exeter, UK</pubPlace>
+            <date>November 2019</date>
+            <availability>
+               <p>The letter transcripts are licensed under a Creative Commons Attribution 4.0
+                  International License. This means that you can use these transcripts providing you
+                  acknowledge the Hardy's Correspondents project.</p>
+               <p>The letter images remain the copyright of Dorset Museum. Please contact the Museum
+                  if you would like to reuse any of the letter images.</p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <placeName ref="#pl:Dorchester">Dorchester</placeName>
+                  <institution>Dorset County Museum</institution>
+                  <idno type="DCM">H.4401</idno>
+                  <!-- temporary file as needs to be replaced with H. number -->
+                  <altIdentifier>
+                     <idno type="Weber464"><!-- optional - any other identifiers --></idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Letter written on <material>cream paper</material>.</p>
+                           <p>Pencil library marks on page 2: <note type="libraryMark" rend="pencil"
+                                 > H.4401</note>.</p>
+                        </support>
+                        <condition>Good</condition>
+                     </supportDesc>
+                  </objectDesc>
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Prepared as part of the AHRC/REACT Studentship on Thomas Hardy's letters, in
+               conjunction with Dorset County Museum.</p>
+         </projectDesc>
+
+      </encodingDesc>
+      <profileDesc>
+         <correspDesc>
+            <!-- Provides detailed correspondence-specific metadata, particularly concerning the communicative aspects 
+            (sending, receiving, forwarding etc.) associated with acts of correspondence. -->
+
+            <correspAction type="sent">
+               <!-- Structured description of the place, the name of a person/organisation and the date related to the sending/receiving of a message -->
+               <persName ref="#ps:WilliamMorris">William Morris</persName>
+
+               <!--Location letter sent from-->
+               <placeName ref="#pl:KelmscottHouse">Kelmscott House, Upper Mall, Hammersmith,
+                  London</placeName>
+               <date when="1891-12-15"/>
+            </correspAction>
+            <correspAction type="received">
+               <persName ref="#ps:TH">Thomas Hardy</persName>
+            </correspAction>
+
+         </correspDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="letter">
+            <pb n="1" facs="uoedh_hl_h.4401_1.jpg"/>
+            <!-- check -->
+
+            <opener>
+               <note rend="pencil" hand="other">'91</note>
+               <address rend="typeset">
+                  <addrLine>KELMSCOTT HOUSE,</addrLine>
+                  <addrLine>UPPER MALL</addrLine>
+                  <addrLine>HAMMERSMITH</addrLine>
+               </address>
+               <dateline>
+                  <date when="1891-12-15">Dec 15<hi rend="superscript">th</hi></date>
+               </dateline>
+
+
+               <salute>Dear Sir</salute>
+            </opener>
+
+            <p>Thank you very much I shall be very pleased to receive your book &amp; to read it. I
+               have read two of your books with much pleasure, <ref
+                  target="#bib:Hardy1874_FarFromTheMaddingCrowd" type="novel">Far from the Madding
+                  Crowd</ref> &amp; <ref target="#bib:Hardy1878_Native">The Return of the
+                  Native</ref>. The first one is the most pleasing and I suppose (you would) look
+               upon it as the most typical of your works. But there is a great deal of close study
+               of nature, <pb n="2" facs="uoedh_hl_h.4401_2.jpg"/>
+               <!-- check --> (I mean <unclear>human</unclear> of that ilk) in <ref
+                  target="#bib:Hardy1878_Native">the Return</ref>, besides the beauty of the mise en
+                     <choice><sic>scéne</sic>
+                  <corr>scène</corr></choice> which with you is a matter of Course.</p>
+
+
+
+
+            <closer>
+               <salute>Again with many thanks</salute>
+               <salute>I am</salute>
+               <salute>Yours faithfully</salute>
+               <signed>William Morris</signed>
+            </closer>
+            <pb n="3" facs="uoedh_hl_h.4401_3.jpg"/>
+            <!-- check -->
+
+            <pb n="4" facs="uoedh_hl_h.4401_4.jpg"/>
+            <!-- check -->
+
+         </div>
+      </body>
+   </text>
+</TEI>

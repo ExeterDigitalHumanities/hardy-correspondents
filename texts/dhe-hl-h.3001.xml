@@ -1,0 +1,212 @@
+<?xml-model href="../../schema/hardyletter.rng" type="application/xml" 
+   schematypens="http://relaxng.org/ns/structure/1.0"?><!--<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="dhe-hl-h.3001">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Letter from Mary Hardy to Thomas Hardy on her new teaching post in Denchworth, 28
+               November 1862</title>
+            <author ref="#ps:TH">Thomas Hardy</author>
+            <!--The editor of the tei file-->
+            <editor ref="#resp-HA">Helen Angear</editor>
+            <funder>Arts and Humanities Research Council</funder>
+            <sponsor>University of Exeter</sponsor>
+            <sponsor>Dorset County Museum</sponsor>
+            <principal>Angelique Richardson</principal>
+
+            <respStmt>
+               <persName ref="#resp:HA">Helen Angear</persName>
+               <resp>Selection</resp>
+               <resp>Transcription</resp>
+
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:HA">Helen Angear</persName>
+               <resp>Proofreading</resp>
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:HP">Hannah Petrie</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="#resp:EW">Elizabeth Williamson</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition, transcribed and edited directly from primary
+               sources</edition>
+         </editionStmt>
+         <publicationStmt>
+            <publisher>University of Exeter Digital Humanities Lab</publisher>
+            <pubPlace>Exeter, UK</pubPlace>
+            <date>November 2019</date>
+            <availability>
+               <p>The letter transcripts are licensed under a Creative Commons Attribution 4.0
+                  International License. This means that you can use these transcripts providing you
+                  acknowledge the Hardy's Correspondents project.</p>
+               <p>The letter images remain the copyright of Dorset Museum. Please contact the Museum
+                  if you would like to reuse any of the letter images.</p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <placeName ref="#pl:Dorchester">Dorchester</placeName>
+                  <institution>Dorset County Museum</institution>
+                  <idno type="DCM">H.3001</idno>
+                  <altIdentifier>
+                     <idno type="XXXX"><!-- optional - any other identifiers --></idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Letter written on <material>cream paper</material>. The author has
+                              continued the letter as cross-written text on page 1. This is labelled
+                              here as page 5. </p>
+                           <p>Pencil library marks on page 4: <note type="libraryMark" rend="pencil"
+                                 > H.3001</note>.</p>
+
+                        </support>
+                        <condition>Fair. Some tearing on pages 3-4 resulting in some missing
+                           text</condition>
+
+                     </supportDesc>
+
+                  </objectDesc>
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Prepared as part of the AHRC/REACT Studentship on Thomas Hardy's letters, in
+               conjunction with Dorset County Museum.</p>
+         </projectDesc>
+
+      </encodingDesc>
+      <profileDesc>
+         <correspDesc>
+            <!-- Provides detailed correspondence-specific metadata, particularly concerning the communicative aspects 
+            (sending, receiving, forwarding etc.) associated with acts of correspondence. -->
+
+            <correspAction type="sent">
+               <persName ref="#ps:MaryHardy">Mary Hardy</persName>
+               <placeName ref="#pl:KingsHouse">King's House, Salisbury</placeName>
+               <date when="1908-02-06"/>
+            </correspAction>
+            <correspAction type="received">
+               <persName ref="#ps:TH">Thomas Hardy</persName>
+               <placeName ref="#pl:London"/>
+            </correspAction>
+
+         </correspDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="letter">
+            <pb n="1" facs="uoedh_hl_h.3001_1.jpg"/>
+
+
+
+
+
+            <opener>
+               <address>
+                  <addrLine>King's House</addrLine>
+                  <addrLine>Salisbury</addrLine>
+               </address>
+
+               <dateline>
+                  <date when="1862-11-28"><hi rend="underline">28 Nov: 1862</hi>.</date>
+               </dateline>
+
+
+               <salute>My dear Tom,</salute>
+
+            </opener>
+
+
+            <p>You never write to me now a days, it is my duty nevertheless to inform you of my next
+               year's whereabouts. I am going to <placeName ref="#pl:Denchworth"><hi
+                     rend="underline">Denchworth</hi></placeName> near <placeName ref="#pl:Wantage"
+                  >Wantage</placeName>. The salary is £40 a year, with a garden &amp; a house partly
+               furnished. I have to play the Organ in Church, I, on account of this wanted, of
+               course, to give it up &amp; <persName ref="#ps:MrRawlins">M<hi rend="superscript"
+                     >r</hi> Rawlins</persName>, (the clergyman) was informed of it but he wrote to
+               say he would pay a little for me <pb n="2" facs="uoedh_hl_h.3001_2.jpg"/> to learn *
+               &amp; also give me a little time to practice when there, before playing in Church.
+                  <persName ref="#ps:KateHardy">Katie</persName><del rend="strikethrough">s</del> is
+               going with <unclear>me</unclear> &amp; Mother is going to stay with
+                  <unclear>me</unclear> for a few weeks when I go first. </p>
+
+            <p>It is a few miles from <placeName ref="#pl:Wantage">Wantage</placeName> – a school of
+               35 children &amp; about – I should imagine, 15 miles from <placeName ref="#pl:Oxford"
+                  >Oxford</placeName>. I shall be a long way from home – nearly 200 miles. They all
+               want me to go there, because the people there are reputedto be extremely kind. When I
+               am settled down</p>
+
+            <p>
+               <note rend="pencil" hand="#ps:TH">* i.e., the organ touch (she had played the piano
+                  for many years)</note>
+            </p>
+
+            <pb n="3" facs="uoedh_hl_h.3001_3.jpg"/>
+            <p>you <hi rend="underline">must</hi> come &amp; see me, <gap extent="several words"
+                  reason="tear"/>
+               <unclear>far off as de</unclear>
+               <gap extent="several lines" reason="tear"/> longed for a place near the sea but I was
+               obliged to give it up. We have only one more week to study &amp; then my duty as a
+               pupil, I suppose, will have gone for me. I have bought the Salisbury Sanctus Book
+               &amp; <unclear>Tunes</unclear> Book <add place="above">I want a Chant Book too</add>
+               but I can't afford it so you must send, to <placeName ref="#pl:HigherBockhampton"
+                  >Bock hampton</placeName>, yours, that I may have <pb n="4"
+                  facs="uoedh_hl_h.3001_4.jpg"/> it in my holidays – as soon as I get home. <gap
+                  extent="several lines" reason="tear"/>
+            </p>
+
+            <p>I read an account of the closing of the Exhibtion; my curiosity is excited to know
+               how it looks &amp; if many frequent the far famed spot now? In my mind's eye I see
+               all the <add place="above"><unclear>articles</unclear></add> disarranged, the floor
+               dirty &amp; men standing about &amp; buying the things. Does <persName
+                  ref="#ps:WilliamShakespeare">Shakespere</persName> still <unclear>sit</unclear>
+               there? Write &amp; tell me. It is just four o'clock &amp; a dull evening. I am
+                  thin<del>g</del>king <pb n="5" facs="uoedh_hl_h.3001_5.jpg"/> that you have all
+               your lights burning in <placeName ref="#pl:London">London</placeName> at this time –
+               we have but just the gas burner lighted. </p>
+
+
+
+
+
+
+
+
+
+            <closer>
+
+
+               <salute>Yours ever</salute>
+               <signed>Mary Hardy</signed>
+
+            </closer>
+
+
+
+
+
+
+         </div>
+      </body>
+   </text>
+</TEI>

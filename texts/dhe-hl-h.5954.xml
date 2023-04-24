@@ -1,0 +1,163 @@
+<?xml-model href="../../schema/hardyletter.rng" type="application/xml" 
+   schematypens="http://relaxng.org/ns/structure/1.0"?><!--<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="dhe-hl-h.5954">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Letter from Virginia Woolf to Thomas Hardy expressing her appreciation of his
+               writing, 17 January 1915</title>
+
+            <author ref="#ps:VirginiaWoolf">Virginia Woolf</author>
+            <!--The editor of the tei file-->
+            <editor ref="#resp-HA">Helen Angear</editor>
+            <funder>Arts and Humanities Research Council</funder>
+            <sponsor>University of Exeter</sponsor>
+            <sponsor>Dorset County Museum</sponsor>
+            <principal>Angelique Richardson</principal>
+
+            <respStmt>
+               <persName ref="#resp-HA">Helen Angear</persName>
+               <resp>Selection</resp>
+               <resp>Transcription</resp>
+
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp-BM">Beth Mills</persName>
+               <resp>Proofreading</resp>
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:HP">Hannah Petrie</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="#resp:EW">Elizabeth Williamson</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition, transcribed and edited directly from primary
+               sources</edition>
+         </editionStmt>
+         <publicationStmt>
+            <publisher>University of Exeter Digital Humanities Lab</publisher>
+            <pubPlace>Exeter, UK</pubPlace>
+            <date>November 2019</date>
+            <availability>
+               <p>The letter transcripts are licensed under a Creative Commons Attribution 4.0
+                  International License. This means that you can use these transcripts providing you
+                  acknowledge the Hardy's Correspondents project.</p>
+               <p>The letter images remain the copyright of Dorset Museum. Please contact the Museum
+                  if you would like to reuse any of the letter images.</p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <placeName ref="#pl:Dorchester">Dorchester</placeName>
+                  <institution>Dorset County Museum</institution>
+                  <idno type="DCM">H.5954</idno>
+                  <altIdentifier>
+                     <idno type="XXXX"><!-- optional - any other identifiers --></idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Written on <material>cream paper</material>.</p>
+                           <p>Pencil library mark on page 2: <note type="libraryMark"
+                              >H.5954</note>.</p>
+                        </support>
+                        <condition>Good.</condition>
+                     </supportDesc>
+                  </objectDesc>
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Prepared as part of the AHRC/REACT Studentship on Thomas Hardy's letters, in
+               conjunction with Dorset County Museum.</p>
+         </projectDesc>
+
+      </encodingDesc>
+      <profileDesc>
+         <correspDesc>
+            <!-- Provides detailed correspondence-specific metadata, particularly concerning the communicative aspects 
+            (sending, receiving, forwarding etc.) associated with acts of correspondence. -->
+
+            <correspAction type="sent">
+               <!-- Structured description of the place, the name of a person/organisation and the date related to the sending/receiving of a message -->
+               <!--<persName> of letter author-->
+               <persName ref="#ps:VirginiaWoolf">Virginia Woolf</persName>
+               <placeName ref="#pl:TheGreen17">17 The Green, Richmond, London</placeName>
+               <date when="1915-01-17">January 17th 1915</date>
+            </correspAction>
+            <correspAction type="received">
+               <persName ref="#ps:TH">Thomas Hardy</persName>
+            </correspAction>
+
+         </correspDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="letter">
+            <pb n="1" facs="uoedh_hl_h.5954_1.jpg"/>
+            <opener>
+               <!-- unknown hand, could be Hardy's but might not be. Needs to be checked i.e. by Helen Gibson -->
+               <note hand="other" rend="pencil" style="transform:rotateZ(90deg)">Mrs Woolf (Daughter
+                  of Leslie Stephen)</note>
+               <address rend="letterhead">
+                  <addrLine>TELEPHONE 496 RICHMOND.</addrLine>
+               </address>
+               <address rend="letterhead">
+                  <addrLine>17 The Green,</addrLine>
+                  <addrLine>Richmond.</addrLine>
+               </address>
+               <dateline>
+                  <date when="1915-01-17">17<hi rend="superscript">th.</hi> Jan.1915</date>
+               </dateline>
+               <salute>Dear M<hi rend="superscript">r.</hi> Hardy,</salute>
+            </opener>
+
+            <p>I have long wished to tell you how profoundly grateful I am to you for your poems
+               &amp; novels, but naturally it seemed an impertinence to do so. When however, your
+               poem to my father, <persName ref="#ps:LeslieStephen">Leslie Stephen</persName>,
+               appeared in <hi rend="underline"><ref target="#bib:Hardy1914_SatiresOfCircumstance"
+                     >Satires of Circumstance</ref></hi> this autumn, I felt that I might perhaps be
+               allowed to thank you for that at least. That poem, &amp; the reminiscences you
+               contributed to <persName ref="#ps:FrederickWilliamMaitland">Professor
+                  Maitland</persName>s Life of him, remain in my mind as incomparably the truest
+               &amp; most imaginative portrait of him in existence, for which alone his children
+               should be always grateful to you.</p>
+
+            <p>But besides this one would like to <pb n="2" facs="uoedh_hl_h.5954_2.jpg"/> thank you
+               for the magnificent work which you have already done, &amp; are still to do. The
+               younger generation, who care for poetry &amp; literature, owe you an immeasurable
+               debt, &amp; in particular for your last volume of poems which, to me at any rate, is
+               the most remarkable book to appear in my life time.</p>
+
+            <p>I write only to satisfy a very old desire, &amp; not to trouble you to reply.</p>
+
+            <closer>
+               <salute>Believe me</salute>
+               <salute>yours sincerely</salute>
+               <signed>Virginia Woolf</signed>
+
+            </closer>
+            <!-- Have we decided now that the pencil mark H.5954 at top of page 2 will not be transcribed now?-->
+
+
+         </div>
+      </body>
+   </text>
+</TEI>

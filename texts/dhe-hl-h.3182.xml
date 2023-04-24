@@ -1,0 +1,201 @@
+<?xml-model href="../../schema/hardyletter.rng" type="application/xml" 
+   schematypens="http://relaxng.org/ns/structure/1.0"?><!--<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="dhe-hl-h.3182">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+
+            <title>Letter from Florence Henniker to Thomas Hardy on his poetry, politics and the
+               First World War, 31 March 1915</title>
+            <!--The author of the letter-->
+            <author ref="#ps:FlorenceHenniker">Florence Henniker</author>
+            <!--The editor of the tei file-->
+            <editor ref="#resp-HA">Helen Angear</editor>
+            <funder>Arts and Humanities Research Council</funder>
+            <sponsor>University of Exeter</sponsor>
+            <sponsor>Dorset County Museum</sponsor>
+            <principal>Angelique Richardson</principal>
+
+            <respStmt>
+               <persName ref="#resp:HA">Helen Angear</persName>
+               <resp>Selection</resp>
+               <resp>Transcription</resp>
+
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:BM">Beth Mills</persName>
+               <resp>Proofreading</resp>
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:HP">Hannah Petrie</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="#resp:EW">Elizabeth Williamson</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition, transcribed and edited directly from primary
+               sources</edition>
+         </editionStmt>
+         <publicationStmt>
+            <publisher>University of Exeter Digital Humanities Lab</publisher>
+            <pubPlace>Exeter, UK</pubPlace>
+            <date>November 2019</date>
+            <availability>
+               <p>The letter transcripts are licensed under a Creative Commons Attribution 4.0
+                  International License. This means that you can use these transcripts providing you
+                  acknowledge the Hardy's Correspondents project.</p>
+               <p>The letter images remain the copyright of Dorset Museum. Please contact the Museum
+                  if you would like to reuse any of the letter images.</p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <placeName ref="#pl:Dorchester">Dorchester</placeName>
+                  <institution>Dorset County Museum</institution>
+                  <idno type="DCM">H.3182</idno>
+                  <altIdentifier>
+                     <idno type="XXXX"><!-- optional - any other identifiers --></idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Letter written on <material>cream folded paper</material>.</p>
+                           <p>Pencil library marks on page 4: <note type="libraryMark"
+                              >H.3182</note>.</p>
+                           <p><figure><figDesc>Letterhead within a green oval decorative border with
+                                    the initials F.H. at the top</figDesc></figure>.</p>
+                           <p>Note that after page 4 Henniker continues writing in the top margin of
+                              the first page (labelled here as page 5).</p>
+                        </support>
+                        <condition>Good</condition>
+                     </supportDesc>
+                  </objectDesc>
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Prepared as part of the AHRC/REACT Studentship on Thomas Hardy's letters, in
+               conjunction with Dorset County Museum.</p>
+         </projectDesc>
+
+      </encodingDesc>
+      <profileDesc>
+         <correspDesc>
+            <!-- Provides detailed correspondence-specific metadata, particularly concerning the communicative aspects 
+            (sending, receiving, forwarding etc.) associated with acts of correspondence. -->
+
+            <correspAction type="sent">
+               <persName ref="#ps:FlorenceHenniker">Florence Henniker</persName>
+
+               <!--Location letter sent from-->
+               <placeName ref="#pl:TheLittleOrchard">The Little Orchard, Shoreham, Kent</placeName>
+               <date when="1915-03-31">March 31 <note rend="pencil">[1915]</note></date>
+            </correspAction>
+            <correspAction type="received">
+               <persName ref="#ps:TH">Thomas Hardy</persName>
+            </correspAction>
+
+         </correspDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="letter">
+            <pb n="1" facs="uoedh_hl_h.3182_1.jpg"/>
+            <opener>
+               <address>
+                  <addrLine>The Little Orchard</addrLine>
+                  <addrLine>Shoreham</addrLine>
+                  <addrLine>Kent</addrLine>
+               </address>
+               <milestone unit="section" xml:id="m01"/>
+               <milestone unit="section" xml:id="m02"/>
+               <milestone unit="section" xml:id="m03"/>
+
+               <dateline>
+                  <date when="1915-03-31">March 31</date>
+               </dateline>
+               <salute>My dear friend</salute>
+            </opener>
+
+            <p>Thank you so much for sending me the enclosed. I feel very strongly as to "<ref
+                  target="#bib:Hardy1915_ThePityOfIt">The Pity of it</ref>", regarding the war. For
+               there can be no doubt that we &amp; <placeName ref="#pl:Germany"> Germany</placeName>
+               have much more in common than we &amp; <placeName ref="#pl:France"
+               >France</placeName>, or we &amp; <placeName ref="#pl:Russia">Russia</placeName>. Had
+               we been fighting either of them, how these <hi rend="underline">detestable</hi>
+               newspapers <choice><abbr>w<hi rend="superscript">d</hi>.</abbr>
+                  <expan>would</expan></choice> have screamed about past <add place="above"
+                  >French</add> atrocities during the Commune &amp;c &amp; about <pb n="2"
+                  facs="uoedh_hl_h.3182_2.jpg"/> Russian "Pogroms". – I wonder, – do the journalists
+               remember the favourite poetic effusion about the Russians not getting <placeName
+                  ref="#pl:Istanbul">Constantino­ple</placeName> etc. –</p>
+
+            <p>I should <hi rend="underline">very much</hi> like to hear <persName
+                  ref="#ps:LordMorley">Lord Morley</persName> &amp; <persName ref="#ps:JohnBurns">
+                  John Burns</persName> give their views, <hi rend="underline">privately</hi>. Both
+               are men of much greater honesty &amp; finer character than many other members of this
+               Cabinet. I suppose they would say that it is a <pb n="3" facs="uoedh_hl_h.3182_3.jpg"
+               /> case of choosing the least of two evils, &amp; that it was morally worse to cause
+               such misery to their country than to shirk helping <placeName ref="#pl:France"
+                  >France</placeName>? – It is a curious point of view, <del>no doubt</del> – but no
+               doubt sincere, &amp; in <persName ref="#ps:JohnBurns"> John Burns'</persName> case it
+               is almost heroic to give up power and influence – (<choice><abbr>wh.</abbr>
+                  <expan>which</expan></choice> must mean so much to him,) as well as money. –</p>
+            <p> Ought you not to have put "er <hi rend="underline">soll</hi>" and "Du bist" in the
+               poem – or is your spelling intentional – &amp; as the <placeName ref="#pl:Dorset"
+                  >Dorset</placeName> people literally pronounce? –</p>
+            <p>I can't tell you how <pb n="4" facs="uoedh_hl_h.3182_4.jpg"/> charming I think your
+                  "<ref target="#bib:Hardy1870_WhenISetOutForLyonnesse"
+                        ><choice><sic>Lyonesse</sic><corr>Lyonnesse</corr></choice></ref>" lyric. I
+               must learn it by heart one of these days. –</p>
+            <p>I am so sorry that dear <persName ref="#ps:FlorenceHardy">Florence</persName> has
+               been suffering from sciatica. I had it once for a <hi rend="underline">long</hi>
+               time, &amp; then <hi rend="underline">quite</hi> got rid of it, owing to treatment by
+               an electric battery on the nerve – Please give my best love to her – I hope she has
+               seen some nice &amp; rare birds in your garden. I look eagerly for them here. –</p>
+            <p>To return to the War – did you not think it injudicious of <persName
+                  ref="#ps:JohnFrench">Sir John F.</persName> to speak with such</p>
+            <!-- Could this be John French, 1st Earl of Ypres?-->
+
+
+            <pb n="5" facs="uoedh_hl_h.3182_5.jpg"/>
+
+            <p xml:id="h3182a" corresp="#m01" style="transform:rotateZ(-90deg)">a confident &amp;
+               sanguine tone to reporters?</p>
+            <p xml:id="h3182b" corresp="#m02" style="transform:rotateZ(-90deg)">I wonder when you
+               think of coming to <placeName ref="#pl:London">London</placeName>? I wish you
+                        <choice><abbr>w<hi rend="superscript">d</hi>.</abbr>
+                  <expan>would</expan></choice> both come &amp; spend a long day here in the
+               orchard?</p>
+            <closer xml:id="h3182c" corresp="#m03" style="transform:rotateZ(-90deg)">
+               <salute><choice><abbr>Ev</abbr>
+                     <expan>Ever</expan></choice>
+                  <choice><abbr>yr</abbr>
+                     <expan>your</expan></choice>
+                  <choice><abbr>affec.</abbr>
+                     <expan>affectionate</expan></choice> friend</salute>
+               <signed>F. H</signed>
+            </closer>
+
+
+
+         </div>
+      </body>
+   </text>
+</TEI>

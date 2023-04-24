@@ -1,0 +1,174 @@
+<?xml-model href="../../schema/hardyletter.rng" type="application/xml" 
+   schematypens="http://relaxng.org/ns/structure/1.0"?><!--<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="dhe-hl-h.3183">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+
+            <title>Letter from Florence Henniker to Thomas Hardy asking him to write a testimonial
+               for her German companion to remain in Britain, 23 May 1915</title>
+            <!--The author of the letter-->
+            <author ref="#ps:FlorenceHenniker">Florence Henniker</author>
+            <!--The editor of the tei file-->
+            <editor ref="#resp-HA">Helen Angear</editor>
+            <funder>Arts and Humanities Research Council</funder>
+            <sponsor>University of Exeter</sponsor>
+            <sponsor>Dorset County Museum</sponsor>
+            <principal>Angelique Richardson</principal>
+
+            <respStmt>
+               <persName ref="#resp:HA">Helen Angear</persName>
+               <resp>Selection</resp>
+               <resp>Transcription</resp>
+
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:BM">Beth Mills</persName>
+               <resp>Proofreading</resp>
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:HP">Hannah Petrie</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="#resp:EW">Elizabeth Williamson</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition, transcribed and edited directly from primary
+               sources</edition>
+         </editionStmt>
+         <publicationStmt>
+            <publisher>University of Exeter Digital Humanities Lab</publisher>
+            <pubPlace>Exeter, UK</pubPlace>
+            <date>November 2019</date>
+            <availability>
+               <p>The letter transcripts are licensed under a Creative Commons Attribution 4.0
+                  International License. This means that you can use these transcripts providing you
+                  acknowledge the Hardy's Correspondents project.</p>
+               <p>The letter images remain the copyright of Dorset Museum. Please contact the Museum
+                  if you would like to reuse any of the letter images.</p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <placeName ref="#pl:Dorchester">Dorchester</placeName>
+                  <institution>Dorset County Museum</institution>
+                  <idno type="DCM">H.3183</idno>
+                  <altIdentifier>
+                     <idno type="Weber">1971</idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Letter written on <material>cream paper</material>.</p>
+                           <p>Pencil library marks on page 2: <note type="libraryMark"
+                              >H.3183</note></p>
+                        </support>
+                        <condition>Good</condition>
+                     </supportDesc>
+                  </objectDesc>
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Prepared as part of the AHRC/REACT Studentship on Thomas Hardy's letters, in
+               conjunction with Dorset County Museum.</p>
+         </projectDesc>
+
+      </encodingDesc>
+      <profileDesc>
+         <correspDesc>
+            <!-- Provides detailed correspondence-specific metadata, particularly concerning the communicative aspects 
+            (sending, receiving, forwarding etc.) associated with acts of correspondence. -->
+
+            <correspAction type="sent">
+               <persName ref="#ps:FlorenceHenniker">Florence Henniker</persName>
+
+               <!--Location letter sent from-->
+               <placeName ref="#pl:TheLittleOrchard">The Little Orchard, Shoreham, Kent</placeName>
+               <date when="1915-05-23">May 23./15</date>
+            </correspAction>
+            <correspAction type="received">
+               <persName ref="#ps:TH">Thomas Hardy</persName>
+            </correspAction>
+
+         </correspDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="letter">
+            <pb n="1" facs="uoedh_hl_h.3183_1b.jpg"/>
+            <opener>
+               <address rend="letterhead">
+                  <addrLine>The Little Orchard</addrLine>
+                  <addrLine>Shoreham</addrLine>
+                  <addrLine>Kent</addrLine>
+               </address>
+
+
+               <dateline>
+                  <date when="1915-05-23">May 23./15</date>
+               </dateline>
+
+               <note hand="unknown" rend="pencil" style="transform:rotateZ(-90deg)">
+                  <hi rend="underline">Hon. Mrs Henniker</hi>
+               </note>
+
+               <salute>My dear friend:</salute>
+            </opener>
+
+
+            <p> I know you will help me &amp; my dear faithful old <persName
+                  ref="#ps:AnnaHirschmann">Anna</persName> – Will you very kindly say that you have
+               known <persName ref="#ps:AnnaHirschmann"><hi rend="underline">Anna</hi>
+                  <hi rend="underline">Hirschmann</hi></persName> for a considerable time, &amp;
+               that you believe her to be a most devoted honest, loyal person – (or any words you
+               like to use?) who may <hi rend="underline">safely be allowed to remain in <placeName
+                     ref="#pl:England"><hi rend="underline">England</hi></placeName></hi>. I want to
+               attach <hi rend="underline">your</hi> testimonial to a form that has to go to the
+                  <placeName ref="#pl:HomeOffice">Home Office</placeName>, to enable her to stay
+               with me.</p>
+
+            <p> She is not strong, &amp; it <choice><abbr>w<hi rend="superscript">d</hi></abbr>
+                  <expan>would</expan></choice> simply break her heart to leave me.</p>
+
+            <p> Y<hi rend="underline">our</hi> name <choice><abbr>w<hi rend="superscript"
+                     >d</hi></abbr>
+                  <expan>would</expan></choice> be a help to her &amp; to me.</p>
+
+            <closer>
+               <salute>Ever <choice><abbr>yr</abbr>
+                     <expan>your</expan></choice>
+                  <choice><abbr>aff.</abbr>
+                     <expan>affectionate</expan></choice> friend</salute>
+               <signed>FloH.</signed>
+
+            </closer>
+            <postscript>
+               <p> I enclose cover to save you trouble.</p>
+               <p> Will you very kindly <pb n="2" facs="uoedh_hl_h.3183_2b.jpg"/> write the
+                  statement <hi rend="underline">not</hi> as a letter to <hi rend="underline"
+                     >me</hi> – but formally beginning "I am glad to vouch for" – or I am glad to
+                  state" – re –</p>
+            </postscript>
+
+
+         </div>
+      </body>
+   </text>
+</TEI>

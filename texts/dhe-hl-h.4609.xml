@@ -1,0 +1,242 @@
+<?xml-model href="../../schema/hardyletter.rng" type="application/xml" 
+   schematypens="http://relaxng.org/ns/structure/1.0"?><!--<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="dhe-hl-h.4609">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Letter from a reader, Frank Theodore, to Thomas Hardy expressing his enjoyment of
+                  <ref target="#bib:Hardy1891_Tess"><emph rend="italics">Tess of the
+                     d'Urbervilles</emph></ref> and relating some of his experiences of living in
+               Dorset, 19 February 1915</title>
+            <author ref="#ps:FrankTheodore">Frank Theodore</author>
+            <!--The editor of the tei file-->
+            <editor ref="#resp-HA">Helen Angear</editor>
+            <funder>Arts and Humanities Research Council</funder>
+            <sponsor>University of Exeter</sponsor>
+            <sponsor>Dorset County Museum</sponsor>
+            <principal>Angelique Richardson</principal>
+
+            <respStmt>
+               <persName ref="#resp:HA">Helen Angear</persName>
+               <resp>Selection</resp>
+               <resp>Proofreading</resp>
+
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:BM">Beth Mills</persName>
+               <resp>Transcription</resp>
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:HP">Hannah Petrie</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="#resp:EW">Elizabeth Williamson</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition, transcribed and edited directly from primary
+               sources</edition>
+         </editionStmt>
+         <publicationStmt>
+            <publisher>University of Exeter Digital Humanities Lab</publisher>
+            <pubPlace>Exeter, UK</pubPlace>
+            <date>November 2019</date>
+            <availability>
+               <p>The letter transcripts are licensed under a Creative Commons Attribution 4.0
+                  International License. This means that you can use these transcripts providing you
+                  acknowledge the Hardy's Correspondents project.</p>
+               <p>The letter images remain the copyright of Dorset Museum. Please contact the Museum
+                  if you would like to reuse any of the letter images.</p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <placeName ref="#pl:Dorchester">Dorchester</placeName>
+                  <institution>Dorset County Museum</institution>
+                  <idno type="DCM">H.4609</idno>
+                  <altIdentifier>
+                     <idno type="XXXX"><!-- optional - any other identifiers --></idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Letter written on folded <material>cream paper</material>.</p>
+                           <p>Pencil library mark on pages 4 and 8: <note type="libraryMark"
+                                 >H.4609</note>.</p>
+                           <p>Author's handwritten page numbers on the top right of each page.</p>
+                        </support>
+                        <!-- The following mark up was used where the page numbers appeared but this makes it odd to read as it breaks into the text -->
+                        <fw type="pageNum" place="top-left">
+                           <hi rend="underline">2</hi>
+                        </fw>
+                        <fw type="pageNum" place="top-left">
+                           <hi rend="underline">3</hi>
+                        </fw>
+                        <fw type="pageNum" place="top-left">
+                           <hi rend="underline">4</hi>
+                        </fw>
+                        <fw type="pageNum" place="top-left">
+                           <hi rend="underline">5</hi>
+                        </fw>
+                        <fw type="pageNum" place="top-left">
+                           <hi rend="underline">6</hi>
+                        </fw>
+                        <fw type="pageNum" place="top-left">
+                           <hi rend="underline">7</hi>
+                        </fw>
+                        <fw type="pageNum" place="top-left">
+                           <hi rend="underline">8</hi>
+                        </fw>
+                        <condition>Good</condition>
+                     </supportDesc>
+                  </objectDesc>
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Prepared as part of the AHRC/REACT Studentship on Thomas Hardy's letters, in
+               conjunction with Dorset County Museum.</p>
+         </projectDesc>
+
+      </encodingDesc>
+      <profileDesc>
+         <correspDesc>
+            <!-- Provides detailed correspondence-specific metadata, particularly concerning the communicative aspects 
+            (sending, receiving, forwarding etc.) associated with acts of correspondence. -->
+
+            <correspAction type="sent">
+               <!-- Structured description of the place, the name of a person/organisation and the date related to the sending/receiving of a message -->
+               <persName ref="#ps:FrankTheodore">Frank Theodore</persName>
+               <placeName ref="#pl:MarlboroughRoad">Ashleigh, Marlborough Road, Ashford,
+                  Middlesex</placeName>
+               <!--couldn't find Ashleigh so made <place> file for the road-->
+               <date when="1915-02-19">Friday February ye nineteenth 1915.</date>
+            </correspAction>
+            <correspAction type="received">
+               <persName ref="#ps:TH">Thomas Hardy</persName>
+            </correspAction>
+
+         </correspDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="letter">
+            <pb n="1" facs="uoedh_hl_h.4609_1.jpg"/>
+            <opener>
+               <address>
+                  <addrLine>Ashleigh. Marlborough Road. </addrLine>
+                  <addrLine>Ashford. Middlesex</addrLine>
+               </address>
+               <dateline>
+                  <date when="1915-02-19">Friday February ye nineteenth 1915.</date>
+               </dateline>
+               <salute>Dear Master Hardy.</salute>
+            </opener>
+
+            <p>This is not where I really live, but the place whereat our regiment is billeted in
+               training for the Front - myself being a private temporally in the Tenth Middlesex
+               during this awful, though fortunately only transitory time.</p>
+
+            <p>I have recently read <ref target="#bib:Hardy1891_Tess">Tess of the
+                  d'Urbervilles</ref> and while I am still in <pb n="2" facs="uoedh_hl_h.4609_2.jpg"
+               /> the <unclear>way</unclear>, wish to thank you. I am in rather a difficult
+               position, for as you clearly show in your writings, you do not care what any man
+               thinks of your books. The expression of thanks to you, must be similar to that
+               tendered to a great surgeon by a patient, whose life he has saved under the influence
+               of anaesthetics.</p>
+
+            <p>I can only ask you to believe in the sincerity of my appreciation.</p>
+
+            <pb n="3" facs="uoedh_hl_h.4609_3.jpg"/>
+
+
+
+            <p>I know the country well. My grandfather - <persName ref="#ps:JohnBeard">Master John
+                  Beard</persName> was master at the <placeName ref="#pl:Bridport">Port
+                  Bredy</placeName> National Schools from about 1850 until 1894 and still continued
+               to live in that lovely little town until his death in 1910. With him I spent my
+               holidays walking through the Matchless <placeName ref="#pl:MarshwoodVale">Vale of
+                  Marshwood</placeName> and roaming over <placeName ref="#pl:PilsdonPen">Pilsdon
+                  Pen</placeName> and <placeName ref="#pl:LewesdonHill"> Lewesdon
+               Hill</placeName>.</p>
+
+            <p>Then again the story is modern, within the period of railways. There <pb n="4"
+                  facs="uoedh_hl_h.4609_4.jpg"/> is no "wrapping up" in an age of which we know
+               nothing. Not that I wish to depreciate "mystery." That is the lovely charm of Gothic
+               Architecture.</p>
+
+            <p>I have never read a story which subdued and impressed me so much. Not even "Hereward
+               the Wake" or "The Cloister and The Hearth" in which, in the legend of "The Cross in
+               Hand" there is a similarity. – I went out into the night air to meditate upon the
+               tragedy under the stars <pb n="5" facs="uoedh_hl_h.4609_5.jpg"/> I could not help
+               wondering how you being a man could so well imagine the thoughts of an outraged pure
+               woman. Could all that agony be borne by one poor girl? Surely an English Court of Law
+               would not have condemned her to death considering the evidence which would have been
+               brought forward at the trial by <persName ref="#ps:AngelClare">Angel Clare</persName>
+               and the landlady? I felt that the false d'Urberville deserved <pb n="6"
+                  facs="uoedh_hl_h.4609_6.jpg"/> to die from some horrible lingering disease. I have
+               little sympathy for <persName ref="#ps:AngelClare">Angel Clare</persName> — how about
+               his sin of which he says no more and over which <persName ref="#ps:TessDurbeyfield"
+                  >Tess</persName> seems to pass? It is a kind of poetical justice that <persName
+                  ref="#ps:TessDurbeyfield">Tess</persName> refused to see him longer. He spoke the
+               truth when he remarked, previous to his emigration to <placeName ref="#pl:Brazil"
+                  >Brazil</placeName>
+               <q>
+                  <choice>
+                     <sic>"that it would break the continuity of his life."</sic>
+                     <corr>"But, my dear Mercy, it snaps the continuity of existence."</corr>
+                  </choice>
+               </q>
+            </p>
+            <!--use <corr> to write correct phrasing? Need to check authoritative version of text-->
+
+            <p>After spending seven or eight years in and out <pb n="7" facs="uoedh_hl_h.4609_7.jpg"
+               /> an architect's and church decorator's office, I went to <placeName
+                  ref="#pl:Canada">Canada</placeName>, expecting to find work of that description
+               but was disillusioned. I did some farming - amongst other things - but I did not find
+               the rising at three in the morning so romantic as in "<ref
+                  target="#bib:Hardy1891_Tess">Tess</ref>"</p>
+
+            <p>It is one thing to gaze down upon a dairy pasture and listen to the lowing of cattle
+               in the distance, and another thing to have them bellowing underneath your bedroom
+               window <pb n="8" facs="uoedh_hl_h.4609_8.jpg"/> at three A. M.</p>
+
+            <p>I am commencing "<ref target="#bib:Hardy1878_Native">The Return of the Native</ref>"
+               which I have heard described as a tragedy of "temperament and environment." I
+               understand this first appeared in 1878 and <ref target="#bib:Hardy1891_Tess"
+                  >Tess</ref> in 1891.</p>
+
+
+
+            <closer>
+               <salute>Thanking you again</salute>
+               <salute>I am</salute>
+               <salute>yours sincerely</salute>
+               <signed>Frank Theodore</signed>
+               <figure>
+                  <figDesc>Flower-shaped image with four petals, two of which right-angled, with
+                     stalk. Two diagonal P-shaped images either side of flower.</figDesc>
+               </figure>
+               <signed>hys mark.</signed>
+            </closer>
+
+
+         </div>
+      </body>
+   </text>
+</TEI>

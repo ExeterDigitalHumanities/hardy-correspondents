@@ -1,0 +1,203 @@
+<?xml-model href="../../schema/hardyletter.rng" type="application/xml" 
+   schematypens="http://relaxng.org/ns/structure/1.0"?><!--<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="dhe-hl-h.2802">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Letter from the Duchess of Hamilton to Thomas Hardy inviting him to be a vice
+               president of the Anti-Vivisection Society, 10 November 1923</title>
+            <author ref="#ps:NinaHamilton">Nina Hamilton</author>
+            <!--The editor of the tei file-->
+            <editor ref="#resp-HA">Helen Angear</editor>
+            <funder>Arts and Humanities Research Council</funder>
+            <sponsor>University of Exeter</sponsor>
+            <sponsor>Dorset County Museum</sponsor>
+            <principal>Angelique Richardson</principal>
+
+            <respStmt>
+               <persName ref="#resp:BM">Beth Mills</persName>
+               <resp>Selection</resp>
+               <resp>Proofreading</resp>
+
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:HA">Helen Angear</persName>
+               <resp>Transcription</resp>
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:HP">Hannah Petrie</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="#resp:EW">Elizabeth Williamson</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition, transcribed and edited directly from primary
+               sources</edition>
+         </editionStmt>
+         <publicationStmt>
+            <publisher>University of Exeter Digital Humanities Lab</publisher>
+            <pubPlace>Exeter, UK</pubPlace>
+            <date>November 2019</date>
+            <availability>
+               <p>The letter transcripts are licensed under a Creative Commons Attribution 4.0
+                  International License. This means that you can use these transcripts providing you
+                  acknowledge the Hardy's Correspondents project.</p>
+               <p>The letter images remain the copyright of Dorset Museum. Please contact the Museum
+                  if you would like to reuse any of the letter images.</p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <placeName ref="#pl:Dorchester">Dorchester</placeName>
+                  <institution>Dorset County Museum</institution>
+                  <idno type="DCM">H.2802</idno>
+                  <altIdentifier>
+                     <idno type="XXXX"><!-- optional - any other identifiers --></idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Letter written on <material>cream folded paper</material>.</p>
+                           <p>Pencil library marks on page 2: <note type="libraryMark"
+                              >H.2802</note>.</p>
+                           <p>Pencil draft reply written in the top left corner of page 2.</p>
+                           <p>In the letterhead at the top of the letter is a black printed image of
+                              a crown with the initials H&amp;B below.</p>
+                        </support>
+                        <condition>Good; some rust marks</condition>
+                        <!--Need to check placement for telephone details 
+                           <ab style="transform:rotateZ(-40deg)">TELEPHONE -24</ab>
+                           <ab style="transform:rotateZ(-40deg)">TELEGRAMS - </ab>
+                           <ab style="transform:rotateZ(-40deg)">STATION - TISBURY</ab>
+                           
+                          wITH FIRST TWO LINES CONNECTED BY } SHAFTESBURY 
+                        -->
+                     </supportDesc>
+                  </objectDesc>
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Prepared as part of the AHRC/REACT Studentship on Thomas Hardy's letters, in
+               conjunction with Dorset County Museum.</p>
+         </projectDesc>
+
+      </encodingDesc>
+      <profileDesc>
+         <correspDesc>
+            <!-- Provides detailed correspondence-specific metadata, particularly concerning the communicative aspects 
+            (sending, receiving, forwarding etc.) associated with acts of correspondence. -->
+
+            <correspAction type="sent">
+               <persName ref="#ps:NinaHamilton">Nina Hamilton</persName>
+               <placeName ref="#pl:FerneHouse">Ferne House, Donhead St Andrew,
+                  Shaftesbury</placeName>
+               <date when="1923-11-10"/>
+            </correspAction>
+            <correspAction type="received">
+               <persName ref="#ps:TH">Thomas Hardy</persName>
+            </correspAction>
+
+         </correspDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="letter">
+            <pb n="1" facs="uoedh_hl_h.2802_1.jpg"/>
+            <opener>
+
+
+               <address rend="letterhead">
+                  <addrLine>Ferne</addrLine>
+                  <addrLine>Donhead</addrLine>
+                  <addrLine>
+                     <del>Salisbury</del>
+                     <add place="below">Shaftesbury</add>
+                  </addrLine>
+                  <!-- added in pen -->
+               </address>
+
+               <dateline>
+                  <date when="1923-11-10">
+                     <hi rend="underline">10 <hi rend="superscript">th</hi> November 1923</hi>
+                  </date>
+               </dateline>
+
+               <salute>Dear Mr. Hardy,</salute>
+            </opener>
+
+            <p>As President of the <orgName ref="#ps:AnimalDefenceAndAnti-VivisectionSociety">Animal
+                  Defence &amp; Anti-Vivisection Society</orgName> I am writing to ask you if you
+               would accept election as one of our Vice-Presidents? We are against all forms of
+               cruelty <pb n="2" facs="uoedh_hl_h.2802_2.jpg"/>
+               <milestone xml:id="m01" unit="reply"/>
+               <!-- Check unit - reply rather than section?--> and are at this time specially
+               pressing for reform <unclear>in</unclear> Slaughterhouses. </p>
+
+            <p>I believe you are in sympathy with all our work for you wrote a charming letter in
+               response to mine a year &amp; a half ago.</p>
+
+            <p>With kind regards to yourself &amp; <persName ref="#ps:FlorenceHardy">Mrs
+                  Hardy</persName></p>
+
+
+            <closer>
+               <salute>Yours sincerely</salute>
+               <signed>Nina Hamilton</signed>
+            </closer>
+
+
+
+         </div>
+      </body>
+      <back>
+         <div type="reply" hand="#ps:TH" rend="pencil">
+            <!-- Not sure if it is TH's hand or secretary's and put in milestone for position -->
+            <p xml:id="h2802a" corresp="#m01">[<choice><abbr>Ans.</abbr>
+                  <expan>Answer</expan></choice>] <choice><abbr>Sh<hi rend="superscript"
+                     >d</hi></abbr>
+                  <expan>Should</expan></choice> be delighted if it does not commit me to absolute
+               anti-vivisection..... Maybe cases in <choice><abbr>wh.</abbr>
+                  <expan>which</expan>
+               </choice> a very small amount of suffering, such as a human-being <choice><abbr>w<hi
+                        rend="superscript">d</hi></abbr>
+                  <expan>would</expan>
+               </choice> submit to – may lead to enlighten­ment on some point of great value in
+               relieving the future suffering both of men &amp; of the animals themselves So I don't
+               know what to say. <choice><abbr>Pps</abbr>
+                  <expan>Perhaps</expan>
+               </choice> you <choice><abbr>c <hi rend="superscript">d</hi></abbr>
+                  <expan>could</expan>
+               </choice> suggest – say title "Animal Defence &amp; Controlled <choice><abbr>Viv <hi
+                        rend="superscript">n</hi></abbr>
+                  <expan>Vivisection</expan>
+               </choice>
+               <choice><abbr>Soc</abbr>
+                  <expan>Society</expan>
+               </choice>" or "<choice><abbr>A.</abbr>
+                  <expan>Animal</expan>
+               </choice> Defence <choice><abbr>Soc.</abbr>
+                  <expan>Society</expan></choice>" alone &amp; I <choice><abbr>w<hi
+                        rend="superscript">d.</hi></abbr>
+                  <expan>would</expan>
+               </choice> join – ...</p>
+         </div>
+      </back>
+   </text>
+</TEI>

@@ -1,0 +1,199 @@
+<?xml-model href="../../schema/hardyletter.rng" type="application/xml" 
+   schematypens="http://relaxng.org/ns/structure/1.0"?><!--<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="dhe-hl-h.4597">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+
+            <title>Letter from a reader, F. M. Bland, to Thomas Hardy about <ref
+                  target="#bib:Hardy1891_Tess"><emph rend="italics">Tess of the
+                  d'Urbervilles</emph></ref>, 8 June 1909</title>
+            <author ref="#ps:FMBland">F. M. Bland</author>
+            <!--The editor of the tei file-->
+            <editor ref="#resp-HA">Helen Angear</editor>
+            <funder>Arts and Humanities Research Council</funder>
+            <sponsor>University of Exeter</sponsor>
+            <sponsor>Dorset County Museum</sponsor>
+            <principal>Angelique Richardson</principal>
+
+            <respStmt>
+               <persName ref="#resp:HA">Helen Angear</persName>
+               <resp>Selection</resp>
+               <resp>Proofreading</resp>
+
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:BM">Beth Mills</persName>
+               <resp>Transcription</resp>
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:HP">Hannah Petrie</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="#resp:EW">Elizabeth Williamson</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition, transcribed and edited directly from primary
+               sources</edition>
+         </editionStmt>
+         <publicationStmt>
+            <publisher>University of Exeter Digital Humanities Lab</publisher>
+            <pubPlace>Exeter, UK</pubPlace>
+            <date>November 2019</date>
+            <availability>
+               <p>The letter transcripts are licensed under a Creative Commons Attribution 4.0
+                  International License. This means that you can use these transcripts providing you
+                  acknowledge the Hardy's Correspondents project.</p>
+               <p>The letter images remain the copyright of Dorset Museum. Please contact the Museum
+                  if you would like to reuse any of the letter images.</p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <placeName ref="#pl:Dorchester">Dorchester</placeName>
+                  <institution>Dorset County Museum</institution>
+                  <idno type="DCM">H.4597</idno>
+                  <altIdentifier>
+                     <idno type="XXXX"><!-- optional - any other identifiers --></idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>Letter written on white folded paper. Pencil library marks on pages
+                           2, 4, 6 and 8:<note type="libraryMark" rend="pencil">
+                           H.4597.</note></support>
+                        <condition>Good</condition>
+                     </supportDesc>
+                  </objectDesc>
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Prepared as part of the AHRC/REACT Studentship on Thomas Hardy's letters, in
+               conjunction with Dorset County Museum.</p>
+         </projectDesc>
+
+      </encodingDesc>
+      <profileDesc>
+         <correspDesc>
+            <!-- Provides detailed correspondence-specific metadata, particularly concerning the communicative aspects 
+            (sending, receiving, forwarding etc.) associated with acts of correspondence. -->
+
+            <correspAction type="sent">
+               <!-- Structured description of the place, the name of a person/organisation and the date related to the sending/receiving of a message -->
+               <persName ref="#ps:FMBland">F. M. Bland</persName>
+
+               <!--Location letter sent from-->
+               <placeName ref="#pl:InglethorpeManor">Inglethorpe Manor, Wisbech</placeName>
+               <date when="1909-06-08">8 June 1909</date>
+            </correspAction>
+            <correspAction type="received">
+               <persName ref="#ps:TH">Thomas Hardy</persName>
+            </correspAction>
+
+         </correspDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="letter">
+            <pb n="1" facs="uoedh_hl_h.4597_1.jpg"/>
+            <note rend="pencil" hand="unknown">F. M. Bland</note>
+            <opener>
+               <address rend="letterhead">
+                  <addrLine>INGLETHORPE MANOR,</addrLine>
+                  <addrLine>WISBECH.</addrLine>
+               </address>
+               <note rend="typeset" place="margin">
+                  <ab style="transform:rotateZ(-40deg)">TELEGRAMS,</ab>
+                  <ab style="transform:rotateZ(-40deg)">ELM.</ab>
+               </note>
+               <dateline>
+                  <date when="1909-06-08">8 June 1909</date>
+               </dateline>
+
+
+               <salute>Dear Sir</salute>
+            </opener>
+
+            <p>I have just read "<ref target="#bib:Hardy1891_Tess">Tess of the D'Urbervilles</ref>"
+               with great interest. Whether the plot is founded on fact I know not but I happen to
+               know an almost parallel case up to a certain point.</p>
+
+            <pb n="2" facs="uoedh_hl_h.4597_2.jpg"/>
+
+            <p>A child barely sixteen was taken advantage of as was <persName
+                  ref="#ps:TessDurbeyfield">Tess</persName> with the same result.</p>
+
+            <p>She subsequently became acquainted with a most worthy man and between them a real
+               affection such as one would imagine nothing could sever ended in their marriage.</p>
+
+            <pb n="3" facs="uoedh_hl_h.4597_3.jpg"/>
+
+            <p>The incidents are the same. The girl often essayed to tell her lover what had
+               happened <del><unclear>to</unclear></del> in her early days but without success as he
+               always stopped her.</p>
+
+            <p>They were married – the mutual confession was made precisely as between <persName
+                  ref="#ps:AngelClare">Angel</persName> &amp; <persName ref="#ps:TessDurbeyfield"
+                  >Tess</persName> and exactly the same result ensued.</p>
+
+            <p>The man left his wife to rejoin his appoint­ <pb n="4" facs="uoedh_hl_h.4597_4.jpg"/>
+               ment in <placeName ref="#pl:India">India</placeName> and died of cholera within a
+               year but before he left <placeName ref="#pl:England">England</placeName> he gave his
+               parents some plausible excuse for leaving his wife and arranged that she should
+               receive through them a monthly allowance telling her what he had done &amp; that all
+               letters between them should pass through the same channel. They corres­ <pb n="5"
+                  facs="uoedh_hl_h.4597_5.jpg"/> ponded regularly for some time till some
+               interfering busy-body a so-called "friend" of the family raked up the girl's history
+               and told it to the man's parents who forthwith took upon themselves to stop the
+               allowance and suppress all communication between the pair. The poor girl, <pb n="6"
+                  facs="uoedh_hl_h.4597_6.jpg"/> now twenty, the same age as <persName
+                  ref="#ps:TessDurbeyfield">Tess</persName>, as honest and as true in her devotion
+               to her husband, deserted, as she thought, by him and his parents entered into
+               domestic service where her story by some unaccountable means appears to have become
+               known resulting in her being summarily <pb n="7" facs="uoedh_hl_h.4597_7.jpg"/>
+               turned out of the house. Since then no trace of the unfortunate girl has been
+               discovered.</p>
+
+
+            <p>It was not till the husband's death that all the facts became known. Among his papers
+               was one relating all that had happened describing his intense affection for his wife
+               and the remorse which came home to him when his letters were <pb n="8"
+                  facs="uoedh_hl_h.4597_8.jpg"/> unanswered and the allowance remained
+               unclaimed.</p>
+
+
+            <p>The state of mind of the man's parents for their share in the unhappy business for
+               which they can never forgive themselves can well be imagined. The only excuse I have
+               heard made for them is that they were actuated by a strict sense of morality <pb
+                  n="9" facs="uoedh_hl_h.4597_9.jpg"/> but what is that morality which brings about
+               such misery!</p>
+
+            <closer>
+               <salute>Thinking it might interest you to hear this I am</salute>
+               <salute>faithfully yours</salute>
+               <signed>F.M. Bland</signed>
+               <persName ref="#ps:TH">Thomas Hardy Esq</persName>
+            </closer>
+
+            <pb n="10" facs="uoedh_hl_h.4597_10.jpg"/>
+
+         </div>
+      </body>
+   </text>
+</TEI>

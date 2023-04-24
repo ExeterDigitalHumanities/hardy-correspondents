@@ -1,0 +1,186 @@
+<?xml-model href="../../schema/hardyletter.rng" type="application/xml" 
+   schematypens="http://relaxng.org/ns/structure/1.0"?><!--<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="dhe-hl-h.751">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+
+            <title>Letter from Wilfred Warner to Thomas Hardy soliciting a message for the League
+               for the Prohibition of Cruel Sports, 4 October 1926</title>
+            <author ref="#ps:WilfredWarner">Wilfred P.H. Warner</author>
+            <!--The editor of the tei file-->
+            <editor ref="#resp-HA">Helen Angear</editor>
+            <funder>Arts and Humanities Research Council</funder>
+            <sponsor>University of Exeter</sponsor>
+            <sponsor>Dorset County Museum</sponsor>
+            <principal>Angelique Richardson</principal>
+
+            <respStmt>
+               <persName ref="#resp:HA">Helen Angear</persName>
+               <resp>Selection</resp>
+               <resp>Transcription</resp>
+
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:BM">Beth Mills</persName>
+               <resp>Proofreading</resp>
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:HP">Hannah Petrie</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="#resp:EW">Elizabeth Williamson</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition, transcribed and edited directly from primary
+               sources</edition>
+         </editionStmt>
+         <publicationStmt>
+            <publisher>University of Exeter Digital Humanities Lab</publisher>
+            <pubPlace>Exeter, UK</pubPlace>
+            <date>November 2019</date>
+            <availability>
+               <p>The letter transcripts are licensed under a Creative Commons Attribution 4.0
+                  International License. This means that you can use these transcripts providing you
+                  acknowledge the Hardy's Correspondents project.</p>
+               <p>The letter images remain the copyright of Dorset Museum. Please contact the Museum
+                  if you would like to reuse any of the letter images.</p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <placeName ref="#pl:Dorchester">Dorchester</placeName>
+                  <institution>Dorset County Museum</institution>
+                  <idno type="DCM">H.751</idno>
+                  <altIdentifier>
+                     <idno type="XXXX"><!-- optional - any other identifiers --></idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Letter written on <material>cream paper</material> with an extensive
+                              letterhead that includes the following quotation: "<hi rend="italics"
+                                 >"Hunting is the lowest, bilest, most abject part of
+                              butchery.</hi>" Sir Thomas More.</p>
+                           <p>Pencil library mark on page 2: <note type="libraryMark"
+                              >H.751</note>.</p>
+                        </support>
+                        <condition>Good</condition>
+                     </supportDesc>
+                  </objectDesc>
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Prepared as part of the AHRC/REACT Studentship on Thomas Hardy's letters, in
+               conjunction with Dorset County Museum.</p>
+         </projectDesc>
+
+      </encodingDesc>
+      <profileDesc>
+         <correspDesc>
+            <!-- Provides detailed correspondence-specific metadata, particularly concerning the communicative aspects 
+            (sending, receiving, forwarding etc.) associated with acts of correspondence. -->
+
+            <correspAction type="sent">
+               <!-- Structured description of the place, the name of a person/organisation and the date related to the sending/receiving of a message -->
+               <persName ref="#ps:WilfredWarner">Wilfred P.H. Warner</persName>
+
+               <!--Location letter sent from-->
+               <placeName ref="#pl:Marldon">Marldon, Nr. Paignton, Devon</placeName>
+               <date when="1926-10-04"/>
+            </correspAction>
+            <correspAction type="received">
+               <persName ref="#ps:TH">Thomas Hardy</persName>
+            </correspAction>
+
+         </correspDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="letter">
+            <pb n="1" facs="uoedh_hl_h.751_1.jpg"/>
+
+            <opener>
+
+
+               <address rend="letterhead">
+                  <addrLine>LEAGUE FOR PROHIBITION OF CRUEL SPORTS,</addrLine>
+                  <addrLine>SOUTH DEVON BRANCH.</addrLine>
+                  <addrLine>HON. SECRETARY &amp; TREASURER:</addrLine>
+                  <addrLine>WILFRED P. H. WARNER</addrLine>
+                  <addrLine>MARLDON</addrLine>
+                  <addrLine><choice><abbr>Nr.</abbr><expan>Near</expan></choice>
+                     PAIGNTON.</addrLine>
+                  <addrLine>DEVON.</addrLine>
+               </address>
+
+
+               <dateline>
+                  <date when="1926-10-04">
+                     <hi rend="underline">Oct 4<hi rend="superscript">th</hi></hi>
+                  </date>
+               </dateline>
+
+               <salute>Sir,</salute>
+            </opener>
+
+            <p>You will notice by the enclosed card that we are holding an "Anti-Cruel Sport"
+               meeting at <placeName ref="#pl:Truro">Truro</placeName>, on the 22<hi
+                  rend="superscript">nd</hi>. Would you send us a message of sympathy to be read at
+               the meeting. </p>
+
+            <p>I enclose a report of a meeting held at <unclear><placeName ref="#pl:Exeter"
+                     >Exeter</placeName></unclear>. </p>
+
+            <closer>
+               <salute><choice><abbr>Yrs</abbr>
+                     <expan>Yours</expan></choice> faithfully</salute>
+               <signed>Wilfred P. H Warner</signed>
+
+               <handShift/>
+               <note rend="pencil" hand="#ps:TH">[<choice><abbr>T.O.</abbr>
+                     <expan>Turn over</expan></choice> for
+                        <choice><abbr>Ans</abbr><expan>Answer</expan></choice>]</note>
+            </closer>
+            <pb n="2" facs="uoedh_hl_h.751_2.jpg"/>
+
+
+         </div>
+      </body>
+      <back>
+         <div type="reply" hand="#ps:TH">
+
+            <opener>
+
+               <dateline>
+                  <date when="1926-10-14">14 Oct. 1926</date>
+               </dateline>
+
+            </opener>
+            <p> You have all my sympathy in protesting against cruel sports; but I fear that the
+               human race has emerged so little yet from a state of savagery that not much can be
+               done. </p>
+            <closer>
+               <signed>T.H.</signed>
+            </closer>
+         </div>
+      </back>
+   </text>
+</TEI>

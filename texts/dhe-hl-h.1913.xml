@@ -1,0 +1,166 @@
+<?xml-model href="../../schema/hardyletter.rng" type="application/xml" 
+   schematypens="http://relaxng.org/ns/structure/1.0"?><!--<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="dhe-hl-h.1913">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Condolence letter from Charles Gifford to Thomas Hardy following the death of
+               Emma Hardy, 28 November 1912</title>
+            <author ref="#ps:CharlesGifford">Charles Gifford</author>
+            <!--The editor of the tei file-->
+            <editor ref="#resp-HA">Helen Angear</editor>
+            <funder>Arts and Humanities Research Council</funder>
+            <sponsor>University of Exeter</sponsor>
+            <sponsor>Dorset County Museum</sponsor>
+            <principal>Angelique Richardson</principal>
+
+            <respStmt>
+               <persName ref="#resp:HA">Helen Angear</persName>
+               <resp>Selection</resp>
+               <resp>Transcription</resp>
+
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:BM">Beth Mills</persName>
+               <resp>Proofreading</resp>
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:HP">Hannah Petrie</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="#resp:EW">Elizabeth Williamson</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition, transcribed and edited directly from primary
+               sources</edition>
+         </editionStmt>
+         <publicationStmt>
+            <publisher>University of Exeter Digital Humanities Lab</publisher>
+            <pubPlace>Exeter, UK</pubPlace>
+            <date>November 2019</date>
+            <availability>
+               <p>The letter transcripts are licensed under a Creative Commons Attribution 4.0
+                  International License. This means that you can use these transcripts providing you
+                  acknowledge the Hardy's Correspondents project.</p>
+               <p>The letter images remain the copyright of Dorset Museum. Please contact the Museum
+                  if you would like to reuse any of the letter images.</p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <placeName ref="#pl:Dorchester">Dorchester</placeName>
+                  <institution>Dorset County Museum</institution>
+                  <idno type="DCM">H.1913</idno>
+                  <altIdentifier>
+                     <idno type="XXXX"><!-- optional - any other identifiers --></idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Letter written on <material>cream paper</material>.</p>
+                           <p>Pencil library marks on page 4: <note type="libraryMark" rend="pencil"
+                                 > H.1913</note>.</p>
+                           <p>Letterhead features <figure><figDesc>printed monogram with three
+                                    overlapping intials: C R L</figDesc></figure>.</p>
+                           <!-- check -->
+                        </support>
+                        <condition>Good</condition>
+
+                     </supportDesc>
+                  </objectDesc>
+                  <decoDesc>
+                     <decoNote type="mourningBorder">
+                        <p>Black border on page 1.</p>
+                     </decoNote>
+                  </decoDesc>
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Prepared as part of the AHRC/REACT Studentship on Thomas Hardy's letters, in
+               conjunction with Dorset County Museum.</p>
+         </projectDesc>
+
+      </encodingDesc>
+      <profileDesc>
+         <correspDesc>
+            <!-- Provides detailed correspondence-specific metadata, particularly concerning the communicative aspects 
+            (sending, receiving, forwarding etc.) associated with acts of correspondence. -->
+
+            <correspAction type="sent">
+               <persName ref="#ps:CharlesGifford">Charles Gifford</persName>
+               <placeName ref="#pl:HardyRoad30">30 Hardy Road, Blackheath, London</placeName>
+               <date when="1912-11-28"/>
+            </correspAction>
+            <correspAction type="received">
+               <persName ref="#ps:TH">Thomas Hardy</persName>
+            </correspAction>
+
+         </correspDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="letter">
+            <pb n="1" facs="uoedh_hl_h.1913_1.jpg"/>
+
+            <opener>
+
+
+               <address>
+                  <addrLine>30, Hardy Road</addrLine>
+                  <addrLine>Blackheath</addrLine>
+
+               </address>
+               <dateline>
+                  <date when="1912-11-28">November 28. 1912.</date>
+               </dateline>
+
+               <salute> Dear M<hi rend="superscript">r</hi> Hardy,</salute>
+
+            </opener>
+
+            <p>It was indeed a shock to me to receive your letter this morning, for recent letters
+               from <persName ref="#ps:EmmaHardy">Emma</persName> had not for a moment led us to
+               suspect <pb n="2" facs="uoedh_hl_h.1913_2.jpg"/> that she was not in good health. For
+               me it is the snapping of another link with the past and I am in full sympathy with
+               you.</p>
+
+            <p>I much regret that I am entirely unfit to be with you on Saturday when I should have
+               liked to <pb n="3" facs="uoedh_hl_h.1913_3.jpg"/> represent the Gifford side. I am
+               unable to walk &amp; rarely leave my easy chair.</p>
+
+            <p>My daughter <persName ref="#ps:LeonieGifford"><unclear>Leonie</unclear></persName>
+               asks me to say that she would be more than ready to come to you at once if she could
+               be of real use in the absence of such help as only a woman can give. She &amp; <pb
+                  n="4" facs="uoedh_hl_h.1913_4.jpg"/> my sister send sympathetic messages.</p>
+
+
+            <closer>
+
+
+               <salute>Yours very sincerely</salute>
+               <signed>C. E. Gifford</signed>
+            </closer>
+
+
+
+         </div>
+      </body>
+   </text>
+</TEI>

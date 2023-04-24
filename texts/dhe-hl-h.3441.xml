@@ -1,0 +1,169 @@
+<?xml-model href="../../schema/hardyletter.rng" type="application/xml" 
+   schematypens="http://relaxng.org/ns/structure/1.0"?><!--<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="dhe-hl-h.3441">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Letter from Alda Hoare to Thomas Hardy on animal welfare, 5 February 1914</title>
+            <author ref="#ps:AldaHoare">Alda Hoare</author>
+            <!--The editor of the tei file-->
+            <editor ref="#resp-HA">Helen Angear</editor>
+            <funder>Arts and Humanities Research Council</funder>
+            <sponsor>University of Exeter</sponsor>
+            <sponsor>Dorset County Museum</sponsor>
+            <principal>Angelique Richardson</principal>
+
+            <respStmt>
+               <persName ref="#resp:BM">Beth Mills</persName>
+               <resp>Selection</resp>
+               <resp>Proofreading</resp>
+
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:HA">Helen Angear</persName>
+               <resp>Transcription</resp>
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:HP">Hannah Petrie</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="#resp:EW">Elizabeth Williamson</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition, transcribed and edited directly from primary
+               sources</edition>
+         </editionStmt>
+         <publicationStmt>
+            <publisher>University of Exeter Digital Humanities Lab</publisher>
+            <pubPlace>Exeter, UK</pubPlace>
+            <date>November 2019</date>
+            <availability>
+               <p>The letter transcripts are licensed under a Creative Commons Attribution 4.0
+                  International License. This means that you can use these transcripts providing you
+                  acknowledge the Hardy's Correspondents project.</p>
+               <p>The letter images remain the copyright of Dorset Museum. Please contact the Museum
+                  if you would like to reuse any of the letter images.</p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <placeName ref="#pl:Dorchester">Dorchester</placeName>
+                  <institution>Dorset County Museum</institution>
+                  <idno type="DCM">H.3441</idno>
+                  <altIdentifier>
+                     <idno type="XXXX"><!-- optional - any other identifiers --></idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Letter written on <material>cream paper</material>.</p>
+                           <p>Pencil library marks on page 4: <note type="libraryMark" rend="pencil"
+                                 > H.3441</note></p>
+
+
+                        </support>
+                        <condition>Good</condition>
+                        <!--Need to check placement for telephone details 
+                           <ab style="transform:rotateZ(-40deg)">Kensington 3867</ab>
+                           
+                        -->
+                     </supportDesc>
+                  </objectDesc>
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Prepared as part of the AHRC/REACT Studentship on Thomas Hardy's letters, in
+               conjunction with Dorset County Museum.</p>
+         </projectDesc>
+
+      </encodingDesc>
+      <profileDesc>
+         <correspDesc>
+            <!-- Provides detailed correspondence-specific metadata, particularly concerning the communicative aspects 
+            (sending, receiving, forwarding etc.) associated with acts of correspondence. -->
+
+            <correspAction type="sent">
+               <persName ref="#ps:AldaHoare">Alda Hoare</persName>
+               <placeName ref="#pl:Stourhead">Stourhead, Zeals S.O. Wiltshire</placeName>
+               <!-- check place info -->
+               <date when="1914-02-05"/>
+            </correspAction>
+            <correspAction type="received">
+               <persName ref="#ps:TH">Thomas Hardy</persName>
+            </correspAction>
+
+         </correspDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="letter">
+            <pb n="1" facs="uoedh_hl_h.3441_1.jpg"/>
+            <!--<pb n="1" facs="uoedh_hl_h.3442_1.jpg"/>-->
+            <opener>
+               <note rend="pencil" hand="other">
+                  <hi rend="underline">Lady Hoare</hi>
+               </note>
+               <!-- Hardy's? -->
+
+               <address rend="letterhead">
+                  <!-- check - embossed -->
+                  <addrLine>Stourhead</addrLine>
+                  <addrLine>Zeals S.O.</addrLine>
+                  <addrLine>Wilts</addrLine>
+               </address>
+               <!-- Need to add in diagonal embossed letterhead for TELEGRAM STOURTON. STATION, GILLINGHAM LSWR -->
+               <dateline>
+                  <date when="1914-02-05">
+                     <hi rend="underline">Feb' 5<hi rend="SUPERSCRIPT">th</hi>
+                        <hi rend="underline">1914</hi></hi>
+                  </date>
+               </dateline>
+               <!-- diagonal text -->
+
+               <salute> Dear M<hi rend="superscript">r</hi> Hardy</salute>
+
+            </opener>
+
+            <p>Will you <hi rend="underline">permit</hi> me to <hi rend="underline">thank</hi> you
+               for using your powerful pen, in the cause of the <hi rend="underline"
+               >animals</hi>?</p>
+            <p>I have never <pb n="2" facs="uoedh_hl_h.3441_2.jpg"/> for nearly 30 years witnessed
+               "Per­forming Animals", nor, as a <hi rend="underline">child</hi>, permitted our son
+               to — I thank you, from my heart, for using your great name, &amp; pen, to pillory <pb
+                  n="3" facs="uoedh_hl_h.3441_3.jpg"/> these cruel, unnatural, &amp; disgusting
+               shows. — </p>
+            <closer>
+               <salute>
+                  <choice><abbr>yrs.</abbr>
+                     <expan>yours</expan></choice> very sincerely</salute>
+               <signed>Alda Hoare</signed>
+            </closer>
+            <pb n="4" facs="uoedh_hl_h.3441_4.jpg"/>
+
+
+
+
+
+
+
+         </div>
+      </body>
+   </text>
+</TEI>

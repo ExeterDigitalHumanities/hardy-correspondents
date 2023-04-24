@@ -1,0 +1,198 @@
+<?xml-model href="../../schema/hardyletter.rng" type="application/xml" 
+   schematypens="http://relaxng.org/ns/structure/1.0"?><!--<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="dhe-hl-h.3188">
+   <!-- add above the xml:id attribute with the value'dhe-hl-h.NNNN' -->
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+
+            <title>Letter from Florence Henniker to Thomas Hardy about a lecture on John Keats and
+               on the death of Sir Frederick Wedmore, 12 March 1921</title>
+            <!--The author of the letter-->
+            <author ref="#ps:FlorenceHenniker">Florence Henniker</author>
+            <!--The editor of the tei file-->
+            <editor ref="#resp-HA">Helen Angear</editor>
+            <funder>Arts and Humanities Research Council</funder>
+            <sponsor>University of Exeter</sponsor>
+            <sponsor>Dorset County Museum</sponsor>
+            <principal>Angelique Richardson</principal>
+
+            <respStmt>
+               <persName ref="#resp:HA">Helen Angear</persName>
+               <resp>Selection</resp>
+               <resp>Transcription</resp>
+
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:BM">Beth Mills</persName>
+               <resp>Proofreading</resp>
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:HP">Hannah Petrie</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="#resp:EW">Elizabeth Williamson</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition, transcribed and edited directly from primary
+               sources</edition>
+         </editionStmt>
+         <publicationStmt>
+            <publisher>University of Exeter Digital Humanities Lab</publisher>
+            <pubPlace>Exeter, UK</pubPlace>
+            <date>November 2019</date>
+            <availability>
+               <p>The letter transcripts are licensed under a Creative Commons Attribution 4.0
+                  International License. This means that you can use these transcripts providing you
+                  acknowledge the Hardy's Correspondents project.</p>
+               <p>The letter images remain the copyright of Dorset Museum. Please contact the Museum
+                  if you would like to reuse any of the letter images.</p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <placeName ref="#pl:Dorchester">Dorchester</placeName>
+                  <institution>Dorset County Museum</institution>
+                  <idno type="DCM">H.3188</idno>
+                  <altIdentifier>
+                     <idno type="XXXX"><!-- optional - any other identifiers --></idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+
+                        <support>
+                           <p>Letter written on <material>cream folded paper</material>.</p>
+                           <p>Pencil library marks on page 4: <note type="libraryMark"
+                              >H.3188</note>.</p>
+                           <p>Note that the fifth page of writing is written in the margin of the
+                              first page.</p>
+                        </support>
+                        <condition>Good</condition>
+                     </supportDesc>
+                  </objectDesc>
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Prepared as part of the AHRC/REACT Studentship on Thomas Hardy's letters, in
+               conjunction with Dorset County Museum.</p>
+         </projectDesc>
+
+      </encodingDesc>
+      <profileDesc>
+         <correspDesc>
+            <!-- Provides detailed correspondence-specific metadata, particularly concerning the communicative aspects 
+            (sending, receiving, forwarding etc.) associated with acts of correspondence. -->
+
+            <correspAction type="sent">
+               <!-- Structured description of the place, the name of a person/organisation and the date related to the sending/receiving of a message -->
+               <!--<persName> of letter author-->
+               <persName ref="#ps:FlorenceHenniker">Florence Henniker</persName>
+
+               <!--Location letter sent from-->
+               <placeName ref="#pl:HydeParkSquare2">2 Hyde Park Square</placeName>
+               <date when="1921-03-12">March 12. 1921</date>
+            </correspAction>
+            <correspAction type="received">
+               <persName ref="#ps:TH">Thomas Hardy</persName>
+            </correspAction>
+
+         </correspDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="letter">
+            <pb n="1" facs="uoedh_hl_h.3188_1.jpg"/>
+            <opener>
+               <address rend="letterhead">
+                  <addrLine>2, Hyde Park Square,</addrLine>
+                  <addrLine>W.2.</addrLine>
+               </address>
+               <dateline>
+                  <milestone xml:id="m01" unit="section"/>
+                  <date when="1921-03-12">March 12. 1921</date>
+               </dateline>
+               <salute>My dear friend –</salute>
+            </opener>
+
+            <p>What a blessing it has been to have had really <hi rend="underline">no</hi> winter!
+               However I hope you are taking care of yourself, as so many people seem to have colds
+               and coughs, possibly because they are rather imprudent in this lovely early spring.
+               –</p>
+
+            <p>I saw some of your <pb n="2" facs="uoedh_hl_h.3188_2.jpg"/>
+               <persName ref="#ps:JohnKeats">Keats</persName> verses quoted, &amp; I must eventually
+               buy the book, but at this moment I am in a hard-up condition! –</p>
+
+            <p>I went to hear <persName ref="#ps:ErnestdeSelincourt">Prof de Selincourt</persName>'s
+               excellent lecture on <persName ref="#ps:JohnKeats">Keats</persName> at the <placeName
+                  ref="#pl:BurlingtonHouse">Burlington House</placeName> gathering - <persName
+                  ref="#ps:MrMacKail">Mr MacKail</persName> also spoke very well, but disagreed with
+                  <persName ref="#ps:ErnestdeSelincourt">Prof. de S</persName>'s point of view that
+                  <persName ref="#ps:JohnKeats">Keats</persName> might have done <hi
+                  rend="underline">greater</hi> work <pb n="3" facs="uoedh_hl_h.3188_3.jpg"/> had he
+               lived longer –. I suppose <hi rend="underline">you</hi> would say that in some of it,
+               he had really attained <hi rend="underline">perfection</hi> –?</p>
+
+            <p>I am very sorry that our old friend <persName ref="#ps:FrederickWedmore">Sir
+                  Frederick Wedmore</persName> has gone. But the last year or so of his life must
+               have been most painful both for him &amp; his family -</p>
+
+            <p>I think you <choice><abbr>w<hi rend="superscript">d</hi>.</abbr></choice> find much
+               to admire in his "<name type="poem">Collapse of the Penitent</name>" &amp; some of
+               his short stories? –</p>
+
+            <p><persName ref="#ps:BirdieIlchester">Birdie I.</persName> and <persName
+                  ref="#ps:MaryFox-Strangways">Mary</persName>
+               <!--Assumed this is Mary Ilchester-->came to luncheon here a day or 2 ago, &amp; we
+               talked of you. <pb n="4" facs="uoedh_hl_h.3188_4.jpg"/> They were both looking so
+               well (&amp; <hi rend="underline">good</hi>-looking!) Of course, <persName
+                  ref="#ps:BirdieIlchester">B.</persName> is dreadfully sad at leaving <placeName
+                  ref="#pl:MelburyHouse">Melbury</placeName>. I own I can't at all understand why
+               they could not <add place="above">still</add> live in part of the house, as they
+               appear to have been doing? –</p>
+
+            <p>I hope <persName ref="#ps:FlorenceHardy">F.</persName> &amp; Wessex are well? When is
+                  <persName ref="#ps:FlorenceHardy">F.</persName> coming to <placeName
+                  ref="#pl:London">London</placeName> again? –</p>
+
+            <p>I have two dogs now who wanted to be given happy homes. The elder one, an Airedale,
+               is a very pathetic creature. – His nerves seem to have been <pb n="5"
+                  facs="uoedh_hl_h.3188_5.jpg"/>
+            </p>
+
+            <ab>
+               <seg xml:id="h3188a" corresp="m01" style="text-orientation: sideways-left">shattered,
+                  as he has a great dread of noise – I think I told <persName
+                     ref="#ps:FlorenceHardy">Florence</persName> all about him. </seg>
+            </ab>
+
+            <closer>
+               <salute>Ever <choice><abbr>y<hi rend="superscript">r</hi></abbr>
+                     <expan>your</expan></choice>
+                  <choice><abbr>affec.</abbr>
+                     <expan>affectionate</expan></choice> friend</salute>
+               <signed>Flo H</signed>
+            </closer>
+
+
+         </div>
+      </body>
+   </text>
+</TEI>

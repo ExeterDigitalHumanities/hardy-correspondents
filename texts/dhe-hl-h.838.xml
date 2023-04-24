@@ -1,0 +1,275 @@
+<?xml-model href="../../schema/hardyletter.rng" type="application/xml" 
+   schematypens="http://relaxng.org/ns/structure/1.0"?><!--<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="dhe-hl-h.838">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+
+            <title>Letter from a reader, Charlotte Logier Baker, to Thomas Hardy asking for help, 24
+               October 1917.</title>
+            <author ref="#ps:CharlotteLBaker">Charlotte Logier Baker</author>
+            <!--The editor of the tei file-->
+            <editor ref="#resp-HA">Helen Angear</editor>
+            <funder>Arts and Humanities Research Council</funder>
+            <sponsor>University of Exeter</sponsor>
+            <sponsor>Dorset County Museum</sponsor>
+            <principal>Angelique Richardson</principal>
+
+            <respStmt>
+               <persName ref="#resp:HA">Helen Angear</persName>
+               <resp>Selection</resp>
+               <resp>Proofreading</resp>
+
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:BM">Beth Mills</persName>
+               <resp>Transcription</resp>
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:HP">Hannah Petrie</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="#resp:EW">Elizabeth Williamson</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition, transcribed and edited directly from primary
+               sources</edition>
+         </editionStmt>
+         <publicationStmt>
+            <publisher>University of Exeter Digital Humanities Lab</publisher>
+            <pubPlace>Exeter, UK</pubPlace>
+            <date>November 2019</date>
+            <availability>
+               <p>The letter transcripts are licensed under a Creative Commons Attribution 4.0
+                  International License. This means that you can use these transcripts providing you
+                  acknowledge the Hardy's Correspondents project.</p>
+               <p>The letter images remain the copyright of Dorset Museum. Please contact the Museum
+                  if you would like to reuse any of the letter images.</p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <placeName ref="#pl:Dorchester">Dorchester</placeName>
+                  <institution>Dorset County Museum</institution>
+                  <idno type="DCM">H.838</idno>
+                  <altIdentifier>
+                     <idno type="XXXX"><!-- optional - any other identifiers --></idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Letter written on <material>white paper</material> with
+                              letterhead.</p>
+                           <p>Pencil library mark on pages 2 and 5: <note type="libraryMark"
+                                 >H.838</note>.</p>
+                           <p>Note that, after page 6, the sender continues her letter on the top of
+                              page 1 (here labelled as page 7).</p>
+                           <figure xml:id="fig01">
+                              <figDesc>Red diamond containing red letters CLB and a red dot either
+                                 side of letters. Positioned at the top of pages 1 and 4.</figDesc>
+                           </figure>
+                        </support>
+                        <condition>Good</condition>
+                     </supportDesc>
+                  </objectDesc>
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Prepared as part of the AHRC/REACT Studentship on Thomas Hardy's letters, in
+               conjunction with Dorset County Museum.</p>
+         </projectDesc>
+
+      </encodingDesc>
+      <profileDesc>
+         <correspDesc>
+            <!-- Provides detailed correspondence-specific metadata, particularly concerning the communicative aspects 
+            (sending, receiving, forwarding etc.) associated with acts of correspondence. -->
+
+            <correspAction type="sent">
+               <!-- Structured description of the place, the name of a person/organisation and the date related to the sending/receiving of a message -->
+               <persName ref="#ps:CharlotteLBaker">Charlotte Logier Baker</persName>
+
+               <!--Location letter sent from-->
+               <placeName ref="#pl:NewtonMA">Newton, Massachusetts, U.S.A.</placeName>
+               <date when="1917-10-24"/>
+            </correspAction>
+            <correspAction type="received">
+               <persName ref="#ps:TH">Thomas Hardy</persName>
+            </correspAction>
+
+         </correspDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="letter">
+            <pb n="1" facs="uoedh_hl_h.838_1.jpg"/>
+
+            <milestone xml:id="m02" unit="section"/>
+
+            <opener>
+
+               <address>
+                  <addrLine>666 Centre St.</addrLine>
+                  <addrLine>Newton, <choice><abbr>Mass <hi rend="underline"><hi rend="superscript"
+                                 >tts</hi></hi></abbr>
+                        <expan>Massachusetts</expan></choice></addrLine>
+                  <note rend="pencil">U.S.A.</note>
+               </address>
+
+               <milestone xml:id="m01" unit="section"/>
+
+               <dateline>
+                  <date when="1917-10-24">Oct. <del rend="diagonal-strikethrough">Nov.</del> 24,
+                     1917.</date>
+               </dateline>
+
+               <salute>Dear M<hi rend="superscript"><hi rend="underline">r</hi></hi> Hardy.</salute>
+            </opener>
+
+
+
+            <p>-<!--check encoding for dashes used throughout in place of commas/full stops--> I
+               have long wanted to write you a few words of appreciation of your art – ever since I
+               first read <ref target="#bib:Hardy1887_Woodlanders">The <hi rend="wavy-underline"
+                     >Woodlanders</hi></ref> – three years ago – but I've never <pb n="2"
+                  facs="uoedh_hl_h.838_4.jpg"/> quite <hi rend="underline">dared</hi> – fearing that
+               my poor, uncouth words <add place="above">of admiration</add> might be unwelcome –
+               &amp; that you might, at best, think me a silly, doting creature.</p>
+
+            <p>– So, though I never dared address you with thanks for your novels – I am now writing
+               to you as a last resort, in the <hi rend="underline">direst</hi>
+               <hi rend="underline">need</hi>. Please, <persName ref="#ps:TH">M<hi
+                     rend="superscript"><hi rend="underline">r</hi></hi> Hardy</persName>, forgive
+               my <choice><sic>timerity</sic>
+                  <corr>temerity</corr></choice>. &amp; please help me!</p>
+
+            <p>My trouble is a terribly subtle one. &amp; <pb n="3" facs="uoedh_hl_h.838_2-3.jpg"/>
+               written down in black &amp; white – shows none of the suffering of my poor, tortured
+               mind - It's simply this – <persName ref="#ps:TH">M<hi rend="superscript"><hi
+                        rend="underline">r</hi></hi> Hardy</persName> – <hi rend="underline">I</hi>
+               <hi rend="underline">can't</hi>
+               <hi rend="underline">find</hi>
+               <hi rend="underline">any</hi>
+               <hi rend="underline">place</hi>
+               <hi rend="underline">for</hi>
+               <hi rend="underline">myself</hi>
+               <hi rend="underline">in</hi>
+               <hi rend="underline">this</hi>
+               <hi rend="underline">world</hi>! It sounds terribly simple, doesn't it - but, really,
+               it has nearly driven me to suicide several times – There isn't a single thing in this
+               world that interests me in the <hi rend="underline">slightest</hi>
+               <hi rend="underline">degree</hi> (except, perhaps, harmonic figuration &amp; one
+               can't exist on that). I feel like a soul from another world – &amp; almost <hi
+                  rend="underline">homesick</hi>. This seems <del>like</del> such a miserable, sad,
+               world – &amp; such a terrible one –I dread, every night, to go to bed, knowing that I
+               must wake to another hideous day – &amp; each day &amp; hour &amp; minute are ions of
+               pain! I feel that something is radically wrong with <hi rend="underline">me</hi> – if
+               other people can live in the same world - &amp; <hi rend="underline">smile</hi>!
+               &amp; So I am writing to you, <hi rend="underline">begging</hi> you, dear <persName
+                  ref="#ps:TH">M<hi rend="superscript"><hi rend="underline">r</hi></hi>
+                  Hardy</persName>, to <pb n="4" facs="uoedh_hl_h.838_5.jpg"/> tell me what the
+               trouble is -</p>
+
+            <p>I am not a pampered child of luxury – but I have a comfortable home – (my father is a
+               surgeon in the Navy –) &amp; the dearest parents in the world – &amp; a sister –
+               &amp; two automobiles – &amp; a <hi rend="underline">grand</hi>
+               <hi rend="underline">piano</hi>.</p>
+
+            <p>I am twenty years old (last <choice><abbr>Aug.</abbr>
+                  <expan>August</expan></choice> 22<hi rend="superscript"><hi rend="underline"
+                     >nd</hi></hi>) &amp; study music at the <orgName ref="#ps:BostonConservatory"
+                  >Conservatory</orgName> in <placeName ref="#pl:Boston">Boston</placeName>. I used,
+               once upon a time, to love my music – <pb n="5" facs="uoedh_hl_h.838_8.jpg"/>
+               <!-- check page order - this should probably come after the page on music --> It was
+               life itself to me – but now <add place="above">the last <hi rend="underline">2</hi>
+                  <choice><abbr>yrs</abbr>
+                     <expan>years</expan></choice></add> I <hi rend="underline">loathe</hi> it so
+               that I have decided to give it up. It tortures me to even think of the whole hateful
+               business – piano – harmony – counterpoint &amp; solfeggio –</p>
+
+            <p>What <hi rend="underline">is</hi> the matter – I seem so different from everybody
+               else. Only the people in your beloved books seem at <hi rend="underline">all</hi>
+               like me. <unclear>Temperamentally</unclear> I am a mixture of <hi rend="underline"
+                     ><persName ref="#ps:JudeFawley">Jude</persName></hi> &amp; <persName
+                  ref="#ps:EustaciaVye">Eustacia</persName> – without any of <hi rend="underline"
+                  >goddess</hi> qualities of the latter.</p>
+
+            <pb n="6" facs="uoedh_hl_h.838_6-7.jpg"/>
+
+            <p>Now, <persName ref="#ps:TH">M<hi rend="superscript"><hi rend="underline">r</hi></hi>
+                  Hardy</persName> – <hi rend="underline">do</hi> you know what ails me? I am
+               engaged to the dearest man in the world – but I don't even care much for him &amp;
+               don't want to marry him– oh it is so abominable to be of no use in this world– I used
+               to have dreams of being a great concert pianist – but these are shattered now – &amp;
+               I don't even care to be one! I feel, after having read all your novels, that you will
+               understand me, if anyone can! Please help me!</p>
+
+            <p>I wish I could express my admiration of your books. I have loved &amp; <hi
+                  rend="underline">lived</hi> them for so long. They are the only <hi
+                  rend="underline">real</hi> things in the world to me. I wish you might know their
+               effect on me - they <hi rend="underline">kill</hi> me almost - so terribly true - And
+                  <hi rend="underline">how</hi> you feel <hi rend="underline">Nature</hi> - &amp;
+               such at <unclear>misfortune</unclear>! My only wish is to visit the <placeName
+                  ref="#pl:Hintocks">Hintocks</placeName> &amp; <placeName ref="#pl:EgdonHeath"
+                  >Egdon Heath</placeName> – <placeName ref="#pl:PortlandBill">the Beal</placeName>
+               – the <placeName ref="#pl:IsleofSlingers">Isle of Slingers</placeName>
+               <placeName ref="#pl:CliffWithoutAName"> the Cliff without Name</placeName> – &amp;
+               the other dear places! I love <ref target="#bib:Hardy1887_Woodlanders">the <hi
+                     rend="underline">Woodlanders</hi></ref> best of all your books. <ref
+                  target="#bib:Hardy1878_Native"><hi rend="underline">The</hi>
+                  <hi rend="underline">Return</hi>
+                  <hi rend="underline">of</hi>
+                  <hi rend="underline">the Native</hi></ref> – 2<hi rend="superscript"><hi
+                     rend="underline">nd</hi></hi> –) <milestone xml:id="m03" unit="section"/>
+            </p>
+
+            <pb n="7" facs="uoedh_hl_h.838_7.jpg"/>
+            <ab>
+               <seg xml:id="h838a" corresp="#m01" style="transform:rotateZ(180deg)"> - I love your
+                     <hi rend="underline">prefaces</hi> – especially this: "The place is
+                  pre-eminently the region of dream and mystery. The ghostly birds the pall-like
+                  sea, the frothy wind, the eternal soliloquy of the waters, the bloom of the dark
+                  purple cast that seems to exhale from the shoreward precipices, in themselves lend
+                  to the scene <del>the</del> an atmosphere like the twilight of a night vision".
+                  <!-- How can we indicate that this is the preface from A Pair of Blue Eyes? -->Am
+                  I correct – It is glorious – like an organ peal! Oh <unclear>M<hi
+                        rend="superscript"><hi rend="underline">r</hi></hi></unclear> Hardy you are
+                  so wonderful! </seg>
+
+               <seg xml:id="h838b" corresp="#m02" style="transform:rotateZ(180deg)"> Please forgive
+                  me for writing so much – &amp; please help me. </seg>
+            </ab>
+
+            <closer xml:id="h838c" corresp="#m03">
+               <!--check this can be remived-->
+               <!--no salute-->
+               <signed>
+                  <persName ref="#ps:CharlotteLBaker">Charlotte Logier Baker</persName>
+               </signed>
+            </closer>
+
+            <postscript>
+               <p> I hope I may <hi rend="underline">see</hi> you, some day. I have two pictures of
+                  you on my desk. </p>
+            </postscript>
+         </div>
+      </body>
+   </text>
+</TEI>

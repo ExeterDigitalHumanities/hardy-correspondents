@@ -1,0 +1,205 @@
+<?xml-model href="../../schema/hardyletter.rng" type="application/xml" 
+   schematypens="http://relaxng.org/ns/structure/1.0"?><!--<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="dhe-hl-h.3481">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+
+            <title>Letter from Arthur Hopkins to Thomas Hardy about drawing the character of
+               Eustacia for <ref target="#bib:Hardy1878_Native">
+                  <emph rend="italics">The Return of the Native</emph></ref>, 19 February
+               1878</title>
+            <author ref="#ps:ArthurHopkins">Arthur Hopkins</author>
+            <!--The editor of the tei file-->
+            <editor ref="#resp-HA">Helen Angear</editor>
+            <funder>Arts and Humanities Research Council</funder>
+            <sponsor>University of Exeter</sponsor>
+            <sponsor>Dorset County Museum</sponsor>
+            <principal>Angelique Richardson</principal>
+
+            <respStmt>
+               <persName ref="#resp:HA">Helen Angear</persName>
+               <resp>Selection</resp>
+               <resp>Transcription</resp>
+
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:BM">Beth Mills</persName>
+               <resp>Proofreading</resp>
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:HP">Hannah Petrie</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="#resp:EW">Elizabeth Williamson</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition, transcribed and edited directly from primary
+               sources</edition>
+         </editionStmt>
+         <publicationStmt>
+            <publisher>University of Exeter Digital Humanities Lab</publisher>
+            <pubPlace>Exeter, UK</pubPlace>
+            <date>November 2019</date>
+            <availability>
+               <p>The letter transcripts are licensed under a Creative Commons Attribution 4.0
+                  International License. This means that you can use these transcripts providing you
+                  acknowledge the Hardy's Correspondents project.</p>
+               <p>The letter images remain the copyright of Dorset Museum. Please contact the Museum
+                  if you would like to reuse any of the letter images.</p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <placeName ref="#pl:Dorchester">Dorchester</placeName>
+                  <institution>Dorset County Museum</institution>
+                  <idno type="DCM">H.3481</idno>
+                  <altIdentifier>
+                     <idno type="XXXX"><!-- optional - any other identifiers --></idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Written on <material>cream paper</material>.</p>
+                           <p>Pencil library marks on pages 4 and 6: <note type="libraryMark"
+                                 >H.3481</note></p>
+                        </support>
+                        <condition>Good</condition>
+                     </supportDesc>
+                  </objectDesc>
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Prepared as part of the AHRC/REACT Studentship on Thomas Hardy's letters, in
+               conjunction with Dorset County Museum.</p>
+         </projectDesc>
+
+      </encodingDesc>
+      <profileDesc>
+         <correspDesc>
+            <!-- Provides detailed correspondence-specific metadata, particularly concerning the communicative aspects 
+            (sending, receiving, forwarding etc.) associated with acts of correspondence. -->
+
+            <correspAction type="sent">
+               <!-- Structured description of the place, the name of a person/organisation and the date related to the sending/receiving of a message -->
+               <persName ref="#ps:ArthurHopkins">Arthur Hopkins</persName>
+
+               <!--Location letter sent from-->
+               <placeName ref="#pl:StAnnsVillas22">22 St. Ann's Villas, Notting Hill, W.
+                  London</placeName>
+               <date when="1878-02-19"/>
+            </correspAction>
+            <correspAction type="received">
+               <persName ref="#ps:TH">Thomas Hardy</persName>
+            </correspAction>
+            
+            
+            <!-- correspContext> -->
+            <!-- Provides references to preceding or following correspondence related to this piece of correspondence -->
+            <!--</correspContext>-->
+            <correspContext>
+               <ref type="next" target="dhe-hl-h.3482"/>
+            </correspContext>
+         </correspDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="letter">
+            <pb n="1" facs="uoedh_hl_h.3481_1.jpg"/>
+
+            <opener>
+               <address rend="letterhead">
+                  <addrLine>22 St. Ann's Villas</addrLine>
+                  <!-- Embossed letterhead -->
+                  <addrLine>Notting Hill</addrLine>
+                  <!-- Embossed letterhead -->
+               </address>
+               <dateline>
+                  <date when="1878-02-19">19<hi rend="superscript">th</hi> FebY 78</date>
+               </dateline>
+               <!-- handwritten hand="#ps:ArthurHopkins" ?? -->
+
+
+               <salute>My dear Sir</salute>
+            </opener>
+
+            <p> Thank you for your letter and kind offer to help me with sketches. I will endeavour
+               to improve on <persName ref="#ps:EustaciaVye">Eustacia</persName> next time she makes
+               her appearance.</p>
+
+            <p>I quite agree with you about the <del>necessity</del>
+               <add place="above">desirability</add> of the artist &amp; author being in constant
+               communication – or, still better, personal intercourse.</p>
+            <pb n="2" facs="uoedh_hl_h.3481_2.jpg"/>
+            <p>The thing might be well &amp; thoroughly done then, which is not the case in
+               practice.</p>
+
+
+            <p>The novel of the day is, practically, not illustrated but embellished with a dozen
+               drawings having some sort of connection with the story.</p>
+
+            <p> However, I do not suppose that I shall improve all this; under the circumstances it
+               is inevitable: </p>
+
+            <p>But I do hope in the case of <pb n="3" facs="uoedh_hl_h.3481_3.jpg"/> the <ref
+                  target="#bib:Hardy1878_Native">'Return of the Native'</ref> to supply some
+               drawings of a strength and character in keeping with the strength and character of
+               the story.</p>
+
+            <p>Although I believe that nobody but the author himself could really <hi
+                  rend="underline">illustrate</hi> a story (since no two people ever picture a
+               described scene alike) still I think that some drawings certainly form an additional
+               attraction to the public; and I can remember several cases where the story was much
+               more vividly <pb n="4" facs="uoedh_hl_h.3481_4.jpg"/> imprinted in my mind &amp;
+               fancy, and stamped in my memory, by its illustrations.</p>
+
+            <p>I am now at work on the <ref
+                  target="http://www.victorianweb.org/art/illustration/hopkins/5.html">May
+                  drawing</ref>. I have chosen the incident in the Party Scene where <persName
+                  ref="#ps:GrandferCantle">Grandfer Cantle</persName> asks to be looked over with
+               the view of finding an improvement in his personal appearance. </p>
+
+            <p>I avoided introducing <persName ref="#ps:EustaciaVye">Eustacia</persName> as in
+               consequence of her disguise I believed it would be unwise.</p>
+
+            <p>But there is room on one side <pb n="5" facs="uoedh_hl_h.3481_5.jpg"/> to introduce a
+               Mummer or two among the group. The Mumming Costume you sketched I presume was
+                  <persName ref="#ps:EustaciaVye">Eustacia</persName>'s. Would not some of the less
+               important of them have a less complete costume. I thought one might have no more than
+               his best smock adorned with many ribbons, a plume &amp; a sword.</p>
+
+            <p>But I will wait to finish the drawing till I hear from you.</p>
+
+            <p>This picture introduces <persName ref="#ps:ClymYeobright">Clym</persName>
+               conspicuously, – I can only hope you will like him.</p>
+
+
+            <closer>
+               <salute>Believe me</salute>
+               <salute>Yours very truly</salute>
+               <signed>Arthur Hopkins</signed>
+            </closer>
+            <pb n="6" facs="uoedh_hl_h.3481_6.jpg"/>
+
+
+         </div>
+      </body>
+   </text>
+</TEI>

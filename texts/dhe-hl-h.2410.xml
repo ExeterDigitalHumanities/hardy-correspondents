@@ -1,0 +1,173 @@
+<?xml-model href="../../schema/hardyletter.rng" type="application/xml" 
+   schematypens="http://relaxng.org/ns/structure/1.0"?><!--<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="dhe-hl-h.2410">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Letter from a young reader, Marie Flower, to Thomas Hardy about the "<placeName
+                  ref="#pl:BeenyCliff">Cliff without a Name</placeName>", 6 March 1925</title>
+            <author ref="#ps:MarieFlower">Marie Flower</author>
+            <!--The editor of the tei file-->
+            <editor ref="#resp-HA">Helen Angear</editor>
+            <funder>Arts and Humanities Research Council</funder>
+            <sponsor>University of Exeter</sponsor>
+            <sponsor>Dorset County Museum</sponsor>
+            <principal>Angelique Richardson</principal>
+
+            <respStmt>
+               <persName ref="#resp:BM">Beth Mills</persName>
+               <resp>Selection</resp>
+               <resp>Proofreading</resp>
+
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:HA">Helen Angear</persName>
+               <resp>Transcription</resp>
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:HP">Hannah Petrie</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="#resp:EW">Elizabeth Williamson</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition, transcribed and edited directly from primary
+               sources</edition>
+         </editionStmt>
+         <publicationStmt>
+            <publisher>University of Exeter Digital Humanities Lab</publisher>
+            <pubPlace>Exeter, UK</pubPlace>
+            <date>November 2019</date>
+            <availability>
+               <p>The letter transcripts are licensed under a Creative Commons Attribution 4.0
+                  International License. This means that you can use these transcripts providing you
+                  acknowledge the Hardy's Correspondents project.</p>
+               <p>The letter images remain the copyright of Dorset Museum. Please contact the Museum
+                  if you would like to reuse any of the letter images.</p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <placeName ref="#pl:Dorchester">Dorchester</placeName>
+                  <institution>Dorset County Museum</institution>
+                  <idno type="DCM">H.2410</idno>
+                  <altIdentifier>
+                     <idno type="XXXX"><!-- optional - any other identifiers --></idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Letter written on <material>cream paper</material> with central
+                              fold.</p>
+                           <p>Pencil library marks on page 2 and 4: <note type="libraryMark"
+                                 rend="pencil"> H.2410</note>.</p>
+
+                        </support>
+                        <condition>Good</condition>
+
+                     </supportDesc>
+                  </objectDesc>
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Prepared as part of the AHRC/REACT Studentship on Thomas Hardy's letters, in
+               conjunction with Dorset County Museum.</p>
+         </projectDesc>
+
+      </encodingDesc>
+      <profileDesc>
+         <correspDesc>
+            <!-- Provides detailed correspondence-specific metadata, particularly concerning the communicative aspects 
+            (sending, receiving, forwarding etc.) associated with acts of correspondence. -->
+
+            <correspAction type="sent">
+               <persName ref="#ps:MarieFlower">Marie Flower</persName>
+               <placeName ref="#pl:ArnoldHighSchool">Girls' High School, Lytham Road,
+                  Blackpool</placeName>
+               <date when="1925-03-06"/>
+            </correspAction>
+            <correspAction type="received">
+               <persName ref="#ps:TH">Thomas Hardy</persName>
+            </correspAction>
+
+         </correspDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="letter">
+            <pb n="1" facs="uoedh_hl_h.2410_1.jpg"/>
+
+            <opener>
+
+
+               <address>
+                  <addrLine>Girls' High School,</addrLine>
+                  <addrLine>Lytham Rd.,</addrLine>
+                  <addrLine>Blackpool.</addrLine>
+               </address>
+               <dateline>
+                  <date when="1925-03-06">6.3.25.</date>
+               </dateline>
+
+               <salute> Dear Mr Hardy,</salute>
+
+            </opener>
+
+            <p>I'm very sorry to trouble you, but I have been wondering whether you can tell me
+               where the "<placeName ref="#pl:BeenyCliff"><choice><sic>Cliff without a name</sic>
+                     <corr>Cliff without a Name</corr></choice></placeName>" is. It appears on the
+               maps, and as far as I remember it is mentioned in <ref target="#bib:Hardy1891_Tess"
+                  >Tess of the d'Urbervilles</ref>.</p>
+
+            <p> I am very interested in it as I live in <placeName ref="#pl:Bude">Bude</placeName>,
+               and know that particular part of the coast fairly well.</p>
+
+
+            <pb n="2" facs="uoedh_hl_h.2410_2.jpg"/>
+            <pb n="3" facs="uoedh_hl_h.2410_3.jpg"/>
+            <p>Hoping I am not giving you a great deal of trouble.</p>
+
+
+            <closer>
+               <salute>I remain</salute>
+               <salute>Yours Sincerely,</salute>
+               <signed>Marie Flower.</signed>
+            </closer>
+            <pb n="4" facs="uoedh_hl_h.2410_4.jpg"/>
+         </div>
+      </body>
+      <back>
+         <div type="reply" hand="unknown">
+            <!-- check with Angelique/Phillip -->
+            <p>The "<placeName ref="#pl:BeenyCliff"><choice><sic>Cliff without a name</sic>
+                     <corr>Cliff without a Name</corr></choice></placeName>"^ <add place="above">in
+                     <ref target="#bib:Hardy1873_PairOfBlueEyes">A Pair of Blue Eyes</ref></add>, so
+               far as it is anywhere , is near <placeName ref="#pl:BeenyCliff">Beeny</placeName>,
+               about a mile from <placeName ref="#pl:Boscastle">Boscastle</placeName>. See <persName
+                  ref="#ps:TH">Mr Hardy</persName>'s "<ref target="#bib:Hardy1919_CollectedPoems"
+                  >Collected Poems</ref>"; 1 vol. (<orgName ref="#ps:Macmillan">Macmillan &amp; Co
+                  publishers</orgName>).</p>
+            <closer> ---- <salute>Sec<hi rend="superscript">r</hi></salute>
+            </closer>
+
+         </div>
+      </back>
+   </text>
+</TEI>

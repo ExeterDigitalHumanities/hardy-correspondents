@@ -1,0 +1,112 @@
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>List of Project Participants</title>
+                
+                <funder>Arts and Humanities Research Council</funder>
+                <sponsor>University of Exeter</sponsor>
+                <principal>Angelique Richardson</principal>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>University of Exeter Digital Humanities Lab</publisher>
+                <pubPlace>Exeter, UK</pubPlace>
+                <date>November 2019</date>
+                <availability>
+                    <p>The letter transcripts are licensed under a Creative Commons Attribution 4.0
+                        International License. This means that you can use these transcripts providing you
+                        acknowledge the Hardy's Correspondents project.</p>
+                    <p>The letter images remain the copyright of Dorset Museum. Please contact the Museum
+                        if you would like to reuse any of the letter images.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p></p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <listPerson>
+                <person xml:id="AR">
+                    <persName>
+                        <forename>Angelique</forename>
+                        <surname>Richardson</surname>
+                    </persName>
+                </person>
+                <person xml:id="HA">
+                    <persName>
+                        <forename>Helen</forename>
+                        <surname>Angear</surname>
+                    </persName>
+                </person>
+                <person xml:id="BM">
+                    <persName>
+                        <forename>Beth</forename>
+                        <surname>Mills</surname>
+                    </persName>
+                </person>
+                <person xml:id="CT">
+                    <persName>
+                        <forename>Charlotte</forename>
+                        <surname>Tupman</surname>
+                    </persName>
+                </person>
+                <person xml:id="HP">
+                    <persName>
+                        <forename>Hannah</forename>
+                        <surname>Petrie</surname>
+                    </persName>
+                </person>
+                <person xml:id="GBS">
+                    <persName>
+                        <forename>Gary</forename>
+                        <surname>Stringer</surname>
+                    </persName>
+                </person>
+                <person xml:id="JM">
+                    <persName>
+                        <forename>Josh</forename>
+                        <surname>Monk</surname>
+                    </persName>
+                </person>
+                <person xml:id="EW">
+                    <persName>
+                        <forename>Elizabeth</forename>
+                        <surname>Williamson</surname>
+                    </persName>
+                </person>
+                <person xml:id="EB">
+                    <persName>
+                        <forename>Eva</forename>
+                        <surname>Bodenschatz</surname>
+                    </persName>
+                </person>
+                <person xml:id="RH">
+                    <persName>
+                        <forename>Richard</forename>
+                        <surname>Holding</surname>
+                    </persName>
+                </person>
+                <person xml:id="GF">
+                    <persName>
+                        <forename>Graham</forename>
+                        <surname>Fereday</surname>
+                    </persName>
+                </person>
+            </listPerson>
+            <listOrg>
+                <org xml:id="DCM">
+                    <orgName>Dorset County Museum</orgName>
+                </org>
+                <org xml:id="EDH">
+                    <orgName>
+                        <name>Digital Humanities Team</name>
+                        <affiliation>University of Exeter</affiliation>
+                    </orgName>
+                </org>
+            </listOrg>
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,169 @@
+<?xml-model href="../../schema/hardyletter.rng" type="application/xml" 
+   schematypens="http://relaxng.org/ns/structure/1.0"?><!--<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="dhe-hl-h.5131">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+
+            <title>Letter from Siegfried Sassoon to Thomas Hardy on the First World War, 24 February
+               1916</title>
+            <author ref="#ps:SiegfriedSassoon">Thomas Hardy</author>
+            <!--The editor of the tei file-->
+            <editor ref="#resp-HA">Helen Angear</editor>
+            <funder>Arts and Humanities Research Council</funder>
+            <sponsor>University of Exeter</sponsor>
+            <sponsor>Dorset County Museum</sponsor>
+            <principal>Angelique Richardson</principal>
+
+            <respStmt>
+               <persName ref="#resp:HA">Helen Angear</persName>
+               <resp>Selection</resp>
+               <resp>Transcription</resp>
+
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:BM">Beth Mills</persName>
+               <resp>Proofreading</resp>
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:HP">Hannah Petrie</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="#resp:EW">Elizabeth Williamson</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition, transcribed and edited directly from primary
+               sources</edition>
+         </editionStmt>
+         <publicationStmt>
+            <publisher>University of Exeter Digital Humanities Lab</publisher>
+            <pubPlace>Exeter, UK</pubPlace>
+            <date>November 2019</date>
+            <availability>
+               <p>The letter transcripts are licensed under a Creative Commons Attribution 4.0
+                  International License. This means that you can use these transcripts providing you
+                  acknowledge the Hardy's Correspondents project.</p>
+               <p>The letter images remain the copyright of Dorset Museum. Please contact the Museum
+                  if you would like to reuse any of the letter images.</p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <placeName ref="#pl:Dorchester">Dorchester</placeName>
+                  <institution>Dorset County Museum</institution>
+                  <idno type="DCM">H.5131</idno>
+                  <altIdentifier>
+                     <idno type="XXXX"><!-- optional - any other identifiers --></idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Letter written on <material>thin, lined paper</material>.</p>
+                           <p>Pencil library marks on page 2: <note type="libraryMark"
+                              >H.5131</note>.</p>
+                        </support>
+                        <condition>Good but slightly torn at the top.</condition>
+                     </supportDesc>
+                  </objectDesc>
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Prepared as part of the AHRC/REACT Studentship on Thomas Hardy's letters, in
+               conjunction with Dorset County Museum.</p>
+         </projectDesc>
+
+      </encodingDesc>
+      <profileDesc>
+         <correspDesc>
+            <!-- Provides detailed correspondence-specific metadata, particularly concerning the communicative aspects 
+            (sending, receiving, forwarding etc.) associated with acts of correspondence. -->
+
+            <correspAction type="sent">
+               <!-- Structured description of the place, the name of a person/organisation and the date related to the sending/receiving of a message -->
+               <persName ref="#ps:SiegfriedSassoon">Siegfried Sassoon</persName>
+
+               <!--Location letter sent from-->
+               <!--Judging by Sassoon's movements at the time, the letter would have been sent from France where he was with the 1st Battalion, according to Oxford University's research (http://ww1lit.nsms.ox.ac.uk/ww1lit/collections/sassoon). Other than that, unknown. 
+               -->
+               <placeName ref="#pl:France">France</placeName>
+               <!-- Check place ID.  -->
+               <date when="1916-02-24"/>
+            </correspAction>
+            <correspAction type="received">
+               <persName ref="#ps:TH">Thomas Hardy</persName>
+            </correspAction>
+
+         </correspDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="letter">
+            <pb n="1" facs="uoedh_hl_h.5131_1.jpg"/>
+
+            <opener>
+               <address>
+                  <addrLine>1<hi rend="superscript">st</hi>
+                     <choice>
+                        <abbr>Batt<hi rend="superscript">n.</hi></abbr>
+                        <expan>Battalion</expan>
+                     </choice>
+                     <choice>
+                        <abbr>R.W. F.</abbr><expan>Royal Welch Fusiliers</expan>
+                     </choice></addrLine>
+                  <addrLine>B.E.F.</addrLine>
+               </address>
+               <dateline>
+                  <date when="1916-02-24">Feb. 24 <hi rend="superscript">th</hi></date>
+               </dateline>
+               <note rend="pencil" hand="unknown">1916</note>
+               <salute>Dear M<hi rend="superscript">r</hi> Hardy</salute>
+            </opener>
+
+            <p>It was a great pleasure to me to receive your letter. The book
+               <!-- add name? Would it be the poetry collection 'The Daffodil Murderer', as this was published in 1913?-->
+               will be sent you in a week or two, but I shall not be able to inscribe your name in
+               it owing to my being at these wars.</p>
+
+            <p>It is not a cheerful performance, 'coming back again'. I wish I could find a spark of
+               glory in it. But there is none now: only organised destruction, &amp; a general
+               feeling of hopelessness. The Army is one vast Stupidity; one "does one's job" &amp;
+               longs for ignoble comforts. And the humour of the Army, – could anything be more
+               English? But no doubt if I were on <persName ref="#ps:DouglasHaig">General
+                  Haig</persName>'s staff I should be an optimist!</p>
+
+            <p>Everyone believes in the war except the man in the shell hole. But I have just had
+               German measles, &amp; that has probably given me a feeling of sympathy for the
+               enemy.</p>
+
+
+
+            <closer>
+               <salute>With all good wishes.</salute>
+               <salute>Yours sincerely,</salute>
+               <signed>
+                  <hi rend="underline">Siegfried Sassoon</hi>
+               </signed>
+            </closer>
+            <pb n="2" facs="uoedh_hl_h.5131_2.jpg"/>
+
+         </div>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,184 @@
+<?xml-model href="../../schema/hardyletter.rng" type="application/xml" 
+   schematypens="http://relaxng.org/ns/structure/1.0"?><!--<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="dhe-hl-h.2735">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+
+            <title>Letter from Edmund Gosse to Thomas Hardy on the illustrations for <ref
+                  target="#bib:Hardy1874_FarFromTheMaddingCrowd"><emph rend="italics">Far From the
+                     Madding Crowd</emph></ref>, 23 July 1906</title>
+            <author ref="#ps:EdmundGosse">Edmund Gosse</author>
+            <!--The editor of the tei file-->
+            <editor ref="#resp-HA">Helen Angear</editor>
+            <funder>Arts and Humanities Research Council</funder>
+            <sponsor>University of Exeter</sponsor>
+            <sponsor>Dorset County Museum</sponsor>
+            <principal>Angelique Richardson</principal>
+
+            <respStmt>
+               <persName ref="#resp:HA">Helen Angear</persName>
+               <resp>Selection</resp>
+               <resp>Proofreading</resp>
+
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:BM">Beth Mills</persName>
+               <resp>Transcription</resp>
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:HP">Hannah Petrie</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="#resp:EW">Elizabeth Williamson</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition, transcribed and edited directly from primary
+               sources</edition>
+         </editionStmt>
+         <publicationStmt>
+            <publisher>University of Exeter Digital Humanities Lab</publisher>
+            <pubPlace>Exeter, UK</pubPlace>
+            <date>November 2019</date>
+            <availability>
+               <p>The letter transcripts are licensed under a Creative Commons Attribution 4.0
+                  International License. This means that you can use these transcripts providing you
+                  acknowledge the Hardy's Correspondents project.</p>
+               <p>The letter images remain the copyright of Dorset Museum. Please contact the Museum
+                  if you would like to reuse any of the letter images.</p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <placeName ref="#pl:Dorchester">Dorchester</placeName>
+                  <institution>Dorset County Museum</institution>
+                  <idno type="DCM">H.2735</idno>
+                  <altIdentifier>
+                     <idno type="XXXX"><!-- optional - any other identifiers --></idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Letter written on <material>cream paper</material>.</p>
+                           <p>Pencil library marks on page 4: <note type="libraryMark"
+                              >H.2735</note></p>
+                        </support>
+                        <condition>Good</condition>
+                     </supportDesc>
+                  </objectDesc>
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Prepared as part of the AHRC/REACT Studentship on Thomas Hardy's letters, in
+               conjunction with Dorset County Museum.</p>
+         </projectDesc>
+
+      </encodingDesc>
+      <profileDesc>
+         <correspDesc>
+            <!-- Provides detailed correspondence-specific metadata, particularly concerning the communicative aspects 
+            (sending, receiving, forwarding etc.) associated with acts of correspondence. -->
+
+            <correspAction type="sent">
+               <!-- Structured description of the place, the name of a person/organisation and the date related to the sending/receiving of a message -->
+               <persName ref="#ps:EdmundGosse">Edmund Gosse</persName>
+
+               <placeName ref="#pl:HanoverTerrace17">17 Hanover Terrace, Regents Park, N.W.
+                  London</placeName>
+               <date when="1906-07-23"/>
+            </correspAction>
+            <correspAction type="received">
+               <persName ref="#ps:TH">Thomas Hardy</persName>
+            </correspAction>
+
+            <!-- correspContext> -->
+            <!-- Provides references to preceding or following correspondence related to this piece of correspondence -->
+            <!--</correspContext>-->   
+            <correspContext>
+               <ref type="next" target="dhe-hl-h.2774"> Reply from <persName ref="#ps:TH"
+                     >Hardy</persName> with further information about the illustrator of <ref
+                     target="#bib:Hardy1874_FarFromTheMaddingCrowd">Far From the Madding
+                  Crowd</ref>. </ref>
+            </correspContext>
+         </correspDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="letter">
+            <pb n="1" facs="uoedh_hl_h.2735_1.jpg"/>
+
+            <note rend="pencil" hand="#ps:TH"><hi rend="underline">Edmund Gosse</hi>.</note>
+
+            <opener>
+               <address rend="letterhead">
+                  <addrLine>17, Hanover Terrace,</addrLine>
+                  <addrLine>Regent's Park, N.W.</addrLine>
+               </address>
+               <dateline>
+                  <date when="1906-07-23">23.7.06</date>
+               </dateline>
+               <salute>My dear Hardy</salute>
+            </opener>
+
+            <p>After long want of success, I have been fortunate enough to get (at a
+                     <subst><del>price</del><add place="above">cost</add></subst> much exceeding,
+               indeed, the original price!) a very fair copy of the first edition of "<ref
+                  target="#bib:Hardy1874_FarFromTheMaddingCrowd">Far from the Madding Crowd</ref>",
+               in the green and gilt boards. I am extremely pleased, for this book has peculiar and
+               even sentimental interest for me.</p>
+
+            <p>Now I want you to be so very kind as to tell <pb n="2" facs="uoedh_hl_h.2735_2.jpg"/>
+               me how the illustrations came to be made. Some are signed "<persName
+                  ref="#ps:HelenAllingham">H. Paterson</persName>" others "<persName
+                  ref="#ps:HelenAllingham"> H. Allingham</persName>". Was the lady married while the
+               book was appearing? Did you know her and direct her pencil?</p>
+
+            <p>Anything you can re­member about the history of these pictures will be very welcome
+               if you will indulge me with it, and will forgive the curiosity of a tiresome old
+               bibliomaniac.</p>
+
+            <p>I hope you and <pb n="3" facs="uoedh_hl_h.2735_3.jpg"/>
+               <persName ref="#ps:EmmaHardy"><abbr>M<hi rend="superscript">rs</hi></abbr>
+                  Hardy</persName> are neither of you any the worse for your <placeName
+                  ref="#pl:London"> London</placeName> visit? My poor <persName ref="#ps:EllenGosse"
+                  >Nellie</persName> is still confined to the room in which you saw her.</p>
+
+            <p>I am going at the end of the week to stay at <placeName ref="#pl:Rye">Rye</placeName>
+               with <persName ref="#ps:HenryJames">Henry James</persName>.</p>
+
+            <closer>
+               <salute>Always yours</salute>
+               <signed>Edmund Gosse</signed>
+            </closer>
+
+            <postscript>
+               <p>P.S. Have you had any con­firmation of that curious story about <persName
+                     ref="#ps:MarieMeredith">M<hi rend="superscript">rs</hi> R—l St—rg—s</persName>?
+                  I have been discretion itself.</p>
+            </postscript>
+
+            <pb n="4" facs="uoedh_hl_h.2735_4.jpg"/>
+
+
+         </div>
+
+      </body>
+   </text>
+</TEI>

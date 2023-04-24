@@ -1,0 +1,185 @@
+<?xml-model href="../../schema/hardyletter.rng" type="application/xml" 
+   schematypens="http://relaxng.org/ns/structure/1.0"?><!--<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="dhe-hl-h.3184_1">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+
+            <title>Letter from Florence Henniker to Thomas Hardy thanking him for writing a
+               testimonial for her German companion to remain in Britain, 28 May 1915</title>
+            <!--The author of the letter-->
+            <author ref="#ps:FlorenceHenniker">Florence Henniker</author>
+            <!--The editor of the tei file-->
+            <editor ref="#resp-HA">Helen Angear</editor>
+            <funder>Arts and Humanities Research Council</funder>
+            <sponsor>University of Exeter</sponsor>
+            <sponsor>Dorset County Museum</sponsor>
+            <principal>Angelique Richardson</principal>
+
+            <respStmt>
+               <persName ref="#resp:HA">Helen Angear</persName>
+               <resp>Selection</resp>
+               <resp>Transcription</resp>
+
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:BM">Beth Mills</persName>
+               <resp>Proofreading</resp>
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:HP">Hannah Petrie</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="#resp:EW">Elizabeth Williamson</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition, transcribed and edited directly from primary
+               sources</edition>
+         </editionStmt>
+         <publicationStmt>
+            <publisher>University of Exeter Digital Humanities Lab</publisher>
+            <pubPlace>Exeter, UK</pubPlace>
+            <date>November 2019</date>
+            <availability>
+               <p>The letter transcripts are licensed under a Creative Commons Attribution 4.0
+                  International License. This means that you can use these transcripts providing you
+                  acknowledge the Hardy's Correspondents project.</p>
+               <p>The letter images remain the copyright of Dorset Museum. Please contact the Museum
+                  if you would like to reuse any of the letter images.</p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <placeName ref="#pl:Dorchester">Dorchester</placeName>
+                  <institution>Dorset County Museum</institution>
+                  <idno type="DCM">H.3184</idno>
+                  <altIdentifier>
+                     <idno type="XXXX"><!-- optional - any other identifiers --></idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Letter written on <material>cream folded paper</material>.</p>
+                           <p>Pencil library marks on page 4: <note type="libraryMark"
+                              >H.3184</note>.</p>
+                           <p><figure><figDesc>Letterhead within a green oval decorative border with
+                                    the initials F.H. at the top</figDesc></figure>.</p>
+                        </support>
+                        <condition>Good</condition>
+                     </supportDesc>
+                  </objectDesc>
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Prepared as part of the AHRC/REACT Studentship on Thomas Hardy's letters, in
+               conjunction with Dorset County Museum.</p>
+         </projectDesc>
+
+      </encodingDesc>
+      <profileDesc>
+         <correspDesc>
+            <!-- Provides detailed correspondence-specific metadata, particularly concerning the communicative aspects 
+            (sending, receiving, forwarding etc.) associated with acts of correspondence. -->
+
+            <correspAction type="sent">
+               <persName ref="#ps:FlorenceHenniker">Florence Henniker</persName>
+
+               <!--Location letter sent from-->
+               <placeName ref="#pl:TheLittleOrchard">The Little Orchard, Shoreham, Kent</placeName>
+               <date when="1915-05-28">May 28.|15</date>
+            </correspAction>
+            <correspAction type="received">
+               <persName ref="#ps:TH">Thomas Hardy</persName>
+            </correspAction>
+
+         </correspDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="letter">
+            <pb n="1" facs="uoedh_hl_h.3184_1.jpg"/>
+            <opener>
+               <address rend="letterhead">
+                  <addrLine>The Little Orchard</addrLine>
+                  <addrLine>Shoreham</addrLine>
+                  <addrLine>Kent</addrLine>
+               </address>
+               <dateline>
+                  <date when="1915-05-28">May 28.|15</date>
+               </dateline>
+               <salute>My dear friend:</salute>
+            </opener>
+
+            <p>My sincerest thanks for your delightfully worded testimony to the value of my good
+               old faithful friend. You will see, by enclosure, how truly grateful she is –.</p>
+
+            <p>It <choice><abbr>w<hi rend="superscript">d</hi>.</abbr>
+                  <expan>would</expan></choice> have been very nice to have had some talks with you
+               in this quiet sunny orchard, – &amp; you know I <choice><abbr>w<hi rend="superscript"
+                        >d</hi></abbr>
+                  <expan>would</expan></choice>. have done my <hi rend="underline">best</hi> to make
+               you comfortable –, &amp; not to let you be too tired here –. <pb n="2"
+                  facs="uoedh_hl_h.3184_2.jpg"/> But I can <hi rend="underline">quite</hi>
+               understand <choice><abbr>y<hi rend="superscript"
+                     >r</hi>.</abbr><expan>your</expan><expan>your</expan></choice>
+               <hi rend="underline">distaste</hi> for journeys –.</p>
+
+            <p>I hope that dear <persName ref="#ps:FlorenceHardy">Florence</persName>'s little
+               operation will be a <hi rend="underline">complete</hi> success. I am so sorry not to
+               be in <placeName ref="#pl:London">London</placeName> to see her in the Home –</p>
+
+            <p>The Coalition <choice><abbr>Govt.</abbr>
+                  <expan>Government</expan></choice> is certainly very interesting, though I think
+               it ought to have included <persName ref="#ps:LordMilner">Lord Milner</persName>, who
+               has done <pb n="3" facs="uoedh_hl_h.3184_3.jpg"/> his best for years to wake up the
+               country – &amp; who is so single-minded &amp; honest a statesman. – I should like
+               very much, to hear <persName ref="#ps:LordMorley"><choice><abbr>L<hi
+                           rend="superscript">d</hi>.</abbr>
+                     <expan>Lord</expan></choice>
+                  <hi rend="underline">Morley</hi></persName> explain his point of view. Probably
+               his health has something to do with his attitude – but it is more likely the
+               principle of <hi rend="underline">non-interference</hi> carried to excess – don't you
+               think? –</p>
+
+            <p>I thought the lines in today's "<orgName ref="#psTheTimes">Times</orgName>" by poor
+                  <persName ref="#ps:JulianGrenfell"><choice><abbr>Capt</abbr>
+                     <expan>Captain</expan></choice> Grenfell</persName> rather striking to <pb
+                  n="4" facs="uoedh_hl_h.3184_4.jpg"/> have been written by a young soldier. And I
+               like his tenderness for birds &amp; horses – in the midst of all the surrounding
+               horror –</p>
+
+            <p>I hope you are feeling well – &amp; that the vein in <choice><abbr>yr.</abbr>
+                  <expan>your</expan></choice> leg does not trouble you, or prevent you from
+               enjoying this lovely May.</p>
+
+            <closer>
+               <salute><choice><abbr>Ev</abbr>
+                     <expan>Ever</expan></choice>
+                  <choice><abbr>yr</abbr>
+                     <expan>your</expan></choice>
+                  <choice><abbr>affec.</abbr>
+                     <expan>affectionate</expan></choice> friend</salute>
+               <signed>Flo H</signed>
+            </closer>
+
+         </div>
+      </body>
+   </text>
+</TEI>

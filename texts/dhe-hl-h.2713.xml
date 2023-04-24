@@ -1,0 +1,166 @@
+<?xml-model href="../../schema/hardyletter.rng" type="application/xml" 
+   schematypens="http://relaxng.org/ns/structure/1.0"?><!--<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="dhe-hl-h.2713">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Letter from Edmund Gosse to Thomas Hardy about his current low mood and an
+               upcoming trip to <placeName ref="#pl:Devon">Devon</placeName>, 28 August 1887</title>
+            <author ref="#ps:EdmundGosse">Edmund Gosse</author>
+            <editor ref="#resp-HA">Helen Angear</editor>
+            <funder>Arts and Humanities Research Council</funder>
+            <sponsor>University of Exeter</sponsor>
+            <sponsor>Dorset County Museum</sponsor>
+            <principal>Angelique Richardson</principal>
+
+            <respStmt>
+               <persName ref="#resp:HA">Helen Angear</persName>
+               <resp>Selection</resp>
+               <resp>Transcription</resp>
+
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:BM">Beth Mills</persName>
+               <resp>Proofreading</resp>
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:HP">Hannah Petrie</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="#resp:EW">Elizabeth Williamson</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition, transcribed and edited directly from primary
+               sources</edition>
+         </editionStmt>
+         <publicationStmt>
+            <publisher>University of Exeter Digital Humanities Lab</publisher>
+            <pubPlace>Exeter, UK</pubPlace>
+            <date>November 2019</date>
+            <availability>
+               <p>The letter transcripts are licensed under a Creative Commons Attribution 4.0
+                  International License. This means that you can use these transcripts providing you
+                  acknowledge the Hardy's Correspondents project.</p>
+               <p>The letter images remain the copyright of Dorset Museum. Please contact the Museum
+                  if you would like to reuse any of the letter images.</p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <placeName ref="#pl:Dorchester">Dorchester</placeName>
+                  <institution>Dorset County Museum</institution>
+                  <idno type="DCM">H.2713</idno>
+                  <altIdentifier>
+                     <idno type="XXXX"><!-- optional - any other identifiers --></idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Written on folded <material>cream paper</material>.</p>
+                           <!-- folded? -->
+                           <p>Pencil library marks on page 4: <note type="libraryMark"
+                              >H.2713</note>.</p>
+                        </support>
+                        <condition>Good</condition>
+                     </supportDesc>
+                  </objectDesc>
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Prepared as part of the AHRC/REACT Studentship on Thomas Hardy's letters, in
+               conjunction with Dorset County Museum.</p>
+         </projectDesc>
+
+      </encodingDesc>
+      <profileDesc>
+         <correspDesc>
+            <!-- Provides detailed correspondence-specific metadata, particularly concerning the communicative aspects 
+            (sending, receiving, forwarding etc.) associated with acts of correspondence. -->
+
+            <correspAction type="sent">
+               <persName ref="#ps:EdmundGosse">Edmund Gosse</persName>
+               <placeName ref="#pl:DelamereTerrace29">29, Delamere Terrace, Westbourne Square, W.
+                  London</placeName>
+               <date when="1887-08-28"/>
+            </correspAction>
+            <correspAction type="received">
+               <persName ref="#ps:TH">Thomas Hardy</persName>
+            </correspAction>
+
+         </correspDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="letter">
+            <pb n="1" facs="uoedh_hl_h.2713_1.jpg"/>
+            <opener>
+               <address>
+                  <addrLine>29, Delamere Terrace,</addrLine>
+                  <addrLine>Westbourne Square.W.</addrLine>
+               </address>
+               <dateline>
+                  <date when="1887-08-28">28.8.87</date>
+               </dateline>
+               <salute>My dear Hardy</salute>
+            </opener>
+
+            <p>A <placeName ref="#pl:Chicago">Chicago</placeName> friend of mine, who is a great
+               admirer of <persName ref="#ps:WilliamBarnes">Barnes</persName> desires to contribute
+               to the Memorial. May he send his cheque direct to you, &amp; so have done with it,
+               for he is travelling, &amp; would like to finish the matter straight away?</p>
+
+            <p><persName ref="#ps:RobertLouisStevenson">Robert Louis Stevenson</persName> is off to
+                  <placeName ref="#pl:Colorado">Colorado</placeName> as a<del>t</del> last chance. I
+               saw him the day before he sailed. The only book <pb n="2"
+                  facs="uoedh_hl_h.2713_2.jpg"/> he seemed to be taking along with him was <ref
+                  target="#bib:Hardy1887_Woodlanders">The "Woodlanders."</ref> He spoke with warmth
+               of you.</p>
+
+            <p>I hope your spirits have been pretty good this summer. I have been scarcely fit for
+               human society, I have been so deep in the dumps. I wonder whether climate has
+               anything to do with it? It is the proper thing nowadays to attribute <pb n="3"
+                  facs="uoedh_hl_h.2713_3.jpg"/> to physical causes all the phenomena which people
+               used to call spiritual. But I am not sure. One may be dyspeptic and yet perfectly
+               cheerful, and yet not fit company for a church-yard worm. For the last week I should
+               not have ventured to say unto the louse "thou art my sister."</p>
+
+            <pb n="4" facs="uoedh_hl_h.2713_4.jpg"/>
+
+            <p>I <unclear>believe</unclear> I am going away at last. I am right sick of London. I
+               hope to get into <placeName ref="#pl:Devon">Devonshire</placeName> on the 10<hi
+                  rend="superscript">th</hi>. I wish it was <placeName ref="#pl:Dorset"
+                  >Dorsetshire</placeName>: not merely because of <placeName ref="#pl:MaxGate">Max
+                  Gate</placeName>, but because of the two counties I vastly prefer the heatherier
+               and breezier one.</p>
+
+            <p>Our united kindest regards to <persName ref="#ps:EmmaHardy">M<hi rend="superscript"
+                     >rs</hi> Hardy</persName>. I am always, my dear friend</p>
+
+
+            <closer>
+               <salute>yours sincerely</salute>
+               <signed>Edmund Gosse</signed>
+            </closer>
+
+
+         </div>
+      </body>
+   </text>
+</TEI>

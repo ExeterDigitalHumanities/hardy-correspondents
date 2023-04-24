@@ -1,0 +1,156 @@
+<?xml-model href="../../schema/hardyletter.rng" type="application/xml" 
+   schematypens="http://relaxng.org/ns/structure/1.0"?><!--<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="dhe-hl-h.3737">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Letter from M. R. James to Thomas Hardy inviting him to visit, 30 September
+               1918.</title>
+            <author ref="#ps:MontagueRhodesJames">M. R. James</author>
+            <!--The editor of the tei file-->
+            <editor ref="#resp-HA">Helen Angear</editor>
+            <funder>Arts and Humanities Research Council</funder>
+            <sponsor>University of Exeter</sponsor>
+            <sponsor>Dorset County Museum</sponsor>
+            <principal>Angelique Richardson</principal>
+
+            <respStmt>
+               <persName ref="#resp:BM">Beth Mills</persName>
+               <resp>Selection</resp>
+               <resp>Proofreading</resp>
+
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:HA">Helen Angear</persName>
+               <resp>Transcription</resp>
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:HP">Hannah Petrie</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="#resp:EW">Elizabeth Williamson</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition, transcribed and edited directly from primary
+               sources</edition>
+         </editionStmt>
+         <publicationStmt>
+            <publisher>University of Exeter Digital Humanities Lab</publisher>
+            <pubPlace>Exeter, UK</pubPlace>
+            <date>November 2019</date>
+            <availability>
+               <p>The letter transcripts are licensed under a Creative Commons Attribution 4.0
+                  International License. This means that you can use these transcripts providing you
+                  acknowledge the Hardy's Correspondents project.</p>
+               <p>The letter images remain the copyright of Dorset Museum. Please contact the Museum
+                  if you would like to reuse any of the letter images.</p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <placeName ref="#pl:Dorchester">Dorchester</placeName>
+                  <institution>Dorset County Museum</institution>
+                  <idno type="DCM">H.3737</idno>
+                  <altIdentifier>
+                     <idno type="XXXX"><!-- optional - any other identifiers --></idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support><p>Letter written on <material>cream paper</material>.</p>
+                           <p>Pencil library marks on page 2: <note type="libraryMark" rend="pencil"
+                                 > H.3737</note></p>.</support>
+                        <condition>Good</condition>
+
+                     </supportDesc>
+
+                  </objectDesc>
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Prepared as part of the AHRC/REACT Studentship on Thomas Hardy's letters, in
+               conjunction with Dorset County Museum.</p>
+         </projectDesc>
+
+      </encodingDesc>
+      <profileDesc>
+         <correspDesc>
+            <!-- Provides detailed correspondence-specific metadata, particularly concerning the communicative aspects 
+            (sending, receiving, forwarding etc.) associated with acts of correspondence. -->
+
+            <correspAction type="sent">
+               <persName ref="#ps:MontagueRhodesJames">M. R. James</persName>
+               <placeName ref="#pl:EtonCollege">The Lodge, Eton College</placeName>
+               <!--There is no place file for this-->
+               <!-- Check Eton College-->
+               <date when="1918-09-30"/>
+            </correspAction>
+            <correspAction type="received">
+               <persName ref="#ps:TH">Thomas Hardy</persName>
+            </correspAction>
+
+         </correspDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="letter">
+            <pb n="1" facs="uoedh_hl_h.3737_1.jpg"/>
+
+            <opener>
+
+               <dateline>
+                  <date when="1918-09-30">30 Sept. 1918</date>
+               </dateline>
+               <address rend="letterhead">
+                  <addrLine>THE LODGE,</addrLine>
+                  <addrLine><del>KING'S</del><add place="inline">ETON</add> COLLEGE</addrLine>
+                  <!-- Need to indicate that this has been added in pen, not letterhead -->
+                  <addrLine>
+                     <del>CAMBRIDGE.</del>
+                  </addrLine>
+               </address>
+
+
+               <salute>My dear Mr Hardy</salute>
+
+            </opener>
+
+            <p>My very best thanks to you and to <persName ref="#ps:FlorenceHardy">Mrs
+                  Hardy</persName> for your very kind thought in writing. I value your good wishes
+               most highly.</p>
+
+            <p>I should like to think that some day in spring or summer next might find you inclined
+               to visit <placeName ref="#pl:EtonCollege">the Eton Lodge</placeName> &amp; give me
+               the pleasure of showing you <pb n="2" facs="uoedh_hl_h.3737_2.jpg"/> one of the most
+               beautiful places in <placeName ref="#pl:England">England</placeName>. </p>
+
+            <closer>
+
+               <salute>Yours very sincerely</salute>
+               <signed>M. R. James</signed>
+
+            </closer>
+
+
+
+
+         </div>
+      </body>
+   </text>
+</TEI>

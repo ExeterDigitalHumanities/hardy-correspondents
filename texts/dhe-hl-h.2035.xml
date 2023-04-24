@@ -1,0 +1,184 @@
+<?xml-model href="../../schema/hardyletter.rng" type="application/xml" 
+   schematypens="http://relaxng.org/ns/structure/1.0"?><!--<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="dhe-hl-h.2035">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+
+            <title>Letter from a reader, Bradford K. Daniels, to Thomas Hardy showing appreciation
+               for Hardy's works and referring to <ref target="#bib:Hardy1891_Tess"><emph
+                     rend="italics">Tess of the d'Urbervilles</emph></ref> and <ref
+                  target="#bib:Hardy1894_JudetheObscure"><emph rend="italics">Jude the
+                     Obscure</emph></ref>, 29 November 1905</title>
+            <author ref="#ps:BradfordKDaniels">Bradford K. Daniels</author>
+            <!--The editor of the tei file-->
+            <editor ref="#resp-HA">Helen Angear</editor>
+            <funder>Arts and Humanities Research Council</funder>
+            <sponsor>University of Exeter</sponsor>
+            <sponsor>Dorset County Museum</sponsor>
+            <principal>Angelique Richardson</principal>
+
+            <respStmt>
+               <persName ref="#resp:HA">Helen Angear</persName>
+               <resp>Selection</resp>
+               <resp>Proofreading</resp>
+
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:BM">Beth Mills</persName>
+               <resp>Transcription</resp>
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:HP">Hannah Petrie</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="#resp:EW">Elizabeth Williamson</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition, transcribed and edited directly from primary
+               sources</edition>
+         </editionStmt>
+         <publicationStmt>
+            <publisher>University of Exeter Digital Humanities Lab</publisher>
+            <pubPlace>Exeter, UK</pubPlace>
+            <date>November 2019</date>
+            <availability>
+               <p>The letter transcripts are licensed under a Creative Commons Attribution 4.0
+                  International License. This means that you can use these transcripts providing you
+                  acknowledge the Hardy's Correspondents project.</p>
+               <p>The letter images remain the copyright of Dorset Museum. Please contact the Museum
+                  if you would like to reuse any of the letter images.</p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <placeName ref="#pl:Dorchester">Dorchester</placeName>
+                  <institution>Dorset County Museum</institution>
+                  <idno type="DCM">H.2035</idno>
+                  <altIdentifier>
+                     <idno type="XXXX"><!-- optional - any other identifiers --></idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Typed letter on <material>cream paper</material>.</p>
+                           <p>Pencil library marks on page 2: <note type="libraryMark" rend="pencil"
+                                 > H.2035</note>.</p>
+                        </support>
+                        <condition>Good; some tearing at folds and edges</condition>
+                     </supportDesc>
+                  </objectDesc>
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Prepared as part of the AHRC/REACT Studentship on Thomas Hardy's letters, in
+               conjunction with Dorset County Museum.</p>
+         </projectDesc>
+
+      </encodingDesc>
+      <profileDesc>
+         <correspDesc>
+            <!-- Provides detailed correspondence-specific metadata, particularly concerning the communicative aspects 
+            (sending, receiving, forwarding etc.) associated with acts of correspondence. -->
+
+            <correspAction type="sent">
+               <!-- Structured description of the place, the name of a person/organisation and the date related to the sending/receiving of a message -->
+               <persName ref="#ps:BradfordKDaniels">Bradford K. Daniels</persName>
+               <placeName ref="#pl:Balayan">Balayan, Batangas Province, Philippine
+                  Islands</placeName>
+               <date when="1905-11-29"/>
+            </correspAction>
+            <correspAction type="received">
+               <persName ref="#ps:TH">Thomas Hardy</persName>
+            </correspAction>
+
+         </correspDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="letter" rend="type">
+            <pb n="1" facs="uoedh_hl_h.2035_1.jpg"/>
+            <opener>
+               <note rend="pencil" hand="other"><hi rend="underline">B. K. Daniels.</hi> Philippine
+                  Islands ("terrible old prophet &amp;c.)</note>
+               <address>
+                  <addrLine>Balayan, Batangas Province, Philippine Islands</addrLine>
+               </address>
+               <dateline>
+                  <date when="1905-11-29">November 29, 1905.</date>
+               </dateline>
+               <salute>Thomas Hardy,</salute>
+               <salute>My dear sir:</salute>
+            </opener>
+
+            <p>I have just finished reading <ref target="#bib:Hardy1891_Tess">Tess</ref>--strange
+               that I never read it before. Next to <ref target="#bib:Hardy1894_JudetheObscure"
+                  >Jude</ref>, it is the most tremendous thing I have ever read. To me you are like
+               some <hi rend="underline">terrible old prophet</hi> crying in the wilderness. The two
+               books have been my baptism of fire. I do not pretend to be a critic, but to me you
+               are the greatest mind that has worked in English fiction. It is useless to compare
+               you with other writers, though, for you are so totally unlike them. It is so easy and
+               so tempting to make a book popular by evading the truth--to present life
+                     <choice><sic>asa</sic><corr>as a</corr></choice> gilded puppet, rather than in
+               its native dignity and--yes, I think so, on the whole--sorrow.</p>
+
+            <p>But to me you are no pessimist. Your belief in human nature is the most profound,
+               unquenchable, of any man's I have ever known in per- <pb n="2"
+                  facs="uoedh_hl_h.2035_2.jpg"/>
+               <pb n="3" facs="uoedh_hl_h.2035_3.jpg"/> son or through books. Your insight into the
+               heart of woman is the most Christ-like of anything I have ever met in literature. The
+               senseless, untrue, and too often malignant criticisms that have been passed upon you
+               in this connection are enough to make one despise the reviewing system which can
+               permit such a travesty on justice. If I had a daughter unfolding into womanhood, I
+               should certainly place <ref target="#bib:Hardy1891_Tess">Tess</ref> and <ref
+                  target="#bib:Hardy1894_JudetheObscure">Jude</ref> in her hands, and feel that I
+               had provided the instruction which most mothers are too cowed by convention to
+               give.</p>
+
+            <p>Although I am an American (Canadian born), yet I have lived some time in <placeName
+                  ref="#pl:England">England</placeName>--mostly in <placeName ref="#pl:Kent"
+                  >Kent</placeName> and <placeName ref="#pl:Essex">Essex</placeName>, and feel that
+               you have made your characters an inseparable part of, the inevitable product of,
+               their environment. Perhaps from the literary standpoint I can pay you no higher
+               compliment.</p>
+
+            <p>But to me you are much more than a great novelist. To use a much abused phrase, you
+               are a man with a mission--the deliverance of woman from the heaviest shackles that a
+               stupid and selfish society has forged for her.</p>
+
+            <pb n="4" facs="uoedh_hl_h.2035_4.jpg"/>
+
+            <pb n="5" facs="uoedh_hl_h.2035_5.jpg"/>
+
+            <p>Now I know that you will take these crudities in the spirit in which they are
+               written--a deep desire to express my appreciation of the man who to me is the most
+               significant figure in modern literature.</p>
+
+            <closer>
+               <salute rend="handwritten">Yours most sincerely,</salute>
+               <signed rend="handwritten">Bradford K. Daniels.</signed>
+            </closer>
+
+            <pb n="6" facs="uoedh_hl_h.2035_6.jpg"/>
+
+         </div>
+      </body>
+   </text>
+</TEI>

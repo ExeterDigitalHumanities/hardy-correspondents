@@ -1,0 +1,220 @@
+<?xml-model href="../../schema/hardyletter.rng" type="application/xml" 
+   schematypens="http://relaxng.org/ns/structure/1.0"?><!--<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="dhe-hl-h.3181">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+
+            <title>Letter from Florence Henniker to Thomas Hardy sharing her thoughts on <ref
+                  target="#bib:Hardy1914_SatiresOfCircumstance">Satires of Circumstance</ref>, 25
+               November 1914</title>
+            <!--The author of the letter-->
+            <author ref="#ps:FlorenceHenniker">Florence Henniker</author>
+            <!--The editor of the tei file-->
+            <editor ref="#resp-HA">Helen Angear</editor>
+            <funder>Arts and Humanities Research Council</funder>
+            <sponsor>University of Exeter</sponsor>
+            <sponsor>Dorset County Museum</sponsor>
+            <principal>Angelique Richardson</principal>
+
+            <respStmt>
+               <persName ref="#resp:HA">Helen Angear</persName>
+               <resp>Selection</resp>
+               <resp>Transcription</resp>
+
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:BM">Beth Mills</persName>
+               <resp>Proofreading</resp>
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:HP">Hannah Petrie</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="#resp:EW">Elizabeth Williamson</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition, transcribed and edited directly from primary
+               sources</edition>
+         </editionStmt>
+         <publicationStmt>
+            <publisher>University of Exeter Digital Humanities Lab</publisher>
+            <pubPlace>Exeter, UK</pubPlace>
+            <date>November 2019</date>
+            <availability>
+               <p>The letter transcripts are licensed under a Creative Commons Attribution 4.0
+                  International License. This means that you can use these transcripts providing you
+                  acknowledge the Hardy's Correspondents project.</p>
+               <p>The letter images remain the copyright of Dorset Museum. Please contact the Museum
+                  if you would like to reuse any of the letter images.</p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <placeName ref="#pl:Dorchester">Dorchester</placeName>
+                  <institution>Dorset County Museum</institution>
+                  <idno type="DCM">H.3181</idno>
+                  <altIdentifier>
+                     <idno type="XXXX"><!-- optional - any other identifiers --></idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+
+                     <!--<supportDesc> <!-\-\- Check if this is correct - indicates envelope has black border-\->
+            <support>Black border</support>
+         </supportDesc>-->
+
+                     <supportDesc>
+                        <support>
+                           <p>Letter written on <material>cream paper</material>.</p>
+                           <p>Pencil library marks on page 4: <note type="libraryMark"
+                              >H.3181</note>.</p>
+                           <p>Note that after page 4 Henniker continues writing in the top margin of
+                              the first page (labelled here as page 5).</p>
+                           <p>Envelope bearing the following marks: <stamp type="postmark">Two
+                                 circular marks specifying <mentioned>SEVENOAKS 4 pm 28 ON
+                                 </mentioned></stamp>. <stamp type="postage">Two halfpenny green
+                                 King George V stamps.</stamp>
+                              <note rend="pencil">Nov. 28 1914</note></p>
+                        </support>
+                        <condition>Good</condition>
+                     </supportDesc>
+                  </objectDesc>
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Prepared as part of the AHRC/REACT Studentship on Thomas Hardy's letters, in
+               conjunction with Dorset County Museum.</p>
+         </projectDesc>
+
+      </encodingDesc>
+      <profileDesc>
+         <correspDesc>
+            <!-- Provides detailed correspondence-specific metadata, particularly concerning the communicative aspects 
+            (sending, receiving, forwarding etc.) associated with acts of correspondence. -->
+
+            <correspAction type="sent">
+               <persName ref="#ps:FlorenceHenniker">Florence Henniker</persName>
+               <placeName ref="#pl:TheLittleOrchard">The Little Orchard, Shoreham, Kent</placeName>
+               <date when="1914-11-25">Nov 25.14.</date>
+            </correspAction>
+            <correspAction type="received">
+               <persName ref="#ps:TH">Thomas Hardy</persName>
+            </correspAction>
+
+         </correspDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="letter">
+            <pb n="1" facs="uoedh_hl_h.3181_1.jpg"/>
+            <opener>
+               <address>
+                  <addrLine>The Little Orchard</addrLine>
+                  <!--Check how to mark up printed design around address-->
+                  <addrLine>Shoreham</addrLine>
+                  <addrLine>Kent</addrLine>
+               </address>
+               <milestone unit="section" xml:id="m01"/>
+               <milestone unit="section" xml:id="m02"/>
+               <dateline>
+                  <date when="1914-11-25">No 25.14</date>
+               </dateline>
+
+               <salute>My dear friend –</salute>
+            </opener>
+
+            <p>The <ref target="#bib:Hardy1914_SatiresOfCircumstance">volume of <choice><abbr>y<hi
+                           rend="superscript">r</hi></abbr>
+                     <expan>your</expan></choice>. Poems</ref> has reached me safely – &amp; I send
+                  <hi rend="underline">many</hi> thanks. Some day you must write my name in it,
+               please, &amp; I shall feel then that it really is <hi rend="underline">from</hi>
+               you.</p>
+            <p> I have read a great many poems, &amp; see that there is a great deal that is
+               beautiful in the book. <pb n="2" facs="uoedh_hl_h.3181_2.jpg"/>
+               <hi rend="underline">Very</hi> especially do I like the one to <persName
+                  ref="#ps:FlorenceHardy">Florence</persName> - There are such lovely lines in that
+               -! (The 2<hi rend="superscript">nd</hi> &amp; 3<hi rend="superscript">rd</hi> stanzas
+               - &amp; the "large luminous living eyes–") I hope she likes that poem <hi
+                  rend="underline">very</hi> much herself?</p>
+            <p> I have not read all yet, but among things that struck me, or in some way appealed to
+               me, are: "<ref target="#bib:Hardy1914_SatiresOfCircumstance">In the Moonlight</ref>":
+                  "<ref target="#bib:Hardy1914_SatiresOfCircumstance">Before &amp; after
+                  Summer</ref>": (which <pb n="3" facs="uoedh_hl_h.3181_3.jpg"/> I <hi
+                  rend="underline">already</hi> knew &amp; liked –) "<ref
+                  target="#bib:Hardy1914_SatiresOfCircumstance">When I set out for
+               Lyonnesse</ref>"–: (a <hi rend="underline">lovely</hi> lyric that,)–: / "<ref
+                  target="#bib:Hardy1914_SatiresOfCircumstance">Her Secret</ref>"-: "<ref
+                  target="#bib:Hardy1914_SatiresOfCircumstance">Beeny Cliff</ref>"- "<ref
+                  target="#bib:Hardy1914_SatiresOfCircumstance">The Death of Regret</ref>–" (which
+               is wonderfully true, I am afraid!) &amp; "<ref
+                  target="#bib:Hardy1914_SatiresOfCircumstance">The Workbox</ref>"– –</p>
+            <p>I saw very pleasant criticism of the "<ref target="#bib:Hardy1904-1908_TheDynasts"
+                  >Dynasts</ref>", so hope the production will be of much interest to you &amp;
+                  <persName ref="#ps:FlorenceHardy">Florence</persName>. <persName
+                  ref="#ps:HarleyGranvilleBarker"><choice><abbr>G.</abbr>
+                     <expan>Granville</expan></choice> Barker</persName> seems to have done his
+               share well? – </p>
+            <p>Please thank <persName ref="#ps:FlorenceHardy"><choice><abbr>F.</abbr>
+                     <expan>Florence</expan></choice></persName> for her very nice letter. I am
+               sorry <pb n="4" facs="uoedh_hl_h.3181_4.jpg"/> that you think <name>"Britannia"
+                  Milner</name>
+               <choice><abbr>w<hi rend="superscript">d</hi>.</abbr>
+                  <expan>would</expan></choice> be too noisy for you! But perhaps <hi
+                  rend="underline">2</hi> dogs racing <unclear>around</unclear>
+               <choice><abbr>w<hi rend="superscript">d</hi>.</abbr>
+                  <expan>would</expan></choice> be a somewhat disturbing influence. I feel glad,
+               however, that you have got Wessex, &amp; that the birds are <hi rend="underline"
+                  >safe</hi> in <choice><abbr>y<hi rend="superscript">r</hi>.</abbr>
+                  <expan>your</expan></choice> garden. </p>
+            <p>To return to the poems – I am glad you have included the <ref
+                  target="#bib:Hardy1914_MenWhoMarchAway">Song of the Soldiers</ref>.</p>
+            <p>I thought <persName ref="#ps:EdmundGosse">Mr Gosse</persName>'s poem "To our Dead" –
+               I think it was called, really fine, didn't you?</p>
+
+            <pb n="5" facs="uoedh_hl_h.3181_5.jpg"/>
+            <p xml:id="h3181a" corresp="#m01" style="transform:rotateZ(-90deg)">My best love to
+                  <persName ref="#ps:FlorenceHardy"/>Florence. I hope she is well in this rather
+               trying wet &amp; windy weather.</p>
+            <closer xml:id="h3181b" corresp="#m02" style="transform:rotateZ(-90deg)">
+               <salute><choice>
+                     <abbr>yr</abbr>
+                     <expan>your</expan>
+                  </choice>
+                  <choice>
+                     <abbr>aff.</abbr>
+                     <expan>affectionate</expan>
+                  </choice>friend</salute>
+               <signed>FH</signed>
+            </closer>
+
+
+         </div>
+      </body>
+      <back>
+         <div type="envelope">
+            <pb n="6" facs="uoedh_hl_h.3181_env1.jpg"/>
+            <p><address><addrLine>Thomas Hardy Esq O.M.</addrLine>
+                  <addrLine>Maxgate</addrLine>
+                  <addrLine rend="underline">Dorchester</addrLine></address></p> gosse<pb n="7"
+               facs="uoedh_hl_h.3181_env2.jpg"/>
+         </div>
+      </back>
+   </text>
+</TEI>

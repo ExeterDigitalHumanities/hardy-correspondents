@@ -1,0 +1,186 @@
+<?xml-model href="../../schema/hardyletter.rng" type="application/xml" 
+   schematypens="http://relaxng.org/ns/structure/1.0"?><!--<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="dhe-hl-h.3136">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+
+            <title>Letter from Thomas Hardy to Florence Henniker notifying her of his marriage to
+               Florence Dugdale, 11 February 1914.</title>
+            <!--The author of the letter-->
+            <author ref="#ps:TH">Thomas Hardy</author>
+            <!--The editor of the tei file-->
+            <editor ref="#resp-HA">Helen Angear</editor>
+            <funder>Arts and Humanities Research Council</funder>
+            <sponsor>University of Exeter</sponsor>
+            <sponsor>Dorset County Museum</sponsor>
+            <principal>Angelique Richardson</principal>
+
+            <respStmt>
+               <persName ref="#resp:HA">Helen Angear</persName>
+               <resp>Selection</resp>
+               <resp>Transcription</resp>
+
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:BM">Beth Mills</persName>
+               <resp>Proofreading</resp>
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:HP">Hannah Petrie</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="#resp:EW">Elizabeth Williamson</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition, transcribed and edited directly from primary
+               sources</edition>
+         </editionStmt>
+         <publicationStmt>
+            <publisher>University of Exeter Digital Humanities Lab</publisher>
+            <pubPlace>Exeter, UK</pubPlace>
+            <date>November 2019</date>
+            <availability>
+               <p>The letter transcripts are licensed under a Creative Commons Attribution 4.0
+                  International License. This means that you can use these transcripts providing you
+                  acknowledge the Hardy's Correspondents project.</p>
+               <p>The letter images remain the copyright of Dorset Museum. Please contact the Museum
+                  if you would like to reuse any of the letter images.</p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <placeName ref="#pl:Dorchester">Dorchester</placeName>
+                  <institution>Dorset County Museum</institution>
+                  <idno type="DCM">H.3136</idno>
+                  <altIdentifier>
+                     <idno type="XXXX"><!-- optional - any other identifiers --></idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Letter written on <material>thick cream paper,
+                                 unwatermarked</material>.</p>
+                           <p>Pencil library marks on page 4: <note type="libraryMark"
+                              >H.3136</note></p>
+                        </support>
+                        <condition>Good</condition>
+                     </supportDesc>
+                  </objectDesc>
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Prepared as part of the AHRC/REACT Studentship on Thomas Hardy's letters, in
+               conjunction with Dorset County Museum.</p>
+         </projectDesc>
+
+      </encodingDesc>
+      <profileDesc>
+         <correspDesc>
+            <correspAction type="sent">
+               <persName ref="#ps:TH">Thomas Hardy</persName>
+               <placeName ref="#pl:MaxGate">Max Gate, Dorchester</placeName>
+               <date when="1914-02-11"/>
+            </correspAction>
+            <correspAction type="received">
+               <persName ref="#ps:FlorenceHenniker">Florence Henniker</persName>
+            </correspAction>
+
+            <!-- correspContext> -->
+            <!-- Provides references to preceding or following correspondence related to this piece of correspondence -->
+            <!--</correspContext>-->
+            <correspContext>
+               <ref type="prev" target="dhe-hl-h.3175"> Reply from <persName
+                     ref="#ps:FlorenceHenniker">Henniker</persName> mentioning the Plumage Bill and
+                  treatment of circus animals. </ref>
+               <ref type="next" target="dhe-hl-h.3176"> Letter from <persName
+                     ref="#ps:FlorenceHenniker">Henniker</persName> revealing her surprise at the
+                  marriage, praising <persName ref="#ps:FlorenceHardy">Florence</persName> and
+                  asking what their mutual friends thought of the event. </ref>
+            </correspContext>
+         </correspDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="letter">
+            <pb n="1" facs="uoedh_hl_h.3136_1.jpg"/>
+            <opener>
+               <address rend="letterhead">
+                  <addrLine>MAX GATE,</addrLine>
+                  <addrLine>DORCHESTER.</addrLine>
+               </address>
+
+
+               <dateline>
+                  <date>
+                     <choice>
+                        <abbr>Wedn<hi rend="superscript">y</hi></abbr>
+                        <expan>Wednesday</expan>
+                     </choice>
+                  </date>
+                  <date when="1914-02-11">11:2:14</date>
+               </dateline>
+
+
+
+               <salute>My dear friend:</salute>
+
+            </opener>
+
+            <p>I wanted to tell you by letter before you could have learnt it from the papers that
+                  <persName ref="#ps:FlorenceHardy">Florence Dugdale</persName> &amp; I were married
+               yesterday at <placeName ref="#pl:Enfield">Enfield</placeName>. But somehow, although
+               nobody seemed to know anything of it, the news was telephoned to <placeName
+                  ref="#pl:London">London</placeName> immediately. If I had foreseen this I would
+               have written beforehand to you, my best friend. However, we thought it better <pb
+                  n="2" facs="uoedh_hl_h.3136_2.jpg"/> in the circumstances to inform nobody, not
+               even relations.</p>
+            <p>Beyond the parties &amp; the officiators there was not a soul present but my brother
+               &amp; her father &amp; sister. And although the church door stood wide open nobody
+               walked in. It was a lovely morning, &amp; the ceremony was over by 8.20!</p>
+
+            <p>You do like her I am sure, &amp; I want you to like her better still, if you will be
+               so kind — though as you <hi rend="underline">always</hi> are kind <pb n="3"
+                  facs="uoedh_hl_h.3136_3.jpg"/> I needn't have said that, &amp; I am sure you will
+               go on liking her.</p>
+
+            <p>Let me hear from you soon. I don't know when we shall go to <placeName
+                  ref="#pl:London">London</placeName>. I rather shun it at this time of year because
+               it gives me such colds. Thank you for your last nice letter. I am glad to know you
+               are on chalk. My experience is that chalk is the healthiest subsoil of any.</p>
+
+
+            <closer>
+               <salute>Believe me</salute>
+               <salute>Your always <choice><abbr>affect–<hi rend="superscript">te</hi></abbr>
+                     <expan>affectionate</expan></choice> friend</salute>
+
+               <signed>Tho. H.</signed>
+            </closer>
+
+            <pb n="4" facs="uoedh_hl_h.3136_4.jpg"/>
+
+
+
+         </div>
+
+      </body>
+   </text>
+</TEI>

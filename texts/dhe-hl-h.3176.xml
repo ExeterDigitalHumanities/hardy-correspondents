@@ -1,0 +1,236 @@
+<?xml-model href="../../schema/hardyletter.rng" type="application/xml" 
+   schematypens="http://relaxng.org/ns/structure/1.0"?><!--<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="dhe-hl-h.3176">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+
+            <title>Letter from Florence Henniker to Thomas Hardy concerning his marriage to Florence
+               Dugdale, 12 February 1914</title>
+            <!--The author of the letter-->
+            <author ref="#ps:FlorenceHenniker">Florence Henniker</author>
+            <!--The editor of the tei file-->
+            <editor ref="#resp-HA">Helen Angear</editor>
+            <funder>Arts and Humanities Research Council</funder>
+            <sponsor>University of Exeter</sponsor>
+            <sponsor>Dorset County Museum</sponsor>
+            <principal>Angelique Richardson</principal>
+
+            <respStmt>
+               <persName ref="#resp:HA">Helen Angear</persName>
+               <resp>Selection</resp>
+               <resp>Proofreading</resp>
+
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:BM">Beth Mills</persName>
+               <resp>Transcription</resp>
+            </respStmt>
+
+            <respStmt>
+               <persName ref="#resp:HP">Hannah Petrie</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="#resp:EW">Elizabeth Williamson</persName>
+               <resp>Encoding policy</resp>
+               <resp>Proofreading</resp>
+               <resp>eXist development and design</resp>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>First digital edition, transcribed and edited directly from primary
+               sources</edition>
+         </editionStmt>
+         <publicationStmt>
+            <publisher>University of Exeter Digital Humanities Lab</publisher>
+            <pubPlace>Exeter, UK</pubPlace>
+            <date>November 2019</date>
+            <availability>
+               <p>The letter transcripts are licensed under a Creative Commons Attribution 4.0
+                  International License. This means that you can use these transcripts providing you
+                  acknowledge the Hardy's Correspondents project.</p>
+               <p>The letter images remain the copyright of Dorset Museum. Please contact the Museum
+                  if you would like to reuse any of the letter images.</p>
+            </availability>
+
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <placeName ref="#pl:Dorchester">Dorchester</placeName>
+                  <institution>Dorset County Museum</institution>
+                  <idno type="DCM">H.3176</idno>
+                  <altIdentifier>
+                     <idno type="XXXX"><!-- optional - any other identifiers --></idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <p>Letter written on <material>cream folded card.</material> with
+                              mourning border on page 1.</p>
+                           <p>Pencil library marks on page 4 and on envelope: <note
+                                 type="libraryMark">H.3176</note>.</p>
+                           <p>Note that after page 4 Henniker continues writing in the top margin of
+                              the first page (labelled here as page 5).</p>
+                           <p>Envelope bearing the following marks: <stamp type="postmark">Circular
+                                 mark specifying <mentioned>Shoreham Kent <unclear>5</unclear> 15 AM
+                                    15 FE 14</mentioned></stamp>. <stamp type="postage">One penny
+                                 bright scarlet King George V stamp.</stamp>
+                           </p>
+                           <p>Enclosure mentioned but not found with the letter.</p>
+                        </support>
+                        <condition>Good</condition>
+                     </supportDesc>
+                  </objectDesc>
+                  <decoDesc>
+                     <decoNote type="mourningBorder">
+                        <p>Black border on page 1.</p>
+                     </decoNote>
+                  </decoDesc>
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Prepared as part of the AHRC/REACT Studentship on Thomas Hardy's letters, in
+               conjunction with Dorset County Museum.</p>
+         </projectDesc>
+
+      </encodingDesc>
+      <profileDesc>
+         <correspDesc>
+            <correspAction type="sent">
+               <persName ref="#ps:FlorenceHenniker">Florence Henniker</persName>
+               <placeName ref="#pl:TheLittleOrchard">The Little Orchard, Shoreham, Kent</placeName>
+               <date when="1914-02-12"/>
+            </correspAction>
+            <correspAction type="received">
+               <persName ref="#ps:TH">Thomas Hardy</persName>
+            </correspAction>
+            
+            <!-- correspContext> -->
+            <!-- Provides references to preceding or following correspondence related to this piece of correspondence -->
+            <!--</correspContext>-->
+            <correspContext>
+               <ref type="prev" target="dhe-hl-h.3136"> Letter from <persName ref="#ps:TH"
+                     >Hardy</persName> starting a new conversational thread in which <persName
+                     ref="#ps:TH">Hardy</persName> informs <persName ref="#ps:FlorenceHenniker"
+                     >Henniker</persName> of his marriage to <persName ref="#ps:FlorenceHardy"
+                     >Florence Dugdale</persName> and regrets that she found out from the newspapers
+                  first. </ref>
+               <ref type="next" target="dhe-hl-h.3137"> Letter from <persName ref="#ps:TH"
+                     >Hardy</persName> on other friends’ reactions to his recent marriage, as well
+                  as referring to <persName ref="#ps:FlorenceHardy">Florence’s</persName> kindness
+                  and good nature. He encloses two unnamed poems. </ref>
+            </correspContext>
+
+         </correspDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="letter">
+            <pb n="1" facs="uoedh_hl_h.3176_1.jpg"/>
+            <opener>
+               <address rend="letterhead">
+                  <addrLine>The Little Orchard,</addrLine>
+                  <addrLine>Shoreham,</addrLine>
+                  <addrLine>Kent.</addrLine>
+               </address>
+               <dateline>
+                  <date when="1914-02-12">Feb 12 - 14</date>
+               </dateline>
+
+               <salute>My dear friend:</salute>
+               <milestone xml:id="m01" unit="section"/>
+               <milestone xml:id="m02" unit="section"/>
+            </opener>
+
+            <p>It is very nice of <add place="superimposed">you</add> to write to me so soon after
+                        <choice><abbr>y<hi rend="superscript"
+                  >r</hi>.</abbr><expan>your</expan></choice> marriage. Of course I <hi
+                  rend="underline">was</hi> very surprised – ! But you know how much I appreciate
+                  <persName ref="#ps:FlorenceHardy">her</persName>. I think she has a beautiful
+               nature; <hi rend="underline">very</hi> full of sympathy, &amp; she combines, (which
+               is perhaps rare –,) the qualit<subst><del>ies</del><add place="superimposed"
+                  >y</add></subst> of enthusiasm, <hi rend="underline"
+                           ><subst><del><unclear>a</unclear></del><add place="superimposed"
+                     >wi</add></subst>th</hi> common – sense –. It will be a great <pb n="2"
+                  facs="uoedh_hl_h.3176_2.jpg"/> happiness too, to you to know that she understands
+               &amp; <hi rend="underline">loves</hi> your work – &amp; is so really <hi
+                  rend="underline">proud</hi> of it.</p>
+
+            <p>Thank you very much for saying you <choice><abbr>w<hi rend="superscript"
+                     >d</hi>.</abbr><expan>would</expan></choice> have written earlier, had you
+               thought the news <choice><abbr>w<hi rend="superscript"
+                     >d</hi>.</abbr><expan>would</expan></choice> reach <placeName ref="#pl:London"
+                  >London</placeName> so soon. I saw the pictures in different <pb n="3"
+                  facs="uoedh_hl_h.3176_3.jpg"/> papers with great interest. If you come to
+                  <placeName ref="#pl:London">London</placeName> in warmer days, you must both spend
+                  <hi rend="underline">a long day</hi> with me here? The station is only a mile off,
+               &amp; the journey an hour from <placeName ref="#pl:VictoriaStation"
+                  >Victoria</placeName>.</p>
+
+            <p>This belated enclosure from <persName ref="#ps:StewartEllis">Mr Ellis</persName>
+               <choice><abbr>sh<hi rend="superscript">d</hi>.</abbr><expan>should</expan></choice>
+               have gone to you long before. Needless to say, <hi rend="underline">I</hi> did not
+               write to the Press. Many people <pb n="4" facs="uoedh_hl_h.3176_4.jpg"/> might have
+               thought it an impertinence on my part.–</p>
+
+            <p>I <choice><abbr>sh<hi rend="superscript">d</hi>.</abbr><expan>should</expan></choice>
+               <hi rend="underline">so</hi> like to know what our mutual friends &amp; acquaintances
+               wrote about <choice><abbr>y<hi rend="superscript"
+                  >r</hi>.</abbr><expan>your</expan></choice> marriage? <persName
+                  ref="#ps:EdmundGosse">Mr Gosse</persName>, <persName ref="#ps:ClementShorter">Mr
+                  Shorter</persName> – <persName ref="#ps:FrederickWedmore">Sir F.
+                  Wedmore</persName> – <persName ref="#ps:BirdieIlchester">Birdie
+                  Ilchester</persName> &amp;c &amp;c &amp;c! Some day you will tell me–?–</p>
+
+            <p>I have let my <placeName ref="#pl:HydeParkSquare">London house</placeName> for a
+               time, &amp; hope to let it again. Do tell your wife to write to</p>
+
+            <pb n="5" facs="uoedh_hl_h.3176_5.jpg"/>
+            <ab>
+               <seg xml:id="h3176a" corresp="#m01" style="transform:rotateZ(-90deg)">me very soon.
+                  It <choice><abbr>w<hi rend="superscript">d</hi>.</abbr>
+                     <expan>would</expan></choice> be a real pleasure &amp; interest to hear all
+                           <choice><abbr>y<hi rend="superscript">r</hi></abbr>
+                     <expan>your</expan></choice> news.</seg>
+            </ab>
+
+            <closer xml:id="h3176b" corresp="#m02" style="transform:rotateZ(-90deg)">
+               <salute><choice><abbr>Ev</abbr><expan>Ever</expan></choice>
+                  <choice><abbr>yr</abbr><expan>your</expan></choice>
+                  <choice><abbr>affec.</abbr><expan>affectionate</expan></choice> friend.</salute>
+               <signed>FH</signed>
+            </closer>
+
+
+
+         </div>
+      </body>
+      <back>
+         <div type="envelope">
+            <pb n="6" facs="uoedh_hl_h.3176_env1.jpg"/>
+            <p>
+               <address>
+                  <addrLine>Feb. 12 1914</addrLine>
+                  <addrLine>Thomas Hardy Esq.</addrLine>
+                  <addrLine>O.M</addrLine>
+                  <addrLine>Maxgate</addrLine>
+                  <addrLine>Dorchester</addrLine>
+               </address>
+            </p>
+            <pb n="7" facs="uoedh_hl_h.3174_env2.jpg"/>
+         </div>
+      </back>
+   </text>
+</TEI>
