@@ -1,5 +1,7 @@
 # hardy-correspondents
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8070658.svg)](https://doi.org/10.5281/zenodo.8070658)
+
 [![CC BY 4.0][cc-by-shield]][cc-by]
 
 Welcome to Hardy’s Correspondents, a collaborative project between Dorset Museum and the University of Exeter whose long-term aim is to make available to the public over 5000 letters housed at Dorset Museum. Writers, artists, scientists, charities, political organisations, friends and fans wrote to Hardy from all round the world, including Chile, China, Egypt, India, Japan, Nigeria and Syria. This first release contains 100 of these letters.
