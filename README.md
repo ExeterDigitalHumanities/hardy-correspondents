@@ -20,7 +20,7 @@ Dr Jon Murden, Director of Dorset Museum.
 
 Dr Lizzy Williamson, Digital Humanities Lead.
 
-Gary Stringer, Richard Holding, Eva Bodenschatz, Graham Fereday, Hannah Petrie, Charlotte Tupman and Julia Hopkin, Digital Humanities Team, University of Exeter.
+Eva Bodenschatz, Graham Fereday, Richard Holding, Julia Hopkin, Beth Mills, Hannah Petrie, Gary Stringer, Charlotte Tupman, and Digital Humanities Team, University of Exeter.
 
 This work is licensed under a
 [Creative Commons Attribution 4.0 International License][cc-by].
